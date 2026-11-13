@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAYASTRA NAWALOKA</title>
+  <meta name="description" content="MAYASTRA NAWALOKA - Architectural digital systems, enterprise software, and commercial platforms.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- SECTION 1: HERO (Strictly text only, massive whitespace, zero navbar) -->
+  <section class="section-hero" id="hero">
+    <div class="container">
+      <h1 class="hero-title">MAYASTRA NAWALOKA</h1>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover) -->
+  <section class="section-projects" id="projects">
+    <div class="container">
+      <div class="projects-feed">
+        <!-- Project 1: ERP -->
+        <article class="project-card" data-project="erp" tabindex="0" role="region" aria-label="Enterprise Resource Planning Showcase">
+          <div class="project-media">
+            <img src="assets/project-erp.svg" alt="ERP System Showcase" loading="lazy">
+            <div class="project-overlay">
+              <button type="button" class="btn-preview" data-project="erp" aria-label="Preview ERP Project">
+                <span>Preview Project</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Toko Online / E-Commerce -->
+        <article class="project-card" data-project="ecommerce" tabindex="0" role="region" aria-label="E-Commerce Store Showcase">
+          <div class="project-media">
+            <img src="assets/project-ecommerce.svg" alt="E-Commerce Architecture Showcase" loading="lazy">
+            <div class="project-overlay">
+              <button type="button" class="btn-preview" data-project="ecommerce" aria-label="Preview E-Commerce Project">
+                <span>Preview Project</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: CMS -->
+        <article class="project-card" data-project="cms" tabindex="0" role="region" aria-label="Content Management System Showcase">
+          <div class="project-media">
+            <img src="assets/project-cms.svg" alt="CMS Architecture Showcase" loading="lazy">
+            <div class="project-overlay">
+              <button type="button" class="btn-preview" data-project="cms" aria-label="Preview CMS Project">
+                <span>Preview Project</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CONTACT (Minimalist email section) -->
+  <section class="section-contact" id="contact">
+    <div class="container">
+      <p class="contact-label">Inquiries &amp; Partnerships</p>
+      <a href="mailto:contact@mayastranawaloka.com" class="contact-email-link" id="emailLink">contact@mayastranawaloka.com</a>
+      <div class="contact-actions">
+        <button type="button" class="btn-copy-email" id="copyEmailBtn">Copy Email Address</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FOOTER (Company info, Menus, and Giant bottom logo with fade gradient) -->
+  <footer class="section-footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-company-block">
+          <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+          <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+        </div>
+        <div class="footer-menus">
+          <div class="menu-column">
+            <span class="menu-column-title">Capabilities</span>
+            <a href="#projects" class="footer-link">ERP Systems</a>
+            <a href="#projects" class="footer-link">Commerce Engines</a>
+            <a href="#projects" class="footer-link">CMS Platforms</a>
+          </div>
+          <div class="menu-column">
+            <span class="menu-column-title">Corporate</span>
+            <a href="#contact" class="footer-link">Inquiries</a>
+            <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Careers</a>
+            <a href="#contact" class="footer-link">Legal</a>
+          </div>
+          <div class="menu-column">
+            <span class="menu-column-title">Network</span>
+            <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+            <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giant bottom logo scaled full-width with fade gradient -->
+    <div class="giant-logo-container" aria-hidden="true">
+      <img src="assets/logo.png" alt="" class="giant-logo-image">
+    </div>
+  </footer>
+
+  <!-- Interactive Project Preview Modal -->
+  <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-title" id="modalTitle">Project Title</span>
+          <span class="modal-badge" id="modalBadge">Classification</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Preview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrapper">
+          <img id="modalImage" src="" alt="Project Preview">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-meta" id="modalMeta">System architecture overview</span>
+        <div class="modal-actions">
+          <a href="#contact" class="modal-btn modal-btn-primary" onclick="document.getElementById('previewModal').classList.remove('active'); document.body.style.overflow = '';">Request Architecture Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

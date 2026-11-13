@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mayastra-profile-web
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 256M
