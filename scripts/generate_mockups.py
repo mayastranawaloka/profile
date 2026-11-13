@@ -313,7 +313,7 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
   <!-- Product Catalog Grid -->
   <g transform="translate(80, 560)">
     <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" letter-spacing="1">CURATED INVENTORY</text>
-    <text x="960" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VIEW COMPLETE COLLECTION &rarr;</text>
+    <text x="960" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VIEW COMPLETE COLLECTION &#8594;</text>
 
     <!-- Product 1 -->
     <rect x="0" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
@@ -419,7 +419,7 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
     <text x="40" y="150" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">for Mid-Market Enterprise 2026</text>
 
     <!-- Meta Subtitle -->
-    <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board &bull; Updated 14 minutes ago &bull; Public Visibility</text>
+    <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board &#8226; Updated 14 minutes ago &#8226; Public Visibility</text>
 
     <!-- Featured Header Visual inside editor -->
     <rect x="40" y="220" width="800" height="220" rx="4" fill="#1b1b20" stroke="#2d2d34" stroke-width="1"/>
@@ -477,10 +477,10 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
     <!-- Revision log -->
     <text x="24" y="455" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">AUDIT TRAIL</text>
     <text x="24" y="485" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #42: Updated layout schematics</text>
-    <text x="24" y="502" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Today, 00:32 &bull; Lead Engineer</text>
+    <text x="24" y="502" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Today, 00:32 &#8226; Lead Engineer</text>
 
     <text x="24" y="535" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #41: Added executive summary</text>
-    <text x="24" y="552" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Yesterday, 18:20 &bull; Managing Editor</text>
+    <text x="24" y="552" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Yesterday, 18:20 &#8226; Managing Editor</text>
   </g>
 </svg>'''
 

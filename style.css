@@ -412,47 +412,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: #000000;
-}
-
-/* Black gradient overlay from top into original logo colors */
-.giant-logo-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 55%;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.92) 20%, rgba(0, 0, 0, 0.45) 60%, transparent 100%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Bottom fade so it seamlessly finishes into black */
-.giant-logo-container::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35%;
-  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.7) 40%, transparent 100%);
-  z-index: 2;
-  pointer-events: none;
+  line-height: 0;
 }
 
 .giant-logo-image {
   width: 100%;
   max-width: 100vw;
-  height: clamp(380px, 50vw, 760px);
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
-  opacity: 1;
-  filter: none;
-  position: relative;
-  z-index: 1;
 }
 
 /* Interactive Preview Modal */

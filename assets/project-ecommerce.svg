@@ -102,7 +102,7 @@
   <!-- Product Catalog Grid -->
   <g transform="translate(80, 560)">
     <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" letter-spacing="1">CURATED INVENTORY</text>
-    <text x="960" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VIEW COMPLETE COLLECTION &rarr;</text>
+    <text x="960" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VIEW COMPLETE COLLECTION &#8594;</text>
 
     <!-- Product 1 -->
     <rect x="0" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>

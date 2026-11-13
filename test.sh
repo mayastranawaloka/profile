@@ -21,13 +21,26 @@ grep -q 'MAYASTRA NAWALOKA' index.html || { echo "FAIL: Hero text missing"; exit
 grep -q 'contact@mayastranawaloka.com' index.html || { echo "FAIL: contact email missing"; exit 1; }
 grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' index.html || { echo "FAIL: footer info missing"; exit 1; }
 
-# Verify 3 project assets
-for asset in assets/project-erp.svg assets/project-ecommerce.svg assets/project-cms.svg assets/logo.png; do
+# Verify project and logo assets and XML validity
+for asset in assets/project-erp.svg assets/project-ecommerce.svg assets/project-cms.svg assets/logo.png assets/logo-banner.png; do
   if [[ ! -f "$asset" ]]; then
     echo "FAIL: missing asset $asset"
     exit 1
   fi
 done
+
+echo "[*] Validating XML structure of all SVG assets..."
+python3 -c '
+import xml.etree.ElementTree as ET
+import glob, sys
+
+for svg in glob.glob("assets/*.svg"):
+    try:
+        ET.parse(svg)
+    except Exception as e:
+        print(f"FAIL: SVG parse error in {svg}: {e}")
+        sys.exit(1)
+'
 
 # Verify CNAME
 if [[ ! -f "CNAME" ]]; then
