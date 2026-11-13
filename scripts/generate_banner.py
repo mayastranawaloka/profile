@@ -1,69 +1,79 @@
-from PIL import Image, ImageFilter
+import math
 import os
+from PIL import Image, ImageFilter
 
 def create_panoramic_banner():
     logo_path = 'assets/logo.png'
     output_path = 'assets/logo-banner.png'
-    
+
     if not os.path.exists(logo_path):
         raise FileNotFoundError(f"Missing {logo_path}")
 
-    orig = Image.open(logo_path).convert('RGBA')
+    orig = Image.open(logo_path).convert('RGB')
     ow, oh = orig.size
 
-    # Panoramic dimensions
-    bw, bh = 1920, 780
-    banner = Image.new('RGBA', (bw, bh), (0, 0, 0, 255))
+    # Ultra-high-resolution widescreen canvas: 2400 x 850
+    bw, bh = 2400, 850
+    cx, cy = bw / 2.0, bh / 2.0
 
-    # Ambient blurred background to span 1920px edge-to-edge
-    bg = orig.resize((bw, bh), Image.Resampling.BILINEAR)
-    bg = bg.filter(ImageFilter.GaussianBlur(radius=60))
-
-    # Scaled center logo with complete flower preservation (356px flower in 780px canvas)
-    nw, nh = 600, 600
+    # Scale original logo so the flower is sized gracefully
+    # Target flower height ~320px
+    # Original flower is 273px -> scale = 320 / 273 = 1.172
+    scale = 1.172
+    nw, nh = int(ow * scale), int(oh * scale) # 539 x 539
     scaled_orig = orig.resize((nw, nh), Image.Resampling.LANCZOS)
 
-    cx = (bw - nw) // 2
-    cy = (bh - nh) // 2
+    # Ambient blurred background to span 2400px edge-to-edge
+    ambient_bg = orig.resize((bw, bh), Image.Resampling.BILINEAR).filter(ImageFilter.GaussianBlur(radius=100))
 
-    banner.paste(bg, (0, 0))
+    # Center composite with smooth radial blend
+    center_composite = ambient_bg.copy()
+    ox = int(cx - nw / 2)
+    oy = int(cy - nh / 2)
 
-    # Smooth feathered circular mask for center logo
-    mask = Image.new('L', (nw, nh), 0)
+    center_mask = Image.new('L', (nw, nh), 0)
     for y in range(nh):
+        dy = y - nh / 2.0
         for x in range(nw):
-            dx = (x - nw/2) / (nw/2)
-            dy = (y - nh/2) / (nh/2)
-            dist = (dx**6 + dy**6)**0.5
-            val = int(max(0, min(1, 1.0 - dist)) * 255)
-            mask.putpixel((x, y), val)
-    mask = mask.filter(ImageFilter.GaussianBlur(radius=15))
+            dx = x - nw / 2.0
+            r = math.sqrt(dx*dx + dy*dy)
+            if r <= 215.0:
+                val = 255
+            elif r < 265.0:
+                # Smooth cosine transition
+                f = 0.5 * (1.0 + math.cos(math.pi * (r - 215.0) / 50.0))
+                val = int(f * 255)
+            else:
+                val = 0
+            center_mask.putpixel((x, y), val)
 
-    banner.paste(scaled_orig, (cx, cy), mask)
+    center_mask = center_mask.filter(ImageFilter.GaussianBlur(radius=4))
+    center_composite.paste(scaled_orig, (ox, oy), center_mask)
 
-    # Vertical gradient fade layer:
-    # Pure black (#000000) at top (y < 0.22) fading smoothly into the blue aura
-    # Bottom fade (y > 0.82) into black
-    # Horizontal vignette at edges (x < 0.12 or x > 0.88)
-    fade_layer = Image.new('RGBA', (bw, bh), (0, 0, 0, 0))
+    # Master elliptical Quartic window to fade seamlessly into pure black (#000000)
+    # Rx = 1080px (wide horizontal spread spanning the viewport)
+    # Ry = 390px (vertical spread reaching top and bottom with zero cutoff)
+    Rx = 1080.0
+    Ry = 390.0
+
+    final_img = Image.new('RGB', (bw, bh), (0, 0, 0))
+    comp_pixels = center_composite.load()
+    final_pixels = final_img.load()
+
     for y in range(bh):
-        y_norm = y / bh
-        top_alpha = int((1.0 - (y_norm / 0.22)) * 255) if y_norm < 0.22 else 0
-        bot_alpha = int(((y_norm - 0.82) / 0.18) * 255) if y_norm > 0.82 else 0
-        alpha = max(top_alpha, bot_alpha)
+        dy = (y - cy) / Ry
         for x in range(bw):
-            x_norm = x / bw
-            side_alpha = 0
-            if x_norm < 0.12:
-                side_alpha = int((1.0 - (x_norm / 0.12)) * 255)
-            elif x_norm > 0.88:
-                side_alpha = int(((x_norm - 0.88) / 0.12) * 255)
-            total_a = max(alpha, side_alpha)
-            if total_a > 0:
-                fade_layer.putpixel((x, y), (0, 0, 0, total_a))
+            dx = (x - cx) / Rx
+            d2 = dx*dx + dy*dy
+            if d2 < 1.0:
+                # Quartic smooth decay: (1 - d2)^2.2
+                weight = (1.0 - d2) ** 2.2
+                r, g, b = comp_pixels[x, y]
+                final_pixels[x, y] = (int(r * weight), int(g * weight), int(b * weight))
+            else:
+                final_pixels[x, y] = (0, 0, 0)
 
-    banner = Image.alpha_composite(banner, fade_layer)
-    banner.save(output_path, 'PNG')
+    final_img.save(output_path, 'PNG')
     print(f"[OK] Generated {output_path} successfully!")
 
 if __name__ == '__main__':
