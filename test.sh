@@ -3,7 +3,7 @@ set -euo pipefail
 
 echo "[*] Running verification test suite..."
 
-PAGES=("index.html" "about.html" "service.html" "contact.html")
+PAGES=("index.html" "about.html" "service.html" "articles.html" "contact.html")
 
 # 1. Structural Checks on all pages
 for page in "${PAGES[@]}"; do
@@ -18,7 +18,12 @@ for page in "${PAGES[@]}"; do
   grep -q 'data-page="home"' "$page" || { echo "FAIL: home link missing in $page"; exit 1; }
   grep -q 'data-page="about"' "$page" || { echo "FAIL: about link missing in $page"; exit 1; }
   grep -q 'data-page="service"' "$page" || { echo "FAIL: service link missing in $page"; exit 1; }
+  grep -q 'data-page="articles"' "$page" || { echo "FAIL: articles link missing in $page"; exit 1; }
   grep -q 'data-page="contact"' "$page" || { echo "FAIL: contact link missing in $page"; exit 1; }
+
+  # Verify Tailwind & Figma Grid Sketch Layout
+  grep -q 'class="sketch-frame"' "$page" || { echo "FAIL: sketch-frame missing in $page"; exit 1; }
+  grep -q 'class="sketch-divider"' "$page" || { echo "FAIL: sketch-divider missing in $page"; exit 1; }
 
   # Verify Footer and original logo image
   grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' "$page" || { echo "FAIL: footer info missing in $page"; exit 1; }
@@ -29,6 +34,7 @@ done
 echo "[*] Verifying page-specific contents..."
 grep -q 'id="hero"' index.html || { echo "FAIL: hero section missing in index.html"; exit 1; }
 grep -q 'id="projects"' index.html || { echo "FAIL: projects section missing in index.html"; exit 1; }
+grep -q 'id="articles-cta"' index.html || { echo "FAIL: articles CTA section missing in index.html"; exit 1; }
 
 # About page: 3 photos side-by-side and computer programming / IT / software copy
 grep -q 'assets/team/person-1.svg' about.html || { echo "FAIL: team photo 1 missing in about.html"; exit 1; }
@@ -38,6 +44,24 @@ grep -qi 'pemrograman komputer' about.html || { echo "FAIL: computer programming
 
 # Service page: services list
 grep -q 'Enterprise Resource Planning' service.html || { echo "FAIL: ERP missing in service.html"; exit 1; }
+
+# Articles page: 20 article cards (10 insight + 10 how-we-work) and reader modal
+echo "[*] Verifying articles count and structure..."
+INSIGHT_COUNT=$(grep -c 'data-category="insight"' articles.html || true)
+SERVICE_COUNT=$(grep -c 'data-category="how-we-work"' articles.html || true)
+
+if [[ "$INSIGHT_COUNT" -ne 10 ]]; then
+  echo "FAIL: Expected 10 insight articles, found ${INSIGHT_COUNT}"
+  exit 1
+fi
+
+if [[ "$SERVICE_COUNT" -ne 10 ]]; then
+  echo "FAIL: Expected 10 how-we-work articles, found ${SERVICE_COUNT}"
+  exit 1
+fi
+
+grep -q 'id="articleModal"' articles.html || { echo "FAIL: articleModal missing in articles.html"; exit 1; }
+grep -q 'id="articleSearchInput"' articles.html || { echo "FAIL: search input missing in articles.html"; exit 1; }
 
 # Contact page: email link
 grep -q 'contact@mayastranawaloka.com' contact.html || { echo "FAIL: contact email missing in contact.html"; exit 1; }
@@ -77,7 +101,7 @@ python3 -c '
 import re, sys
 
 banned_chars = ["—", "–"]
-files = ["index.html", "about.html", "service.html", "contact.html", "style.css", "script.js"]
+files = ["index.html", "about.html", "service.html", "articles.html", "contact.html", "style.css", "script.js"]
 
 for path in files:
     with open(path, "r", encoding="utf-8") as f:

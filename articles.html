@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles - MAYASTRA NAWALOKA</title>
+  <meta name="description" content="PT MAYASTRA NAWALOKA NUSANTARA - Technical publications, computer science insights, and commercial engineering methodology.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MINIMALIST NAVBAR (Live WIB Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat">
+        <span class="wib-dot"></span>
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">WIB</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link active" data-page="articles">articles</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
+
+    <!-- MAIN ARTICLES CONTENT -->
+    <main class="container">
+      <div class="sketch-meta-bar">
+        <span class="sketch-tag">INDEX // 03 KNOWLEDGE DISPATCHES</span>
+        <span class="sketch-dimension">20 ACTIVE ENTRIES</span>
+      </div>
+      <header class="page-header">
+        <p class="page-tagline">Publications &amp; Case Methodology</p>
+        <h1 class="page-title">ARTICLES</h1>
+      </header>
+
+      <!-- Filter Controls & Search Toolbar -->
+      <section class="articles-toolbar" aria-label="Article Filter Controls">
+        <div class="articles-filter-group" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All (20)</button>
+          <button type="button" class="filter-btn" data-filter="insight" role="tab" aria-selected="false">Insights (10)</button>
+          <button type="button" class="filter-btn" data-filter="how-we-work" role="tab" aria-selected="false">How We Work (10)</button>
+        </div>
+        <div class="articles-search-wrap">
+          <svg class="articles-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="articleSearchInput" class="articles-search-input" placeholder="Search publications or keywords..." aria-label="Search articles">
+        </div>
+      </section>
+
+      <!-- 20 Article Cards Grid -->
+      <section class="articles-grid" id="articlesGrid" aria-label="Publications Grid">
+
+        <!-- ==================== INSIGHT ARTICLES (10) ==================== -->
+
+        <!-- Article 01 -->
+        <article class="article-card" data-category="insight" data-id="1" tabindex="0" role="region" aria-label="Article: Deterministic State Machines in Modern Web Applications">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">NOV 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Deterministic State Machines in Modern Web Applications</h2>
+            <p class="article-card-excerpt">
+              Why modeling client-side user interfaces and state transitions through formal mathematical statecharts completely eradicates impossible UI states, race conditions, and unhandled transition bugs.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#ARCHITECTURE</span>
+              <span class="article-tag-item">#STATECHARTS</span>
+              <span class="article-tag-item">#DETERMINISM</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 02 -->
+        <article class="article-card" data-category="insight" data-id="2" tabindex="0" role="region" aria-label="Article: High-Throughput Memory Architecture and Zero-Copy I/O">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">NOV 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">High-Throughput Memory Architecture and Zero-Copy I/O</h2>
+            <p class="article-card-excerpt">
+              Exploring Linux page boundary management, kernel epoll multiplexing, and zero-copy data streaming techniques to sustain millions of concurrent packets with minimal CPU context switches.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#LINUX-KERNEL</span>
+              <span class="article-tag-item">#NETWORKING</span>
+              <span class="article-tag-item">#MEMORY</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 03 -->
+        <article class="article-card" data-category="insight" data-id="3" tabindex="0" role="region" aria-label="Article: Multi-Region Database Sharding and High-Concurrency Ledgers">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">OCT 2026 / 9 MIN</span>
+            </div>
+            <h2 class="article-card-title">Multi-Region Database Sharding and High-Concurrency Ledgers</h2>
+            <p class="article-card-excerpt">
+              Architectural principles behind distributed ledger integrity: consensus protocols, partition keys distribution, monotonic timestamp ordering, and two-phase commit fallback safety.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#DISTRIBUTED-DB</span>
+              <span class="article-tag-item">#RAFT</span>
+              <span class="article-tag-item">#LEDGER</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 04 -->
+        <article class="article-card" data-category="insight" data-id="4" tabindex="0" role="region" aria-label="Article: The Minimalist Monolith vs Premature Microservices">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">OCT 2026 / 7 MIN</span>
+            </div>
+            <h2 class="article-card-title">The Minimalist Monolith vs Premature Microservices</h2>
+            <p class="article-card-excerpt">
+              An empirical critique of corporate over-engineering. Why modular monolithic architectures consistently outpace microservice sprawl in operational velocity, cost efficiency, and reliability.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#ENGINEERING</span>
+              <span class="article-tag-item">#MONOLITH</span>
+              <span class="article-tag-item">#SYSTEMS</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 05 -->
+        <article class="article-card" data-category="insight" data-id="5" tabindex="0" role="region" aria-label="Article: Real-Time Distributed Events: WebSockets and Server-Sent Events">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">OCT 2026 / 5 MIN</span>
+            </div>
+            <h2 class="article-card-title">Real-Time Distributed Events: WebSockets and Server-Sent Events</h2>
+            <p class="article-card-excerpt">
+              Evaluating bidirectional duplex socket pipelines against unidirectional HTTP/2 streaming protocols for high-density live telemetry, collaborative canvases, and order status tracking.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#WEBSOCKETS</span>
+              <span class="article-tag-item">#SSE</span>
+              <span class="article-tag-item">#REALTIME</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 06 -->
+        <article class="article-card" data-category="insight" data-id="6" tabindex="0" role="region" aria-label="Article: Zero-Trust Security Posture for Modern Corporate Infrastructure">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">SEP 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">Zero-Trust Security Posture for Modern Corporate Infrastructure</h2>
+            <p class="article-card-excerpt">
+              Deprecating perimeter VPN networks in favor of continuous cryptographic mutual TLS (mTLS) handshakes, short-lived ephemeral certificates, and granular policy enforcement points.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#SECURITY</span>
+              <span class="article-tag-item">#MTLS</span>
+              <span class="article-tag-item">#ZERO-TRUST</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 07 -->
+        <article class="article-card" data-category="insight" data-id="7" tabindex="0" role="region" aria-label="Article: Eliminating Browser Layout Thrashing for 60 FPS Digital Experiences">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">SEP 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Eliminating Browser Layout Thrashing for 60 FPS Experiences</h2>
+            <p class="article-card-excerpt">
+              An engineering deep-dive into browser composite layers: layout invalidations, paint containment, transform-only GPU acceleration, and microtask scheduling for friction-free UIs.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#FRONTEND</span>
+              <span class="article-tag-item">#RENDERING</span>
+              <span class="article-tag-item">#PERFORMANCE</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 08 -->
+        <article class="article-card" data-category="insight" data-id="8" tabindex="0" role="region" aria-label="Article: Cache Coherence and Invalidation Strategies in Edge Networks">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">AUG 2026 / 7 MIN</span>
+            </div>
+            <h2 class="article-card-title">Cache Coherence and Invalidation Strategies in Edge Networks</h2>
+            <p class="article-card-excerpt">
+              Solving distributed caching trade-offs through stale-while-revalidate patterns, surrogate keys tagging, and edge serverless execution to guarantee sub-50ms Time To First Byte (TTFB).
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#EDGE-CDN</span>
+              <span class="article-tag-item">#CACHING</span>
+              <span class="article-tag-item">#LATENCY</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 09 -->
+        <article class="article-card" data-category="insight" data-id="9" tabindex="0" role="region" aria-label="Article: Container Isolation and Ephemeral Linux Sandboxing Strategies">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">AUG 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">Container Isolation and Ephemeral Linux Sandboxing Strategies</h2>
+            <p class="article-card-excerpt">
+              Hardening multi-tenant production runtime nodes using cgroups v2 resource capping, read-only root filesystems, unprivileged user namespaces, and seccomp system call filtering.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#DOCKER</span>
+              <span class="article-tag-item">#CGROUPS</span>
+              <span class="article-tag-item">#SANDBOX</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 10 -->
+        <article class="article-card" data-category="insight" data-id="10" tabindex="0" role="region" aria-label="Article: Static Type Sovereignty: Eradicating Runtime Anomalies with Type Systems">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-insight">INSIGHT</span>
+              <span class="article-card-meta">JUL 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Static Type Sovereignty: Eradicating Runtime Anomalies</h2>
+            <p class="article-card-excerpt">
+              Harnessing algebraic data types, exhaustiveness checks, and strict validation boundaries to eliminate 99 percent of production runtime crashes before source code ever compiles.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#TYPE-SYSTEM</span>
+              <span class="article-tag-item">#RELIABILITY</span>
+              <span class="article-tag-item">#COMPILERS</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- ==================== HOW WE WORK ARTICLES (10) ==================== -->
+
+        <!-- Article 11 -->
+        <article class="article-card" data-category="how-we-work" data-id="11" tabindex="0" role="region" aria-label="Article: Bespoke Web Development: Delivering Ultra-Fast Commercial Platforms">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">NOV 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Bespoke Web Development: Delivering Ultra-Fast Commercial Platforms</h2>
+            <p class="article-card-excerpt">
+              How Mayastra Nawaloka constructs custom commercial web platforms with zero bloated dependencies, sub-second load times, semantic SEO architecture, and conversion-focused UX engineering.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#WEB-DEV</span>
+              <span class="article-tag-item">#CUSTOM-WEB</span>
+              <span class="article-tag-item">#SEO-ENGINEERING</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 12 -->
+        <article class="article-card" data-category="how-we-work" data-id="12" tabindex="0" role="region" aria-label="Article: Enterprise Resource Planning: Custom ERP for Scalable Operations">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">NOV 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">Enterprise Resource Planning: Custom ERP for Scalable Operations</h2>
+            <p class="article-card-excerpt">
+              Unifying inventory logistics, automated procurement pipelines, double-entry financial ledgers, and executive intelligence dashboards into a unified bespoke ERP suite.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#ERP-SYSTEMS</span>
+              <span class="article-tag-item">#B2B-SOFTWARE</span>
+              <span class="article-tag-item">#OPERATIONS</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 13 -->
+        <article class="article-card" data-category="how-we-work" data-id="13" tabindex="0" role="region" aria-label="Article: High-Performance E-Commerce Development: Sub-Second Checkout Pipelines">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">OCT 2026 / 7 MIN</span>
+            </div>
+            <h2 class="article-card-title">High-Performance E-Commerce Development: Sub-Second Checkouts</h2>
+            <p class="article-card-excerpt">
+              Architecting tailored retail web engines with instantaneous product search filtering, automated QRIS and payment gateway webhooks, and resilient high-volume checkout queues.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#ECOMMERCE</span>
+              <span class="article-tag-item">#PAYMENTS</span>
+              <span class="article-tag-item">#CHECKOUT</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 14 -->
+        <article class="article-card" data-category="how-we-work" data-id="14" tabindex="0" role="region" aria-label="Article: Custom CMS Engineering: High-Density Publishing for Media & Brands">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">OCT 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Custom CMS Engineering: High-Density Publishing for Media &amp; Brands</h2>
+            <p class="article-card-excerpt">
+              Building proprietary headless and coupled content management engines designed for frictionless authoring desks, automated asset compression, and instant edge cache distribution.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#CMS-DEVELOPMENT</span>
+              <span class="article-tag-item">#PUBLISHING</span>
+              <span class="article-tag-item">#EDITORIAL</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 15 -->
+        <article class="article-card" data-category="how-we-work" data-id="15" tabindex="0" role="region" aria-label="Article: Full-Stack Software Development: Custom Enterprise Web & Cloud Systems">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">OCT 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">Full-Stack Software Development: Custom Enterprise Web &amp; Cloud</h2>
+            <p class="article-card-excerpt">
+              End-to-end bespoke software creation: architectural blueprints, resilient relational backends, intuitive user workspaces, and rigorous automated test verification protocols.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#SOFTWARE-DEV</span>
+              <span class="article-tag-item">#FULLSTACK</span>
+              <span class="article-tag-item">#ENTERPRISE</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 16 -->
+        <article class="article-card" data-category="how-we-work" data-id="16" tabindex="0" role="region" aria-label="Article: Cloud Infrastructure, Containerization, and Continuous Deployment">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">SEP 2026 / 7 MIN</span>
+            </div>
+            <h2 class="article-card-title">Cloud Infrastructure, Containerization, and Continuous Deployment</h2>
+            <p class="article-card-excerpt">
+              Hardening enterprise cloud topology: immutable Docker build stages, unprivileged execution runtimes, resource boundaries, automated SSL rotation, and zero-downtime redeployments.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#CLOUD-DEVOPS</span>
+              <span class="article-tag-item">#CONTAINERS</span>
+              <span class="article-tag-item">#DEPLOYMENT</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 17 -->
+        <article class="article-card" data-category="how-we-work" data-id="17" tabindex="0" role="region" aria-label="Article: System Integration & API Engineering: Connecting Payment, ERP, & CRM">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">SEP 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">System Integration &amp; API Engineering: Connecting Enterprise Stacks</h2>
+            <p class="article-card-excerpt">
+              Seamlessly integrating disparate enterprise ecosystems: financial banking APIs, third-party logistics trackers, government taxation services, and CRM databases with zero telemetry loss.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#API-ENGINEERING</span>
+              <span class="article-tag-item">#INTEGRATION</span>
+              <span class="article-tag-item">#AUTOMATION</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 18 -->
+        <article class="article-card" data-category="how-we-work" data-id="18" tabindex="0" role="region" aria-label="Article: Legacy System Modernization and High-Assurance Data Migration">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">AUG 2026 / 8 MIN</span>
+            </div>
+            <h2 class="article-card-title">Legacy System Modernization and High-Assurance Data Migration</h2>
+            <p class="article-card-excerpt">
+              Safely upgrading deprecated database tables, fragile legacy codebases, and outdated servers to modern architectures utilizing strangler fig patterns and dual-write verification.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#MODERNIZATION</span>
+              <span class="article-tag-item">#DATA-MIGRATION</span>
+              <span class="article-tag-item">#REFACTORING</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 19 -->
+        <article class="article-card" data-category="how-we-work" data-id="19" tabindex="0" role="region" aria-label="Article: Performance Auditing, Code Optimization, and Security Hardening">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">AUG 2026 / 7 MIN</span>
+            </div>
+            <h2 class="article-card-title">Performance Auditing, Code Optimization, and Security Hardening</h2>
+            <p class="article-card-excerpt">
+              Comprehensive code audits for active digital operations: identifying memory leaks, optimizing slow SQL query execution plans, patching OWASP vulnerabilities, and shrinking network payloads.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#CODE-AUDIT</span>
+              <span class="article-tag-item">#SECURITY</span>
+              <span class="article-tag-item">#OPTIMIZATION</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Article 20 -->
+        <article class="article-card" data-category="how-we-work" data-id="20" tabindex="0" role="region" aria-label="Article: Long-Term Technical Partnerships, SLA Support, and Software Evolution">
+          <div class="article-card-main">
+            <div class="article-card-header">
+              <span class="article-category-badge badge-service">HOW WE WORK</span>
+              <span class="article-card-meta">JUL 2026 / 6 MIN</span>
+            </div>
+            <h2 class="article-card-title">Long-Term Technical Partnerships, SLA Support, and Software Evolution</h2>
+            <p class="article-card-excerpt">
+              Why growing commercial enterprises select Mayastra for ongoing maintenance: dedicated technical availability, preventative system tuning, disaster recovery readiness, and iterative feature scaling.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-tags-list">
+              <span class="article-tag-item">#PARTNERSHIP</span>
+              <span class="article-tag-item">#MAINTENANCE</span>
+              <span class="article-tag-item">#ENTERPRISE-SLA</span>
+            </div>
+            <span class="article-read-action">
+              <span>Read</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+            </span>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="service.html" class="footer-link">ERP Systems</a>
+              <a href="service.html" class="footer-link">Commerce Engines</a>
+              <a href="service.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
+
+  <!-- Full Article Reader Modal -->
+  <div class="article-modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+    <div class="article-modal-dialog">
+      <div class="article-modal-header">
+        <div>
+          <span class="article-category-badge" id="articleModalBadge">INSIGHT</span>
+          <h3 class="article-card-title" id="articleModalTitle" style="margin-top: 12px; margin-bottom: 4px;">Article Title</h3>
+          <span class="article-card-meta" id="articleModalMeta">DATE / READ TIME</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="articleModalCloseBtn" aria-label="Close Article">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="article-modal-body" id="articleModalBody">
+        <!-- Structured article content populated by script.js -->
+      </div>
+      <div class="article-modal-footer">
+        <span class="article-card-meta" id="articleModalTagSummary">#TAGS</span>
+        <a href="contact.html" class="btn-articles-explore" style="padding: 10px 22px; font-size: 0.78rem;">
+          <span>Work With Mayastra</span>
+          <svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

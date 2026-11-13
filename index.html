@@ -21,111 +21,178 @@
         <li><a href="index.html" class="nav-link active" data-page="home">home</a></li>
         <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
         <li><a href="service.html" class="nav-link" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link" data-page="articles">articles</a></li>
         <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- SECTION 1: HERO (Strictly single line, half screen height) -->
-  <section class="section-hero" id="hero">
-    <div class="container">
-      <h1 class="hero-title">MAYASTRA NAWALOKA</h1>
-    </div>
-  </section>
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
 
-  <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover) -->
-  <section class="section-projects" id="projects">
-    <div class="container">
-      <div class="projects-feed">
-        <!-- Project 1: ERP -->
-        <article class="project-card" data-project="erp" tabindex="0" role="region" aria-label="Enterprise Resource Planning Showcase">
-          <div class="project-media">
-            <img src="assets/project-erp.svg" alt="ERP System Showcase" loading="lazy">
-            <div class="project-overlay">
-              <button type="button" class="btn-preview" data-project="erp" aria-label="Preview ERP Project">
-                <span>Preview Project</span>
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2: Toko Online / E-Commerce -->
-        <article class="project-card" data-project="ecommerce" tabindex="0" role="region" aria-label="E-Commerce Store Showcase">
-          <div class="project-media">
-            <img src="assets/project-ecommerce.svg" alt="E-Commerce Architecture Showcase" loading="lazy">
-            <div class="project-overlay">
-              <button type="button" class="btn-preview" data-project="ecommerce" aria-label="Preview E-Commerce Project">
-                <span>Preview Project</span>
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3: CMS -->
-        <article class="project-card" data-project="cms" tabindex="0" role="region" aria-label="Content Management System Showcase">
-          <div class="project-media">
-            <img src="assets/project-cms.svg" alt="CMS Architecture Showcase" loading="lazy">
-            <div class="project-overlay">
-              <button type="button" class="btn-preview" data-project="cms" aria-label="Preview CMS Project">
-                <span>Preview Project</span>
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3: CONTACT (Minimalist email section) -->
-  <section class="section-contact" id="contact">
-    <div class="container">
-      <p class="contact-label">Inquiries &amp; Partnerships</p>
-      <a href="mailto:contact@mayastranawaloka.com" class="contact-email-link" id="emailLink">contact@mayastranawaloka.com</a>
-      <div class="contact-actions">
-        <button type="button" class="btn-copy-email" id="copyEmailBtn">Copy Email Address</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 4: FOOTER (Company info, Menus, and Giant bottom logo with fade gradient) -->
-  <footer class="section-footer" id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-company-block">
-          <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
-          <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+    <!-- SECTION 1: HERO (Strictly single line, half screen height) -->
+    <section class="section-hero" id="hero">
+      <div class="container">
+        <div class="sketch-meta-bar">
+          <span class="sketch-tag">COORD // 01 HERO</span>
+          <span class="sketch-dimension">FRAME 1360 x 50vh</span>
         </div>
-        <div class="footer-menus">
-          <div class="menu-column">
-            <span class="menu-column-title">Capabilities</span>
-            <a href="service.html" class="footer-link">ERP Systems</a>
-            <a href="service.html" class="footer-link">Commerce Engines</a>
-            <a href="service.html" class="footer-link">CMS Platforms</a>
-          </div>
-          <div class="menu-column">
-            <span class="menu-column-title">Corporate</span>
-            <a href="about.html" class="footer-link">About Company</a>
-            <a href="service.html" class="footer-link">Services</a>
-            <a href="contact.html" class="footer-link">Contact</a>
-          </div>
-          <div class="menu-column">
-            <span class="menu-column-title">Network</span>
-            <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
-            <a href="contact.html" class="footer-link">Inquiries</a>
-            <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
-          </div>
+        <h1 class="hero-title">MAYASTRA NAWALOKA</h1>
+      </div>
+    </section>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover) -->
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="sketch-meta-bar">
+          <span class="sketch-tag">SECTION // 02 SELECTED WORKS</span>
+          <span class="sketch-dimension">3 NODES</span>
+        </div>
+        <div class="projects-feed">
+          <!-- Project 1: ERP -->
+          <article class="project-card" data-project="erp" tabindex="0" role="region" aria-label="Enterprise Resource Planning Showcase">
+            <div class="project-media">
+              <img src="assets/project-erp.svg" alt="ERP System Showcase" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn-preview" data-project="erp" aria-label="Preview ERP Project">
+                  <span>Preview Project</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Toko Online / E-Commerce -->
+          <article class="project-card" data-project="ecommerce" tabindex="0" role="region" aria-label="E-Commerce Store Showcase">
+            <div class="project-media">
+              <img src="assets/project-ecommerce.svg" alt="E-Commerce Architecture Showcase" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn-preview" data-project="ecommerce" aria-label="Preview E-Commerce Project">
+                  <span>Preview Project</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CMS -->
+          <article class="project-card" data-project="cms" tabindex="0" role="region" aria-label="Content Management System Showcase">
+            <div class="project-media">
+              <img src="assets/project-cms.svg" alt="CMS Architecture Showcase" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn-preview" data-project="cms" aria-label="Preview CMS Project">
+                  <span>Preview Project</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Original Photo Footer with subtle top black gradient fade -->
-    <div class="giant-logo-container" aria-hidden="true">
-      <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
-    </div>
-  </footer>
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION: ARTICLES CTA (Positioned right above contact section) -->
+    <section class="section-articles-cta" id="articles-cta">
+      <div class="container">
+        <div class="sketch-meta-bar">
+          <span class="sketch-tag">SECTION // 03 PUBLICATIONS</span>
+          <span class="sketch-dimension">20 ENTRIES</span>
+        </div>
+        <div class="articles-cta-box">
+          <h2 class="articles-cta-title">PERSPECTIVES &amp; CAPABILITIES</h2>
+          <p class="articles-cta-desc">
+            We publish in-depth architectural dispatches examining computer science principles, distributed systems, and modern software craftsmanship, alongside detailed case studies of our commercial engineering capabilities.
+          </p>
+          <div class="articles-cta-metrics">
+            <div class="cta-metric-card">
+              <span class="cta-metric-num">10</span>
+              <div class="cta-metric-info">
+                <span class="cta-metric-title">Architectural Insights</span>
+                <span class="cta-metric-sub">Open Computer Science</span>
+              </div>
+            </div>
+            <div class="cta-metric-card">
+              <span class="cta-metric-num">10</span>
+              <div class="cta-metric-info">
+                <span class="cta-metric-title">How We Work</span>
+                <span class="cta-metric-sub">Commercial Development</span>
+              </div>
+            </div>
+          </div>
+          <div class="articles-cta-action">
+            <a href="articles.html" class="btn-articles-explore">
+              <span>Explore 20 Articles</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 3: CONTACT (Minimalist email section) -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="sketch-meta-bar">
+          <span class="sketch-tag">SECTION // 04 INQUIRY</span>
+          <span class="sketch-dimension">DIRECT DISPATCH</span>
+        </div>
+        <p class="contact-label">Inquiries &amp; Partnerships</p>
+        <a href="mailto:contact@mayastranawaloka.com" class="contact-email-link" id="emailLink">contact@mayastranawaloka.com</a>
+        <div class="contact-actions">
+          <button type="button" class="btn-copy-email" id="copyEmailBtn">Copy Email Address</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER (Company info, Menus, and Giant bottom logo with fade gradient) -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="service.html" class="footer-link">ERP Systems</a>
+              <a href="service.html" class="footer-link">Commerce Engines</a>
+              <a href="service.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
 
   <!-- Interactive Project Preview Modal -->
   <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
