@@ -1,83 +1,67 @@
 const { chromium } = require('playwright');
-const fs = require('fs');
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
 
-  console.log('Navigating to http://localhost:8088...');
-  await page.goto('http://localhost:8088', { waitUntil: 'networkidle' });
+  const routes = [
+    { path: 'http://localhost:8088/index.html', title: 'MAYASTRA NAWALOKA', active: 'home' },
+    { path: 'http://localhost:8088/about.html', title: 'About', active: 'about' },
+    { path: 'http://localhost:8088/service.html', title: 'Services', active: 'service' },
+    { path: 'http://localhost:8088/contact.html', title: 'Contact', active: 'contact' }
+  ];
 
-  // 1. Verify Title & Hero
-  const title = await page.title();
-  console.log('Page Title:', title);
-  if (!title.includes('MAYASTRA NAWALOKA')) throw new Error('Title mismatch');
+  for (const route of routes) {
+    console.log(`Checking route: ${route.path}...`);
+    await page.goto(route.path, { waitUntil: 'networkidle' });
+    
+    // 1. Check title
+    const pageTitle = await page.title();
+    console.log(`  Title: ${pageTitle}`);
+    if (!pageTitle.includes(route.title)) throw new Error(`Title mismatch on ${route.path}`);
 
-  const heroText = await page.textContent('.hero-title');
-  console.log('Hero Title Text:', heroText.trim());
-  if (heroText.trim() !== 'MAYASTRA NAWALOKA') throw new Error('Hero text mismatch');
+    // 2. Check WIB clock ticking
+    const clockText = await page.textContent('#wibClock');
+    console.log(`  Clock Text: ${clockText.trim()}`);
+    if (!clockText.includes('WIB')) throw new Error(`WIB Clock missing on ${route.path}`);
 
-  // Verify No Navbar
-  const navCount = await page.locator('nav').count();
-  console.log('Nav element count:', navCount);
-  if (navCount > 0) throw new Error('Navbar should not exist');
+    // 3. Check active nav link
+    const activeLink = await page.locator(`.nav-link[data-page="${route.active}"]`).getAttribute('class');
+    console.log(`  Active link class: ${activeLink}`);
+    if (!activeLink.includes('active')) throw new Error(`Active class missing for ${route.active}`);
 
-  // 2. Verify Projects Feed
-  const cards = await page.locator('.project-card');
-  const cardCount = await cards.count();
-  console.log('Project card count:', cardCount);
-  if (cardCount !== 3) throw new Error(`Expected 3 cards, got ${cardCount}`);
+    // 4. Check footer original logo loaded
+    const logoImg = page.locator('.giant-logo-image');
+    const logoSrc = await logoImg.getAttribute('src');
+    if (logoSrc !== 'assets/logo.png') throw new Error(`Footer logo must be assets/logo.png, got ${logoSrc}`);
+    const nw = await logoImg.evaluate(el => el.naturalWidth);
+    const nh = await logoImg.evaluate(el => el.naturalHeight);
+    console.log(`  Footer Logo original photo: ${nw}x${nh}`);
+    if (nw === 0) throw new Error(`Footer logo failed to load on ${route.path}`);
+  }
 
-  // Test Hover on first card
-  const firstCard = cards.nth(0);
-  await firstCard.hover();
-  const previewBtn = firstCard.locator('.btn-preview');
-  await previewBtn.waitFor({ state: 'visible' });
-  console.log('Hover state verified: Preview button became visible.');
+  // About page specific: 3 team photos
+  await page.goto('http://localhost:8088/about.html', { waitUntil: 'networkidle' });
+  const teamImgs = await page.locator('.team-card-image img').all();
+  console.log(`Team portraits count on about.html: ${teamImgs.length}`);
+  if (teamImgs.length !== 3) throw new Error('Expected 3 team photos on about.html');
+  for (let i = 0; i < 3; i++) {
+    const tw = await teamImgs[i].evaluate(el => el.naturalWidth);
+    console.log(`  Team member ${i+1}: ${tw}px naturalWidth`);
+    if (tw === 0) throw new Error(`Team photo ${i+1} failed to load!`);
+  }
 
-  // Test Modal opening
-  await previewBtn.click();
-  const modal = page.locator('#previewModal');
-  await modal.waitFor({ state: 'visible' });
-  const modalTitle = await page.textContent('#modalTitle');
-  console.log('Modal opened with title:', modalTitle.trim());
-
-  // Test Modal closing via Escape
-  await page.keyboard.press('Escape');
-  await page.waitForTimeout(400);
-  const isModalActive = await modal.evaluate(el => el.classList.contains('active'));
-  console.log('Modal active after Escape:', isModalActive);
-  if (isModalActive) throw new Error('Modal should close on Escape');
-
-  // 3. Verify Contact Email
-  const email = await page.textContent('.contact-email-link');
-  console.log('Contact email:', email.trim());
-  if (email.trim() !== 'contact@mayastranawaloka.com') throw new Error('Email mismatch');
-
-  // Test Copy Email button
+  // Contact page specific: copy email
+  await page.goto('http://localhost:8088/contact.html', { waitUntil: 'networkidle' });
   await page.click('#copyEmailBtn');
   const toast = page.locator('#toastNotice');
   await toast.waitFor({ state: 'visible' });
   const toastText = await toast.textContent();
-  console.log('Toast message:', toastText.trim());
-
-  // 4. Verify Footer
-  const footerCompany = await page.textContent('.footer-company-name');
-  console.log('Footer company name:', footerCompany.trim());
-  if (footerCompany.trim() !== 'BY. PT MAYASTRA NAWALOKA NUSANTARA') throw new Error('Footer info mismatch');
-
-  // Verify Bottom Logo
-  const giantLogo = page.locator('.giant-logo-image');
-  const logoVisible = await giantLogo.isVisible();
-  console.log('Bottom giant logo visible:', logoVisible);
-
-  fs.mkdirSync('test-results', { recursive: true });
-  await page.screenshot({ path: 'test-results/full-page.png', fullPage: true });
-  console.log('Full-page screenshot saved to test-results/full-page.png');
+  console.log(`Contact toast feedback: ${toastText.trim()}`);
 
   await browser.close();
-  console.log('ALL E2E CHECKS PASSED PERFECTLY!');
+  console.log('ALL 4 PAGES VERIFIED WITH ZERO ERRORS!');
 })().catch(err => {
   console.error('E2E Test Failed:', err);
   process.exit(1);

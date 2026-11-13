@@ -134,4 +134,38 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast('OPENING MAIL & COPIED ADDRESS');
     });
   }
+
+  // Live Waktu Indonesia Barat (WIB / UTC+7) Clock
+  const clockEl = document.getElementById('wibClock');
+  if (clockEl) {
+    const updateWibClock = () => {
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Asia/Jakarta',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+      const timeStr = formatter.format(now);
+      const digits = clockEl.querySelector('.time-digits');
+      if (digits) {
+        digits.textContent = timeStr;
+      } else {
+        clockEl.textContent = `${timeStr} WIB`;
+      }
+    };
+    updateWibClock();
+    setInterval(updateWibClock, 1000);
+  }
+
+  // Active Navbar Link Detection
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
 });

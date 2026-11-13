@@ -9,7 +9,24 @@
 </head>
 <body>
 
-  <!-- SECTION 1: HERO (Strictly text only, massive whitespace, zero navbar) -->
+  <!-- MINIMALIST NAVBAR (Live WIB Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat">
+        <span class="wib-dot"></span>
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">WIB</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link" data-page="service">service</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO (Strictly single line, half screen height) -->
   <section class="section-hero" id="hero">
     <div class="container">
       <h1 class="hero-title">MAYASTRA NAWALOKA</h1>
@@ -84,28 +101,29 @@
         <div class="footer-menus">
           <div class="menu-column">
             <span class="menu-column-title">Capabilities</span>
-            <a href="#projects" class="footer-link">ERP Systems</a>
-            <a href="#projects" class="footer-link">Commerce Engines</a>
-            <a href="#projects" class="footer-link">CMS Platforms</a>
+            <a href="service.html" class="footer-link">ERP Systems</a>
+            <a href="service.html" class="footer-link">Commerce Engines</a>
+            <a href="service.html" class="footer-link">CMS Platforms</a>
           </div>
           <div class="menu-column">
             <span class="menu-column-title">Corporate</span>
-            <a href="#contact" class="footer-link">Inquiries</a>
-            <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Careers</a>
-            <a href="#contact" class="footer-link">Legal</a>
+            <a href="about.html" class="footer-link">About Company</a>
+            <a href="service.html" class="footer-link">Services</a>
+            <a href="contact.html" class="footer-link">Contact</a>
           </div>
           <div class="menu-column">
             <span class="menu-column-title">Network</span>
             <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+            <a href="contact.html" class="footer-link">Inquiries</a>
             <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Giant bottom logo scaled full-width with fade gradient -->
+    <!-- Original Photo Footer with subtle top black gradient fade -->
     <div class="giant-logo-container" aria-hidden="true">
-      <img src="assets/logo-banner.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
     </div>
   </footer>
 

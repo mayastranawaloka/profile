@@ -3,38 +3,60 @@ set -euo pipefail
 
 echo "[*] Running verification test suite..."
 
-# 1. Structural Checks on index.html
-echo "[*] Checking sections in index.html..."
-grep -q 'id="hero"' index.html || { echo "FAIL: hero section missing"; exit 1; }
-grep -q 'id="projects"' index.html || { echo "FAIL: projects section missing"; exit 1; }
-grep -q 'id="contact"' index.html || { echo "FAIL: contact section missing"; exit 1; }
-grep -q 'id="footer"' index.html || { echo "FAIL: footer section missing"; exit 1; }
+PAGES=("index.html" "about.html" "service.html" "contact.html")
 
-# Verify NO NAVBAR
-if grep -qi '<nav' index.html; then
-  echo "FAIL: navbar detected. Specification requires no navbar."
-  exit 1
-fi
+# 1. Structural Checks on all pages
+for page in "${PAGES[@]}"; do
+  echo "[*] Verifying structural standards on ${page}..."
+  if [[ ! -f "$page" ]]; then
+    echo "FAIL: missing page $page"
+    exit 1
+  fi
+  # Verify Navbar with WIB clock and menus
+  grep -q 'class="navbar"' "$page" || { echo "FAIL: navbar missing in $page"; exit 1; }
+  grep -q 'id="wibClock"' "$page" || { echo "FAIL: WIB clock missing in $page"; exit 1; }
+  grep -q 'data-page="home"' "$page" || { echo "FAIL: home link missing in $page"; exit 1; }
+  grep -q 'data-page="about"' "$page" || { echo "FAIL: about link missing in $page"; exit 1; }
+  grep -q 'data-page="service"' "$page" || { echo "FAIL: service link missing in $page"; exit 1; }
+  grep -q 'data-page="contact"' "$page" || { echo "FAIL: contact link missing in $page"; exit 1; }
 
-# Verify EXACT text requirements
-grep -q 'MAYASTRA NAWALOKA' index.html || { echo "FAIL: Hero text missing"; exit 1; }
-grep -q 'contact@mayastranawaloka.com' index.html || { echo "FAIL: contact email missing"; exit 1; }
-grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' index.html || { echo "FAIL: footer info missing"; exit 1; }
+  # Verify Footer and original logo image
+  grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' "$page" || { echo "FAIL: footer info missing in $page"; exit 1; }
+  grep -q 'src="assets/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
+done
 
-# Verify project and logo assets and XML validity
-for asset in assets/project-erp.svg assets/project-ecommerce.svg assets/project-cms.svg assets/logo.png assets/logo-banner.png; do
+# 2. Page Specific Content Verifications
+echo "[*] Verifying page-specific contents..."
+grep -q 'id="hero"' index.html || { echo "FAIL: hero section missing in index.html"; exit 1; }
+grep -q 'id="projects"' index.html || { echo "FAIL: projects section missing in index.html"; exit 1; }
+
+# About page: 3 photos side-by-side and computer programming / IT / software copy
+grep -q 'assets/team/person-1.svg' about.html || { echo "FAIL: team photo 1 missing in about.html"; exit 1; }
+grep -q 'assets/team/person-2.svg' about.html || { echo "FAIL: team photo 2 missing in about.html"; exit 1; }
+grep -q 'assets/team/person-3.svg' about.html || { echo "FAIL: team photo 3 missing in about.html"; exit 1; }
+grep -qi 'pemrograman komputer' about.html || { echo "FAIL: computer programming copy missing in about.html"; exit 1; }
+
+# Service page: services list
+grep -q 'Enterprise Resource Planning' service.html || { echo "FAIL: ERP missing in service.html"; exit 1; }
+
+# Contact page: email link
+grep -q 'contact@mayastranawaloka.com' contact.html || { echo "FAIL: contact email missing in contact.html"; exit 1; }
+
+# 3. Verify assets existence
+for asset in assets/project-erp.svg assets/project-ecommerce.svg assets/project-cms.svg assets/logo.png assets/team/person-1.svg assets/team/person-2.svg assets/team/person-3.svg; do
   if [[ ! -f "$asset" ]]; then
     echo "FAIL: missing asset $asset"
     exit 1
   fi
 done
 
+# 4. Validate XML structure of all SVG assets
 echo "[*] Validating XML structure of all SVG assets..."
 python3 -c '
 import xml.etree.ElementTree as ET
 import glob, sys
 
-for svg in glob.glob("assets/*.svg"):
+for svg in glob.glob("assets/**/*.svg", recursive=True):
     try:
         ET.parse(svg)
     except Exception as e:
@@ -42,20 +64,20 @@ for svg in glob.glob("assets/*.svg"):
         sys.exit(1)
 '
 
-# Verify CNAME
+# 5. Verify CNAME
 if [[ ! -f "CNAME" ]]; then
   echo "FAIL: missing CNAME"
   exit 1
 fi
 grep -q 'www.mayastranawaloka.com' CNAME || { echo "FAIL: CNAME content mismatch"; exit 1; }
 
-# Verify Zero Emojis and Zero Em Dashes
+# 6. Verify Zero Emojis and Zero Em Dashes
 echo "[*] Checking for banned characters (emojis, em dashes)..."
 python3 -c '
 import re, sys
 
 banned_chars = ["—", "–"]
-files = ["index.html", "style.css", "script.js"]
+files = ["index.html", "about.html", "service.html", "contact.html", "style.css", "script.js"]
 
 for path in files:
     with open(path, "r", encoding="utf-8") as f:
@@ -64,7 +86,6 @@ for path in files:
         if b in content:
             print(f"FAIL: Banned dash found in {path}")
             sys.exit(1)
-    # Check emojis
     emoji_pattern = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
     if emoji_pattern.search(content):
         print(f"FAIL: Emoji detected in {path}")
