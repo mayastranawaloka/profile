@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070709" />
+      <stop offset="100%" stop-color="#0e0e12" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Grid -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="750" />
+    <line x1="240" y1="0" x2="240" y2="750" />
+    <line x1="600" y1="0" x2="600" y2="750" />
+    <line x1="960" y1="0" x2="960" y2="750" />
+    <line x1="1140" y1="0" x2="1140" y2="750" />
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="460" x2="1200" y2="460" />
+    <line x1="0" y1="680" x2="1200" y2="680" />
+  </g>
+
+  <!-- Frame Border -->
+  <rect x="20" y="20" width="1160" height="710" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+
+  <!-- Window Header -->
+  <rect x="20" y="20" width="1160" height="48" rx="6" fill="#0d0d11" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  <circle cx="48" cy="44" r="5" fill="#ff5f56" opacity="0.8" />
+  <circle cx="68" cy="44" r="5" fill="#ffbd2e" opacity="0.8" />
+  <circle cx="88" cy="44" r="5" fill="#27c93f" opacity="0.8" />
+
+  <!-- URL Address Bar -->
+  <rect x="360" y="32" width="480" height="24" rx="4" fill="#050507" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  <text x="600" y="48" fill="#777777" font-family="monospace" font-size="11" text-anchor="middle">https://preview.mayastranawaloka.com/erp suite/executive-overview</text>
+
+  <!-- Window Status Badge -->
+  <rect x="1060" y="34" width="90" height="20" rx="2" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+  <text x="1105" y="48" fill="#ffffff" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="1">LIVE PROD</text>
+
+  <!-- Main View Header Inside Mockup -->
+  <g transform="translate(50, 95)">
+    <text x="0" y="0" fill="#666666" font-family="monospace" font-size="11" letter-spacing="2">ERP SUITE // ARCHITECTURE PREVIEW</text>
+    <text x="0" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">Executive Overview</text>
+    <text x="0" y="48" fill="#999999" font-family="'Space Grotesk', sans-serif" font-size="13">Enterprise consolidation, revenue trajectory &amp; operating metrics</text>
+  </g>
+
+  <!-- Detailed Mockup Content -->
+  
+   <g transform="translate(50, 165)">
+     <!-- 4 KPI Cards -->
+     <g transform="translate(0, 0)">
+       <rect width="260" height="90" rx="4" fill="#0c0c10" stroke="rgba(255,255,255,0.1)" />
+       <text x="20" y="26" fill="#888" font-family="monospace" font-size="10" letter-spacing="1">CONSOLIDATED REVENUE</text>
+       <text x="20" y="58" fill="#fff" font-family="sans-serif" font-size="22" font-weight="700">Rp 1.482.000.000</text>
+       <text x="20" y="76" fill="#4ade80" font-family="monospace" font-size="10">+18.4% vs last cycle</text>
+     </g>
+     <g transform="translate(280, 0)">
+       <rect width="260" height="90" rx="4" fill="#0c0c10" stroke="rgba(255,255,255,0.1)" />
+       <text x="20" y="26" fill="#888" font-family="monospace" font-size="10" letter-spacing="1">ACTIVE SKU COUNT</text>
+       <text x="20" y="58" fill="#fff" font-family="sans-serif" font-size="22" font-weight="700">14,290 Units</text>
+       <text x="20" y="76" fill="#999" font-family="monospace" font-size="10">99.2% in-stock health</text>
+     </g>
+     <g transform="translate(560, 0)">
+       <rect width="260" height="90" rx="4" fill="#0c0c10" stroke="rgba(255,255,255,0.1)" />
+       <text x="20" y="26" fill="#888" font-family="monospace" font-size="10" letter-spacing="1">PENDING DISPATCH</text>
+       <text x="20" y="58" fill="#fff" font-family="sans-serif" font-size="22" font-weight="700">328 Orders</text>
+       <text x="20" y="76" fill="#38bdf8" font-family="monospace" font-size="10">4 logistics hubs</text>
+     </g>
+     <g transform="translate(840, 0)">
+       <rect width="260" height="90" rx="4" fill="#0c0c10" stroke="rgba(255,255,255,0.1)" />
+       <text x="20" y="26" fill="#888" font-family="monospace" font-size="10" letter-spacing="1">OPERATING MARGIN</text>
+       <text x="20" y="58" fill="#fff" font-family="sans-serif" font-size="22" font-weight="700">34.8%</text>
+       <text x="20" y="76" fill="#4ade80" font-family="monospace" font-size="10">Automated ledger</text>
+     </g>
+
+     <!-- Central Trend Graph & Distribution Nodes -->
+     <g transform="translate(0, 110)">
+       <rect width="700" height="240" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
+       <text x="24" y="32" fill="#fff" font-family="sans-serif" font-size="14" font-weight="600">Production &amp; Cash Flow Forecast</text>
+       <path d="M 40 180 Q 180 120 320 150 T 660 70" fill="none" stroke="#ffffff" stroke-width="2.5" />
+       <path d="M 40 180 Q 180 120 320 150 T 660 70 L 660 210 L 40 210 Z" fill="rgba(255,255,255,0.04)" />
+       <circle cx="320" cy="150" r="4" fill="#fff" />
+       <circle cx="660" cy="70" r="5" fill="#4ade80" />
+     </g>
+     <g transform="translate(720, 110)">
+       <rect width="380" height="240" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
+       <text x="24" y="32" fill="#fff" font-family="sans-serif" font-size="14" font-weight="600">Regional Fulfillment Nodes</text>
+       <text x="24" y="70" fill="#bbb" font-family="sans-serif" font-size="12">Hub Jakarta Barat (Central)</text>
+       <rect x="24" y="80" width="330" height="8" rx="4" fill="#222" /><rect x="24" y="80" width="280" height="8" rx="4" fill="#fff" />
+       <text x="24" y="120" fill="#bbb" font-family="sans-serif" font-size="12">Hub Surabaya Rungkut</text>
+       <rect x="24" y="130" width="330" height="8" rx="4" fill="#222" /><rect x="24" y="130" width="210" height="8" rx="4" fill="#aaa" />
+       <text x="24" y="170" fill="#bbb" font-family="sans-serif" font-size="12">Hub Medan Belawan</text>
+       <rect x="24" y="180" width="330" height="8" rx="4" fill="#222" /><rect x="24" y="180" width="160" height="8" rx="4" fill="#777" />
+     </g>
+
+     <!-- Bottom Transactions List -->
+     <g transform="translate(0, 368)">
+       <rect width="1100" height="130" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
+       <text x="24" y="28" fill="#888" font-family="monospace" font-size="10" letter-spacing="1">RECENT PROCUREMENT LEDGER</text>
+       <text x="24" y="56" fill="#fff" font-family="monospace" font-size="12">PO-2026-0812 | PT Sinar Sentosa | Raw Material Steel | Rp 128.450.000 | Status: APPROVED</text>
+       <text x="24" y="84" fill="#fff" font-family="monospace" font-size="12">PO-2026-0813 | CV Indo Niaga | FMCG Packaging | Rp 64.200.000 | Status: IN-TRANSIT</text>
+       <text x="24" y="112" fill="#fff" font-family="monospace" font-size="12">PO-2026-0814 | PT Prima Baja | Micro Electronics | Rp 312.900.000 | Status: DELIVERED</text>
+     </g>
+   </g>
+   
+
+  <!-- Footer Meta Ribbon -->
+  <g transform="translate(50, 705)">
+    <text x="0" y="0" fill="#555555" font-family="monospace" font-size="10" letter-spacing="1">PT MAYASTRA NAWALOKA NUSANTARA // HIGH-ASSURANCE SYSTEMS</text>
+    <text x="1100" y="0" fill="#555555" font-family="monospace" font-size="10" text-anchor="end" letter-spacing="1">TYPE-SAFE // DOCKERIZED // SECURE</text>
+  </g>
+</svg>
