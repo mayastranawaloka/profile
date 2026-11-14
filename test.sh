@@ -12,9 +12,14 @@ for page in "${PAGES[@]}"; do
     echo "FAIL: missing page $page"
     exit 1
   fi
-  # Verify Navbar with WIB clock and menus
+  # Verify Navbar with clock (UTC+7, no dot) and menus
   grep -q 'class="navbar"' "$page" || { echo "FAIL: navbar missing in $page"; exit 1; }
-  grep -q 'id="wibClock"' "$page" || { echo "FAIL: WIB clock missing in $page"; exit 1; }
+  grep -q 'id="wibClock"' "$page" || { echo "FAIL: clock missing in $page"; exit 1; }
+  grep -q 'UTC+7' "$page" || { echo "FAIL: UTC+7 missing in $page"; exit 1; }
+  if grep -q 'wib-dot' "$page"; then
+    echo "FAIL: unwanted wib-dot found in $page"
+    exit 1
+  fi
   grep -q 'data-page="home"' "$page" || { echo "FAIL: home link missing in $page"; exit 1; }
   grep -q 'data-page="about"' "$page" || { echo "FAIL: about link missing in $page"; exit 1; }
   grep -q 'data-page="service"' "$page" || { echo "FAIL: service link missing in $page"; exit 1; }

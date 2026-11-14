@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (digits) {
         digits.textContent = timeStr;
       } else {
-        clockEl.textContent = `${timeStr} WIB`;
+        clockEl.textContent = `${timeStr} UTC+7`;
       }
     };
     updateWibClock();
