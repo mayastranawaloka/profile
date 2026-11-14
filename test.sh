@@ -366,11 +366,19 @@ grep -q 'Herdian Aji Laksana, S.Kom' about.html || { echo "FAIL: Herdian full na
 # 13. Verify Enterprise AI Integration SEO Priority Across Pages & Sitemap
 echo "[*] Verifying Enterprise AI Integration SEO Priority..."
 python3 -c '
-import re, sys
+import re, sys, glob
+
+# Verify strict ban on pretentious buzzword "pelopor"
+for html_file in glob.glob("*.html"):
+    with open(html_file, "r", encoding="utf-8") as f:
+        c = f.read()
+    if re.search(r"\bpelopor\b", c, re.IGNORECASE):
+        print(f"FAIL: Banned buzzword pelopor found in {html_file}")
+        sys.exit(1)
 
 checks = [
     ("index.html", r"<title>PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; LLM Integration Architecture</title>"),
-    ("index.html", r"content=\"PT Mayastra Nawaloka Nusantara adalah pelopor integrasi Enterprise AI &amp; LLM API key"),
+    ("index.html", r"content=\"PT Mayastra Nawaloka Nusantara adalah perusahaan rekayasa software dan arsitektur sistem digital di Indonesia"),
     ("service.html", r"<title>Enterprise AI &amp; LLM Integration Services - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
     ("about.html", r"<title>About PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; Architectural Systems Profile</title>"),
     ("contact.html", r"<title>Enterprise AI &amp; Software Consultations - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
