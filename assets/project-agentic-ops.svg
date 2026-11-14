@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
   <defs>
-    <linearGradient id="bgGlowAgent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070807"/>
-      <stop offset="100%" stop-color="#0a0d0a"/>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#121215"/>
     </linearGradient>
-    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="1000" fill="url(#bgGlowAgent)"/>
+  <rect width="1600" height="1000" fill="url(#bgGlow)"/>
 
   <!-- Browser Header Bar -->
   <rect width="1600" height="52" fill="#111113" stroke="#27272a" stroke-width="1"/>
@@ -22,13 +22,13 @@
   <!-- Sidebar -->
   <rect x="0" y="52" width="260" height="948" fill="#0d0d10" stroke="#27272a" stroke-width="1"/>
   <!-- Brand in Agentic Ops -->
-  <rect x="28" y="80" width="24" height="24" rx="4" fill="#10b981"/>
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#ffffff"/>
   <text x="64" y="97" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AGENTIC OPS</text>
 
   <!-- Nav items -->
   <g transform="translate(24, 140)">
     <rect x="0" y="0" width="212" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
-    <rect x="16" y="14" width="10" height="10" fill="#10b981"/>
+    <rect x="16" y="14" width="10" height="10" fill="#ffffff"/>
     <text x="38" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Mission Control</text>
     <rect x="16" y="60" width="10" height="10" fill="#52525b"/>
     <text x="38" y="70" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Multi-Agent DAG</text>
@@ -46,189 +46,163 @@
 
   <!-- Swarm Status at bottom sidebar -->
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-  <circle cx="48" cy="951" r="5" fill="#10b981"/>
+  <circle cx="48" cy="951" r="5" fill="#ffffff"/>
   <text x="64" y="948" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Autonomous Swarm #04</text>
   <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
-    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Autonomous Agentic Mission Control</text>
-    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Multi-Agent Swarm Orchestration, Deterministic Tool Sandbox &amp; Live Vector RAG Synthesis</text>
+    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Autonomous Swarm Mission Control</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Real-Time Multi-Agent Task Orchestration, Swarm Telemetry &amp; Consensus Engine</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="1125" y="30" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Export DAG</text>
 
-    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#10b981"/>
-    <text x="1235" y="30" fill="#000000" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Agent</text>
+    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#ffffff"/>
+    <text x="1235" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Agent</text>
   </g>
 
   <!-- Main Content Body -->
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE AUTONOMOUS SWARMS</text>
       <text x="20" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">34</text>
-      <text x="75" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">100% Healthy</text>
+      <text x="180" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">100% HEALTH</text>
       <text x="20" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Multi-Agent Parallel Execution</text>
-
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TOOL INVOCATION ACCURACY</text>
-      <text x="345" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">99.94%</text>
-      <text x="475" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Deterministic</text>
-      <text x="345" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Schema Verified via AST Validator</text>
-
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">VECTOR RETRIEVAL SHARDS</text>
-      <text x="670" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">14.8M</text>
-      <text x="770" y="64" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">1536D Chunks</text>
-      <text x="670" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Dense-Sparse Hybrid Re-ranking</text>
-
-      <rect x="975" y="0" width="305" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HUMAN ESCALATION RATE</text>
-      <text x="995" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0.06%</text>
-      <text x="1105" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Autonomous</text>
-      <text x="995" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">High Confidence Tool Automation</text>
+      <text x="345" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">99.4%</text>
+      <text x="505" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">0.01% FAIL</text>
+      <text x="345" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Schema-Validated Function Calls</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">VECTOR KNOWLEDGE NODES</text>
+      <text x="670" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">18.2M</text>
+      <text x="830" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">1536D NODES</text>
+      <text x="670" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Sub-15ms Hybrid Dense Retrieval</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CONCURRENT WORKFLOW RUNS</text>
+      <text x="995" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">142</text>
+      <text x="1155" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">ACTIVE DAG</text>
+      <text x="995" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Memory Leaks or Rogue Loops</text>
     </g>
+    <!-- Main Split Panels -->
+    <g transform="translate(0, 114)">
+      <!-- Left Panel: High Density Table -->
+      <rect width="820" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Active Autonomous Swarms &amp; DAG Fleet</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inspect live worker hierarchies, task status, tool invocation counts, and latency</text>
 
-    <!-- Mid Section: Directed Acyclic Graph (DAG) & Tool Sandbox Terminal -->
-    <g transform="translate(0, 116)">
-      <!-- Left Panel: Multi-Agent DAG Visualizer -->
-      <rect width="780" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Autonomous Reasoning DAG (Directed Acyclic Graph)</text>
-      <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Real-time trace of Swarm #04: Financial Audit &amp; Inventory Discrepancy Synthesis</text>
+      <!-- Search / Filter Pill -->
+      <rect x="580" y="24" width="216" height="30" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
 
-      <!-- DAG Node 1: Planner Agent -->
-      <rect x="40" y="90" width="160" height="70" rx="4" fill="#16161a" stroke="#10b981" stroke-width="1.5"/>
-      <circle cx="56" cy="110" r="4" fill="#10b981"/>
-      <text x="68" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Supervisor Planner</text>
-      <text x="48" y="134" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Deconstruct goal: 4 steps</text>
-      <text x="48" y="148" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Status: DONE (22ms)</text>
+      <!-- Table Separator -->
+      <line x1="24" y1="78" x2="796" y2="78" stroke="#27272a" stroke-width="1"/>
 
-      <!-- Arrow 1 to 2 -->
-      <line x1="200" y1="125" x2="250" y2="125" stroke="#10b981" stroke-width="1.5"/>
-      <polygon points="250,121 258,125 250,129" fill="#10b981"/>
+      <!-- Table Headers -->
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SWARM ID</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PRIMARY OBJECTIVE</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AGENT SPECIALISTS</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOOL CALLS</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">LATENCY</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <!-- DAG Node 2: Knowledge Vector Retriever -->
-      <rect x="260" y="90" width="160" height="70" rx="4" fill="#16161a" stroke="#10b981" stroke-width="1.5"/>
-      <circle cx="276" cy="110" r="4" fill="#10b981"/>
-      <text x="288" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RAG Retriever</text>
-      <text x="268" y="134" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Fetched 12 ledger shards</text>
-      <text x="268" y="148" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Similarity: 0.96 (18ms)</text>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#1f1f23" stroke-width="1"/>
 
-      <!-- Arrow 2 to 3 -->
-      <line x1="420" y1="125" x2="470" y2="125" stroke="#10b981" stroke-width="1.5"/>
-      <polygon points="470,121 478,125 470,129" fill="#10b981"/>
-
-      <!-- DAG Node 3: Isolated Code Sandbox -->
-      <rect x="480" y="90" width="160" height="70" rx="4" fill="#16161a" stroke="#06b6d4" stroke-width="1.5"/>
-      <circle cx="496" cy="110" r="4" fill="#06b6d4"/>
-      <text x="508" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Sandbox Runner</text>
-      <text x="488" y="134" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Executing reconciliation.py</text>
-      <text x="488" y="148" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Status: EXECUTING</text>
-
-      <!-- Arrow 3 to 4 -->
-      <line x1="640" y1="125" x2="680" y2="125" stroke="#52525b" stroke-width="1.5" stroke-dasharray="3,3"/>
-      <polygon points="680,121 688,125 680,129" fill="#52525b"/>
-
-      <!-- DAG Node 4: Critic & Grounding Verifier -->
-      <rect x="480" y="210" width="160" height="70" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <circle cx="496" cy="230" r="4" fill="#52525b"/>
-      <text x="508" y="234" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Critic Evaluator</text>
-      <text x="488" y="254" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Waiting for code output</text>
-      <text x="488" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Verification Pending</text>
-
-      <!-- DAG Node 5: Output Synthesizer -->
-      <rect x="260" y="210" width="160" height="70" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <circle cx="276" cy="230" r="4" fill="#52525b"/>
-      <text x="288" y="234" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Final Synthesizer</text>
-      <text x="268" y="254" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Executive summary drafting</text>
-      <text x="268" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Status: QUEUED</text>
-
-      <!-- Connecting loop line from 3 to 4 -->
-      <path d="M 560 160 L 560 210" fill="none" stroke="#52525b" stroke-width="1.5" stroke-dasharray="3,3"/>
-      <!-- Connecting line from 4 to 5 -->
-      <line x1="480" y1="245" x2="420" y2="245" stroke="#52525b" stroke-width="1.5" stroke-dasharray="3,3"/>
-
-      <!-- Right Panel: Ephemeral Sandbox Tool Console -->
-      <rect x="805" width="475" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="825" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Ephemeral Tool Sandbox Runner</text>
-      <text x="825" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">gVisor Linux Sandboxing (Network: Isolated None)</text>
-
-      <rect x="825" y="72" width="435" height="248" rx="4" fill="#0a0a0d" stroke="#1f1f23"/>
-      <text x="840" y="96" fill="#10b981" font-family="monospace" font-size="11">$ gvisor-sandbox run --timeout 30s --mem 256M</text>
-      <text x="840" y="118" fill="#71717a" font-family="monospace" font-size="11">[INIT] Spawning isolated runtime environment...</text>
-      <text x="840" y="138" fill="#71717a" font-family="monospace" font-size="11">[INPUT] Loading /mnt/data/ledger_snapshot_q4.parquet</text>
-      <text x="840" y="158" fill="#06b6d4" font-family="monospace" font-size="11">[TOOL] Invoking tool: calculate_balance_variance()</text>
-      <text x="840" y="178" fill="#ffffff" font-family="monospace" font-size="11">   Reconciling 14,820 double-entry journals...</text>
-      <text x="840" y="198" fill="#ffffff" font-family="monospace" font-size="11">   Variance found: IDR 0.00 (Perfect Match)</text>
-      <text x="840" y="218" fill="#ffffff" font-family="monospace" font-size="11">   Audit Trail Hash: e3b0c44298fc1c149afbf4c8996fb92427ae</text>
-      <text x="840" y="240" fill="#10b981" font-family="monospace" font-size="11">[EXIT] Process terminated with returncode: 0 (OK)</text>
-      <text x="840" y="260" fill="#71717a" font-family="monospace" font-size="11">[CLEANUP] Destroyed ephemeral memory sandbox</text>
-      <text x="840" y="282" fill="#10b981" font-family="monospace" font-size="11">[TELEMETRY] Execution time: 142ms / CPU cap: 42%</text>
-    </g>
-
-    <!-- Bottom Section: Active Autonomous Tool Registry & Vector Shards -->
-    <g transform="translate(0, 480)">
-      <rect width="1280" height="300" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Enterprise Agent Tool Registry &amp; Capability Boundaries</text>
-      <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Strict OpenAPI function definitions with automated argument sanitization and human approval gating</text>
-
-      <!-- Table Header -->
-      <rect x="24" y="70" width="1232" height="34" rx="4" fill="#16161a"/>
-      <text x="44" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOOL DECLARATION</text>
-      <text x="320" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ISOLATION MODE</text>
-      <text x="560" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SCHEMA VERIFICATION</text>
-      <text x="780" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">24H INVOCATIONS</text>
-      <text x="980" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">HUMAN GATE</text>
-      <text x="1160" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
-
+      <!-- Rows -->
       <!-- Row 1 -->
-      <g transform="translate(24, 112)">
-        <text x="20" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">erp_query_warehouse_inventory()</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Read-Only SQL Replica</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Strict Pydantic AST (0 Errs)</text>
-        <text x="756" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">84,120 calls</text>
-        <text x="956" y="22" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Autonomous</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SWARM-ALPHA-01</text>
+      <text x="210" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">End-to-End Financial Audit</text>
+      <text x="390" y="142" fill="#ffffff" font-family="monospace" font-size="12">Planner + Coder + Critic</text>
+      <text x="520" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">42 tools</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4.2 s</text>
+      <rect x="716" y="126" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="141" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">RUNNING</text>
       <!-- Row 2 -->
-      <g transform="translate(24, 156)">
-        <text x="20" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">erp_post_journal_entry()</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Double-Entry Transaction</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Cryptographic Signing</text>
-        <text x="756" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4,280 calls</text>
-        <rect x="946" y="8" width="90" height="20" rx="3" fill="#f59e0b" fill-opacity="0.15"/>
-        <text x="991" y="22" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ESCALATE &gt; 50M</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="168" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="196" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SWARM-BETA-04</text>
+      <text x="210" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Warehouse Inventory Sync</text>
+      <text x="390" y="196" fill="#ffffff" font-family="monospace" font-size="12">Ingestion + Verifier</text>
+      <text x="520" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">18 tools</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1.8 s</text>
+      <rect x="716" y="180" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="195" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
       <!-- Row 3 -->
-      <g transform="translate(24, 200)">
-        <text x="20" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">sandbox_python_executor()</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">gVisor Ephemeral Container</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Static AST Security Lint</text>
-        <text x="756" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">18,450 runs</text>
-        <text x="956" y="22" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Autonomous</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="250" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SWARM-GAMMA-02</text>
+      <text x="210" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Automated Tax Reconciliation</text>
+      <text x="390" y="250" fill="#ffffff" font-family="monospace" font-size="12">Legal Analyst + Auditor</text>
+      <text x="520" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">31 tools</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3.1 s</text>
+      <rect x="716" y="234" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="249" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
       <!-- Row 4 -->
-      <g transform="translate(24, 244)">
-        <text x="20" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">vector_hybrid_search()</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">HNSW + BM25 Reciprocal Rank</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Cosine Threshold &gt; 0.85</text>
-        <text x="756" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">142,800 queries</text>
-        <text x="956" y="22" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Autonomous</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
+      <rect x="12" y="276" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SWARM-DELTA-08</text>
+      <text x="210" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Multi-Document OCR Parse</text>
+      <text x="390" y="304" fill="#ffffff" font-family="monospace" font-size="12">Layout Parser + Tokenizer</text>
+      <text x="520" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">64 tools</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">6.2 s</text>
+      <rect x="716" y="288" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="303" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">OPTIMAL</text>
+      <!-- Row 5 -->
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="358" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SWARM-EPSILON-03</text>
+      <text x="210" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Microservice Health Probe</text>
+      <text x="390" y="358" fill="#ffffff" font-family="monospace" font-size="12">Sentinel Daemon</text>
+      <text x="520" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">12 tools</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.9 s</text>
+      <rect x="716" y="342" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="357" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
+
+      <!-- Table Pagination / Status Footer -->
+      <line x1="24" y1="620" x2="796" y2="620" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
+      <rect x="710" y="632" width="86" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="753" y="648" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
+
+      <!-- Right Panel: Telemetry / Inspector Drawer -->
+      <g transform="translate(840, 0)">
+        <rect width="440" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+        <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Swarm Execution Topology &amp; Tool Activity</text>
+        <line x1="24" y1="58" x2="416" y2="58" stroke="#27272a" stroke-width="1"/>
+        <!-- Swarm throughput sparkline -->
+        <rect x="24" y="80" width="392" height="150" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="104" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SWARM EXECUTION VELOCITY</text>
+        <text x="40" y="122" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Active tasks per minute across all nodes</text>
+        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130 L 400 215 L 40 215 Z" fill="url(#monoGrad)"/>
+        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+        <!-- Capability boundary status -->
+        <g transform="translate(24, 250)">
+          <rect width="392" height="110" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">CAPABILITY ACCESS BOUNDARY</text>
+          <text x="16" y="52" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700">0 Egress Violations</text>
+          <text x="16" y="74" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero trust network proxy / Local isolation active</text>
+          <rect x="16" y="88" width="360" height="6" rx="3" fill="#27272a"/>
+          <rect x="16" y="88" width="360" height="6" rx="3" fill="#ffffff"/>
+        </g>
+
+        <!-- Sandbox Runner Status -->
+        <g transform="translate(24, 380)">
+          <rect width="392" height="120" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">GVISOR SANDBOX ISOLATION</text>
+          <text x="16" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Ephemeral MicroVM Kernel Sandboxing</text>
+          <text x="16" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">64 Sandboxes Sealed</text>
+          <text x="16" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero root escapes / Strict 128MB RAM limit</text>
+        </g>
+
+        <!-- Human In The Loop Gate -->
+        <g transform="translate(24, 520)">
+          <rect width="392" height="120" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">HUMAN-IN-THE-LOOP STATUS</text>
+          <text x="16" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Threshold Approval Governance</text>
+          <text x="16" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3 Pending Review</text>
+          <text x="16" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">High-stakes actions paused for manual signoff</text>
+        </g>
       </g>
     </g>
   </g>

@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070708"/>
-      <stop offset="100%" stop-color="#0a0a0d"/>
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#121215"/>
     </linearGradient>
-    <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+    <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
   </defs>
 
@@ -22,13 +22,13 @@
   <!-- Sidebar -->
   <rect x="0" y="52" width="260" height="948" fill="#0d0d10" stroke="#27272a" stroke-width="1"/>
   <!-- Brand in Gateway -->
-  <rect x="28" y="80" width="24" height="24" rx="4" fill="#06b6d4"/>
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#ffffff"/>
   <text x="64" y="97" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AI GATEWAY</text>
 
   <!-- Nav items -->
   <g transform="translate(24, 140)">
     <rect x="0" y="0" width="212" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
-    <rect x="16" y="14" width="10" height="10" fill="#06b6d4"/>
+    <rect x="16" y="14" width="10" height="10" fill="#ffffff"/>
     <text x="38" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Gateway Telemetry</text>
     <rect x="16" y="60" width="10" height="10" fill="#52525b"/>
     <text x="38" y="70" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Key Vault &amp; RBAC</text>
@@ -46,187 +46,163 @@
 
   <!-- Cluster status at bottom sidebar -->
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-  <circle cx="48" cy="951" r="5" fill="#10b981"/>
+  <circle cx="48" cy="951" r="5" fill="#ffffff"/>
   <text x="64" y="948" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Enterprise Vault #01</text>
   <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">HSM Encrypted / FIPS-140</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
-    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Enterprise LLM Gateway Telemetry</text>
-    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Real-Time Multi-Provider Token Dispatch, Sub-Millisecond Routing &amp; HSM Key Security</text>
+    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Multi-Model Telemetry &amp; Token Throughput</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Real-time dispatch latency, token burn rate, and cross-provider failover</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="1125" y="30" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Export Traces</text>
 
-    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#06b6d4"/>
-    <text x="1235" y="30" fill="#000000" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Key</text>
+    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#ffffff"/>
+    <text x="1235" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Key</text>
   </g>
 
   <!-- Main Content Body -->
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">24H TOKEN VELOCITY</text>
-      <text x="20" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">48.2M</text>
-      <text x="140" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">+19.4% WoW</text>
-      <text x="20" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Aggregated Prompt &amp; Completion</text>
-
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE API KEY VAULTS</text>
-      <text x="345" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">142</text>
-      <text x="425" y="64" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Zero Leaks</text>
-      <text x="345" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Hardware Security Module Sealed</text>
-
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MEDIAN GATEWAY LATENCY</text>
-      <text x="670" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">118ms</text>
-      <text x="770" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Cache: 6ms</text>
-      <text x="670" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Edge Routing with Zero Jitter</text>
-
-      <rect x="975" y="0" width="305" height="96" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">COST OPTIMIZATION YIELD</text>
-      <text x="995" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">41.8%</text>
-      <text x="1105" y="64" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Saved</text>
-      <text x="995" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Via Semantic Cache &amp; Routing</text>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE MODEL CLUSTERS</text>
+      <text x="20" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">12 / 12</text>
+      <text x="180" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">100% HEALTH</text>
+      <text x="20" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Downtime SLA Guaranteed</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">GLOBAL THROUGHPUT</text>
+      <text x="345" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">14,820</text>
+      <text x="505" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">REQ / SEC</text>
+      <text x="345" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">p99 Latency 38ms Global Mean</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SEMANTIC CACHE RATIO</text>
+      <text x="670" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">42.4%</text>
+      <text x="830" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">+42% SAVED</text>
+      <text x="670" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Sub-millisecond Vector Match</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">AGGREGATE TOKEN VELOCITY</text>
+      <text x="995" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">1.42M</text>
+      <text x="1155" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TOKENS / MIN</text>
+      <text x="995" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Blended Yield $0.0018 / 1k</text>
     </g>
+    <!-- Main Split Panels -->
+    <g transform="translate(0, 114)">
+      <!-- Left Panel: High Density Table -->
+      <rect width="820" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Active Foundation Model Pools &amp; Health Matrix</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Live inference routing, token yield, and latency benchmarks across 12 clusters</text>
 
-    <!-- Mid Section: Model Traffic Velocity & Live Stream Panel -->
-    <g transform="translate(0, 116)">
-      <!-- Left Chart: Routing Velocity -->
-      <rect width="780" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Dynamic Model Routing Matrix &amp; Velocity</text>
-      <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Real-time token distribution across Foundation, Reasoning, and Specialist clusters</text>
+      <!-- Search / Filter Pill -->
+      <rect x="580" y="24" width="216" height="30" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter records...</text>
 
-      <!-- Grid lines -->
-      <line x1="24" y1="100" x2="756" y2="100" stroke="#1f1f23" stroke-width="1"/>
-      <line x1="24" y1="160" x2="756" y2="160" stroke="#1f1f23" stroke-width="1"/>
-      <line x1="24" y1="220" x2="756" y2="220" stroke="#1f1f23" stroke-width="1"/>
-      <line x1="24" y1="280" x2="756" y2="280" stroke="#1f1f23" stroke-width="1"/>
+      <!-- Table Separator -->
+      <line x1="24" y1="78" x2="796" y2="78" stroke="#27272a" stroke-width="1"/>
 
-      <!-- Path chart: primary foundation model velocity -->
-      <path d="M 30 260 Q 120 220 200 240 T 380 180 T 540 130 T 750 90 L 750 280 L 30 280 Z" fill="url(#cyanGrad)"/>
-      <path d="M 30 260 Q 120 220 200 240 T 380 180 T 540 130 T 750 90" fill="none" stroke="#06b6d4" stroke-width="2.5"/>
+      <!-- Table Headers -->
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CLUSTER POOL</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">BASE ARCHITECTURE</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">p99 LATENCY</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOKEN YIELD</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ERROR RATE</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <!-- Secondary model: reasoning model path -->
-      <path d="M 30 270 Q 140 250 220 260 T 400 210 T 560 170 T 750 140" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="4,4"/>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#1f1f23" stroke-width="1"/>
 
-      <!-- Legend -->
-      <rect x="24" y="304" width="10" height="10" rx="2" fill="#06b6d4"/>
-      <text x="40" y="313" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">High-Throughput Model API</text>
-
-      <rect x="230" y="304" width="10" height="10" rx="2" fill="#a855f7"/>
-      <text x="246" y="313" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Deep Reasoning Engine (Speculative 32B)</text>
-
-      <rect x="520" y="304" width="10" height="10" rx="2" fill="#10b981"/>
-      <text x="536" y="313" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Sub-Millisecond Semantic Cache Hit</text>
-
-      <!-- Right Panel: Live Gateway Ingestion Stream -->
-      <rect x="805" width="475" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="825" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Live API Key Ingestion Stream</text>
-      <text x="825" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Automated Key Rotation &amp; Redaction</text>
-
-      <!-- Stream item 1 -->
-      <rect x="825" y="72" width="435" height="54" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <rect x="837" y="85" width="58" height="20" rx="3" fill="#06b6d4" fill-opacity="0.15"/>
-      <text x="866" y="99" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ROUTED</text>
-      <text x="905" y="94" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">sk_live_sec_***89f2</text>
-      <text x="905" y="112" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Finance Ledger Copilot / 4,120 tok</text>
-      <text x="1245" y="94" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="end">88ms</text>
-      <text x="1245" y="112" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Cluster US-East</text>
-
-      <!-- Stream item 2 -->
-      <rect x="825" y="136" width="435" height="54" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <rect x="837" y="149" width="58" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-      <text x="866" y="163" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">CACHED</text>
-      <text x="905" y="158" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">sk_live_sec_***41ab</text>
-      <text x="905" y="176" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Catalog Auto-Categorization / 890 tok</text>
-      <text x="1245" y="158" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="end">4ms</text>
-      <text x="1245" y="176" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Zero Cost Hit</text>
-
-      <!-- Stream item 3 -->
-      <rect x="825" y="200" width="435" height="54" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <rect x="837" y="213" width="58" height="20" rx="3" fill="#f59e0b" fill-opacity="0.15"/>
-      <text x="866" y="227" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">FALLBACK</text>
-      <text x="905" y="222" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">sk_live_sec_***902c</text>
-      <text x="905" y="240" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Legal Compliance Parser / 8,240 tok</text>
-      <text x="1245" y="222" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="end">240ms</text>
-      <text x="1245" y="240" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Tier-2 Failover</text>
-
-      <!-- Stream item 4 -->
-      <rect x="825" y="264" width="435" height="54" rx="4" fill="#16161a" stroke="#27272a" stroke-width="1"/>
-      <rect x="837" y="277" width="58" height="20" rx="3" fill="#06b6d4" fill-opacity="0.15"/>
-      <text x="866" y="291" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ROUTED</text>
-      <text x="905" y="286" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">sk_live_sec_***112d</text>
-      <text x="905" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Customer Ticket Triage / 1,450 tok</text>
-      <text x="1245" y="286" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="end">92ms</text>
-      <text x="1245" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Cluster APAC-Edge</text>
-    </g>
-
-    <!-- Bottom Section: Cluster Health & Quota Consumption Table -->
-    <g transform="translate(0, 480)">
-      <rect width="1280" height="300" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-      <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600">Foundation Model Provider Clusters &amp; Token Budget Allocations</text>
-      <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Automated load-balancing with rate-limit dampening across multi-provider accounts</text>
-
-      <!-- Table Header -->
-      <rect x="24" y="70" width="1232" height="34" rx="4" fill="#16161a"/>
-      <text x="44" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PROVIDER CLUSTER</text>
-      <text x="320" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TIER &amp; ARCHITECTURE</text>
-      <text x="560" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">HEALTH / P99</text>
-      <text x="760" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONCURRENCY</text>
-      <text x="960" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DAILY SPEND</text>
-      <text x="1160" y="92" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">FAILOVER</text>
-
+      <!-- Rows -->
       <!-- Row 1 -->
-      <g transform="translate(24, 112)">
-        <circle cx="20" cy="18" r="4" fill="#10b981"/>
-        <text x="40" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Primary Core Model API (US-East)</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Dense 70B Foundation</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">99.99% / 142ms</text>
-        <text x="736" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">184 / 500 max</text>
-        <text x="936" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">IDR 4.2M / 10M</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Deep Reasoning Pool</text>
+      <text x="210" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">32B Speculative Cluster</text>
+      <text x="390" y="142" fill="#ffffff" font-family="monospace" font-size="12">42 ms</text>
+      <text x="520" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">480k / min</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.00%</text>
+      <rect x="716" y="126" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="141" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
       <!-- Row 2 -->
-      <g transform="translate(24, 156)">
-        <circle cx="20" cy="18" r="4" fill="#10b981"/>
-        <text x="40" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Deep Reasoning Node (EU-Central)</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Speculative CoT 32B</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">99.95% / 310ms</text>
-        <text x="736" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">42 / 200 max</text>
-        <text x="936" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">IDR 1.8M / 5M</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="168" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="196" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">High-Throughput Pool</text>
+      <text x="210" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">70B Dense Pool</text>
+      <text x="390" y="196" fill="#ffffff" font-family="monospace" font-size="12">28 ms</text>
+      <text x="520" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">620k / min</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.01%</text>
+      <rect x="716" y="180" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="195" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
       <!-- Row 3 -->
-      <g transform="translate(24, 200)">
-        <circle cx="20" cy="18" r="4" fill="#10b981"/>
-        <text x="40" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Fast Token Specialist (APAC-Edge)</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Distilled 8B Architecture</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">100.0% / 44ms</text>
-        <text x="736" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">312 / 1000 max</text>
-        <text x="936" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">IDR 920K / 4M</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#10b981" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
-        <line x1="0" y1="36" x2="1232" y2="36" stroke="#1f1f23" stroke-width="1"/>
-      </g>
-
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="250" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Code Synthesis Pool</text>
+      <text x="210" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">34B Instruct Weights</text>
+      <text x="390" y="250" fill="#ffffff" font-family="monospace" font-size="12">34 ms</text>
+      <text x="520" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">190k / min</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.00%</text>
+      <rect x="716" y="234" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="249" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
       <!-- Row 4 -->
-      <g transform="translate(24, 244)">
-        <circle cx="20" cy="18" r="4" fill="#06b6d4"/>
-        <text x="40" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Semantic Vector Cache Cluster</text>
-        <text x="296" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">In-Memory 1536D Cosine Match</text>
-        <text x="536" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Hit Rate: 34.2%</text>
-        <text x="736" y="22" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Zero API Egress</text>
-        <text x="936" y="22" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Saved: IDR 3.4M</text>
-        <rect x="1136" y="8" width="60" height="20" rx="3" fill="#06b6d4" fill-opacity="0.15"/>
-        <text x="1166" y="22" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">LOCAL</text>
+      <rect x="12" y="276" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Semantic Vector Pool</text>
+      <text x="210" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1536D Dense Embedding</text>
+      <text x="390" y="304" fill="#ffffff" font-family="monospace" font-size="12">8 ms</text>
+      <text x="520" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">130k / min</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.00%</text>
+      <rect x="716" y="288" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="303" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">OPTIMAL</text>
+      <!-- Row 5 -->
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="358" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Edge Low-Latency Pool</text>
+      <text x="210" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">8B Quantized Weights</text>
+      <text x="390" y="358" fill="#ffffff" font-family="monospace" font-size="12">12 ms</text>
+      <text x="520" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">95k / min</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.00%</text>
+      <rect x="716" y="342" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="357" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
+
+      <!-- Table Pagination / Status Footer -->
+      <line x1="24" y1="620" x2="796" y2="620" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active records</text>
+      <rect x="710" y="632" width="86" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="753" y="648" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
+
+      <!-- Right Panel: Telemetry / Inspector Drawer -->
+      <g transform="translate(840, 0)">
+        <rect width="440" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+        <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Real-Time Telemetry &amp; Buffer Dynamics</text>
+        <line x1="24" y1="58" x2="416" y2="58" stroke="#27272a" stroke-width="1"/>
+        <!-- Telemetry sparkline graph -->
+        <rect x="24" y="80" width="392" height="150" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="104" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">INFERENCE VELOCITY CURVE</text>
+        <text x="40" y="122" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Window: Last 60 Minutes (req/sec)</text>
+        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135 L 400 215 L 40 215 Z" fill="url(#monoGrad)"/>
+        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+        <!-- Stream status box -->
+        <g transform="translate(24, 250)">
+          <rect width="392" height="110" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">DUPLEX STREAMING BUFFER</text>
+          <text x="16" y="52" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700">1,240 Channels</text>
+          <text x="16" y="74" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero buffer drop / Backpressure safe</text>
+          <rect x="16" y="88" width="360" height="6" rx="3" fill="#27272a"/>
+          <rect x="16" y="88" width="280" height="6" rx="3" fill="#ffffff"/>
+        </g>
+
+        <!-- Key Vault Security Badge -->
+        <g transform="translate(24, 380)">
+          <rect width="392" height="120" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">HSM KEY VAULT ENCLAVE</text>
+          <text x="16" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Hardware Level Security Isolation</text>
+          <text x="16" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">16 Vaults Sealed</text>
+          <text x="16" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">AES-256 Envelope Encryption Active</text>
+        </g>
+
+        <!-- Guardrail Status -->
+        <g transform="translate(24, 520)">
+          <rect width="392" height="120" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">PII SCRUBBING FIREWALL</text>
+          <text x="16" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero-Leakage Real-Time Filter</text>
+          <text x="16" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0 Secrets Outbound</text>
+          <text x="16" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Automated Masking at Ingestion</text>
+        </g>
       </g>
     </g>
   </g>

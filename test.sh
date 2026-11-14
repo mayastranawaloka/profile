@@ -202,6 +202,36 @@ if failed:
 print(f"[*] Verified zero third-party brands across {len(files)} files.")
 '
 
+# 10. Verify 100% Strict Monochrome Palette across all SVG assets
+echo "[*] Verifying 100% strict monochrome palette across all SVG assets..."
+python3 -c '
+import glob, re, sys
+
+def has_chromatic_color(hex_str):
+    hex_str = hex_str.lstrip("#")
+    if len(hex_str) != 6:
+        return False
+    r = int(hex_str[0:2], 16)
+    g = int(hex_str[2:4], 16)
+    b = int(hex_str[4:6], 16)
+    return max(abs(r - g), abs(g - b), abs(r - b)) > 12
+
+svg_files = glob.glob("assets/**/*.svg", recursive=True)
+failed = False
+for fpath in svg_files:
+    with open(fpath, "r", encoding="utf-8") as f:
+        c = f.read()
+    colors = re.findall(r"#[0-9a-fA-F]{6}", c)
+    bad = [col for col in colors if has_chromatic_color(col)]
+    if bad:
+        print(f"FAIL: Non-monochrome chromatic color {set(bad)} found in {fpath}")
+        failed = True
+
+if failed:
+    sys.exit(1)
+print(f"[*] Verified 100% strict monochrome palette across all {len(svg_files)} SVGs.")
+'
+
 # 10. Verify robots.txt and sitemap.xml
 echo "[*] Verifying robots.txt and sitemap.xml..."
 if [[ ! -f "robots.txt" ]]; then

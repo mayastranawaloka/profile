@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070708"/>
-      <stop offset="100%" stop-color="#0a0a0d"/>
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#121215"/>
     </linearGradient>
-    <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+    <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
   </defs>
 
@@ -22,7 +22,7 @@
   <!-- Sidebar -->
   <rect x="0" y="52" width="260" height="948" fill="#0d0d10" stroke="#27272a" stroke-width="1"/>
   <!-- Brand in Gateway -->
-  <rect x="28" y="80" width="24" height="24" rx="4" fill="#06b6d4"/>
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#ffffff"/>
   <text x="64" y="97" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AI GATEWAY</text>
 
   <!-- Nav items -->
@@ -40,32 +40,161 @@
     <rect x="16" y="244" width="10" height="10" fill="#52525b"/>
     <text x="38" y="254" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Security &amp; Firewall</text>
     <rect x="0" y="276" width="212" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
-    <rect x="16" y="290" width="10" height="10" fill="#06b6d4"/>
+    <rect x="16" y="290" width="10" height="10" fill="#ffffff"/>
     <text x="38" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Audit Logs</text>
   </g>
 
   <!-- Cluster status at bottom sidebar -->
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-  <circle cx="48" cy="951" r="5" fill="#10b981"/>
+  <circle cx="48" cy="951" r="5" fill="#ffffff"/>
   <text x="64" y="948" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Enterprise Vault #01</text>
   <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">HSM Encrypted / FIPS-140</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
-    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Immutable Audit Log &amp; Forensic Explorer</text>
-    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cryptographically Sealed SHA-256 Traces for Legal, Security &amp; Financial Audits</text>
+    <text x="0" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Enterprise Compliance &amp; Immutable Prompt Audit Trail</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SHA-256 Chained Event Logs, SOC2 Type II Readiness &amp; Cryptographic Verification</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="1125" y="30" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Export Traces</text>
 
-    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#06b6d4"/>
-    <text x="1235" y="30" fill="#000000" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Key</text>
+    <rect x="1190" y="8" width="90" height="34" rx="4" fill="#ffffff"/>
+    <text x="1235" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Deploy Key</text>
   </g>
 
   <!-- Main Content Body -->
   <g transform="translate(290, 150)">
-    <rect width="1280" height="780" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-    <text x="32" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600">Cryptographic Request &amp; Token Audit Trail</text>
-    <text x="32" y="68" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Every inference call is hashed with Merkle-tree verification for complete SOX, GDPR, and ISO-27001 auditability</text>
+    <!-- 4 KPI Cards -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">LOGGED TRANSACTIONS</text>
+      <text x="20" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">14.2M</text>
+      <text x="180" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">100% COVER</text>
+      <text x="20" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Missing Records or Log Gaps</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MERKLE ROOT STATUS</text>
+      <text x="345" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">VALID</text>
+      <text x="505" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SHA-256</text>
+      <text x="345" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Cryptographic Proof Tamper-Proof</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">COMPLIANCE READINESS</text>
+      <text x="670" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">SOC2 / ISO</text>
+      <text x="830" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TYPE II</text>
+      <text x="670" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Enterprise Financial Grade Audit</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">IMMUTABLE RETENTION</text>
+      <text x="995" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">7 Years</text>
+      <text x="1155" y="64" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WORM LOCK</text>
+      <text x="995" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Write-Once Read-Many Sealed Storage</text>
+    </g>
+    <!-- Main Split Panels -->
+    <g transform="translate(0, 114)">
+      <!-- Left Panel: High Density Table -->
+      <rect width="820" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Cryptographic Audit Ledger &amp; Chain of Custody</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Every prompt dispatch, response hash, and token usage event is immutably hashed and verifiable</text>
+
+      <!-- Search / Filter Pill -->
+      <rect x="580" y="24" width="216" height="30" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter records...</text>
+
+      <!-- Table Separator -->
+      <line x1="24" y1="78" x2="796" y2="78" stroke="#27272a" stroke-width="1"/>
+
+      <!-- Table Headers -->
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AUDIT HASH</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TIMESTAMP</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SERVICE ORIGIN</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MODEL CLUSTER</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">POLICY RESULT</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#1f1f23" stroke-width="1"/>
+
+      <!-- Rows -->
+      <!-- Row 1 -->
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">0x8F90A1..D2</text>
+      <text x="210" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">11:29:40</text>
+      <text x="390" y="142" fill="#ffffff" font-family="monospace" font-size="12">Svc-ERP-Operations</text>
+      <text x="520" y="142" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Deep Reasoning 32B</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PII Masked Clean</text>
+      <rect x="716" y="126" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="141" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
+      <!-- Row 2 -->
+      <rect x="12" y="168" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="196" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">0x7E8B42..91</text>
+      <text x="210" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">11:29:38</text>
+      <text x="390" y="196" fill="#ffffff" font-family="monospace" font-size="12">Svc-Fin-Ledger</text>
+      <text x="520" y="196" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">High-Throughput 70B</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Guardrail Passed</text>
+      <rect x="716" y="180" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="195" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
+      <!-- Row 3 -->
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="250" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">0x6D4A19..3C</text>
+      <text x="210" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">11:29:35</text>
+      <text x="390" y="250" fill="#ffffff" font-family="monospace" font-size="12">Svc-Logistics-Hub</text>
+      <text x="520" y="250" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge Fast 8B</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rate Limit OK</text>
+      <rect x="716" y="234" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="249" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
+      <!-- Row 4 -->
+      <rect x="12" y="276" width="796" height="46" rx="4" fill="#18181b"/>
+      <text x="24" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">0x5C1277..88</text>
+      <text x="210" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">11:29:31</text>
+      <text x="390" y="304" fill="#ffffff" font-family="monospace" font-size="12">Svc-DevOps-Pipeline</text>
+      <text x="520" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Code Synthesis 34B</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Sandboxed Verified</text>
+      <rect x="716" y="288" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="303" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
+      <!-- Row 5 -->
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#121215"/>
+      <text x="24" y="358" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">0x4B9954..10</text>
+      <text x="210" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">11:29:28</text>
+      <text x="390" y="358" fill="#ffffff" font-family="monospace" font-size="12">Svc-Customer-API</text>
+      <text x="520" y="358" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">High-Throughput 70B</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">DLP Scrubbed</text>
+      <rect x="716" y="342" width="76" height="22" rx="3" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+      <text x="754" y="357" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
+
+      <!-- Table Pagination / Status Footer -->
+      <line x1="24" y1="620" x2="796" y2="620" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active records</text>
+      <rect x="710" y="632" width="86" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="753" y="648" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
+
+      <!-- Right Panel: Telemetry / Inspector Drawer -->
+      <g transform="translate(840, 0)">
+        <rect width="440" height="666" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+        <text x="24" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Merkle Tree Proof &amp; Non-Repudiation</text>
+        <line x1="24" y1="58" x2="416" y2="58" stroke="#27272a" stroke-width="1"/>
+        <g transform="translate(24, 80)">
+          <rect width="392" height="540" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+          <text x="20" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">CRYPTOGRAPHIC PROOF VERIFIER</text>
+
+          <text x="20" y="70" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Current Block Height:</text>
+          <text x="20" y="94" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700">Block #1,842,910</text>
+
+          <text x="20" y="130" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Merkle Root Hash:</text>
+          <text x="20" y="152" fill="#d4d4d8" font-family="monospace" font-size="10">0x992bf441a7c0932810e4a7812bc8819</text>
+
+          <line x1="20" y1="180" x2="372" y2="180" stroke="#27272a" stroke-width="1"/>
+
+          <text x="20" y="210" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">INSPECTOR BUNDLE EXPORT</text>
+          <text x="20" y="234" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Export complete cryptographically signed evidence</text>
+          <rect x="20" y="250" width="352" height="36" rx="4" fill="#27272a"/>
+          <text x="196" y="272" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">DOWNLOAD AUDIT ARCHIVE (ZIP)</text>
+
+          <g transform="translate(20, 310)">
+            <rect width="352" height="140" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+            <text x="16" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">NON-REPUDIATION GUARANTEE</text>
+            <text x="16" y="50" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Signed with Enterprise HSM Private Key</text>
+            <text x="16" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Integrity: 100% Tamper Evident</text>
+            <text x="16" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Acceptable for external legal &amp; tax discovery</text>
+          </g>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
