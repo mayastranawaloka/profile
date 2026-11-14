@@ -545,6 +545,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bodyEl) bodyEl.innerHTML = article.content;
 
     document.title = `${article.title} - MAYASTRA NAWALOKA`;
+
+    // Dynamic SEO Updates for Search Crawlers and Share Cards
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.href = `https://www.mayastranawaloka.com/article.html?id=${articleId}`;
+    }
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.content = `${article.title}. Publikasi riset teknologi dan arsitektur sistem digital oleh PT Mayastra Nawaloka Nusantara.`;
+    }
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.content = `${article.title} - MAYASTRA NAWALOKA`;
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.content = `https://www.mayastranawaloka.com/article.html?id=${articleId}`;
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.content = `${article.title} - MAYASTRA NAWALOKA`;
+
+    const schemaScript = document.getElementById('articleSchema');
+    if (schemaScript) {
+      try {
+        const schema = JSON.parse(schemaScript.textContent);
+        if (schema && schema['@graph'] && schema['@graph'][0]) {
+          schema['@graph'][0].headline = article.title;
+          schema['@graph'][0]['@id'] = `https://www.mayastranawaloka.com/article.html?id=${articleId}#article`;
+          schemaScript.textContent = JSON.stringify(schema);
+        }
+      } catch (err) {
+        // Fallback gracefully without throwing
+      }
+    }
   }
 
   // Articles Page: Category Filtering & Direct Card Clicks (articles.html)

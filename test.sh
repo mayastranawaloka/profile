@@ -139,7 +139,7 @@ banned_chars = ["—", "–", "&#8212;", "&#8211;", "&mdash;", "&ndash;"]
 files = [
     "index.html", "about.html", "service.html", "articles.html", "contact.html",
     "project-erp.html", "project-ecommerce.html", "project-cms.html", "article.html",
-    "style.css", "script.js"
+    "style.css", "script.js", "robots.txt", "sitemap.xml"
 ] + glob.glob("assets/**/*.svg", recursive=True)
 
 for path in files:
@@ -156,4 +156,101 @@ for path in files:
 print(f"[*] Verified zero emojis and zero em dashes across {len(files)} files.")
 '
 
-echo "[OK] All 9 pages and 33 project SVGs passed verification suite cleanly!"
+# 9. Verify robots.txt and sitemap.xml
+echo "[*] Verifying robots.txt and sitemap.xml..."
+if [[ ! -f "robots.txt" ]]; then
+  echo "FAIL: missing robots.txt"
+  exit 1
+fi
+grep -q 'User-agent: \*' robots.txt || { echo "FAIL: missing User-agent: * in robots.txt"; exit 1; }
+grep -q 'Allow: /' robots.txt || { echo "FAIL: missing Allow: / in robots.txt"; exit 1; }
+grep -q 'Sitemap: https://www.mayastranawaloka.com/sitemap.xml' robots.txt || { echo "FAIL: missing Sitemap in robots.txt"; exit 1; }
+
+if [[ ! -f "sitemap.xml" ]]; then
+  echo "FAIL: missing sitemap.xml"
+  exit 1
+fi
+
+python3 -c '
+import xml.etree.ElementTree as ET
+import sys
+
+try:
+    tree = ET.parse("sitemap.xml")
+    root = tree.getroot()
+except Exception as e:
+    print(f"FAIL: sitemap.xml parse error: {e}")
+    sys.exit(1)
+
+urls = root.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url")
+if len(urls) < 29:
+    print(f"FAIL: Expected at least 29 URLs in sitemap, found {len(urls)}")
+    sys.exit(1)
+
+locs = [u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text for u in urls]
+for required in [
+    "https://www.mayastranawaloka.com/",
+    "https://www.mayastranawaloka.com/about.html",
+    "https://www.mayastranawaloka.com/service.html",
+    "https://www.mayastranawaloka.com/project-erp.html",
+    "https://www.mayastranawaloka.com/project-ecommerce.html",
+    "https://www.mayastranawaloka.com/project-cms.html",
+    "https://www.mayastranawaloka.com/articles.html",
+    "https://www.mayastranawaloka.com/contact.html",
+    "https://www.mayastranawaloka.com/article.html"
+]:
+    if required not in locs:
+        print(f"FAIL: Missing required route in sitemap: {required}")
+        sys.exit(1)
+
+print(f"[*] Verified sitemap.xml with {len(urls)} entries and valid XML namespace.")
+'
+
+# 10. Verify Full SEO Tags & JSON-LD Schemas across all 9 HTML Pages
+echo "[*] Verifying SEO metadata and Schema.org JSON-LD across all 9 pages..."
+python3 -c '
+import re, json, sys
+
+pages = [
+    "index.html", "about.html", "service.html", "articles.html", "contact.html",
+    "project-erp.html", "project-ecommerce.html", "project-cms.html", "article.html"
+]
+
+for p in pages:
+    with open(p, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Canonical
+    if "rel=\"canonical\"" not in html:
+        print(f"FAIL: Missing canonical link in {p}")
+        sys.exit(1)
+
+    # Open Graph & Twitter
+    for tag in ["og:title", "og:description", "og:image", "og:url", "twitter:card", "twitter:title"]:
+        if tag not in html:
+            print(f"FAIL: Missing {tag} in {p}")
+            sys.exit(1)
+
+    # Robots meta
+    if "name=\"robots\"" not in html:
+        print(f"FAIL: Missing robots meta in {p}")
+        sys.exit(1)
+
+    # JSON-LD Structured Data
+    json_ld_matches = re.findall(r"<script type=\"application/ld\+json\"[^>]*>(.*?)</script>", html, re.DOTALL)
+    if not json_ld_matches:
+        print(f"FAIL: Missing application/ld+json in {p}")
+        sys.exit(1)
+
+    for jld in json_ld_matches:
+        try:
+            data = json.loads(jld)
+            assert "@context" in data
+        except Exception as err:
+            print(f"FAIL: Invalid JSON-LD in {p}: {err}")
+            sys.exit(1)
+
+print(f"[*] Verified SEO meta tags and Schema.org JSON-LD across all {len(pages)} pages cleanly.")
+'
+
+echo "[OK] All 9 pages, 33 project SVGs, sitemap.xml, and robots.txt passed verification suite cleanly!"

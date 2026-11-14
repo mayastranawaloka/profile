@@ -1,0 +1,9 @@
+# robots.txt for PT MAYASTRA NAWALOKA NUSANTARA
+# Allows search engine crawlers (Googlebot, Bingbot, etc.) full access to index all public assets and routes.
+
+User-agent: *
+Allow: /
+
+# Sitemap Declarations
+Sitemap: https://www.mayastranawaloka.com/sitemap.xml
+Host: https://www.mayastranawaloka.com

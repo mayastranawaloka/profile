@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.mayastranawaloka.com/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/logo.png</image:loc>
+      <image:title>PT Mayastra Nawaloka Nusantara Emblem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/project-erp.svg</image:loc>
+      <image:title>Enterprise Resource Planning Showcase</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/project-ecommerce.svg</image:loc>
+      <image:title>Modern Commerce Engine Showcase</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/project-cms.svg</image:loc>
+      <image:title>Editorial CMS Platform Showcase</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/about.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/logo.png</image:loc>
+      <image:title>PT Mayastra Nawaloka Nusantara Official Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/service.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/project-erp.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/01-executive-overview.svg</image:loc>
+      <image:title>ERP Architecture Screen 01</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/02-warehouse-inventory.svg</image:loc>
+      <image:title>ERP Architecture Screen 02</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/03-procurement-pipeline.svg</image:loc>
+      <image:title>ERP Architecture Screen 03</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/04-financial-ledger.svg</image:loc>
+      <image:title>ERP Architecture Screen 04</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/05-sales-dispatch.svg</image:loc>
+      <image:title>ERP Architecture Screen 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/06-supply-chain-flow.svg</image:loc>
+      <image:title>ERP Architecture Screen 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/07-employee-rbac.svg</image:loc>
+      <image:title>ERP Architecture Screen 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/08-asset-maintenance.svg</image:loc>
+      <image:title>ERP Architecture Screen 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/09-audit-logs.svg</image:loc>
+      <image:title>ERP Architecture Screen 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/10-system-settings.svg</image:loc>
+      <image:title>ERP Architecture Screen 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/erp/11-predictive-forecasting.svg</image:loc>
+      <image:title>ERP Architecture Screen 11</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/project-ecommerce.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/01-curated-storefront.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 01</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/02-product-detail.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 02</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/03-cart-drawer.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 03</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/04-checkout-flow.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 04</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/05-payment-gateway.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/06-order-tracking.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/07-customer-account.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/08-inventory-sync.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/09-merchant-analytics.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/10-customer-loyalty.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/ecommerce/11-promotions-engine.svg</image:loc>
+      <image:title>E-Commerce Architecture Screen 11</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/project-cms.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/01-editorial-workspace.svg</image:loc>
+      <image:title>CMS Architecture Screen 01</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/02-content-repository.svg</image:loc>
+      <image:title>CMS Architecture Screen 02</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/03-seo-optimizer.svg</image:loc>
+      <image:title>CMS Architecture Screen 03</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/04-media-library.svg</image:loc>
+      <image:title>CMS Architecture Screen 04</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/05-publishing-workflow.svg</image:loc>
+      <image:title>CMS Architecture Screen 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/06-revision-history.svg</image:loc>
+      <image:title>CMS Architecture Screen 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/07-taxonomy-manager.svg</image:loc>
+      <image:title>CMS Architecture Screen 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/08-audience-analytics.svg</image:loc>
+      <image:title>CMS Architecture Screen 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/09-api-distribution.svg</image:loc>
+      <image:title>CMS Architecture Screen 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/10-access-governance.svg</image:loc>
+      <image:title>CMS Architecture Screen 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/11-webhook-integrations.svg</image:loc>
+      <image:title>CMS Architecture Screen 11</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/articles.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/contact.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=1</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=2</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=3</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=4</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=5</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=6</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=7</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=8</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=9</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=10</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=11</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=12</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=13</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=14</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=15</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=16</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=17</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=18</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=19</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/article.html?id=20</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
