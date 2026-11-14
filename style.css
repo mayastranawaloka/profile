@@ -1981,7 +1981,7 @@ body {
   color: var(--text-muted);
 }
 
-/* Screens Grid (10 Coded SVGs) */
+/* Screens Grid (11 Coded SVGs) */
 .project-screens-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

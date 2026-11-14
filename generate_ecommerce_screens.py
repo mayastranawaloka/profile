@@ -54,114 +54,10 @@ def generate_all_ecommerce():
     os.makedirs("assets/projects/ecommerce", exist_ok=True)
 
     # -------------------------------------------------------------
-    # Screen 01: Curated Storefront
+    # Screen 01: Curated Storefront (100% Home Master Parity)
     # -------------------------------------------------------------
-    content_01 = """  <!-- Hero Feature Banner -->
-  <g transform="translate(80, 150)">
-    <rect x="0" y="0" width="1020" height="380" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
-    
-    <!-- Geometric artwork inside hero -->
-    <rect x="620" y="40" width="350" height="300" rx="4" fill="#1c1c22" stroke="#323238" stroke-width="1"/>
-    <circle cx="795" cy="190" r="100" fill="#26262e"/>
-    <circle cx="795" cy="190" r="60" fill="#0d0d10"/>
-    <line x1="620" y1="190" x2="970" y2="190" stroke="#323238" stroke-width="1"/>
-    <line x1="795" y1="40" x2="795" y2="340" stroke="#323238" stroke-width="1"/>
-
-    <text x="50" y="90" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="3" font-weight="600">SERIES 04 / EDITION 2026</text>
-    <text x="50" y="150" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">MONOCHROME</text>
-    <text x="50" y="200" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">STUDIO OBJECTS</text>
-    <text x="50" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Direct-to-consumer artisanal home and studio instruments.</text>
-    <text x="50" y="260" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Engineered for commercial spaces and boutique environments.</text>
-
-    <rect x="50" y="295" width="150" height="42" rx="4" fill="#ffffff"/>
-    <text x="125" y="321" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">EXPLORE DROP</text>
-  </g>
-
-  <!-- Cart / Checkout Preview Drawer on the Right -->
-  <g transform="translate(1130, 150)">
-    <rect x="0" y="0" width="390" height="800" rx="6" fill="#121216" stroke="#27272a" stroke-width="1"/>
-    <text x="30" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">SHOPPING BAG</text>
-    <text x="330" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3 ITEMS</text>
-    <line x1="30" y1="65" x2="360" y2="65" stroke="#27272a" stroke-width="1"/>
-
-    <!-- Cart Item 1 -->
-    <rect x="30" y="85" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <circle cx="60" cy="115" r="15" fill="#323238"/>
-    <text x="105" y="105" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Matte Ceramic Carafe</text>
-    <text x="105" y="125" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 1 | Midnight Black</text>
-    <text x="105" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 480.000</text>
-
-    <!-- Cart Item 2 -->
-    <rect x="30" y="170" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <rect x="45" y="185" width="30" height="30" rx="2" fill="#323238"/>
-    <text x="105" y="190" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Linear Anodized Tray</text>
-    <text x="105" y="210" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 2 | Raw Silver</text>
-    <text x="105" y="227" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 650.000</text>
-
-    <!-- Cart Item 3 -->
-    <rect x="30" y="255" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <circle cx="60" cy="285" r="18" fill="#323238"/>
-    <text x="105" y="275" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Solid Cast Iron Desk Lamp</text>
-    <text x="105" y="295" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 1 | Carbon Edition</text>
-    <text x="105" y="312" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 1.250.000</text>
-
-    <line x1="30" y1="340" x2="360" y2="340" stroke="#27272a" stroke-width="1"/>
-
-    <!-- Summary -->
-    <text x="30" y="375" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Subtotal</text>
-    <text x="360" y="375" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" text-anchor="end">Rp 2.380.000</text>
-
-    <text x="30" y="405" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Insured Courier (JNE/SiCepat)</text>
-    <text x="360" y="405" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">FREE</text>
-
-    <line x1="30" y1="430" x2="360" y2="430" stroke="#27272a" stroke-width="1"/>
-
-    <text x="30" y="465" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">TOTAL</text>
-    <text x="360" y="465" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="800" text-anchor="end">Rp 2.380.000</text>
-
-    <!-- Payment Gateway Badges -->
-    <rect x="30" y="495" width="330" height="48" rx="4" fill="#ffffff"/>
-    <text x="195" y="525" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" letter-spacing="1" text-anchor="middle">INSTANT CHECKOUT (QRIS / VA)</text>
-
-    <text x="195" y="570" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Encrypted 256-bit automated payment sync</text>
-  </g>
-
-  <!-- Product Catalog Grid -->
-  <g transform="translate(80, 560)">
-    <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" letter-spacing="1">CURATED INVENTORY</text>
-    <text x="960" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VIEW COMPLETE COLLECTION &#8594;</text>
-
-    <!-- Product 1 -->
-    <rect x="0" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <rect x="20" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <circle cx="160" cy="170" r="50" fill="#24242c"/>
-    <text x="20" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Matte Obsidian Vessel</text>
-    <text x="20" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Handcrafted Studio Stoneware</text>
-    <text x="300" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 520.000</text>
-
-    <!-- Product 2 -->
-    <rect x="350" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <rect x="370" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <rect x="470" y="120" width="80" height="100" rx="4" fill="#24242c"/>
-    <text x="370" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Acoustic Wool Desk Mat</text>
-    <text x="370" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Organic Felt Surface 900x400</text>
-    <text x="650" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 390.000</text>
-
-    <!-- Product 3 -->
-    <rect x="700" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <rect x="720" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <polygon points="860,110 810,210 910,210" fill="#24242c"/>
-    <text x="720" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Brass Geometric Bookend</text>
-    <text x="720" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Solid Milled Metal Pair</text>
-    <text x="1000" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 890.000</text>
-  </g>"""
-
-    svg_01 = build_ecommerce_svg(
-        url="https://store.mayastranawaloka.com/curated-edition",
-        active_cat="ALL OBJECTS",
-        bag_count=3,
-        content_svg=content_01
-    )
+    with open("assets/project-ecommerce.svg", "r", encoding="utf-8") as f:
+        svg_01 = f.read()
     with open("assets/projects/ecommerce/01-curated-storefront.svg", "w", encoding="utf-8") as f:
         f.write(svg_01)
 
@@ -866,7 +762,102 @@ def generate_all_ecommerce():
     with open("assets/projects/ecommerce/10-customer-loyalty.svg", "w", encoding="utf-8") as f:
         f.write(svg_10)
 
-    print("[*] Generated all 10 E-Commerce SVGs successfully.")
+    # -------------------------------------------------------------
+    # Screen 11: Automated Promotions & Flash-Sale Rules Matrix
+    # -------------------------------------------------------------
+    content_11 = """  <!-- Promotions Matrix Content -->
+  <g transform="translate(80, 150)">
+    <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700">PROMOTIONS &amp; FLASH-SALE RULES ENGINE</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Automated discount matrix, bundle logic, coupon thresholds, and margin protections</text>
+
+    <!-- Top 4 Metrics -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="340" height="96" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTIVE CAMPAIGNS</text>
+      <text x="24" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">4 Running</text>
+      <text x="220" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">0 Expired</text>
+
+      <rect x="366" y="0" width="340" height="96" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
+      <text x="390" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG BASKET UPLIFT</text>
+      <text x="390" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">+32.4%</text>
+      <text x="560" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tiered Bundles</text>
+
+      <rect x="732" y="0" width="340" height="96" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
+      <text x="756" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">COUPON REDEMPTION</text>
+      <text x="756" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">18.6%</text>
+      <text x="910" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1 User Limit</text>
+
+      <rect x="1098" y="0" width="342" height="96" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
+      <text x="1122" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MARGIN PROTECTION</text>
+      <text x="1122" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">28.5% Min</text>
+      <text x="1300" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Guaranteed</text>
+    </g>
+
+    <!-- Rules Table -->
+    <g transform="translate(0, 190)">
+      <rect x="0" y="0" width="1440" height="520" rx="8" fill="#121216" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="1440" height="44" fill="#18181c" rx="8"/>
+      <text x="24" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">PROMO TITLE &amp; CODE</text>
+      <text x="360" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">DISCOUNT LOGIC</text>
+      <text x="600" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">MINIMUM SPEND</text>
+      <text x="800" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">REDEMPTIONS</text>
+      <text x="1000" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">CAMPAIGN WINDOW</text>
+      <text x="1200" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">STATUS</text>
+      <text x="1340" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">ACTIONS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 44)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Studio Opening Drop - CODE: MONO15</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Applies to All Studio Instruments &amp; Desk Objects</text>
+        <text x="360" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">15% Instant Cart Discount</text>
+        <text x="600" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Rp 1.000.000</text>
+        <text x="800" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">420 / 500 Used</text>
+        <text x="1000" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Nov 10 - Nov 20, 2026</text>
+        <rect x="1200" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1245" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Active</text>
+        <text x="1340" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edit</text>
+        <line x1="24" y1="74" x2="1416" y2="74" stroke="#1f1f23"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 118)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Hardware Bundle Set - AUTO APPLIED</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Buy Desk Lamp + Aluminum Tray together</text>
+        <text x="360" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Rp 250.000 Bundle Rebate</text>
+        <text x="600" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Bundle Match</text>
+        <text x="800" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">184 Bundles</text>
+        <text x="1000" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Permanent Promotion</text>
+        <rect x="1200" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1245" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Active</text>
+        <text x="1340" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edit</text>
+        <line x1="24" y1="74" x2="1416" y2="74" stroke="#1f1f23"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 192)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">VIP Founding Tier Free Logistics</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Automated 100% courier shipping absorption</text>
+        <text x="360" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Free Insured Courier</text>
+        <text x="600" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">No Minimum</text>
+        <text x="800" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">892 Shipments</text>
+        <text x="1000" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Indefinite (VIP)</text>
+        <rect x="1200" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1245" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Active</text>
+        <text x="1340" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edit</text>
+      </g>
+    </g>
+  </g>"""
+
+    svg_11 = build_ecommerce_svg(
+        url="https://store.mayastranawaloka.com/admin/promotions-matrix",
+        active_cat="ALL OBJECTS",
+        bag_count=3,
+        content_svg=content_11
+    )
+    with open("assets/projects/ecommerce/11-promotions-engine.svg", "w", encoding="utf-8") as f:
+        f.write(svg_11)
+
+    print("[*] Generated all 11 E-Commerce SVGs successfully.")
 
 if __name__ == "__main__":
     generate_all_ecommerce()

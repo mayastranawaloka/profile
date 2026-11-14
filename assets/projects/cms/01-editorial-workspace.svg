@@ -15,28 +15,35 @@
   <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
-    <rect x="16" y="14" width="10" height="10" fill="#52525b"/>
     <text x="38" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Dashboard</text>
-    <rect x="0" y="56" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
-    <rect x="16" y="70" width="10" height="10" fill="#ffffff"/>
-    <text x="38" y="80" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Articles &amp; Posts</text>
-    <rect x="16" y="126" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="136" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media Library</text>
-    <rect x="16" y="182" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="192" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
-    <rect x="16" y="238" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="248" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
-    <rect x="16" y="294" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
-    <rect x="16" y="350" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="360" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
-    <rect x="16" y="406" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="416" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
+    <rect x="16" y="14" width="10" height="10" fill="#52525b"/>
+
+    <rect x="0" y="46" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="38" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Articles &amp; Posts</text>
+    <rect x="16" y="60" width="10" height="10" fill="#ffffff"/>
+
+    <text x="38" y="116" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media Library</text>
+    <rect x="16" y="106" width="10" height="10" fill="#52525b"/>
+
+    <text x="38" y="162" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
+    <rect x="16" y="152" width="10" height="10" fill="#52525b"/>
+
+    <text x="38" y="208" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
+    <rect x="16" y="198" width="10" height="10" fill="#52525b"/>
+
+    <text x="38" y="254" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
+    <rect x="16" y="244" width="10" height="10" fill="#52525b"/>
+
+    <text x="38" y="300" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
+    <rect x="16" y="290" width="10" height="10" fill="#52525b"/>
+
+    <text x="38" y="346" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
+    <rect x="16" y="336" width="10" height="10" fill="#52525b"/>
   </g>
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Articles / Enterprise Architecture / Edit Post #8901</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Articles / Enterprise Architecture / Edit Post</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Save Draft</text>
 
@@ -64,7 +71,7 @@
     <text x="40" y="150" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">for Mid-Market Enterprise 2026</text>
 
     <!-- Meta Subtitle -->
-    <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board - Updated 14 minutes ago - Public Visibility</text>
+    <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board &#8226; Updated 14 minutes ago &#8226; Public Visibility</text>
 
     <!-- Featured Header Visual inside editor -->
     <rect x="40" y="220" width="800" height="220" rx="4" fill="#1b1b20" stroke="#2d2d34" stroke-width="1"/>
@@ -72,13 +79,13 @@
     <text x="440" y="335" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
 
     <!-- Content Paragraphs -->
-    <text x="40" y="480" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Modern enterprise applications require high-precision information density without perceptual</text>
+    <text x="40" y="480" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" line-height="24">Modern enterprise applications require high-precision information density without perceptual</text>
     <text x="40" y="508" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">clutter. By utilizing strict monochromatic typography, intentional whitespace, and zero superfluous</text>
     <text x="40" y="536" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">embellishments, digital operations achieve instantaneous user comprehension.</text>
 
     <!-- Quote Block -->
     <rect x="40" y="570" width="4" height="60" fill="#ffffff"/>
-    <text x="60" y="595" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-style="italic">"Simplicity is not the absence of clutter, that is a consequence of simplicity."</text>
+    <text x="60" y="595" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-style="italic">"Simplicity is not the absence of clutter, that's a consequence of simplicity."</text>
     <text x="60" y="620" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jonathan Ive, Industrial Architecture</text>
 
     <!-- Structured Data Subheader -->
@@ -122,9 +129,9 @@
     <!-- Revision log -->
     <text x="24" y="455" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">AUDIT TRAIL</text>
     <text x="24" y="485" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #42: Updated layout schematics</text>
-    <text x="24" y="502" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Today, 00:32 - Lead Engineer</text>
+    <text x="24" y="502" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Today, 00:32 &#8226; Lead Engineer</text>
 
     <text x="24" y="535" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #41: Added executive summary</text>
-    <text x="24" y="552" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Yesterday, 18:20 - Managing Editor</text>
+    <text x="24" y="552" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Yesterday, 18:20 &#8226; Managing Editor</text>
   </g>
 </svg>

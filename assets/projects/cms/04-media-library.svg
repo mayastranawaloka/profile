@@ -17,21 +17,21 @@
   <g transform="translate(24, 140)">
     <rect x="16" y="14" width="10" height="10" fill="#52525b"/>
     <text x="38" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Dashboard</text>
-    <rect x="16" y="70" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="80" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Articles &amp; Posts</text>
-    <rect x="0" y="112" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
-    <rect x="16" y="126" width="10" height="10" fill="#ffffff"/>
-    <text x="38" y="136" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Media Library</text>
-    <rect x="16" y="182" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="192" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
-    <rect x="16" y="238" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="248" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
-    <rect x="16" y="294" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
-    <rect x="16" y="350" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="360" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
-    <rect x="16" y="406" width="10" height="10" fill="#52525b"/>
-    <text x="38" y="416" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
+    <rect x="16" y="60" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="70" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Articles &amp; Posts</text>
+    <rect x="0" y="92" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="16" y="106" width="10" height="10" fill="#ffffff"/>
+    <text x="38" y="116" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Media Library</text>
+    <rect x="16" y="152" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="162" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
+    <rect x="16" y="198" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="208" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
+    <rect x="16" y="244" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="254" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
+    <rect x="16" y="290" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="300" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
+    <rect x="16" y="336" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="346" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
   </g>
 
   <!-- Editorial Top Bar -->

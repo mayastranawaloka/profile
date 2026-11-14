@@ -16,11 +16,10 @@
 
   <g transform="translate(480, 94)">
     <text x="0" y="0" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">ALL OBJECTS</text>
-    <text x="120" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">LIVING</text>
-    <text x="240" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">HARDWARE</text>
-    <text x="360" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">ARCHIVES</text>
-    <text x="480" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">EDITORIAL</text>
-    
+    <text x="140" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1.5">LIVING</text>
+    <text x="240" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1.5">HARDWARE</text>
+    <text x="360" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1.5">ARCHIVES</text>
+    <text x="480" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1.5">EDITORIAL</text>
   </g>
 
   <!-- Currency & Cart -->
@@ -44,7 +43,7 @@
     <text x="50" y="90" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="3" font-weight="600">SERIES 04 / EDITION 2026</text>
     <text x="50" y="150" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">MONOCHROME</text>
     <text x="50" y="200" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">STUDIO OBJECTS</text>
-    <text x="50" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Direct-to-consumer artisanal home and studio instruments.</text>
+    <text x="50" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" max-width="480">Direct-to-consumer artisanal home and studio instruments.</text>
     <text x="50" y="260" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Engineered for commercial spaces and boutique environments.</text>
 
     <rect x="50" y="295" width="150" height="42" rx="4" fill="#ffffff"/>

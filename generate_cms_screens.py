@@ -13,13 +13,13 @@ def get_browser_header(url):
 def get_pulse_sidebar(active_name="Articles &amp; Posts"):
     items = [
         ("Dashboard", 0),
-        ("Articles &amp; Posts", 56),
-        ("Media Library", 112),
-        ("Categories &amp; Tags", 168),
-        ("Editorial Calendar", 224),
-        ("SEO Diagnostics", 280),
-        ("Team &amp; Roles", 336),
-        ("System Settings", 392)
+        ("Articles &amp; Posts", 46),
+        ("Media Library", 92),
+        ("Categories &amp; Tags", 138),
+        ("Editorial Calendar", 184),
+        ("SEO Diagnostics", 230),
+        ("Team &amp; Roles", 276),
+        ("System Settings", 322)
     ]
     menu_svg = ""
     for name, offset in items:
@@ -67,98 +67,10 @@ def build_cms_svg(url, active_nav, breadcrumb, btn1, btn2, content_svg):
 cms_screens = {}
 
 # -------------------------------------------------------------
-# Screen 1: Editorial Markdown Workspace
+# Screen 1: Editorial Markdown Workspace (100% Home Master Parity)
 # -------------------------------------------------------------
-cms_screens["01-editorial-workspace.svg"] = build_cms_svg(
-    url="https://cms.mayastranawaloka.com/editor/articles/8901",
-    active_nav="Articles &amp; Posts",
-    breadcrumb="Articles / Enterprise Architecture / Edit Post #8901",
-    btn1="Save Draft",
-    btn2="Publish Live",
-    content_svg="""  <!-- Editor Main Area -->
-  <g transform="translate(280, 140)">
-    <rect x="0" y="0" width="880" height="820" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-
-    <!-- Document Toolbar -->
-    <rect x="0" y="0" width="880" height="50" fill="#151518" stroke="#27272a" stroke-width="1"/>
-    <text x="30" y="30" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">H1</text>
-    <text x="70" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">H2</text>
-    <text x="110" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">B</text>
-    <text x="140" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-style="italic">I</text>
-    <text x="170" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">&lt;/&gt;</text>
-    <text x="210" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media</text>
-    <text x="270" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Quote</text>
-    <text x="840" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">1,480 Words | 6 min read</text>
-
-    <!-- Post Title -->
-    <text x="40" y="110" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Architectural Minimalist Systems</text>
-    <text x="40" y="150" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">for Mid-Market Enterprise 2026</text>
-
-    <!-- Meta Subtitle -->
-    <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board - Updated 14 minutes ago - Public Visibility</text>
-
-    <!-- Featured Header Visual inside editor -->
-    <rect x="40" y="220" width="800" height="220" rx="4" fill="#1b1b20" stroke="#2d2d34" stroke-width="1"/>
-    <circle cx="440" cy="330" r="50" fill="#292932"/>
-    <text x="440" y="335" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
-
-    <!-- Content Paragraphs -->
-    <text x="40" y="480" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">Modern enterprise applications require high-precision information density without perceptual</text>
-    <text x="40" y="508" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">clutter. By utilizing strict monochromatic typography, intentional whitespace, and zero superfluous</text>
-    <text x="40" y="536" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15">embellishments, digital operations achieve instantaneous user comprehension.</text>
-
-    <!-- Quote Block -->
-    <rect x="40" y="570" width="4" height="60" fill="#ffffff"/>
-    <text x="60" y="595" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-style="italic">"Simplicity is not the absence of clutter, that is a consequence of simplicity."</text>
-    <text x="60" y="620" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jonathan Ive, Industrial Architecture</text>
-
-    <!-- Structured Data Subheader -->
-    <text x="40" y="675" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">Core Infrastructure Deliverables</text>
-    <text x="40" y="710" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">1. Autonomous CMS synchronization with edge caching layers.</text>
-    <text x="40" y="735" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">2. Zero latency content delivery network with automated asset compression.</text>
-    <text x="40" y="760" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">3. Granular RBAC permissions for enterprise editorial departments.</text>
-  </g>
-
-  <!-- Sidebar Inspector on the Right -->
-  <g transform="translate(1190, 140)">
-    <rect x="0" y="0" width="370" height="820" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
-    <text x="24" y="36" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">DOCUMENT METRICS</text>
-    <line x1="24" y1="52" x2="346" y2="52" stroke="#27272a" stroke-width="1"/>
-
-    <!-- SEO Score Card -->
-    <rect x="24" y="70" width="322" height="90" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-    <text x="44" y="100" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SEARCH OPTIMIZATION INDEX</text>
-    <text x="44" y="136" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">98 / 100</text>
-    <text x="240" y="136" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">GRADE A+</text>
-
-    <!-- Fields -->
-    <text x="24" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Permalink Slug</text>
-    <rect x="24" y="208" width="322" height="36" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-    <text x="36" y="231" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">/insights/architectural-minimalist-systems</text>
-
-    <text x="24" y="275" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Primary Category</text>
-    <rect x="24" y="288" width="322" height="36" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-    <text x="36" y="311" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Enterprise Technology</text>
-
-    <text x="24" y="355" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tags</text>
-    <rect x="24" y="370" width="80" height="26" rx="13" fill="#ffffff" fill-opacity="0.1"/>
-    <text x="64" y="387" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">#ERP</text>
-    <rect x="114" y="370" width="80" height="26" rx="13" fill="#ffffff" fill-opacity="0.1"/>
-    <text x="154" y="387" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">#Design</text>
-    <rect x="204" y="370" width="80" height="26" rx="13" fill="#ffffff" fill-opacity="0.1"/>
-    <text x="244" y="387" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">#Cloud</text>
-
-    <line x1="24" y1="425" x2="346" y2="425" stroke="#27272a" stroke-width="1"/>
-
-    <!-- Revision log -->
-    <text x="24" y="455" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">AUDIT TRAIL</text>
-    <text x="24" y="485" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #42: Updated layout schematics</text>
-    <text x="24" y="502" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Today, 00:32 - Lead Engineer</text>
-
-    <text x="24" y="535" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rev #41: Added executive summary</text>
-    <text x="24" y="552" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Yesterday, 18:20 - Managing Editor</text>
-  </g>"""
-)
+with open("assets/project-cms.svg", "r", encoding="utf-8") as f:
+    cms_screens["01-editorial-workspace.svg"] = f.read()
 
 # -------------------------------------------------------------
 # Screen 2: Unified Content Repository
@@ -1327,6 +1239,113 @@ cms_screens["10-access-governance.svg"] = build_cms_svg(
       <line x1="24" y1="46" x2="1256" y2="46" stroke="#27272a" stroke-width="1"/>
       <text x="24" y="72" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1. Session Idle Timeout: 12 Hours with mandatory re-auth on publishing live actions.</text>
       <text x="24" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2. IP Whitelisting: Enforced for administrative role modification and bulk taxonomy deletions.</text>
+    </g>
+  </g>"""
+)
+
+# -------------------------------------------------------------
+# Screen 11: Edge Invalidation Webhooks & Omnichannel Pipeline
+# -------------------------------------------------------------
+cms_screens["11-webhook-integrations.svg"] = build_cms_svg(
+    url="https://cms.mayastranawaloka.com/settings/webhooks",
+    active_nav="System Settings",
+    breadcrumb="System Settings / Event Webhooks &amp; Edge Invalidation Pipeline",
+    btn1="Test All Webhooks",
+    btn2="+ Register Endpoint",
+    content_svg="""  <!-- Webhook Pipeline Area -->
+  <g transform="translate(280, 140)">
+    <!-- 4 KPI Cards -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">REGISTERED ENDPOINTS</text>
+      <text x="24" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">8 Active</text>
+      <text x="180" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">0 Failing</text>
+
+      <rect x="326" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="350" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG DISPATCH LATENCY</text>
+      <text x="350" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">14.2 ms</text>
+      <text x="500" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Async Queue</text>
+
+      <rect x="652" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="676" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GLOBAL PURGE TIME</text>
+      <text x="676" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">&lt; 50 ms</text>
+      <text x="820" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge Propagation</text>
+
+      <rect x="978" y="0" width="302" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="1002" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DELIVERY RETRY SLA</text>
+      <text x="1002" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">99.99 %</text>
+      <text x="1140" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Exponential DLQ</text>
+    </g>
+
+    <!-- Webhook Table -->
+    <g transform="translate(0, 116)">
+      <rect x="0" y="0" width="1280" height="570" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">INTEGRATION &amp; TARGET URL</text>
+      <text x="440" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">SUBSCRIBED EVENTS</text>
+      <text x="740" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">HMAC SIGNATURE</text>
+      <text x="960" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">LAST DELIVERY</text>
+      <text x="1150" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">STATUS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 44)">
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#1f1f23" stroke-width="1"/>
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Cloudflare Edge Cache Purge</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.cloudflare.com/client/v4/zones/.../purge_cache</text>
+        <rect x="440" y="26" width="150" height="24" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="515" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.published, article.rev</text>
+        <text x="740" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SHA256 (Enforced)</text>
+        <text x="960" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Today 00:32 (18ms)</text>
+        <rect x="1150" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1195" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">200 OK</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 124)">
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#1f1f23" stroke-width="1"/>
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Mobile Newsstand Push Notification</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://fcm.googleapis.com/v1/projects/mayastra-news/messages:send</text>
+        <rect x="440" y="26" width="160" height="24" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="520" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.breaking_news</text>
+        <text x="740" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">OAuth 2.0 Token</text>
+        <text x="960" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Yesterday 18:20 (32ms)</text>
+        <rect x="1150" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1195" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">200 OK</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 204)">
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#1f1f23" stroke-width="1"/>
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Search Engine IndexNow Broadcaster</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.indexnow.org/indexnow</text>
+        <rect x="440" y="26" width="140" height="24" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="510" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.url_published</text>
+        <text x="740" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">API Key Header</text>
+        <text x="960" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Today 00:32 (45ms)</text>
+        <rect x="1150" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1195" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">200 OK</text>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 284)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Static RSS / Atom XML Feed Builder</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://cdn.mayastranawaloka.com/hooks/rebuild-rss</text>
+        <rect x="440" y="26" width="130" height="24" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="505" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.all_events</text>
+        <text x="740" y="42" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">HMAC-SHA256</text>
+        <text x="960" y="42" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Nov 12 11:15 (8ms)</text>
+        <rect x="1150" y="26" width="90" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="1195" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">200 OK</text>
+      </g>
+    </g>
+
+    <!-- Bottom Security Policy -->
+    <g transform="translate(0, 700)">
+      <rect x="0" y="0" width="1280" height="120" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">WEBHOOK SECURITY &amp; RETRY CONFIGURATION</text>
+      <line x1="24" y1="46" x2="1256" y2="46" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="72" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1. Cryptographic HMAC-SHA256 signature calculated over timestamp + JSON body to eliminate replay attacks.</text>
+      <text x="24" y="94" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2. Exponential backoff retry: 5 attempts (1s, 5s, 30s, 5m, 1h) before moving payload to Dead Letter Queue (DLQ).</text>
     </g>
   </g>"""
 )

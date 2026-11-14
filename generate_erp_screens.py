@@ -13,12 +13,12 @@ def get_browser_header(url):
 def get_maya_sidebar(active_name):
     items = [
         ("Overview", 0),
-        ("Inventory &amp; Stock", 56),
-        ("Orders &amp; Sales", 112),
-        ("Procurement", 168),
-        ("Finance &amp; Ledger", 224),
-        ("Warehouse Hub", 280),
-        ("Settings", 336),
+        ("Inventory &amp; Stock", 46),
+        ("Orders &amp; Sales", 92),
+        ("Procurement", 138),
+        ("Finance &amp; Ledger", 184),
+        ("Warehouse Hub", 230),
+        ("Settings", 276),
     ]
     menu_svg = ""
     for name, offset in items:
@@ -108,125 +108,10 @@ def generate_all_erp():
     os.makedirs("assets/projects/erp", exist_ok=True)
 
     # -------------------------------------------------------------
-    # Screen 01: Executive Overview
+    # Screen 01: Executive Overview (100% Home Master Parity)
     # -------------------------------------------------------------
-    content_01 = """  <!-- Main Content Grid -->
-  <g transform="translate(290, 304)">
-    <!-- Left: Chart Card -->
-    <rect x="0" y="0" width="810" height="660" rx="8" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <text x="32" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Consolidated Revenue &amp; Inventory Outflow</text>
-    <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Rolling 30-day transactional volume across 4 regional hubs</text>
-
-    <!-- Chart grid lines -->
-    <g stroke="#1f1f23" stroke-width="1">
-      <line x1="32" y1="120" x2="778" y2="120"/>
-      <line x1="32" y1="200" x2="778" y2="200"/>
-      <line x1="32" y1="280" x2="778" y2="280"/>
-      <line x1="32" y1="360" x2="778" y2="360"/>
-      <line x1="32" y1="440" x2="778" y2="440"/>
-    </g>
-    <!-- Axis Labels -->
-    <text x="32" y="115" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Rp 1.0B</text>
-    <text x="32" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Rp 750M</text>
-    <text x="32" y="275" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Rp 500M</text>
-    <text x="32" y="355" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Rp 250M</text>
-
-    <!-- Area Chart Gradient Fill -->
-    <path d="M 60 380 L 140 340 L 220 310 L 300 330 L 380 260 L 460 220 L 540 240 L 620 180 L 700 150 L 760 140 L 760 440 L 60 440 Z" fill="url(#chartGrad)"/>
-    <path d="M 60 380 L 140 340 L 220 310 L 300 330 L 380 260 L 460 220 L 540 240 L 620 180 L 700 150 L 760 140" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-
-    <!-- Data points -->
-    <circle cx="380" cy="260" r="4" fill="#ffffff"/>
-    <circle cx="620" cy="180" r="4" fill="#ffffff"/>
-    <circle cx="760" cy="140" r="5" fill="#ffffff"/>
-
-    <!-- Bottom summary metrics -->
-    <g transform="translate(32, 480)">
-      <rect x="0" y="0" width="230" height="140" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-      <text x="20" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">AVERAGE FULFILLMENT TIME</text>
-      <text x="20" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">4.2 Hours</text>
-      <text x="20" y="96" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">-18% vs target SLA</text>
-
-      <rect x="254" y="0" width="230" height="140" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-      <text x="274" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">STOCK OUTAGE INCIDENTS</text>
-      <text x="274" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">0 Incidents</text>
-      <text x="274" y="96" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">100% stock reliability</text>
-
-      <rect x="508" y="0" width="238" height="140" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-      <text x="528" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">TOTAL DISPATCHED VALUE</text>
-      <text x="528" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Rp 12.4 B</text>
-      <text x="528" y="96" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Year-to-date volume</text>
-    </g>
-
-    <!-- Right: Regional Warehouse Status -->
-    <rect x="834" y="0" width="436" height="660" rx="8" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <text x="866" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Regional Warehouse Capacity</text>
-    <text x="866" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Live telemetry and storage saturation</text>
-
-    <!-- Hub 1: Jakarta Central -->
-    <g transform="translate(866, 105)">
-      <text x="0" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Jakarta Central Mega Hub</text>
-      <text x="370" y="16" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">84% Capacity</text>
-      <rect x="0" y="28" width="370" height="8" rx="4" fill="#1f1f23"/>
-      <rect x="0" y="28" width="310" height="8" rx="4" fill="#ffffff"/>
-      <text x="0" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">12,400 / 14,800 Pallets &#8226; 48 Active Docks</text>
-    </g>
-
-    <!-- Hub 2: Surabaya Hub -->
-    <g transform="translate(866, 195)">
-      <text x="0" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Surabaya East Logistics</text>
-      <text x="370" y="16" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">62% Capacity</text>
-      <rect x="0" y="28" width="370" height="8" rx="4" fill="#1f1f23"/>
-      <rect x="0" y="28" width="230" height="8" rx="4" fill="#ffffff"/>
-      <text x="0" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">6,800 / 11,000 Pallets &#8226; 24 Active Docks</text>
-    </g>
-
-    <!-- Hub 3: Medan Hub -->
-    <g transform="translate(866, 285)">
-      <text x="0" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Medan North Depot</text>
-      <text x="370" y="16" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">48% Capacity</text>
-      <rect x="0" y="28" width="370" height="8" rx="4" fill="#1f1f23"/>
-      <rect x="0" y="28" width="177" height="8" rx="4" fill="#ffffff"/>
-      <text x="0" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">3,400 / 7,200 Pallets &#8226; 16 Active Docks</text>
-    </g>
-
-    <!-- Hub 4: Makassar Hub -->
-    <g transform="translate(866, 375)">
-      <text x="0" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Makassar Eastern Transit</text>
-      <text x="370" y="16" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">71% Capacity</text>
-      <rect x="0" y="28" width="370" height="8" rx="4" fill="#1f1f23"/>
-      <rect x="0" y="28" width="262" height="8" rx="4" fill="#ffffff"/>
-      <text x="0" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">4,200 / 5,900 Pallets &#8226; 12 Active Docks</text>
-    </g>
-
-    <!-- Live Telemetry Card -->
-    <g transform="translate(866, 475)">
-      <rect x="0" y="0" width="372" height="145" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-      <text x="20" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" letter-spacing="1">SYSTEM TELEMETRY</text>
-      <circle cx="20" cy="60" r="5" fill="#ffffff"/>
-      <text x="34" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Database Cluster Replication: 0.12ms</text>
-      <circle cx="20" cy="90" r="5" fill="#ffffff"/>
-      <text x="34" y="94" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Monotonic Event Queue: Optimal (0 Lag)</text>
-      <circle cx="20" cy="120" r="5" fill="#ffffff"/>
-      <text x="34" y="124" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Automated Ledger Checksum: 100% Match</text>
-    </g>
-  </g>"""
-
-    svg_01 = build_erp_svg(
-        url="https://erp.mayastranawaloka.com/dashboard",
-        active_nav="Overview",
-        title="Enterprise Resource Dashboard",
-        subtitle="Multi-Warehouse Inventory &amp; Revenue Consolidation",
-        btn1="Export Data",
-        btn2="New Order",
-        kpis=[
-            ("MONTHLY REVENUE", "Rp 842.500.000", "+18.4% from last period"),
-            ("ACTIVE INVENTORY SKU", "14,290 Units", "99.2% in stock health"),
-            ("PENDING FULFILLMENT", "328 Orders", "4 hubs processing"),
-            ("OPERATIONAL MARGIN", "34.8 %", "Automated cost reconciliation")
-        ],
-        content_svg=content_01
-    )
+    with open("assets/project-erp.svg", "r", encoding="utf-8") as f:
+        svg_01 = f.read()
     with open("assets/projects/erp/01-executive-overview.svg", "w", encoding="utf-8") as f:
         f.write(svg_01)
 
@@ -920,7 +805,116 @@ def generate_all_erp():
     with open("assets/projects/erp/10-system-settings.svg", "w", encoding="utf-8") as f:
         f.write(svg_10)
 
-    print("[*] Generated all 10 ERP SVGs successfully.")
+    # -------------------------------------------------------------
+    # Screen 11: Predictive Forecasting & Replenishment Model
+    # -------------------------------------------------------------
+    content_11 = """  <!-- Predictive Forecasting Content -->
+  <g transform="translate(290, 300)">
+    <!-- Forecast Chart Box -->
+    <rect x="0" y="0" width="1230" height="340" rx="8" fill="#121215" stroke="#27272a" stroke-width="1"/>
+    <text x="24" y="34" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">90-Day Predictive Demand Velocity vs Buffer Stock Simulation</text>
+    <text x="24" y="56" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">ARIMA / Monte Carlo multi-warehouse replenishment algorithm - Jakarta Hub &amp; Regional DCs</text>
+    <text x="1150" y="34" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" text-anchor="end">Model Confidence: 99.4%</text>
+
+    <!-- Forecast Curve Graphic -->
+    <g transform="translate(24, 70)">
+      <line x1="40" y1="30" x2="1140" y2="30" stroke="#1f1f23" stroke-width="1"/>
+      <line x1="40" y1="90" x2="1140" y2="90" stroke="#1f1f23" stroke-width="1"/>
+      <line x1="40" y1="150" x2="1140" y2="150" stroke="#1f1f23" stroke-width="1"/>
+      <line x1="40" y1="210" x2="1140" y2="210" stroke="#1f1f23" stroke-width="1"/>
+
+      <text x="30" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">40K</text>
+      <text x="30" y="94" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">30K</text>
+      <text x="30" y="154" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">20K</text>
+      <text x="30" y="214" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">10K</text>
+
+      <!-- Confidence band fill -->
+      <path d="M 50 180 Q 250 160 450 120 T 850 70 T 1130 50 L 1130 90 Q 850 110 450 150 T 50 200 Z" fill="#ffffff" fill-opacity="0.06"/>
+      <!-- Projected Mean Demand Line -->
+      <path d="M 50 190 Q 250 170 450 135 T 850 90 T 1130 70" stroke="#ffffff" stroke-width="3" fill="none"/>
+      <!-- Safety Stock Threshold Line -->
+      <line x1="50" y1="170" x2="1130" y2="170" stroke="#71717a" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="1130" y="165" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Safety Buffer Baseline (16,000 Units)</text>
+
+      <!-- Timeline Axis -->
+      <text x="50" y="235" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Current</text>
+      <text x="320" y="235" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">+15 Days</text>
+      <text x="590" y="235" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">+30 Days</text>
+      <text x="860" y="235" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">+60 Days</text>
+      <text x="1130" y="235" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">+90 Days (Peak Q4)</text>
+    </g>
+
+    <!-- Replenishment Recommendations Table -->
+    <g transform="translate(0, 360)">
+      <rect x="0" y="0" width="1230" height="300" rx="8" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="1230" height="42" fill="#18181b" rx="8"/>
+      <text x="24" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SKU CODE</text>
+      <text x="180" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PRODUCT NAME</text>
+      <text x="500" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CURRENT STOCK</text>
+      <text x="660" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">30D VELOCITY</text>
+      <text x="820" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RE-ORDER ADVICE</text>
+      <text x="1000" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SUGGESTED VENDOR</text>
+      <text x="1160" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTION</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 42)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-8921-JKT</text>
+        <text x="180" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Precision Aluminum Chassis M4</text>
+        <text x="500" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">840 Units</text>
+        <text x="660" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1,240 Units / mo</text>
+        <rect x="820" y="16" width="120" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="880" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">+600 Units PO</text>
+        <text x="1000" y="32" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PT Metalindo Presisi</text>
+        <text x="1160" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Order</text>
+        <line x1="24" y1="48" x2="1206" y2="48" stroke="#1f1f23"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 92)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-7734-SBY</text>
+        <text x="180" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Industrial Motherboard Micro-ATX</text>
+        <text x="500" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">320 Units</text>
+        <text x="660" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">450 Units / mo</text>
+        <rect x="820" y="16" width="120" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="880" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">+300 Units PO</text>
+        <text x="1000" y="32" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Global Components SG</text>
+        <text x="1160" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Order</text>
+        <line x1="24" y1="48" x2="1206" y2="48" stroke="#1f1f23"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 142)">
+        <text x="24" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-4410-BDG</text>
+        <text x="180" y="32" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Copper Heat-Sink Assembly v2</text>
+        <text x="500" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2,100 Units</text>
+        <text x="660" y="32" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">800 Units / mo</text>
+        <rect x="820" y="16" width="120" height="24" rx="4" fill="#18181b" stroke="#27272a"/>
+        <text x="880" y="32" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Optimal Stock</text>
+        <text x="1000" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PT Thermal Nusantara</text>
+        <text x="1160" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">View</text>
+      </g>
+    </g>
+  </g>"""
+
+    svg_11 = build_erp_svg(
+        url="https://erp.mayastranawaloka.com/forecasting/predictive",
+        active_nav="Warehouse Hub",
+        title="Predictive Inventory &amp; Demand Forecasting",
+        subtitle="Monte Carlo Replenishment Algorithm &amp; Auto PO Suggestions (Next 90 Days)",
+        btn1="Run Simulation",
+        btn2="Execute 2 POs",
+        kpis=[
+            ("FORECAST ACCURACY", "99.4 %", "Confidence interval verified"),
+            ("SAFETY STOCK BUFFER", "16,000 Units", "Zero stockout risk"),
+            ("ARMED RE-ORDERS", "Rp 420.000.000", "2 POs awaiting confirmation"),
+            ("LEAD TIME VARIANCE", "-1.2 Days", "Multi-supplier optimization")
+        ],
+        content_svg=content_11
+    )
+    with open("assets/projects/erp/11-predictive-forecasting.svg", "w", encoding="utf-8") as f:
+        f.write(svg_11)
+
+    print("[*] Generated all 11 ERP SVGs successfully.")
 
 if __name__ == "__main__":
     generate_all_erp()

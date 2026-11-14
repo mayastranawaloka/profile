@@ -65,14 +65,14 @@ for proj in "project-erp.html" "project-ecommerce.html" "project-cms.html"; do
   grep -q 'class="project-specs-grid"' "$proj" || { echo "FAIL: specs grid missing in $proj"; exit 1; }
   grep -q 'class="project-screens-grid"' "$proj" || { echo "FAIL: screens grid missing in $proj"; exit 1; }
   SCREEN_COUNT=$(grep -c 'class="project-screen-card"' "$proj" || true)
-  if [[ "$SCREEN_COUNT" -ne 10 ]]; then
-    echo "FAIL: Expected 10 project screens in $proj, found ${SCREEN_COUNT}"
+  if [[ "$SCREEN_COUNT" -ne 11 ]]; then
+    echo "FAIL: Expected 11 project screens in $proj, found ${SCREEN_COUNT}"
     exit 1
   fi
 done
 
-# Verify all 30 SVGs exist and are linked in respective pages
-for i in {1..10}; do
+# Verify all 33 SVGs exist and are linked in respective pages
+for i in {1..11}; do
   NUM=$(printf "%02d" $i)
   grep -q "assets/projects/erp/${NUM}-" project-erp.html || { echo "FAIL: missing SVG ${NUM} in project-erp.html"; exit 1; }
   grep -q "assets/projects/ecommerce/${NUM}-" project-ecommerce.html || { echo "FAIL: missing SVG ${NUM} in project-ecommerce.html"; exit 1; }
@@ -104,14 +104,14 @@ fi
 grep -q 'id="articleSearchInput"' articles.html || { echo "FAIL: search input missing in articles.html"; exit 1; }
 
 # 6. Validate XML structure of all SVG assets
-echo "[*] Validating XML structure of all 30+ SVG assets..."
+echo "[*] Validating XML structure of all 33+ SVG assets..."
 python3 -c '
 import xml.etree.ElementTree as ET
 import glob, sys
 
 svg_files = glob.glob("assets/**/*.svg", recursive=True)
-if len(svg_files) < 30:
-    print(f"FAIL: Expected at least 30 SVGs, found {len(svg_files)}")
+if len(svg_files) < 33:
+    print(f"FAIL: Expected at least 33 SVGs, found {len(svg_files)}")
     sys.exit(1)
 
 for svg in svg_files:
@@ -156,4 +156,4 @@ for path in files:
 print(f"[*] Verified zero emojis and zero em dashes across {len(files)} files.")
 '
 
-echo "[OK] All 9 pages and 30 project SVGs passed verification suite cleanly!"
+echo "[OK] All 9 pages and 33 project SVGs passed verification suite cleanly!"
