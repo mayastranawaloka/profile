@@ -363,4 +363,40 @@ grep -q 'Gilang Teja Krishna, S.Kom' about.html || { echo "FAIL: Gilang full nam
 grep -q 'Carmelita Cynthia Dagur, S.Kom' about.html || { echo "FAIL: Cynthia full name missing in about.html"; exit 1; }
 grep -q 'Herdian Aji Laksana, S.Kom' about.html || { echo "FAIL: Herdian full name missing in about.html"; exit 1; }
 
+# 13. Verify Enterprise AI Integration SEO Priority Across Pages & Sitemap
+echo "[*] Verifying Enterprise AI Integration SEO Priority..."
+python3 -c '
+import re, sys
+
+checks = [
+    ("index.html", r"<title>PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; LLM Integration Architecture</title>"),
+    ("index.html", r"content=\"PT Mayastra Nawaloka Nusantara adalah pelopor integrasi Enterprise AI &amp; LLM API key"),
+    ("service.html", r"<title>Enterprise AI &amp; LLM Integration Services - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("about.html", r"<title>About PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; Architectural Systems Profile</title>"),
+    ("contact.html", r"<title>Enterprise AI &amp; Software Consultations - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("articles.html", r"<title>Enterprise AI &amp; Engineering Research Insights - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("article.html", r"<title>Enterprise AI &amp; Engineering Research Reader - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("project-llm-gateway.html", r"<title>Enterprise AI LLM Gateway &amp; API Key Harness - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("project-agentic-ops.html", r"<title>Enterprise Autonomous Agentic AI &amp; RAG Systems - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+]
+
+for filename, pattern in checks:
+    with open(filename, "r", encoding="utf-8") as f:
+        content = f.read()
+    if not re.search(pattern, content):
+        print(f"FAIL: Pattern {pattern} not matched in {filename}")
+        sys.exit(1)
+
+with open("sitemap.xml", "r", encoding="utf-8") as f:
+    sitemap = f.read()
+if "project-llm-gateway.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
+    print("FAIL: project-llm-gateway.html not elevated to 0.95 priority in sitemap.xml")
+    sys.exit(1)
+if "project-agentic-ops.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
+    print("FAIL: project-agentic-ops.html not elevated to 0.95 priority in sitemap.xml")
+    sys.exit(1)
+
+print("[*] Verified Enterprise AI Integration SEO priority across all pages and sitemap cleanly.")
+'
+
 echo "[OK] All 11 pages, 55 project SVGs, team assets, sitemap.xml, and robots.txt passed verification suite cleanly!"
