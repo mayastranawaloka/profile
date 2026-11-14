@@ -407,4 +407,11 @@ if "project-agentic-ops.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <chan
 print("[*] Verified Enterprise AI Integration SEO priority across all pages and sitemap cleanly.")
 '
 
+# 14. Verify Tap Highlight Disabled and Faded Grey Text Selection Styling
+echo "[*] Verifying Tap Highlight Disabled and Faded Grey Selection in style.css..."
+grep -q -- '-webkit-tap-highlight-color: transparent' style.css || { echo "FAIL: tap-highlight-color not disabled in style.css"; exit 1; }
+grep -q '::selection' style.css || { echo "FAIL: ::selection not defined in style.css"; exit 1; }
+grep -q '::-moz-selection' style.css || { echo "FAIL: ::-moz-selection not defined in style.css"; exit 1; }
+echo "[*] Verified tap highlight reset and custom selection in style.css cleanly."
+
 echo "[OK] All 11 pages, 55 project SVGs, team assets, sitemap.xml, and robots.txt passed verification suite cleanly!"

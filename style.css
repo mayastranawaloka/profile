@@ -17,6 +17,33 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Text Selection Highlight (Faded Neutral Zinc-Grey) */
+::selection {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+/* Eliminate Mobile Blue Tap Highlight & Focus Ring Artifacts */
+a, button, input, textarea, select, [role="button"], [tabindex] {
+  -webkit-tap-highlight-color: transparent;
+  outline-color: transparent;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Custom Minimalist Dark Scrollbar */
@@ -1027,11 +1054,15 @@ body {
 
 .article-modal-callout {
   padding: 20px 24px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border-left: 2px solid var(--text-white);
+  background-color: #0c0c0f;
+  border-left: 2px solid #52525b;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   margin: 28px 0;
   font-size: 0.94rem;
-  color: var(--text-white);
+  color: #d4d4d8;
+  border-radius: 2px;
 }
 
 .article-modal-footer {
@@ -2395,14 +2426,19 @@ body {
   margin-bottom: 24px;
 }
 
-.article-reader-callout {
-  background-color: #0a0a0c;
-  border-left: 2px solid var(--text-white);
-  padding: 20px 24px;
+.article-reader-callout,
+blockquote {
+  background-color: #0c0c0f;
+  border-left: 2px solid #52525b;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 22px 26px;
   margin: 32px 0;
   font-size: 0.94rem;
-  line-height: 1.65;
-  color: #e0e0e0;
+  line-height: 1.7;
+  color: #d4d4d8;
+  border-radius: 2px;
 }
 
 .article-reader-footer-box {
