@@ -2,7 +2,7 @@
 id: "009"
 title: "Harmonize 30 Project Detail SVGs with Master Home Design Systems"
 type: "feature"
-status: "in-progress"
+status: "done"
 created_at: "2026-11-14"
 updated_at: "2026-11-14"
 ---
@@ -47,9 +47,9 @@ Redesign all 30 project detail SVGs (10 ERP, 10 E-Commerce, 10 CMS) to strictly 
   - [x] 08-audience-analytics.svg
   - [x] 09-api-distribution.svg
   - [x] 10-access-governance.svg
-- [ ] Phase 5: XML validation, zero emojis, zero em dashes, test.sh green
-- [ ] Phase 6: Headless Chrome screenshot visual audit & Docker redeploy
-- [ ] Phase 7: Push changes to devv and main
+- [x] Phase 5: XML validation, zero emojis, zero em dashes, test.sh green
+- [x] Phase 6: Headless Chrome screenshot visual audit & Docker redeploy
+- [x] Phase 7: Push changes to devv and main
 
 ## Context / Notes
 - Home master SVGs (assets/project-erp.svg, assets/project-ecommerce.svg, assets/project-cms.svg) MUST NEVER BE CHANGED.

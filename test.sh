@@ -133,26 +133,27 @@ grep -q 'www.mayastranawaloka.com' CNAME || { echo "FAIL: CNAME content mismatch
 # 8. Verify Zero Emojis and Zero Em Dashes
 echo "[*] Checking for banned characters (emojis, em dashes)..."
 python3 -c '
-import re, sys
+import re, sys, glob
 
-banned_chars = ["—", "–"]
+banned_chars = ["—", "–", "&#8212;", "&#8211;", "&mdash;", "&ndash;"]
 files = [
     "index.html", "about.html", "service.html", "articles.html", "contact.html",
     "project-erp.html", "project-ecommerce.html", "project-cms.html", "article.html",
     "style.css", "script.js"
-]
+] + glob.glob("assets/**/*.svg", recursive=True)
 
 for path in files:
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
     for b in banned_chars:
         if b in content:
-            print(f"FAIL: Banned dash found in {path}")
+            print(f"FAIL: Banned dash {b} found in {path}")
             sys.exit(1)
     emoji_pattern = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
     if emoji_pattern.search(content):
         print(f"FAIL: Emoji detected in {path}")
         sys.exit(1)
+print(f"[*] Verified zero emojis and zero em dashes across {len(files)} files.")
 '
 
 echo "[OK] All 9 pages and 30 project SVGs passed verification suite cleanly!"
