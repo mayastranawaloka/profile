@@ -265,4 +265,23 @@ for p in pages:
 print(f"[*] Verified SEO meta tags and Schema.org JSON-LD across all {len(pages)} pages cleanly.")
 '
 
-echo "[OK] All 9 pages, 33 project SVGs, sitemap.xml, and robots.txt passed verification suite cleanly!"
+# 11. Verify About Page Team Photos, Nicknames, and Leadership Directory
+echo "[*] Verifying About page leadership team and directory..."
+for f in "assets/team/gilang.jpeg" "assets/team/cynthia.jpeg" "assets/team/herdian.jpeg"; do
+  if [[ ! -f "$f" ]]; then
+    echo "FAIL: Missing team photo $f"
+    exit 1
+  fi
+done
+grep -q 'assets/team/gilang.jpeg' about.html || { echo "FAIL: gilang.jpeg missing in about.html"; exit 1; }
+grep -q 'assets/team/cynthia.jpeg' about.html || { echo "FAIL: cynthia.jpeg missing in about.html"; exit 1; }
+grep -q 'assets/team/herdian.jpeg' about.html || { echo "FAIL: herdian.jpeg missing in about.html"; exit 1; }
+grep -q 'GILANG' about.html || { echo "FAIL: GILANG nickname missing in about.html"; exit 1; }
+grep -q 'CYNTHIA' about.html || { echo "FAIL: CYNTHIA nickname missing in about.html"; exit 1; }
+grep -q 'HERDIAN' about.html || { echo "FAIL: HERDIAN nickname missing in about.html"; exit 1; }
+grep -q 'class="leadership-directory"' about.html || { echo "FAIL: leadership-directory missing in about.html"; exit 1; }
+grep -q 'Gilang Teja Krishna, S.Kom' about.html || { echo "FAIL: Gilang full name missing in about.html"; exit 1; }
+grep -q 'Carmelita Cynthia Dagur, S.Kom' about.html || { echo "FAIL: Cynthia full name missing in about.html"; exit 1; }
+grep -q 'Herdian Aji Laksana, S.Kom' about.html || { echo "FAIL: Herdian full name missing in about.html"; exit 1; }
+
+echo "[OK] All 9 pages, 33 project SVGs, team assets, sitemap.xml, and robots.txt passed verification suite cleanly!"

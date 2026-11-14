@@ -32,6 +32,18 @@
       <image:loc>https://www.mayastranawaloka.com/assets/logo.png</image:loc>
       <image:title>PT Mayastra Nawaloka Nusantara Official Logo</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/team/gilang.jpeg</image:loc>
+      <image:title>Gilang Teja Krishna - CEO &amp; CTO</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/team/cynthia.jpeg</image:loc>
+      <image:title>Carmelita Cynthia Dagur - CPEO</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/team/herdian.jpeg</image:loc>
+      <image:title>Herdian Aji Laksana - CCPO</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.mayastranawaloka.com/service.html</loc>
