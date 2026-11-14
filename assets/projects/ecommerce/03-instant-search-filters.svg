@@ -59,7 +59,7 @@
         <rect x="0" y="210" width="252" height="6" rx="3" fill="#1f1f23"/>
         <rect x="0" y="210" width="180" height="6" rx="3" fill="#ffffff"/>
         <circle cx="180" cy="213" r="8" fill="#ffffff"/>
-        <text x="0" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Rp 100.000 &#8212; Rp 2.500.000</text>
+        <text x="0" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Rp 100.000 - Rp 2.500.000</text>
 
         <!-- Material Filter -->
         <text x="0" y="280" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">PRIMARY MATERIAL</text>

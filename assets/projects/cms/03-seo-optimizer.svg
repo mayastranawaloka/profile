@@ -1,80 +1,147 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070709" />
-      <stop offset="100%" stop-color="#0e0e12" />
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#09090b"/>
 
-  <!-- Canvas Background -->
-  <rect width="1200" height="750" fill="url(#bgGrad)" />
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#27272a"/>
+  <circle cx="56" cy="26" r="6" fill="#27272a"/>
+  <circle cx="76" cy="26" r="6" fill="#27272a"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/seo/diagnostics/8901</text>
 
-  <!-- Subtle Blueprint Grid -->
-  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
-    <line x1="60" y1="0" x2="60" y2="750" />
-    <line x1="240" y1="0" x2="240" y2="750" />
-    <line x1="600" y1="0" x2="600" y2="750" />
-    <line x1="960" y1="0" x2="960" y2="750" />
-    <line x1="1140" y1="0" x2="1140" y2="750" />
-    <line x1="0" y1="70" x2="1200" y2="70" />
-    <line x1="0" y1="200" x2="1200" y2="200" />
-    <line x1="0" y1="460" x2="1200" y2="460" />
-    <line x1="0" y1="680" x2="1200" y2="680" />
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#27272a" stroke-width="1"/>
+  <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
+
+  <g transform="translate(24, 140)">
+    <rect x="16" y="14" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Dashboard</text>
+    <rect x="16" y="70" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="80" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Articles &amp; Posts</text>
+    <rect x="16" y="126" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="136" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media Library</text>
+    <rect x="16" y="182" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="192" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
+    <rect x="16" y="238" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="248" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
+    <rect x="0" y="280" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="16" y="294" width="10" height="10" fill="#ffffff"/>
+    <text x="38" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SEO Diagnostics</text>
+    <rect x="16" y="350" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="360" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
+    <rect x="16" y="406" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="416" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
   </g>
 
-  <!-- Frame Border -->
-  <rect x="20" y="20" width="1160" height="710" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <!-- Editorial Top Bar -->
+  <g transform="translate(280, 80)">
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SEO Diagnostics / Automated Audit / Post #8901</text>
+    <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Re-run Audit</text>
 
-  <!-- Window Header -->
-  <rect x="20" y="20" width="1160" height="48" rx="6" fill="#0d0d11" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <circle cx="48" cy="44" r="5" fill="#ff5f56" opacity="0.8" />
-  <circle cx="68" cy="44" r="5" fill="#ffbd2e" opacity="0.8" />
-  <circle cx="88" cy="44" r="5" fill="#27c93f" opacity="0.8" />
-
-  <!-- URL Address Bar -->
-  <rect x="360" y="32" width="480" height="24" rx="4" fill="#050507" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <text x="600" y="48" fill="#777777" font-family="monospace" font-size="11" text-anchor="middle">https://preview.mayastranawaloka.com/cms platform/seo-optimizer</text>
-
-  <!-- Window Status Badge -->
-  <rect x="1060" y="34" width="90" height="20" rx="2" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
-  <text x="1105" y="48" fill="#ffffff" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="1">LIVE PROD</text>
-
-  <!-- Main View Header Inside Mockup -->
-  <g transform="translate(50, 95)">
-    <text x="0" y="0" fill="#666666" font-family="monospace" font-size="11" letter-spacing="2">CMS PLATFORM // ARCHITECTURE PREVIEW</text>
-    <text x="0" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">SEO Optimizer</text>
-    <text x="0" y="48" fill="#999999" font-family="'Space Grotesk', sans-serif" font-size="13">Real-time Core Web Vitals scoring &amp; Google SERP simulation</text>
+    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ffffff"/>
+    <text x="1030" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Apply Changes</text>
   </g>
 
-  <!-- Detailed Mockup Content -->
-  
-   <g transform="translate(50, 165)">
-     <rect width="1100" height="500" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
-     <text x="30" y="40" fill="#fff" font-family="sans-serif" font-size="16" font-weight="700">Search Engine Optimization &amp; Schema Validator</text>
-     <g transform="translate(30, 80)">
-       <rect width="500" height="200" rx="4" fill="#14141c" />
-       <text x="20" y="35" fill="#888" font-family="monospace" font-size="11">GOOGLE SERP PREVIEW</text>
-       <text x="20" y="70" fill="#38bdf8" font-size="15">Deterministic State Machines - Mayastra Nawaloka</text>
-       <text x="20" y="95" fill="#4ade80" font-size="11" font-family="monospace">https://www.mayastranawaloka.com/articles/state-machines</text>
-       <text x="20" y="125" fill="#aaa" font-size="12">Why modeling UI and distributed state through formal statecharts...</text>
-     </g>
-     <g transform="translate(560, 80)">
-       <rect width="500" height="200" rx="4" fill="#14141c" />
-       <text x="20" y="35" fill="#888" font-family="monospace" font-size="11">CORE WEB VITALS SCORE</text>
-       <text x="20" y="80" fill="#4ade80" font-size="36" font-weight="700">99 / 100</text>
-       <text x="20" y="115" fill="#aaa" font-size="12">LCP: 0.4s | FID: 2ms | CLS: 0.001 (PASS)</text>
-     </g>
-   </g>
-   
+  <!-- SEO Area -->
+  <g transform="translate(280, 140)">
+    <!-- 4 Metric Cards -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">OVERALL SEO INDEX</text>
+      <text x="24" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">98 / 100</text>
+      <text x="200" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">GRADE A+</text>
 
-  <!-- Footer Meta Ribbon -->
-  <g transform="translate(50, 705)">
-    <text x="0" y="0" fill="#555555" font-family="monospace" font-size="10" letter-spacing="1">PT MAYASTRA NAWALOKA NUSANTARA // HIGH-ASSURANCE SYSTEMS</text>
-    <text x="1100" y="0" fill="#555555" font-family="monospace" font-size="10" text-anchor="end" letter-spacing="1">TYPE-SAFE // DOCKERIZED // SECURE</text>
+      <rect x="326" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="350" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">READABILITY SCORE</text>
+      <text x="350" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">68.4 Flesch</text>
+      <text x="510" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Standard Flow</text>
+
+      <rect x="652" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="676" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">KEYWORD DENSITY</text>
+      <text x="676" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">2.4% Focus</text>
+      <text x="830" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14 Mentions</text>
+
+      <rect x="978" y="0" width="302" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="1002" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CORE WEB VITALS</text>
+      <text x="1002" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="800">LCP 0.8s</text>
+      <text x="1140" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CLS 0.01 Fast</text>
+    </g>
+
+    <!-- Split Panels -->
+    <!-- Left: SERP Preview & Open Graph -->
+    <g transform="translate(0, 116)">
+      <rect x="0" y="0" width="760" height="704" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="36" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">SEARCH ENGINE &amp; SOCIAL PREVIEW</text>
+      <line x1="24" y1="52" x2="736" y2="52" stroke="#27272a" stroke-width="1"/>
+
+      <!-- SERP Snippet Box -->
+      <text x="24" y="85" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Google Desktop SERP Snippet Preview</text>
+      <rect x="24" y="100" width="712" height="150" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+      <text x="44" y="132" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">https://mayastranawaloka.com &gt; insights &gt; architectural-minimalist-systems</text>
+      <text x="44" y="160" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">Architectural Minimalist Systems for Mid-Market Enterprise 2026</text>
+      <text x="44" y="190" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Explore production-grade minimalist systems design for mid-market businesses. Discover zero-latency content delivery, deterministic state, and enterprise architecture.</text>
+      <text x="44" y="230" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Title: 58 / 60 chars (Optimal) | Description: 152 / 160 chars (Optimal)</text>
+
+      <!-- Social Card Preview -->
+      <text x="24" y="285" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Open Graph Social Meta Card (Twitter/X &amp; LinkedIn)</text>
+      <rect x="24" y="300" width="712" height="360" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+      <rect x="44" y="320" width="672" height="200" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
+      <text x="380" y="420" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="middle">og:image [1200x630 High Density Asset Verified]</text>
+      <text x="44" y="555" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">Architectural Minimalist Systems for Mid-Market Enterprise 2026</text>
+      <text x="44" y="585" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">mayastranawaloka.com - 6 min read - PT Mayastra Nawaloka Nusantara</text>
+      <text x="44" y="630" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Twitter Card: summary_large_image | og:type: article | twitter:site: @mayastranawaloka</text>
+    </g>
+
+    <!-- Right: Heuristics Checklist -->
+    <g transform="translate(786, 116)">
+      <rect x="0" y="0" width="494" height="704" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="36" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">HEURISTICS AUDIT (10 / 10 PASS)</text>
+      <line x1="24" y1="52" x2="470" y2="52" stroke="#27272a" stroke-width="1"/>
+
+      <!-- Checklist Items -->
+      <g transform="translate(24, 75)">
+        <rect x="0" y="0" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Primary keyword in Title and H1 tag</text>
+
+        <rect x="0" y="48" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="64" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Keyword appears in first 100 words</text>
+
+        <rect x="0" y="96" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">All 4 images possess descriptive alt text</text>
+
+        <rect x="0" y="144" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="160" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="160" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Internal links ratio optimal (6 verified links)</text>
+
+        <rect x="0" y="192" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="208" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="208" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Outbound authority reference cited</text>
+
+        <rect x="0" y="240" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="256" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="256" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Canonical URL tag configured correctly</text>
+
+        <rect x="0" y="288" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="304" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Structured JSON-LD TechArticle valid</text>
+
+        <rect x="0" y="336" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="352" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="352" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Mobile touch targets meet 48px baseline</text>
+
+        <rect x="0" y="384" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="400" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="400" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Zero broken hyperlinks or redirect loops</text>
+
+        <rect x="0" y="432" width="54" height="24" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="27" y="448" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+        <text x="68" y="448" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Flesch-Kincaid readability grade 11.2</text>
+      </g>
+    </g>
   </g>
 </svg>

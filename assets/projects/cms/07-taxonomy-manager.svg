@@ -1,72 +1,198 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070709" />
-      <stop offset="100%" stop-color="#0e0e12" />
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#09090b"/>
 
-  <!-- Canvas Background -->
-  <rect width="1200" height="750" fill="url(#bgGrad)" />
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#27272a"/>
+  <circle cx="56" cy="26" r="6" fill="#27272a"/>
+  <circle cx="76" cy="26" r="6" fill="#27272a"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/taxonomy</text>
 
-  <!-- Subtle Blueprint Grid -->
-  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
-    <line x1="60" y1="0" x2="60" y2="750" />
-    <line x1="240" y1="0" x2="240" y2="750" />
-    <line x1="600" y1="0" x2="600" y2="750" />
-    <line x1="960" y1="0" x2="960" y2="750" />
-    <line x1="1140" y1="0" x2="1140" y2="750" />
-    <line x1="0" y1="70" x2="1200" y2="70" />
-    <line x1="0" y1="200" x2="1200" y2="200" />
-    <line x1="0" y1="460" x2="1200" y2="460" />
-    <line x1="0" y1="680" x2="1200" y2="680" />
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#27272a" stroke-width="1"/>
+  <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
+
+  <g transform="translate(24, 140)">
+    <rect x="16" y="14" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Dashboard</text>
+    <rect x="16" y="70" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="80" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Articles &amp; Posts</text>
+    <rect x="16" y="126" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="136" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media Library</text>
+    <rect x="0" y="168" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="16" y="182" width="10" height="10" fill="#ffffff"/>
+    <text x="38" y="192" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Categories &amp; Tags</text>
+    <rect x="16" y="238" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="248" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
+    <rect x="16" y="294" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
+    <rect x="16" y="350" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="360" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
+    <rect x="16" y="406" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="416" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
   </g>
 
-  <!-- Frame Border -->
-  <rect x="20" y="20" width="1160" height="710" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <!-- Editorial Top Bar -->
+  <g transform="translate(280, 80)">
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Taxonomy Manager / Hierarchical Categories &amp; Redirect Graph</text>
+    <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Rebuild Cache</text>
 
-  <!-- Window Header -->
-  <rect x="20" y="20" width="1160" height="48" rx="6" fill="#0d0d11" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <circle cx="48" cy="44" r="5" fill="#ff5f56" opacity="0.8" />
-  <circle cx="68" cy="44" r="5" fill="#ffbd2e" opacity="0.8" />
-  <circle cx="88" cy="44" r="5" fill="#27c93f" opacity="0.8" />
-
-  <!-- URL Address Bar -->
-  <rect x="360" y="32" width="480" height="24" rx="4" fill="#050507" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <text x="600" y="48" fill="#777777" font-family="monospace" font-size="11" text-anchor="middle">https://preview.mayastranawaloka.com/cms platform/taxonomy-manager</text>
-
-  <!-- Window Status Badge -->
-  <rect x="1060" y="34" width="90" height="20" rx="2" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
-  <text x="1105" y="48" fill="#ffffff" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="1">LIVE PROD</text>
-
-  <!-- Main View Header Inside Mockup -->
-  <g transform="translate(50, 95)">
-    <text x="0" y="0" fill="#666666" font-family="monospace" font-size="11" letter-spacing="2">CMS PLATFORM // ARCHITECTURE PREVIEW</text>
-    <text x="0" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">Taxonomy Manager</text>
-    <text x="0" y="48" fill="#999999" font-family="'Space Grotesk', sans-serif" font-size="13">Nested category tree, tag relationships &amp; 301 URL redirect rules</text>
+    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ffffff"/>
+    <text x="1030" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">+ Create Taxonomy</text>
   </g>
 
-  <!-- Detailed Mockup Content -->
-  
-   <g transform="translate(50, 165)">
-     <rect width="1100" height="500" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
-     <text x="30" y="40" fill="#fff" font-family="sans-serif" font-size="16" font-weight="700">Taxonomy, Categories &amp; Permalinks</text>
-     <g transform="translate(40, 90)">
-       <text x="0" y="20" fill="#fff" font-family="monospace">/insights/ (Parent)</text>
-       <text x="24" y="50" fill="#aaa" font-family="monospace">/insights/distributed-systems/ (Child)</text>
-       <text x="24" y="80" fill="#aaa" font-family="monospace">/insights/frontend-architecture/ (Child)</text>
-     </g>
-   </g>
-   
+  <!-- Taxonomy Area -->
+  <g transform="translate(280, 140)">
+    <!-- Left: Hierarchy Tree -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="580" height="820" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="580" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">HIERARCHICAL CATEGORY STRUCTURE</text>
 
-  <!-- Footer Meta Ribbon -->
-  <g transform="translate(50, 705)">
-    <text x="0" y="0" fill="#555555" font-family="monospace" font-size="10" letter-spacing="1">PT MAYASTRA NAWALOKA NUSANTARA // HIGH-ASSURANCE SYSTEMS</text>
-    <text x="1100" y="0" fill="#555555" font-family="monospace" font-size="10" text-anchor="end" letter-spacing="1">TYPE-SAFE // DOCKERIZED // SECURE</text>
+      <g transform="translate(24, 70)">
+        <!-- Node 1 -->
+        <rect x="0" y="0" width="532" height="48" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="16" y="29" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">[-] Enterprise Architecture (342 posts)</text>
+        <text x="360" y="29" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">/insights/architecture</text>
+
+        <!-- Subnode 1.1 -->
+        <line x1="20" y1="48" x2="20" y2="180" stroke="#27272a" stroke-width="1"/>
+        <rect x="40" y="60" width="492" height="40" rx="4" fill="#141418" stroke="#27272a" stroke-width="1"/>
+        <text x="56" y="85" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">|-- Cloud Infrastructure (128 posts)</text>
+        <text x="360" y="85" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">/insights/architecture/cloud</text>
+
+        <!-- Subnode 1.2 -->
+        <rect x="40" y="112" width="492" height="40" rx="4" fill="#141418" stroke="#27272a" stroke-width="1"/>
+        <text x="56" y="137" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">|-- Microservices &amp; Edge (86 posts)</text>
+        <text x="360" y="137" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">/insights/architecture/edge</text>
+
+        <!-- Subnode 1.3 -->
+        <rect x="40" y="164" width="492" height="40" rx="4" fill="#141418" stroke="#27272a" stroke-width="1"/>
+        <text x="56" y="189" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">\-- Legacy Migration (44 posts)</text>
+        <text x="360" y="189" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">/insights/architecture/migration</text>
+
+        <!-- Node 2 -->
+        <rect x="0" y="226" width="532" height="48" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="16" y="255" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">[-] Software Engineering (412 posts)</text>
+        <text x="360" y="255" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">/insights/engineering</text>
+
+        <!-- Subnode 2.1 -->
+        <line x1="20" y1="274" x2="20" y2="350" stroke="#27272a" stroke-width="1"/>
+        <rect x="40" y="286" width="492" height="40" rx="4" fill="#141418" stroke="#27272a" stroke-width="1"/>
+        <text x="56" y="311" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">|-- Systems &amp; Low-Level (94 posts)</text>
+        <text x="360" y="311" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">/insights/engineering/systems</text>
+
+        <!-- Subnode 2.2 -->
+        <rect x="40" y="338" width="492" height="40" rx="4" fill="#141418" stroke="#27272a" stroke-width="1"/>
+        <text x="56" y="363" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">\-- Security &amp; Governance (110 posts)</text>
+        <text x="360" y="363" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">/insights/engineering/security</text>
+
+        <!-- Node 3 -->
+        <rect x="0" y="400" width="532" height="48" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="16" y="429" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">[+] Design Systems (184 posts)</text>
+        <text x="360" y="429" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">/insights/design-systems</text>
+
+        <!-- Node 4 -->
+        <rect x="0" y="460" width="532" height="48" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
+        <text x="16" y="489" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">[+] Data Platforms &amp; AI (310 posts)</text>
+        <text x="360" y="489" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">/insights/data-ai</text>
+      </g>
+    </g>
+
+    <!-- Right: Tag Registry & URL Redirection -->
+    <g transform="translate(604, 0)">
+      <!-- Top: Tag Registry -->
+      <rect x="0" y="0" width="676" height="390" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="676" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TOPIC TAG REGISTRY (148 ACTIVE TAGS)</text>
+
+      <g transform="translate(24, 65)">
+        <!-- Tag Pills -->
+        <rect x="0" y="0" width="115" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="57" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#ERP (182)</text>
+
+        <rect x="125" y="0" width="150" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="200" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Kubernetes (140)</text>
+
+        <rect x="285" y="0" width="165" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="367" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Microservices (112)</text>
+
+        <rect x="460" y="0" width="145" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="532" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#PostgreSQL (98)</text>
+
+        <rect x="0" y="44" width="145" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="72" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Performance (87)</text>
+
+        <rect x="155" y="44" width="125" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="217" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Security (76)</text>
+
+        <rect x="290" y="44" width="110" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="345" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Rust (64)</text>
+
+        <rect x="410" y="44" width="115" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="467" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Kafka (58)</text>
+
+        <rect x="535" y="44" width="90" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="580" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Go (52)</text>
+
+        <rect x="0" y="88" width="120" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="60" y="109" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#GraphQL (46)</text>
+
+        <rect x="130" y="88" width="135" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="197" y="109" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#TypeScript (41)</text>
+
+        <rect x="275" y="88" width="110" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="330" y="109" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#Redis (39)</text>
+
+        <rect x="395" y="88" width="125" height="32" rx="16" fill="#ffffff" fill-opacity="0.1"/>
+        <text x="457" y="109" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">#DevOps (34)</text>
+
+        <text x="0" y="170" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tag rules: Automatic canonical lowercase slugging with strict hyphen separator.</text>
+      </g>
+
+      <!-- Bottom: URL Redirect Manager -->
+      <g transform="translate(0, 410)">
+        <rect x="0" y="0" width="676" height="410" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+        <rect x="0" y="0" width="676" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+        <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">URL 301 / 302 REDIRECT MANAGER</text>
+
+        <g transform="translate(24, 60)">
+          <!-- Row 1 -->
+          <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/blog/old-erp-guide</text>
+          <text x="170" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">-&gt;</text>
+          <text x="200" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/insights/enterprise-erp-systems</text>
+          <rect x="520" y="8" width="40" height="22" rx="3" fill="#ffffff" fill-opacity="0.1"/>
+          <text x="540" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">301</text>
+          <text x="580" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14,820 Hits</text>
+
+          <!-- Row 2 -->
+          <text x="0" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/articles/docker-setup</text>
+          <text x="170" y="68" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">-&gt;</text>
+          <text x="200" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/insights/containerized-infrastructure</text>
+          <rect x="520" y="52" width="40" height="22" rx="3" fill="#ffffff" fill-opacity="0.1"/>
+          <text x="540" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">301</text>
+          <text x="580" y="68" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">9,340 Hits</text>
+
+          <!-- Row 3 -->
+          <text x="0" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/docs/api-v1-deprecation</text>
+          <text x="170" y="112" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">-&gt;</text>
+          <text x="200" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/developers/graphql</text>
+          <rect x="520" y="96" width="40" height="22" rx="3" fill="#ffffff" fill-opacity="0.1"/>
+          <text x="540" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">301</text>
+          <text x="580" y="112" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">5,120 Hits</text>
+
+          <!-- Row 4 -->
+          <text x="0" y="156" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/news/q3-roundup</text>
+          <text x="170" y="156" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">-&gt;</text>
+          <text x="200" y="156" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">/insights/q3-financial-architecture</text>
+          <rect x="520" y="140" width="40" height="22" rx="3" fill="#ffffff" fill-opacity="0.1"/>
+          <text x="540" y="156" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">301</text>
+          <text x="580" y="156" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3,490 Hits</text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>

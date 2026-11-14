@@ -1,71 +1,177 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070709" />
-      <stop offset="100%" stop-color="#0e0e12" />
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#09090b"/>
 
-  <!-- Canvas Background -->
-  <rect width="1200" height="750" fill="url(#bgGrad)" />
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#27272a"/>
+  <circle cx="56" cy="26" r="6" fill="#27272a"/>
+  <circle cx="76" cy="26" r="6" fill="#27272a"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/analytics/audience</text>
 
-  <!-- Subtle Blueprint Grid -->
-  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
-    <line x1="60" y1="0" x2="60" y2="750" />
-    <line x1="240" y1="0" x2="240" y2="750" />
-    <line x1="600" y1="0" x2="600" y2="750" />
-    <line x1="960" y1="0" x2="960" y2="750" />
-    <line x1="1140" y1="0" x2="1140" y2="750" />
-    <line x1="0" y1="70" x2="1200" y2="70" />
-    <line x1="0" y1="200" x2="1200" y2="200" />
-    <line x1="0" y1="460" x2="1200" y2="460" />
-    <line x1="0" y1="680" x2="1200" y2="680" />
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#27272a" stroke-width="1"/>
+  <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
+
+  <g transform="translate(24, 140)">
+    <rect x="0" y="0" width="202" height="38" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="16" y="14" width="10" height="10" fill="#ffffff"/>
+    <text x="38" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Dashboard</text>
+    <rect x="16" y="70" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="80" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Articles &amp; Posts</text>
+    <rect x="16" y="126" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="136" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Media Library</text>
+    <rect x="16" y="182" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="192" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Categories &amp; Tags</text>
+    <rect x="16" y="238" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="248" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Editorial Calendar</text>
+    <rect x="16" y="294" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="304" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SEO Diagnostics</text>
+    <rect x="16" y="350" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="360" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Team &amp; Roles</text>
+    <rect x="16" y="406" width="10" height="10" fill="#52525b"/>
+    <text x="38" y="416" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">System Settings</text>
   </g>
 
-  <!-- Frame Border -->
-  <rect x="20" y="20" width="1160" height="710" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <!-- Editorial Top Bar -->
+  <g transform="translate(280, 80)">
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Audience Analytics / Global Reader Metrics (Last 30 Days)</text>
+    <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Filter: 30D</text>
 
-  <!-- Window Header -->
-  <rect x="20" y="20" width="1160" height="48" rx="6" fill="#0d0d11" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <circle cx="48" cy="44" r="5" fill="#ff5f56" opacity="0.8" />
-  <circle cx="68" cy="44" r="5" fill="#ffbd2e" opacity="0.8" />
-  <circle cx="88" cy="44" r="5" fill="#27c93f" opacity="0.8" />
-
-  <!-- URL Address Bar -->
-  <rect x="360" y="32" width="480" height="24" rx="4" fill="#050507" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-  <text x="600" y="48" fill="#777777" font-family="monospace" font-size="11" text-anchor="middle">https://preview.mayastranawaloka.com/cms platform/audience-analytics</text>
-
-  <!-- Window Status Badge -->
-  <rect x="1060" y="34" width="90" height="20" rx="2" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
-  <text x="1105" y="48" fill="#ffffff" font-family="monospace" font-size="9" text-anchor="middle" letter-spacing="1">LIVE PROD</text>
-
-  <!-- Main View Header Inside Mockup -->
-  <g transform="translate(50, 95)">
-    <text x="0" y="0" fill="#666666" font-family="monospace" font-size="11" letter-spacing="2">CMS PLATFORM // ARCHITECTURE PREVIEW</text>
-    <text x="0" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">Audience Analytics</text>
-    <text x="0" y="48" fill="#999999" font-family="'Space Grotesk', sans-serif" font-size="13">Real-time readership velocity, scroll depth &amp; engagement graphs</text>
+    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ffffff"/>
+    <text x="1030" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Export CSV</text>
   </g>
 
-  <!-- Detailed Mockup Content -->
-  
-   <g transform="translate(50, 165)">
-     <rect width="1100" height="500" rx="4" fill="#0a0a0e" stroke="rgba(255,255,255,0.08)" />
-     <text x="30" y="40" fill="#fff" font-family="sans-serif" font-size="16" font-weight="700">Readership Telemetry &amp; Scroll Engagement</text>
-     <g transform="translate(40, 80)">
-       <text x="0" y="30" fill="#888" font-family="monospace">AVG READ TIME</text>
-       <text x="0" y="65" fill="#fff" font-size="24" font-weight="700">5m 42s (84% Completion)</text>
-     </g>
-   </g>
-   
+  <!-- Audience Analytics Area -->
+  <g transform="translate(280, 140)">
+    <!-- 4 KPI Cards -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL UNIQUE READERS</text>
+      <text x="24" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">248,910</text>
+      <text x="200" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">+18.4% MoM</text>
 
-  <!-- Footer Meta Ribbon -->
-  <g transform="translate(50, 705)">
-    <text x="0" y="0" fill="#555555" font-family="monospace" font-size="10" letter-spacing="1">PT MAYASTRA NAWALOKA NUSANTARA // HIGH-ASSURANCE SYSTEMS</text>
-    <text x="1100" y="0" fill="#555555" font-family="monospace" font-size="10" text-anchor="end" letter-spacing="1">TYPE-SAFE // DOCKERIZED // SECURE</text>
+      <rect x="326" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="350" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG TIME ON PAGE</text>
+      <text x="350" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">4m 32s</text>
+      <text x="490" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Benchmark 2m 10s</text>
+
+      <rect x="652" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="676" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG SCROLL DEPTH</text>
+      <text x="676" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">78.6%</text>
+      <text x="820" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">92% to Conclusion</text>
+
+      <rect x="978" y="0" width="302" height="96" rx="4" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <text x="1002" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL ARTICLE SHARES</text>
+      <text x="1002" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">14,290</text>
+      <text x="1140" y="66" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">LinkedIn 58% / X 42%</text>
+    </g>
+
+    <!-- Split Panels: Large Chart (Left) + Referrals/Geo (Right) -->
+    <g transform="translate(0, 116)">
+      <!-- Left Chart Panel -->
+      <rect x="0" y="0" width="840" height="704" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="840" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">READER ENGAGEMENT &amp; DAILY TRAFFIC VOLUME</text>
+      <text x="620" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">White: Uniques | Dotted: Returns</text>
+
+      <!-- Chart Graphics -->
+      <g transform="translate(30, 80)">
+        <!-- Gridlines -->
+        <line x1="40" y1="50" x2="780" y2="50" stroke="#1f1f23" stroke-width="1"/>
+        <line x1="40" y1="130" x2="780" y2="130" stroke="#1f1f23" stroke-width="1"/>
+        <line x1="40" y1="210" x2="780" y2="210" stroke="#1f1f23" stroke-width="1"/>
+        <line x1="40" y1="290" x2="780" y2="290" stroke="#1f1f23" stroke-width="1"/>
+        <line x1="40" y1="370" x2="780" y2="370" stroke="#1f1f23" stroke-width="1"/>
+
+        <!-- Y Axis labels -->
+        <text x="30" y="55" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">12K</text>
+        <text x="30" y="135" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">9K</text>
+        <text x="30" y="215" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">6K</text>
+        <text x="30" y="295" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">3K</text>
+        <text x="30" y="375" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">0</text>
+
+        <!-- Area Curve Underneath -->
+        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120 L 770 370 L 50 370 Z" fill="#ffffff" fill-opacity="0.04"/>
+
+        <!-- Primary Trend Line -->
+        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120" stroke="#ffffff" stroke-width="3" fill="none"/>
+
+        <!-- Return Readers Dotted Line -->
+        <path d="M 50 360 Q 150 330 250 340 T 450 270 T 650 210 T 770 230" stroke="#71717a" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+
+        <!-- Peak Indicator Point -->
+        <circle cx="650" cy="100" r="5" fill="#ffffff"/>
+        <rect x="600" y="50" width="100" height="30" rx="4" fill="#ffffff"/>
+        <text x="650" y="70" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Peak: 11,480</text>
+
+        <!-- X Axis labels -->
+        <text x="50" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Oct 15</text>
+        <text x="170" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Oct 22</text>
+        <text x="290" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Oct 29</text>
+        <text x="410" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Nov 05</text>
+        <text x="530" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Nov 12</text>
+        <text x="650" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Nov 14</text>
+        <text x="770" y="405" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Today</text>
+      </g>
+    </g>
+
+    <!-- Right Panels: Referral & Geo -->
+    <g transform="translate(864, 116)">
+      <!-- Top: Referral Sources -->
+      <rect x="0" y="0" width="416" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+      <rect x="0" y="0" width="416" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+      <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TOP REFERRAL SOURCES</text>
+
+      <g transform="translate(24, 64)">
+        <text x="0" y="20" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Google Organic Search</text>
+        <text x="368" y="20" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">54% (134K)</text>
+        <rect x="0" y="32" width="368" height="6" rx="3" fill="#27272a"/>
+        <rect x="0" y="32" width="198" height="6" rx="3" fill="#ffffff"/>
+
+        <text x="0" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Direct Navigation &amp; Bookmarks</text>
+        <text x="368" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">22% (54K)</text>
+        <rect x="0" y="82" width="368" height="6" rx="3" fill="#27272a"/>
+        <rect x="0" y="82" width="81" height="6" rx="3" fill="#ffffff"/>
+
+        <text x="0" y="120" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">LinkedIn Technical Posts</text>
+        <text x="368" y="120" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">14% (34K)</text>
+        <rect x="0" y="132" width="368" height="6" rx="3" fill="#27272a"/>
+        <rect x="0" y="132" width="51" height="6" rx="3" fill="#ffffff"/>
+
+        <text x="0" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">GitHub Repositories</text>
+        <text x="368" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">6% (15K)</text>
+        <rect x="0" y="182" width="368" height="6" rx="3" fill="#27272a"/>
+        <rect x="0" y="182" width="22" height="6" rx="3" fill="#ffffff"/>
+
+        <text x="0" y="220" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Hacker News &amp; Tech Forums</text>
+        <text x="368" y="220" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">4% (10K)</text>
+        <rect x="0" y="232" width="368" height="6" rx="3" fill="#27272a"/>
+        <rect x="0" y="232" width="15" height="6" rx="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Bottom: Geographic Distribution -->
+      <g transform="translate(0, 364)">
+        <rect x="0" y="0" width="416" height="340" rx="6" fill="#111114" stroke="#27272a" stroke-width="1"/>
+        <rect x="0" y="0" width="416" height="44" fill="#151518" stroke="#27272a" stroke-width="1"/>
+        <text x="24" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">GEOGRAPHIC DISTRIBUTION</text>
+
+        <g transform="translate(24, 70)">
+          <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Indonesia (Jakarta, Surabaya, Bandung)</text>
+          <text x="368" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">68%</text>
+
+          <text x="0" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Singapore (APAC Tech Hub)</text>
+          <text x="368" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">14%</text>
+
+          <text x="0" y="116" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">United States (West Coast &amp; NYC)</text>
+          <text x="368" y="116" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">10%</text>
+
+          <text x="0" y="162" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">European Union &amp; Other</text>
+          <text x="368" y="162" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">8%</text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
