@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- MINIMALIST NAVBAR (Live WIB Clock on Left, Menus on Right) -->
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
   <nav class="navbar" id="navbar" aria-label="Main Navigation">
     <div class="nav-container">
       <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
@@ -42,12 +42,12 @@
 
     <div class="sketch-divider"></div>
 
-    <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover) -->
+    <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover leading to dedicated detail pages) -->
     <section class="section-projects" id="projects">
       <div class="container">
         <div class="sketch-meta-bar">
           <span class="sketch-tag">SECTION // 02 SELECTED WORKS</span>
-          <span class="sketch-dimension">3 NODES</span>
+          <span class="sketch-dimension">3 ARCHITECTURAL PLATFORMS</span>
         </div>
         <div class="projects-feed">
           <!-- Project 1: ERP -->
@@ -55,10 +55,10 @@
             <div class="project-media">
               <img src="assets/project-erp.svg" alt="ERP System Showcase" loading="lazy">
               <div class="project-overlay">
-                <button type="button" class="btn-preview" data-project="erp" aria-label="Preview ERP Project">
-                  <span>Preview Project</span>
+                <a href="project-erp.html" class="btn-preview" aria-label="Explore ERP Project Architecture">
+                  <span>Explore 10 Screens</span>
                   <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -68,10 +68,10 @@
             <div class="project-media">
               <img src="assets/project-ecommerce.svg" alt="E-Commerce Architecture Showcase" loading="lazy">
               <div class="project-overlay">
-                <button type="button" class="btn-preview" data-project="ecommerce" aria-label="Preview E-Commerce Project">
-                  <span>Preview Project</span>
+                <a href="project-ecommerce.html" class="btn-preview" aria-label="Explore E-Commerce Project Architecture">
+                  <span>Explore 10 Screens</span>
                   <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -81,10 +81,10 @@
             <div class="project-media">
               <img src="assets/project-cms.svg" alt="CMS Architecture Showcase" loading="lazy">
               <div class="project-overlay">
-                <button type="button" class="btn-preview" data-project="cms" aria-label="Preview CMS Project">
-                  <span>Preview Project</span>
+                <a href="project-cms.html" class="btn-preview" aria-label="Explore CMS Project Architecture">
+                  <span>Explore 10 Screens</span>
                   <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -104,7 +104,7 @@
         <div class="articles-cta-box">
           <h2 class="articles-cta-title">PERSPECTIVES &amp; CAPABILITIES</h2>
           <p class="articles-cta-desc">
-            We publish in-depth architectural dispatches examining computer science principles, distributed systems, and modern software craftsmanship, alongside detailed case studies of our commercial engineering capabilities.
+            Kita buka-bukaan riset sistem komputer, arsitektur memory zero-copy, dan ledger konsensus terdistribusi, plus studi kasus mendalam tentang gimana tim Mayastra merancang commercial software yang clean, scalable, dan reliable.
           </p>
           <div class="articles-cta-metrics">
             <div class="cta-metric-card">
@@ -124,7 +124,7 @@
           </div>
           <div class="articles-cta-action">
             <a href="articles.html" class="btn-articles-explore">
-              <span>Explore 20 Articles</span>
+              <span>Jelajahi 20 Artikel</span>
               <svg viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -159,14 +159,14 @@
         <div class="footer-content">
           <div class="footer-company-block">
             <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
-            <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
           </div>
           <div class="footer-menus">
             <div class="menu-column">
               <span class="menu-column-title">Capabilities</span>
-              <a href="service.html" class="footer-link">ERP Systems</a>
-              <a href="service.html" class="footer-link">Commerce Engines</a>
-              <a href="service.html" class="footer-link">CMS Platforms</a>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
             </div>
             <div class="menu-column">
               <span class="menu-column-title">Corporate</span>
@@ -192,35 +192,6 @@
     </footer>
 
   </div><!-- end .sketch-frame -->
-
-  <!-- Interactive Project Preview Modal -->
-  <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <span class="modal-title" id="modalTitle">Project Title</span>
-          <span class="modal-badge" id="modalBadge">Classification</span>
-        </div>
-        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Preview">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-img-wrapper">
-          <img id="modalImage" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Project Preview">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <span class="modal-meta" id="modalMeta">System architecture overview</span>
-        <div class="modal-actions">
-          <a href="#contact" class="modal-btn modal-btn-primary" onclick="document.getElementById('previewModal').classList.remove('active'); document.body.style.overflow = '';">Request Architecture Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Toast Notification Feedback -->
   <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>

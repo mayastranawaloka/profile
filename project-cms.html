@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Content Management System - MAYASTRA NAWALOKA</title>
+  <meta name="description" content="PT MAYASTRA NAWALOKA NUSANTARA - High-density editorial CMS, headless content distribution, and real-time SEO scoring.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">UTC+7</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link active" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link" data-page="articles">articles</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
+
+    <main class="container">
+      <div class="sketch-meta-bar">
+        <span class="sketch-tag">WORK // 03 PUBLISHING ARCHITECTURE</span>
+        <span class="sketch-dimension">10 INTERFACE SCREENS</span>
+      </div>
+
+      <!-- Breadcrumb Bar -->
+      <div class="project-breadcrumb-bar">
+        <a href="index.html#projects" class="project-breadcrumb">
+          <span>&larr;</span>
+          <span>Balik ke Projects</span>
+        </a>
+        <span class="project-badge-pill">HEADLESS PUBLISHING SYSTEM</span>
+      </div>
+
+      <!-- Project Hero & Deep Summary -->
+      <section class="project-detail-hero">
+        <p class="project-detail-tagline">High-Density Publishing Platform</p>
+        <h1 class="project-detail-title">HIGH-DENSITY EDITORIAL CMS</h1>
+        <p class="project-detail-summary">
+          Platform Content Management System (CMS) berdensitas tinggi untuk ruang redaksi modern, media digital, dan publikasi korporat. Mengusung workspace markdown distraction-free, scoring SEO real-time berbasis Abstract Syntax Tree (AST), approval workflow berjenjang, dan headless edge API yang siap mendistribusikan konten ke berbagai aplikasi klien dengan latency minimal.
+        </p>
+
+        <!-- Technical Specifications Grid -->
+        <div class="project-specs-grid">
+          <div class="project-spec-card">
+            <span class="project-spec-label">Content Delivery</span>
+            <div class="project-spec-val">Headless GraphQL + REST</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Authoring Mode</span>
+            <div class="project-spec-val">Markdown + AST Validator</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Edge Cache Speed</span>
+            <div class="project-spec-val">&lt; 80ms Global Propagation</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Versioning Model</span>
+            <div class="project-spec-val">Immutable Commit History</div>
+          </div>
+        </div>
+
+        <!-- Architectural Deep Dive Box -->
+        <div class="project-deepdive-box">
+          <h2 class="project-deepdive-title">Engineering Highlights &amp; Solusi Sistem</h2>
+          <p class="project-deepdive-text">
+            Banyak editorial tim mengeluhkan CMS konvensional yang terasa berat, lambat saat mengetik naskah panjang, dan rawan kehilangan draft saat koneksi internet terputus. Di Mayastra Nawaloka, kita merancang editor naskah yang mengutamakan kecepatan mengetik: parsing markdown berjalan di background Web Worker secara asinkron, didukung sinkronisasi draft lokal via IndexedDB.
+          </p>
+          <p class="project-deepdive-text">
+            Sistem perizinan redaksi membedakan peran jurnalis, editor bahasa, dan redaktur pelaksana secara tegas. Setiap perubahan draft dicatat dalam granular visual diffing mirip Git, memungkinkan tim memulihkan versi sebelumnya dalam satu klik tanpa takut ada konten penting yang terhapus secara permanen.
+          </p>
+        </div>
+
+        <!-- 10 Coded Screens Gallery -->
+        <div class="screens-section-header">
+          <h2 class="screens-section-title">Preview 10 Interface Sistem</h2>
+          <span class="screens-section-count">10 Scalable Vector Displays</span>
+        </div>
+
+        <div class="project-screens-grid">
+
+          <!-- Screen 1 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/01-editorial-workspace.svg" alt="Editorial Workspace Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 01 / 10</span>
+                <span class="screen-caption-badge">Workspace</span>
+              </div>
+              <h3 class="screen-caption-title">Editorial Markdown Workspace</h3>
+              <p class="screen-caption-desc">Ruang kerja penulisan naskah tanpa distraksi: split editor markdown, auto-save cerdas, word counter, estimasi waktu baca, dan quick formatting shortcut.</p>
+            </div>
+          </article>
+
+          <!-- Screen 2 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/02-content-repository.svg" alt="Content Repository Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 02 / 10</span>
+                <span class="screen-caption-badge">Repository</span>
+              </div>
+              <h3 class="screen-caption-title">Unified Content Repository</h3>
+              <p class="screen-caption-desc">Repositori artikel terpusat dengan filter status publikasi (Published, Draft, Review), sorting kategori, metadata penulis, dan pencarian cepat.</p>
+            </div>
+          </article>
+
+          <!-- Screen 3 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/03-seo-optimizer.svg" alt="SEO Optimizer Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 03 / 10</span>
+                <span class="screen-caption-badge">SEO Engine</span>
+              </div>
+              <h3 class="screen-caption-title">Real-Time SEO &amp; Meta Engine</h3>
+              <p class="screen-caption-desc">Analisis SEO real-time: kalkulasi densitas kata kunci, keterbacaan teks Flesch-Kincaid, preview Open Graph sosial media, dan audit schema markup.</p>
+            </div>
+          </article>
+
+          <!-- Screen 4 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/04-media-library.svg" alt="Media Library Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 04 / 10</span>
+                <span class="screen-caption-badge">Assets</span>
+              </div>
+              <h3 class="screen-caption-title">Digital Asset &amp; Media Library</h3>
+              <p class="screen-caption-desc">Manajemen aset gambar dan video: kompresi WebP otomatis, tagging aset, generator teks alt untuk aksesibilitas, dan integrasi CDN global.</p>
+            </div>
+          </article>
+
+          <!-- Screen 5 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/05-publishing-workflow.svg" alt="Publishing Workflow Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 05 / 10</span>
+                <span class="screen-caption-badge">Workflow</span>
+              </div>
+              <h3 class="screen-caption-title">Multi-Stage Editorial Workflow</h3>
+              <p class="screen-caption-desc">Papan alur kerja kanban redaksi: pemantauan status naskah dari tahap ideasi, penulisan, review editor, perbaikan, hingga jadwal tayang otomatis.</p>
+            </div>
+          </article>
+
+          <!-- Screen 6 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/06-revision-history.svg" alt="Revision History Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 06 / 10</span>
+                <span class="screen-caption-badge">Versioning</span>
+              </div>
+              <h3 class="screen-caption-title">Granular Revision History &amp; Diff</h3>
+              <p class="screen-caption-desc">Pemeriksaan histori revisi naskah berdampingan (side-by-side visual diff), tracking kontributor, dan rollback instan ke versi naskah mana pun.</p>
+            </div>
+          </article>
+
+          <!-- Screen 7 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/07-taxonomy-manager.svg" alt="Taxonomy Manager Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 07 / 10</span>
+                <span class="screen-caption-badge">Taxonomy</span>
+              </div>
+              <h3 class="screen-caption-title">Dynamic Taxonomy &amp; Tag Manager</h3>
+              <p class="screen-caption-desc">Pengelolaan struktur kategori hierarkis, tag topik trending, relasi antar topik, dan manajemen redirection URL secara terpusat.</p>
+            </div>
+          </article>
+
+          <!-- Screen 8 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/08-audience-analytics.svg" alt="Audience Analytics Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 08 / 10</span>
+                <span class="screen-caption-badge">Analytics</span>
+              </div>
+              <h3 class="screen-caption-title">Audience &amp; Engagement Analytics</h3>
+              <p class="screen-caption-desc">Metrik performa artikel: total pembaca unik, rata-rata durasi baca (time-on-page), scroll depth pembaca, dan referral traffic teratas.</p>
+            </div>
+          </article>
+
+          <!-- Screen 9 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/09-api-distribution.svg" alt="API Distribution Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 09 / 10</span>
+                <span class="screen-caption-badge">Headless API</span>
+              </div>
+              <h3 class="screen-caption-title">Headless GraphQL &amp; REST Distribution</h3>
+              <p class="screen-caption-desc">Portal dokumentasi dan playground API: query GraphQL teroptimasi, token akses pengembang, webhook subscriber, dan cache invalidation trigger.</p>
+            </div>
+          </article>
+
+          <!-- Screen 10 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/cms/10-access-governance.svg" alt="Access Governance Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 10 / 10</span>
+                <span class="screen-caption-badge">Governance</span>
+              </div>
+              <h3 class="screen-caption-title">Enterprise Access &amp; RBAC Control</h3>
+              <p class="screen-caption-desc">Pengaturan hak akses ruang redaksi tingkat enterprise: otorisasi berbasis departemen rubrik, proteksi 2FA, dan sesi login pengguna aktif.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Project Detail Bottom CTA -->
+        <div class="project-cta-banner">
+          <div class="project-cta-info">
+            <h2 class="project-cta-title">Siap Bangun Publishing Engine Headless Buat Redaksimu?</h2>
+            <p class="project-cta-desc">
+              Tingkatkan produktivitas ruang redaksi dan distribusikan artikel ke multi-platform tanpa hambatan teknologi. Konsultasikan kebutuhan CMS bareng Mayastra.
+            </p>
+          </div>
+          <a href="contact.html" class="project-cta-btn">
+            <span>Diskusi Bareng Mayastra</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

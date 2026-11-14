@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Commerce Engine - MAYASTRA NAWALOKA</title>
+  <meta name="description" content="PT MAYASTRA NAWALOKA NUSANTARA - High-performance commerce platform architecture, real-time cart ledger, and sub-second checkout.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">UTC+7</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link active" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link" data-page="articles">articles</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
+
+    <main class="container">
+      <div class="sketch-meta-bar">
+        <span class="sketch-tag">WORK // 02 COMMERCE ARCHITECTURE</span>
+        <span class="sketch-dimension">10 INTERFACE SCREENS</span>
+      </div>
+
+      <!-- Breadcrumb Bar -->
+      <div class="project-breadcrumb-bar">
+        <a href="index.html#projects" class="project-breadcrumb">
+          <span>&larr;</span>
+          <span>Balik ke Projects</span>
+        </a>
+        <span class="project-badge-pill">DIRECT-TO-CONSUMER ENGINE</span>
+      </div>
+
+      <!-- Project Hero & Deep Summary -->
+      <section class="project-detail-hero">
+        <p class="project-detail-tagline">High-Performance Commerce Platform</p>
+        <h1 class="project-detail-title">MODERN COMMERCE ENGINE</h1>
+        <p class="project-detail-summary">
+          Engine platform toko online modern dengan performa tinggi, dirancang khusus buat brand ritel yang butuh alur checkout secepat kilat, faceted search instan tanpa reload, dan sinkronisasi stok multi-channel tanpa risiko overselling. Memangkas cart abandonment akibat latency dengan arsitektur decoupled yang ultra-responsif.
+        </p>
+
+        <!-- Technical Specifications Grid -->
+        <div class="project-specs-grid">
+          <div class="project-spec-card">
+            <span class="project-spec-label">Core Stack</span>
+            <div class="project-spec-val">TypeScript / Node / Redis</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">P99 Response Time</span>
+            <div class="project-spec-val">&lt; 120ms Edge Delivery</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Payment Engine</span>
+            <div class="project-spec-val">QRIS Dinamis + Multi-Bank VA</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Inventory Lock</span>
+            <div class="project-spec-val">Atomic Reservation with TTL</div>
+          </div>
+        </div>
+
+        <!-- Architectural Deep Dive Box -->
+        <div class="project-deepdive-box">
+          <h2 class="project-deepdive-title">Engineering Highlights &amp; Solusi Sistem</h2>
+          <p class="project-deepdive-text">
+            Banyak toko online gagal saat flash sale karena backend monolithic yang tersendat akibat bottleneck pada query database cart dan gateway pembayaran. Di platform commerce Mayastra, kita pisahkan state keranjang belanja ke in-memory Redis cluster berkecepatan tinggi, sehingga ribuan pembeli dapat menambahkan barang ke keranjang tanpa menyentuh primary database secara berlebih.
+          </p>
+          <p class="project-deepdive-text">
+            Alur checkout disederhanakan menjadi single-step responsive interface. Integrasi payment gateway mendukung webhooks terverifikasi kriptografis, otomatis menerbitkan resi logistik, serta langsung memperbarui status order ke konsumen via automated notification pipelines.
+          </p>
+        </div>
+
+        <!-- 10 Coded Screens Gallery -->
+        <div class="screens-section-header">
+          <h2 class="screens-section-title">Preview 10 Interface Sistem</h2>
+          <span class="screens-section-count">10 Scalable Vector Displays</span>
+        </div>
+
+        <div class="project-screens-grid">
+
+          <!-- Screen 1 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/01-curated-storefront.svg" alt="Storefront Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 01 / 10</span>
+                <span class="screen-caption-badge">Storefront</span>
+              </div>
+              <h3 class="screen-caption-title">Curated Minimalist Storefront</h3>
+              <p class="screen-caption-desc">Tampilan etalase produk minimalis bergaya kuratorial, tipografi kontras tinggi, navigasi kategori cepat, dan hero visual beresolusi tajam.</p>
+            </div>
+          </article>
+
+          <!-- Screen 2 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/02-product-detail.svg" alt="Product Detail Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 02 / 10</span>
+                <span class="screen-caption-badge">Product View</span>
+              </div>
+              <h3 class="screen-caption-title">Product Detail &amp; Variant Matrix</h3>
+              <p class="screen-caption-desc">Pemilih varian ukuran dan warna dinamis dengan indikator stok real-time, spesifikasi teknis produk, dan rekomendasi item terkait.</p>
+            </div>
+          </article>
+
+          <!-- Screen 3 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/03-instant-search-filters.svg" alt="Search and Filters Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 03 / 10</span>
+                <span class="screen-caption-badge">Search Engine</span>
+              </div>
+              <h3 class="screen-caption-title">Instant Faceted Search</h3>
+              <p class="screen-caption-desc">Pencarian produk instan berkecepatan sub-50ms dengan auto-suggestion cerdas, filter rentang harga, atribut material, dan status ketersediaan.</p>
+            </div>
+          </article>
+
+          <!-- Screen 4 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/04-slide-cart-ledger.svg" alt="Slide Cart Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 04 / 10</span>
+                <span class="screen-caption-badge">Cart Ledger</span>
+              </div>
+              <h3 class="screen-caption-title">Slide-Out Real-Time Cart Ledger</h3>
+              <p class="screen-caption-desc">Panel keranjang belanja geser dengan kalkulasi subtotal instan, validasi kupon promo real-time, dan free shipping progress bar.</p>
+            </div>
+          </article>
+
+          <!-- Screen 5 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/05-streamlined-checkout.svg" alt="Checkout Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 05 / 10</span>
+                <span class="screen-caption-badge">Checkout</span>
+              </div>
+              <h3 class="screen-caption-title">Streamlined One-Page Checkout</h3>
+              <p class="screen-caption-desc">Formulir checkout satu halaman tanpa distraksi, input alamat terintegrasi autocomplete kode pos, dan kalkulasi ongkir multi-kurir otomatis.</p>
+            </div>
+          </article>
+
+          <!-- Screen 6 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/06-payment-gateway.svg" alt="Payment Gateway Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 06 / 10</span>
+                <span class="screen-caption-badge">Payment</span>
+              </div>
+              <h3 class="screen-caption-title">Multi-Channel Payment Gateway</h3>
+              <p class="screen-caption-desc">Gateway pembayaran komprehensif mendukung QRIS dinamis instan, Virtual Account semua bank utama, e-wallet, dan kartu debit/kredit internasional.</p>
+            </div>
+          </article>
+
+          <!-- Screen 7 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/07-order-tracking.svg" alt="Order Tracking Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 07 / 10</span>
+                <span class="screen-caption-badge">Tracking</span>
+              </div>
+              <h3 class="screen-caption-title">Real-Time Order Milestones</h3>
+              <p class="screen-caption-desc">Pelacakan milestone status pesanan dari konfirmasi bayar, packing gudang, serah terima kurir, hingga barang diterima pelanggan.</p>
+            </div>
+          </article>
+
+          <!-- Screen 8 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/08-merchant-dashboard.svg" alt="Merchant Dashboard Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 08 / 10</span>
+                <span class="screen-caption-badge">Analytics</span>
+              </div>
+              <h3 class="screen-caption-title">Merchant Intelligence Dashboard</h3>
+              <p class="screen-caption-desc">Dashboard analitik penjualan pemilik toko: conversion rate checkout, nilai transaksi rata-rata (AOV), produk terlaris, dan proyeksi omset.</p>
+            </div>
+          </article>
+
+          <!-- Screen 9 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/09-inventory-sync.svg" alt="Inventory Sync Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 09 / 10</span>
+                <span class="screen-caption-badge">Synchronization</span>
+              </div>
+              <h3 class="screen-caption-title">Omnichannel Inventory Balancing</h3>
+              <p class="screen-caption-desc">Sinkronisasi stok dua arah antara website toko resmi dan channel marketplace, mengunci kuota produk secara deterministik saat order dibuat.</p>
+            </div>
+          </article>
+
+          <!-- Screen 10 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/ecommerce/10-customer-loyalty.svg" alt="Customer Loyalty Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 10 / 10</span>
+                <span class="screen-caption-badge">Loyalty</span>
+              </div>
+              <h3 class="screen-caption-title">Tiered Customer Loyalty Engine</h3>
+              <p class="screen-caption-desc">Program loyalitas bertingkat, akumulasi reward point otomatis, penawaran diskon personal, dan histori riwayat belanja pelanggan.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Project Detail Bottom CTA -->
+        <div class="project-cta-banner">
+          <div class="project-cta-info">
+            <h2 class="project-cta-title">Siap Tingkatkan Conversion Toko Online Brand Kamu?</h2>
+            <p class="project-cta-desc">
+              Tinggalkan platform lambat yang membatasi pertumbuhan bisnis. Bangun commerce engine headless berkecepatan tinggi bareng Mayastra.
+            </p>
+          </div>
+          <a href="contact.html" class="project-cta-btn">
+            <span>Diskusi Bareng Mayastra</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

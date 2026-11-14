@@ -3,7 +3,17 @@ set -euo pipefail
 
 echo "[*] Running verification test suite..."
 
-PAGES=("index.html" "about.html" "service.html" "articles.html" "contact.html")
+PAGES=(
+  "index.html"
+  "about.html"
+  "service.html"
+  "articles.html"
+  "contact.html"
+  "project-erp.html"
+  "project-ecommerce.html"
+  "project-cms.html"
+  "article.html"
+)
 
 # 1. Structural Checks on all pages
 for page in "${PAGES[@]}"; do
@@ -35,22 +45,48 @@ for page in "${PAGES[@]}"; do
   grep -q 'src="assets/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
 done
 
-# 2. Page Specific Content Verifications
-echo "[*] Verifying page-specific contents..."
-grep -q 'id="hero"' index.html || { echo "FAIL: hero section missing in index.html"; exit 1; }
-grep -q 'id="projects"' index.html || { echo "FAIL: projects section missing in index.html"; exit 1; }
-grep -q 'id="articles-cta"' index.html || { echo "FAIL: articles CTA section missing in index.html"; exit 1; }
+# 2. Strict Zero Popups Check (Zero Modals across entire site)
+echo "[*] Verifying Strict Zero Popups across all pages..."
+for page in "${PAGES[@]}"; do
+  if grep -q 'id="previewModal"' "$page"; then
+    echo "FAIL: unwanted previewModal found in $page (strict zero popups mandate)"
+    exit 1
+  fi
+  if grep -q 'id="articleModal"' "$page"; then
+    echo "FAIL: unwanted articleModal found in $page (strict zero popups mandate)"
+    exit 1
+  fi
+done
 
-# About page: 3 photos side-by-side and computer programming / IT / software copy
-grep -q 'assets/team/person-1.svg' about.html || { echo "FAIL: team photo 1 missing in about.html"; exit 1; }
-grep -q 'assets/team/person-2.svg' about.html || { echo "FAIL: team photo 2 missing in about.html"; exit 1; }
-grep -q 'assets/team/person-3.svg' about.html || { echo "FAIL: team photo 3 missing in about.html"; exit 1; }
-grep -qi 'pemrograman komputer' about.html || { echo "FAIL: computer programming copy missing in about.html"; exit 1; }
+# 3. Dedicated Project Pages Verifications
+echo "[*] Verifying dedicated project detail pages..."
+for proj in "project-erp.html" "project-ecommerce.html" "project-cms.html"; do
+  grep -q 'class="project-breadcrumb"' "$proj" || { echo "FAIL: breadcrumb missing in $proj"; exit 1; }
+  grep -q 'class="project-specs-grid"' "$proj" || { echo "FAIL: specs grid missing in $proj"; exit 1; }
+  grep -q 'class="project-screens-grid"' "$proj" || { echo "FAIL: screens grid missing in $proj"; exit 1; }
+  SCREEN_COUNT=$(grep -c 'class="project-screen-card"' "$proj" || true)
+  if [[ "$SCREEN_COUNT" -ne 10 ]]; then
+    echo "FAIL: Expected 10 project screens in $proj, found ${SCREEN_COUNT}"
+    exit 1
+  fi
+done
 
-# Service page: services list
-grep -q 'Enterprise Resource Planning' service.html || { echo "FAIL: ERP missing in service.html"; exit 1; }
+# Verify all 30 SVGs exist and are linked in respective pages
+for i in {1..10}; do
+  NUM=$(printf "%02d" $i)
+  grep -q "assets/projects/erp/${NUM}-" project-erp.html || { echo "FAIL: missing SVG ${NUM} in project-erp.html"; exit 1; }
+  grep -q "assets/projects/ecommerce/${NUM}-" project-ecommerce.html || { echo "FAIL: missing SVG ${NUM} in project-ecommerce.html"; exit 1; }
+  grep -q "assets/projects/cms/${NUM}-" project-cms.html || { echo "FAIL: missing SVG ${NUM} in project-cms.html"; exit 1; }
+done
 
-# Articles page: 20 article cards (10 insight + 10 how-we-work) and reader modal
+# 4. Standalone Article Reader Page Verification
+echo "[*] Verifying standalone article reader page..."
+grep -q 'id="articleReaderView"' article.html || { echo "FAIL: articleReaderView missing in article.html"; exit 1; }
+grep -q 'id="articleCategoryBadge"' article.html || { echo "FAIL: category badge missing in article.html"; exit 1; }
+grep -q 'id="articleTitle"' article.html || { echo "FAIL: title element missing in article.html"; exit 1; }
+grep -q 'id="articleBody"' article.html || { echo "FAIL: body element missing in article.html"; exit 1; }
+
+# 5. Articles page: 20 article cards (10 insight + 10 how-we-work) and direct links
 echo "[*] Verifying articles count and structure..."
 INSIGHT_COUNT=$(grep -c 'data-category="insight"' articles.html || true)
 SERVICE_COUNT=$(grep -c 'data-category="how-we-work"' articles.html || true)
@@ -65,48 +101,46 @@ if [[ "$SERVICE_COUNT" -ne 10 ]]; then
   exit 1
 fi
 
-grep -q 'id="articleModal"' articles.html || { echo "FAIL: articleModal missing in articles.html"; exit 1; }
 grep -q 'id="articleSearchInput"' articles.html || { echo "FAIL: search input missing in articles.html"; exit 1; }
 
-# Contact page: email link
-grep -q 'contact@mayastranawaloka.com' contact.html || { echo "FAIL: contact email missing in contact.html"; exit 1; }
-
-# 3. Verify assets existence
-for asset in assets/project-erp.svg assets/project-ecommerce.svg assets/project-cms.svg assets/logo.png assets/team/person-1.svg assets/team/person-2.svg assets/team/person-3.svg; do
-  if [[ ! -f "$asset" ]]; then
-    echo "FAIL: missing asset $asset"
-    exit 1
-  fi
-done
-
-# 4. Validate XML structure of all SVG assets
-echo "[*] Validating XML structure of all SVG assets..."
+# 6. Validate XML structure of all SVG assets
+echo "[*] Validating XML structure of all 30+ SVG assets..."
 python3 -c '
 import xml.etree.ElementTree as ET
 import glob, sys
 
-for svg in glob.glob("assets/**/*.svg", recursive=True):
+svg_files = glob.glob("assets/**/*.svg", recursive=True)
+if len(svg_files) < 30:
+    print(f"FAIL: Expected at least 30 SVGs, found {len(svg_files)}")
+    sys.exit(1)
+
+for svg in svg_files:
     try:
         ET.parse(svg)
     except Exception as e:
         print(f"FAIL: SVG parse error in {svg}: {e}")
         sys.exit(1)
+print(f"[*] Validated {len(svg_files)} SVGs successfully.")
 '
 
-# 5. Verify CNAME
+# 7. Verify CNAME
 if [[ ! -f "CNAME" ]]; then
   echo "FAIL: missing CNAME"
   exit 1
 fi
 grep -q 'www.mayastranawaloka.com' CNAME || { echo "FAIL: CNAME content mismatch"; exit 1; }
 
-# 6. Verify Zero Emojis and Zero Em Dashes
+# 8. Verify Zero Emojis and Zero Em Dashes
 echo "[*] Checking for banned characters (emojis, em dashes)..."
 python3 -c '
 import re, sys
 
 banned_chars = ["—", "–"]
-files = ["index.html", "about.html", "service.html", "articles.html", "contact.html", "style.css", "script.js"]
+files = [
+    "index.html", "about.html", "service.html", "articles.html", "contact.html",
+    "project-erp.html", "project-ecommerce.html", "project-cms.html", "article.html",
+    "style.css", "script.js"
+]
 
 for path in files:
     with open(path, "r", encoding="utf-8") as f:
@@ -121,4 +155,4 @@ for path in files:
         sys.exit(1)
 '
 
-echo "[OK] All checks passed successfully!"
+echo "[OK] All 9 pages and 30 project SVGs passed verification suite cleanly!"

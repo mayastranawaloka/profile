@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- MINIMALIST NAVBAR (Live WIB Clock on Left, Menus on Right) -->
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
   <nav class="navbar" id="navbar" aria-label="Main Navigation">
     <div class="nav-container">
       <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
@@ -56,10 +56,8 @@
         </div>
       </section>
 
-      <!-- 20 Article Cards Grid -->
+      <!-- 20 Article Cards Grid (Strict Zero Popups: Direct Link to Standalone Reader) -->
       <section class="articles-grid" id="articlesGrid" aria-label="Publications Grid">
-
-        <!-- ==================== INSIGHT ARTICLES (10) ==================== -->
 
         <!-- Article 01 -->
         <article class="article-card" data-category="insight" data-id="1" tabindex="0" role="region" aria-label="Article: Deterministic State Machines in Modern Web Applications">
@@ -70,7 +68,7 @@
             </div>
             <h2 class="article-card-title">Deterministic State Machines in Modern Web Applications</h2>
             <p class="article-card-excerpt">
-              Why modeling client-side user interfaces and state transitions through formal mathematical statecharts completely eradicates impossible UI states, race conditions, and unhandled transition bugs.
+              Mengapa memodelkan antarmuka dan transisi status menggunakan statecharts matematis formal sanggup melenyapkan illegal UI states, race conditions, dan glitch transisi secara deterministik.
             </p>
           </div>
           <div class="article-card-footer">
@@ -79,10 +77,10 @@
               <span class="article-tag-item">#STATECHARTS</span>
               <span class="article-tag-item">#DETERMINISM</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=1" class="article-read-action" aria-label="Read Deterministic State Machines in Modern Web Applications">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -95,7 +93,7 @@
             </div>
             <h2 class="article-card-title">High-Throughput Memory Architecture and Zero-Copy I/O</h2>
             <p class="article-card-excerpt">
-              Exploring Linux page boundary management, kernel epoll multiplexing, and zero-copy data streaming techniques to sustain millions of concurrent packets with minimal CPU context switches.
+              Bedah manajemen batas halaman memori Linux, kernel epoll multiplexing, dan teknik zero-copy streaming untuk menangani jutaan paket data tanpa membebani context switch CPU.
             </p>
           </div>
           <div class="article-card-footer">
@@ -104,10 +102,10 @@
               <span class="article-tag-item">#NETWORKING</span>
               <span class="article-tag-item">#MEMORY</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=2" class="article-read-action" aria-label="Read High-Throughput Memory Architecture and Zero-Copy I/O">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -120,7 +118,7 @@
             </div>
             <h2 class="article-card-title">Multi-Region Database Sharding and High-Concurrency Ledgers</h2>
             <p class="article-card-excerpt">
-              Architectural principles behind distributed ledger integrity: consensus protocols, partition keys distribution, monotonic timestamp ordering, and two-phase commit fallback safety.
+              Prinsip arsitektur di balik konsistensi distributed ledger: protokol konsensus Raft, sharding keys deterministik, timestamp logis, dan toleransi partisi multi-datacenter.
             </p>
           </div>
           <div class="article-card-footer">
@@ -129,10 +127,10 @@
               <span class="article-tag-item">#RAFT</span>
               <span class="article-tag-item">#LEDGER</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=3" class="article-read-action" aria-label="Read Multi-Region Database Sharding and High-Concurrency Ledgers">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -145,7 +143,7 @@
             </div>
             <h2 class="article-card-title">The Minimalist Monolith vs Premature Microservices</h2>
             <p class="article-card-excerpt">
-              An empirical critique of corporate over-engineering. Why modular monolithic architectures consistently outpace microservice sprawl in operational velocity, cost efficiency, and reliability.
+              Mengapa modular monolith yang terdisiplin mengalahkan kerumitan premature microservices: latensi panggilan memori nanodetik vs overhead jaringan distributed systems.
             </p>
           </div>
           <div class="article-card-footer">
@@ -154,10 +152,10 @@
               <span class="article-tag-item">#MONOLITH</span>
               <span class="article-tag-item">#SYSTEMS</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=4" class="article-read-action" aria-label="Read The Minimalist Monolith vs Premature Microservices">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -170,7 +168,7 @@
             </div>
             <h2 class="article-card-title">Real-Time Distributed Events: WebSockets and Server-Sent Events</h2>
             <p class="article-card-excerpt">
-              Evaluating bidirectional duplex socket pipelines against unidirectional HTTP/2 streaming protocols for high-density live telemetry, collaborative canvases, and order status tracking.
+              Evaluasi komparatif protokol komunikasi real-time: kapan harus memakai kesederhanaan Server-Sent Events (SSE) dan kapan wajib menggunakan bidirectional WebSockets.
             </p>
           </div>
           <div class="article-card-footer">
@@ -179,10 +177,10 @@
               <span class="article-tag-item">#SSE</span>
               <span class="article-tag-item">#REALTIME</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=5" class="article-read-action" aria-label="Read Real-Time Distributed Events: WebSockets and Server-Sent Events">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -195,7 +193,7 @@
             </div>
             <h2 class="article-card-title">Zero-Trust Security Posture for Modern Corporate Infrastructure</h2>
             <p class="article-card-excerpt">
-              Deprecating perimeter VPN networks in favor of continuous cryptographic mutual TLS (mTLS) handshakes, short-lived ephemeral certificates, and granular policy enforcement points.
+              Meninggalkan model perimeter castle-and-moat: penegakan verifikasi kriptografis berkelanjutan, mutual TLS (mTLS), dan sertifikat ephemeral di seluruh micro-services.
             </p>
           </div>
           <div class="article-card-footer">
@@ -204,15 +202,15 @@
               <span class="article-tag-item">#MTLS</span>
               <span class="article-tag-item">#ZERO-TRUST</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=6" class="article-read-action" aria-label="Read Zero-Trust Security Posture for Modern Corporate Infrastructure">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
         <!-- Article 07 -->
-        <article class="article-card" data-category="insight" data-id="7" tabindex="0" role="region" aria-label="Article: Eliminating Browser Layout Thrashing for 60 FPS Digital Experiences">
+        <article class="article-card" data-category="insight" data-id="7" tabindex="0" role="region" aria-label="Article: Eliminating Browser Layout Thrashing for 60 FPS Experiences">
           <div class="article-card-main">
             <div class="article-card-header">
               <span class="article-category-badge badge-insight">INSIGHT</span>
@@ -220,7 +218,7 @@
             </div>
             <h2 class="article-card-title">Eliminating Browser Layout Thrashing for 60 FPS Experiences</h2>
             <p class="article-card-excerpt">
-              An engineering deep-dive into browser composite layers: layout invalidations, paint containment, transform-only GPU acceleration, and microtask scheduling for friction-free UIs.
+              Membedah mekanisme layout invalidation engine browser: cara memisahkan kalkulasi geometri DOM dan mutasi visual via requestAnimationFrame demi 60 FPS mulus.
             </p>
           </div>
           <div class="article-card-footer">
@@ -229,10 +227,10 @@
               <span class="article-tag-item">#RENDERING</span>
               <span class="article-tag-item">#PERFORMANCE</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=7" class="article-read-action" aria-label="Read Eliminating Browser Layout Thrashing for 60 FPS Experiences">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -245,7 +243,7 @@
             </div>
             <h2 class="article-card-title">Cache Coherence and Invalidation Strategies in Edge Networks</h2>
             <p class="article-card-excerpt">
-              Solving distributed caching trade-offs through stale-while-revalidate patterns, surrogate keys tagging, and edge serverless execution to guarantee sub-50ms Time To First Byte (TTFB).
+              Menyelesaikan dilema invalidasi cache pada CDN terdistribusi: penggunaan surrogate key tagging dan header stale-while-revalidate untuk sub-50ms TTFB global.
             </p>
           </div>
           <div class="article-card-footer">
@@ -254,10 +252,10 @@
               <span class="article-tag-item">#CACHING</span>
               <span class="article-tag-item">#LATENCY</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=8" class="article-read-action" aria-label="Read Cache Coherence and Invalidation Strategies in Edge Networks">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -270,7 +268,7 @@
             </div>
             <h2 class="article-card-title">Container Isolation and Ephemeral Linux Sandboxing Strategies</h2>
             <p class="article-card-excerpt">
-              Hardening multi-tenant production runtime nodes using cgroups v2 resource capping, read-only root filesystems, unprivileged user namespaces, and seccomp system call filtering.
+              Mengamankan server produksi dengan cgroups v2: pembatasan resource CPU/RAM 50 persen, user non-root unprivileged, dan filesystem read-only anti-container breakout.
             </p>
           </div>
           <div class="article-card-footer">
@@ -279,15 +277,15 @@
               <span class="article-tag-item">#CGROUPS</span>
               <span class="article-tag-item">#SANDBOX</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=9" class="article-read-action" aria-label="Read Container Isolation and Ephemeral Linux Sandboxing Strategies">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
         <!-- Article 10 -->
-        <article class="article-card" data-category="insight" data-id="10" tabindex="0" role="region" aria-label="Article: Static Type Sovereignty: Eradicating Runtime Anomalies with Type Systems">
+        <article class="article-card" data-category="insight" data-id="10" tabindex="0" role="region" aria-label="Article: Static Type Sovereignty: Eradicating Runtime Anomalies">
           <div class="article-card-main">
             <div class="article-card-header">
               <span class="article-category-badge badge-insight">INSIGHT</span>
@@ -295,7 +293,7 @@
             </div>
             <h2 class="article-card-title">Static Type Sovereignty: Eradicating Runtime Anomalies</h2>
             <p class="article-card-excerpt">
-              Harnessing algebraic data types, exhaustiveness checks, and strict validation boundaries to eliminate 99 percent of production runtime crashes before source code ever compiles.
+              Mengeliminasi runtime crash undefined is not a function: memodelkan domain bisnis menggunakan algebraic data types agar kondisi ilegal mustahil dikompilasi.
             </p>
           </div>
           <div class="article-card-footer">
@@ -304,14 +302,12 @@
               <span class="article-tag-item">#RELIABILITY</span>
               <span class="article-tag-item">#COMPILERS</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=10" class="article-read-action" aria-label="Read Static Type Sovereignty: Eradicating Runtime Anomalies">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
-
-        <!-- ==================== HOW WE WORK ARTICLES (10) ==================== -->
 
         <!-- Article 11 -->
         <article class="article-card" data-category="how-we-work" data-id="11" tabindex="0" role="region" aria-label="Article: Bespoke Web Development: Delivering Ultra-Fast Commercial Platforms">
@@ -322,7 +318,7 @@
             </div>
             <h2 class="article-card-title">Bespoke Web Development: Delivering Ultra-Fast Commercial Platforms</h2>
             <p class="article-card-excerpt">
-              How Mayastra Nawaloka constructs custom commercial web platforms with zero bloated dependencies, sub-second load times, semantic SEO architecture, and conversion-focused UX engineering.
+              Rekayasa aplikasi web komersial dari nol dengan semantic HTML5, zero framework bloat, dan Core Web Vitals 95+ untuk mengangkat reputasi serta SEO bisnis.
             </p>
           </div>
           <div class="article-card-footer">
@@ -331,10 +327,10 @@
               <span class="article-tag-item">#CUSTOM-WEB</span>
               <span class="article-tag-item">#SEO-ENGINEERING</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=11" class="article-read-action" aria-label="Read Bespoke Web Development: Delivering Ultra-Fast Commercial Platforms">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -347,7 +343,7 @@
             </div>
             <h2 class="article-card-title">Enterprise Resource Planning: Custom ERP for Scalable Operations</h2>
             <p class="article-card-excerpt">
-              Unifying inventory logistics, automated procurement pipelines, double-entry financial ledgers, and executive intelligence dashboards into a unified bespoke ERP suite.
+              Membangun sistem ERP kustom yang fleksibel untuk integrasi multi-gudang, procurement otomatis, dan ledger finansial tanpa tagihan royalti per-user bulanan.
             </p>
           </div>
           <div class="article-card-footer">
@@ -356,15 +352,15 @@
               <span class="article-tag-item">#B2B-SOFTWARE</span>
               <span class="article-tag-item">#OPERATIONS</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=12" class="article-read-action" aria-label="Read Enterprise Resource Planning: Custom ERP for Scalable Operations">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
         <!-- Article 13 -->
-        <article class="article-card" data-category="how-we-work" data-id="13" tabindex="0" role="region" aria-label="Article: High-Performance E-Commerce Development: Sub-Second Checkout Pipelines">
+        <article class="article-card" data-category="how-we-work" data-id="13" tabindex="0" role="region" aria-label="Article: High-Performance E-Commerce Development: Sub-Second Checkouts">
           <div class="article-card-main">
             <div class="article-card-header">
               <span class="article-category-badge badge-service">HOW WE WORK</span>
@@ -372,7 +368,7 @@
             </div>
             <h2 class="article-card-title">High-Performance E-Commerce Development: Sub-Second Checkouts</h2>
             <p class="article-card-excerpt">
-              Architecting tailored retail web engines with instantaneous product search filtering, automated QRIS and payment gateway webhooks, and resilient high-volume checkout queues.
+              Merancang arsitektur toko online boutique dengan pencarian katalog sub-50ms, alur checkout satu langkah (one-page), dan gateway QRIS / Virtual Account instan.
             </p>
           </div>
           <div class="article-card-footer">
@@ -381,10 +377,10 @@
               <span class="article-tag-item">#PAYMENTS</span>
               <span class="article-tag-item">#CHECKOUT</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=13" class="article-read-action" aria-label="Read High-Performance E-Commerce Development: Sub-Second Checkouts">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -395,9 +391,9 @@
               <span class="article-category-badge badge-service">HOW WE WORK</span>
               <span class="article-card-meta">OCT 2026 / 6 MIN</span>
             </div>
-            <h2 class="article-card-title">Custom CMS Engineering: High-Density Publishing for Media &amp; Brands</h2>
+            <h2 class="article-card-title">Custom CMS Engineering: High-Density Publishing for Media & Brands</h2>
             <p class="article-card-excerpt">
-              Building proprietary headless and coupled content management engines designed for frictionless authoring desks, automated asset compression, and instant edge cache distribution.
+              Platform manajemen konten modern untuk ruang redaksi digital: workspace markdown berkecepatan tinggi, scoring SEO real-time, dan headless API siap pakai.
             </p>
           </div>
           <div class="article-card-footer">
@@ -406,23 +402,23 @@
               <span class="article-tag-item">#PUBLISHING</span>
               <span class="article-tag-item">#EDITORIAL</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=14" class="article-read-action" aria-label="Read Custom CMS Engineering: High-Density Publishing for Media & Brands">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
         <!-- Article 15 -->
-        <article class="article-card" data-category="how-we-work" data-id="15" tabindex="0" role="region" aria-label="Article: Full-Stack Software Development: Custom Enterprise Web & Cloud Systems">
+        <article class="article-card" data-category="how-we-work" data-id="15" tabindex="0" role="region" aria-label="Article: Full-Stack Software Development: Custom Enterprise Web & Cloud">
           <div class="article-card-main">
             <div class="article-card-header">
               <span class="article-category-badge badge-service">HOW WE WORK</span>
               <span class="article-card-meta">OCT 2026 / 8 MIN</span>
             </div>
-            <h2 class="article-card-title">Full-Stack Software Development: Custom Enterprise Web &amp; Cloud</h2>
+            <h2 class="article-card-title">Full-Stack Software Development: Custom Enterprise Web & Cloud</h2>
             <p class="article-card-excerpt">
-              End-to-end bespoke software creation: architectural blueprints, resilient relational backends, intuitive user workspaces, and rigorous automated test verification protocols.
+              Mengotomasi proses bisnis kompleks melalui pengembangan software full-stack bespoke berbasis kontrak API bertipe ketat dan metodologi pengujian presisi.
             </p>
           </div>
           <div class="article-card-footer">
@@ -431,10 +427,10 @@
               <span class="article-tag-item">#FULLSTACK</span>
               <span class="article-tag-item">#ENTERPRISE</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=15" class="article-read-action" aria-label="Read Full-Stack Software Development: Custom Enterprise Web & Cloud">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -447,7 +443,7 @@
             </div>
             <h2 class="article-card-title">Cloud Infrastructure, Containerization, and Continuous Deployment</h2>
             <p class="article-card-excerpt">
-              Hardening enterprise cloud topology: immutable Docker build stages, unprivileged execution runtimes, resource boundaries, automated SSL rotation, and zero-downtime redeployments.
+              Membangun infrastruktur server otomatis dengan Docker build imutabel, pengawasan batas resource ketat, pipeline CI/CD, dan target ketersediaan 99.99 persen.
             </p>
           </div>
           <div class="article-card-footer">
@@ -456,23 +452,23 @@
               <span class="article-tag-item">#CONTAINERS</span>
               <span class="article-tag-item">#DEPLOYMENT</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=16" class="article-read-action" aria-label="Read Cloud Infrastructure, Containerization, and Continuous Deployment">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
         <!-- Article 17 -->
-        <article class="article-card" data-category="how-we-work" data-id="17" tabindex="0" role="region" aria-label="Article: System Integration & API Engineering: Connecting Payment, ERP, & CRM">
+        <article class="article-card" data-category="how-we-work" data-id="17" tabindex="0" role="region" aria-label="Article: System Integration & API Engineering: Connecting Enterprise Stacks">
           <div class="article-card-main">
             <div class="article-card-header">
               <span class="article-category-badge badge-service">HOW WE WORK</span>
               <span class="article-card-meta">SEP 2026 / 6 MIN</span>
             </div>
-            <h2 class="article-card-title">System Integration &amp; API Engineering: Connecting Enterprise Stacks</h2>
+            <h2 class="article-card-title">System Integration & API Engineering: Connecting Enterprise Stacks</h2>
             <p class="article-card-excerpt">
-              Seamlessly integrating disparate enterprise ecosystems: financial banking APIs, third-party logistics trackers, government taxation services, and CRM databases with zero telemetry loss.
+              Menghubungkan silo data yang terpecah melalui API REST/GraphQL berkeamanan tinggi, antrean webhook asinkron, dan integrasi payment/ekspedisi logistik.
             </p>
           </div>
           <div class="article-card-footer">
@@ -481,10 +477,10 @@
               <span class="article-tag-item">#INTEGRATION</span>
               <span class="article-tag-item">#AUTOMATION</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=17" class="article-read-action" aria-label="Read System Integration & API Engineering: Connecting Enterprise Stacks">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -497,7 +493,7 @@
             </div>
             <h2 class="article-card-title">Legacy System Modernization and High-Assurance Data Migration</h2>
             <p class="article-card-excerpt">
-              Safely upgrading deprecated database tables, fragile legacy codebases, and outdated servers to modern architectures utilizing strangler fig patterns and dual-write verification.
+              Memperbarui software legacy menggunakan Strangler Fig pattern dan verifikasi dual-write paralel untuk menjamin integritas data tanpa downtime operasional.
             </p>
           </div>
           <div class="article-card-footer">
@@ -506,10 +502,10 @@
               <span class="article-tag-item">#DATA-MIGRATION</span>
               <span class="article-tag-item">#REFACTORING</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=18" class="article-read-action" aria-label="Read Legacy System Modernization and High-Assurance Data Migration">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -522,7 +518,7 @@
             </div>
             <h2 class="article-card-title">Performance Auditing, Code Optimization, and Security Hardening</h2>
             <p class="article-card-excerpt">
-              Comprehensive code audits for active digital operations: identifying memory leaks, optimizing slow SQL query execution plans, patching OWASP vulnerabilities, and shrinking network payloads.
+              Mengidentifikasi query database lambat, celah OWASP Top 10, dan script render-blocking melalui audit teknis mendalam disertai rekomendasi perbaikan kode konkret.
             </p>
           </div>
           <div class="article-card-footer">
@@ -531,10 +527,10 @@
               <span class="article-tag-item">#SECURITY</span>
               <span class="article-tag-item">#OPTIMIZATION</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=19" class="article-read-action" aria-label="Read Performance Auditing, Code Optimization, and Security Hardening">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
 
@@ -547,7 +543,7 @@
             </div>
             <h2 class="article-card-title">Long-Term Technical Partnerships, SLA Support, and Software Evolution</h2>
             <p class="article-card-excerpt">
-              Why growing commercial enterprises select Mayastra for ongoing maintenance: dedicated technical availability, preventative system tuning, disaster recovery readiness, and iterative feature scaling.
+              Kemitraan rekayasa teknologi berkelanjutan dengan garansi response time SLA darurat, perawatan keamanan berkala, dan iterasi penambahan fitur bulanan.
             </p>
           </div>
           <div class="article-card-footer">
@@ -556,13 +552,12 @@
               <span class="article-tag-item">#MAINTENANCE</span>
               <span class="article-tag-item">#ENTERPRISE-SLA</span>
             </div>
-            <span class="article-read-action">
+            <a href="article.html?id=20" class="article-read-action" aria-label="Read Long-Term Technical Partnerships, SLA Support, and Software Evolution">
               <span>Read</span>
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
-            </span>
+            </a>
           </div>
         </article>
-
       </section>
     </main>
 
@@ -574,14 +569,14 @@
         <div class="footer-content">
           <div class="footer-company-block">
             <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
-            <p class="footer-tagline">Architectural systems, modern digital infrastructure, and commercial software solutions.</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
           </div>
           <div class="footer-menus">
             <div class="menu-column">
               <span class="menu-column-title">Capabilities</span>
-              <a href="service.html" class="footer-link">ERP Systems</a>
-              <a href="service.html" class="footer-link">Commerce Engines</a>
-              <a href="service.html" class="footer-link">CMS Platforms</a>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
             </div>
             <div class="menu-column">
               <span class="menu-column-title">Corporate</span>
@@ -608,34 +603,8 @@
 
   </div><!-- end .sketch-frame -->
 
-  <!-- Full Article Reader Modal -->
-  <div class="article-modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
-    <div class="article-modal-dialog">
-      <div class="article-modal-header">
-        <div>
-          <span class="article-category-badge" id="articleModalBadge">INSIGHT</span>
-          <h3 class="article-card-title" id="articleModalTitle" style="margin-top: 12px; margin-bottom: 4px;">Article Title</h3>
-          <span class="article-card-meta" id="articleModalMeta">DATE / READ TIME</span>
-        </div>
-        <button type="button" class="modal-close-btn" id="articleModalCloseBtn" aria-label="Close Article">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-      <div class="article-modal-body" id="articleModalBody">
-        <!-- Structured article content populated by script.js -->
-      </div>
-      <div class="article-modal-footer">
-        <span class="article-card-meta" id="articleModalTagSummary">#TAGS</span>
-        <a href="contact.html" class="btn-articles-explore" style="padding: 10px 22px; font-size: 0.78rem;">
-          <span>Work With Mayastra</span>
-          <svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 12l8-8M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>

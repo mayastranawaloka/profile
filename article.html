@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Reader - MAYASTRA NAWALOKA</title>
+  <meta name="description" content="PT MAYASTRA NAWALOKA NUSANTARA - Technical publications, computer science insights, and commercial engineering methodology.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">UTC+7</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link active" data-page="articles">articles</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
+
+    <main class="container">
+      <div class="sketch-meta-bar">
+        <span class="sketch-tag">DISPATCH // 03 KNOWLEDGE ENGINE</span>
+        <span class="sketch-dimension">FULL READER MODE</span>
+      </div>
+
+      <!-- Breadcrumb Bar -->
+      <div class="project-breadcrumb-bar">
+        <a href="articles.html" class="project-breadcrumb">
+          <span>&larr;</span>
+          <span>Balik ke Articles</span>
+        </a>
+        <span class="project-badge-pill" id="articleCategoryBadge">INSIGHT</span>
+      </div>
+
+      <!-- Standalone Article Reader View -->
+      <article class="article-reader-view" id="articleReaderView">
+
+        <header class="article-reader-header">
+          <div class="article-reader-meta-top">
+            <span class="article-card-meta" id="articleMeta">NOV 2026 / 6 MIN READ</span>
+          </div>
+          <h1 class="article-reader-title" id="articleTitle">Deterministic State Machines in Modern Web Applications</h1>
+          <p class="article-reader-tags" id="articleTags">#ARCHITECTURE / #STATECHARTS / #DETERMINISM</p>
+        </header>
+
+        <!-- Dynamic Article Content (Populated by script.js or static fallback) -->
+        <div class="article-reader-body" id="articleBody">
+          <h4>1. The Perils of Ad-Hoc Boolean State</h4>
+          <p>Dalam rekayasa web modern, aplikasi sering menimbun status boolean terfragmentasi seperti isLoading, isError, hasLoaded, dan isSubmitting. Seiring bertambahnya fitur, kombinasi ini memicu illegal states, misalnya isLoading dan isError sama-sama bernilai true. Ini adalah biang kerok utama tampilan antarmuka rusak dan timbulnya race conditions liar.</p>
+          <div class="article-reader-callout">
+            <strong>Aksioma Fundamental:</strong> Tampilan antarmuka hanya boleh berada di tepat satu state pada satu satuan waktu. Transisi status wajib eksplisit, matematis, dan deterministik.
+          </div>
+          <h4>2. Implementasi Finite Statecharts</h4>
+          <p>Dengan meresmikan antarmuka lewat finite state machines (FSM), tim engineer mendefinisikan aturan transisi yang tegas. Suatu state hanya bisa berpindah ke loading lewat aksi FETCH, dan dari loading hanya bisa menuju success atau failure. Aksi tak terduga yang terpanggil di luar urutan otomatis ditolak tanpa merusak alur data di memori.</p>
+          <h4>3. Architectural Takeaway</h4>
+          <p>Di Mayastra Nawaloka, kita menegakkan definisi status deterministik pada seluruh workflow client dan server. Ini menjamin aplikasi bisnis mission-critical tetap tangguh menghadapi lonjakan latency jaringan dan interaksi pengguna yang simultan.</p>
+        </div>
+
+        <!-- Article Reader Footer & CTA -->
+        <div class="article-reader-footer-box">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; text-transform: uppercase; margin-bottom: 8px;">Tertarik Diskusi Arsitektur Ini?</h3>
+            <p style="font-size: 0.86rem; color: #888888; line-height: 1.5;">Kita senang bertukar pikiran seputar sistem komputasi, high concurrency, dan arsitektur software berstandar industri.</p>
+          </div>
+          <a href="contact.html" class="project-cta-btn" style="padding: 12px 24px;">
+            <span>Kontak Mayastra</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+          </a>
+        </div>
+
+      </article>
+
+    </main>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

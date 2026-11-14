@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Resource Planning - MAYASTRA NAWALOKA</title>
+  <meta name="description" content="PT MAYASTRA NAWALOKA NUSANTARA - Bespoke Enterprise Resource Planning (ERP) architecture, multi-warehouse inventory, and financial ledgers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MINIMALIST NAVBAR (Live Clock on Left, Menus on Right) -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-time" id="wibClock" aria-label="Waktu Indonesia Barat (UTC+7)">
+        <span class="time-digits">--:--:--</span>
+        <span class="time-zone">UTC+7</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-page="home">home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">about</a></li>
+        <li><a href="service.html" class="nav-link active" data-page="service">service</a></li>
+        <li><a href="articles.html" class="nav-link" data-page="articles">articles</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
+  <div class="sketch-frame">
+
+    <main class="container">
+      <div class="sketch-meta-bar">
+        <span class="sketch-tag">WORK // 01 ENTERPRISE ARCHITECTURE</span>
+        <span class="sketch-dimension">10 INTERFACE SCREENS</span>
+      </div>
+
+      <!-- Breadcrumb Bar -->
+      <div class="project-breadcrumb-bar">
+        <a href="index.html#projects" class="project-breadcrumb">
+          <span>&larr;</span>
+          <span>Balik ke Projects</span>
+        </a>
+        <span class="project-badge-pill">B2B OPERATIONS SUITE</span>
+      </div>
+
+      <!-- Project Hero & Deep Summary -->
+      <section class="project-detail-hero">
+        <p class="project-detail-tagline">Bespoke Software Architecture</p>
+        <h1 class="project-detail-title">ENTERPRISE RESOURCE PLANNING</h1>
+        <p class="project-detail-summary">
+          Bespoke ERP suite yang kita rancang khusus buat handle operasional multi-gudang, rekonsiliasi financial ledger otomatis, dan procurement pipeline tanpa dependensi lisensi per-user yang membebani kas perusahaan. Dibangun dengan pendekatan modular monolith performa tinggi, sistem ini sanggup proses jutaan mutasi stok dengan konsistensi data absolut.
+        </p>
+
+        <!-- Technical Specifications Grid -->
+        <div class="project-specs-grid">
+          <div class="project-spec-card">
+            <span class="project-spec-label">Core Engine</span>
+            <div class="project-spec-val">Go / TypeScript</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Data Architecture</span>
+            <div class="project-spec-val">PostgreSQL + Event Log</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Throughput Target</span>
+            <div class="project-spec-val">10,000+ Transaksi / Detik</div>
+          </div>
+          <div class="project-spec-card">
+            <span class="project-spec-label">Software Ownership</span>
+            <div class="project-spec-val">100% In-House / Zero Royalty</div>
+          </div>
+        </div>
+
+        <!-- Architectural Deep Dive Box -->
+        <div class="project-deepdive-box">
+          <h2 class="project-deepdive-title">Engineering Highlights &amp; Solusi Sistem</h2>
+          <p class="project-deepdive-text">
+            Banyak platform ERP komersial di pasaran terlalu lambat, penuh bloated features yang gak kepake, dan menerapkan tagihan lisensi per-seat yang bikin biaya operasional membengkak drastis saat bisnis ekspansi. Di Mayastra Nawaloka, kita bangun solusi ERP yang tailored strictly ke alur supply chain dan operasional nyata klien.
+          </p>
+          <p class="project-deepdive-text">
+            Sistem ini menerapkan strictly double-entry bookkeeping di layer database: setiap pergerakan saldo atau inventory tercatat secara immutable dengan audit log permanen. Sinkronisasi multi-gudang didukung mekanisme row-level locking transaksional, memastikan gak bakal ada selisih stok fiktif atau phantom reads saat traffic order melonjak tinggi.
+          </p>
+        </div>
+
+        <!-- 10 Coded Screens Gallery -->
+        <div class="screens-section-header">
+          <h2 class="screens-section-title">Preview 10 Interface Sistem</h2>
+          <span class="screens-section-count">10 Scalable Vector Displays</span>
+        </div>
+
+        <div class="project-screens-grid">
+
+          <!-- Screen 1 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/01-executive-overview.svg" alt="ERP Executive Overview Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 01 / 10</span>
+                <span class="screen-caption-badge">Executive View</span>
+              </div>
+              <h3 class="screen-caption-title">Executive Command Dashboard</h3>
+              <p class="screen-caption-desc">Ringkasan KPI operasional perusahaan, margin laba bersih harian, status inventory global, dan alerting anomali sistem secara real-time.</p>
+            </div>
+          </article>
+
+          <!-- Screen 2 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/02-warehouse-inventory.svg" alt="ERP Warehouse Inventory Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 02 / 10</span>
+                <span class="screen-caption-badge">Inventory Engine</span>
+              </div>
+              <h3 class="screen-caption-title">Warehouse Inventory Matrix</h3>
+              <p class="screen-caption-desc">Manajemen stok lintas gudang regional dengan nomor batch, nomor rak, tracking expiry date, dan buffer stok otomatis.</p>
+            </div>
+          </article>
+
+          <!-- Screen 3 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/03-procurement-pipeline.svg" alt="ERP Procurement Pipeline Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 03 / 10</span>
+                <span class="screen-caption-badge">Procurement</span>
+              </div>
+              <h3 class="screen-caption-title">Procurement &amp; Vendor Pipeline</h3>
+              <p class="screen-caption-desc">Otomasi Purchase Order (PO), pencocokan invoice 3-way matching (PO, Surat Jalan, Faktur), dan scoring performa supplier.</p>
+            </div>
+          </article>
+
+          <!-- Screen 4 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/04-financial-ledger.svg" alt="ERP Financial Ledger Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 04 / 10</span>
+                <span class="screen-caption-badge">Accounting</span>
+              </div>
+              <h3 class="screen-caption-title">Double-Entry Financial Ledger</h3>
+              <p class="screen-caption-desc">Jurnal akuntansi otomatis, rekonsiliasi mutasi rekening bank korporat, neraca keuangan real-time, dan laporan arus kas periodik.</p>
+            </div>
+          </article>
+
+          <!-- Screen 5 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/05-sales-dispatch.svg" alt="ERP Sales Dispatch Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 05 / 10</span>
+                <span class="screen-caption-badge">Fulfillment</span>
+              </div>
+              <h3 class="screen-caption-title">Sales Dispatch &amp; Logistics Hub</h3>
+              <p class="screen-caption-desc">Manajemen antrean surat jalan pengiriman, tracking armada distribusi, validasi manifest kargo, dan integrasi resi ekspedisi.</p>
+            </div>
+          </article>
+
+          <!-- Screen 6 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/06-supply-chain-flow.svg" alt="ERP Supply Chain Flow Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 06 / 10</span>
+                <span class="screen-caption-badge">Analytics</span>
+              </div>
+              <h3 class="screen-caption-title">Supply Chain Flow &amp; Bottlenecks</h3>
+              <p class="screen-caption-desc">Visualisasi alur logistik antar simpul suplai, identifikasi titik lambat distribusi, dan estimasi waktu transit rata-rata.</p>
+            </div>
+          </article>
+
+          <!-- Screen 7 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/07-employee-rbac.svg" alt="ERP Employee RBAC Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 07 / 10</span>
+                <span class="screen-caption-badge">Governance</span>
+              </div>
+              <h3 class="screen-caption-title">Employee Directory &amp; RBAC Control</h3>
+              <p class="screen-caption-desc">Struktur hak akses berbasis peran (RBAC) super ketat, autentikasi multi-faktor, dan kontrol wewenang approval dokumen sensitif.</p>
+            </div>
+          </article>
+
+          <!-- Screen 8 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/08-asset-maintenance.svg" alt="ERP Asset Maintenance Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 08 / 10</span>
+                <span class="screen-caption-badge">Operations</span>
+              </div>
+              <h3 class="screen-caption-title">Fixed Asset &amp; Maintenance Schedule</h3>
+              <p class="screen-caption-desc">Pencatatan aset tetap perusahaan, kalkulasi depresiasi nilai otomatis, serta penjadwalan servis mesin dan kendaraan operasional.</p>
+            </div>
+          </article>
+
+          <!-- Screen 9 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/09-audit-logs.svg" alt="ERP Audit Logs Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 09 / 10</span>
+                <span class="screen-caption-badge">Compliance</span>
+              </div>
+              <h3 class="screen-caption-title">Immutable Audit Trail</h3>
+              <p class="screen-caption-desc">Log histori perubahan data yang terkunci secara permanen, merekam identitas operator, alamat IP, timestamp nano-detik, dan nilai data sebelum diedit.</p>
+            </div>
+          </article>
+
+          <!-- Screen 10 -->
+          <article class="project-screen-card">
+            <div class="project-screen-media">
+              <img src="assets/projects/erp/10-system-settings.svg" alt="ERP System Settings Screen" loading="lazy">
+            </div>
+            <div class="project-screen-caption">
+              <div class="screen-caption-header">
+                <span class="screen-caption-number">Screen 10 / 10</span>
+                <span class="screen-caption-badge">Configuration</span>
+              </div>
+              <h3 class="screen-caption-title">Cluster Parameters &amp; Integrations</h3>
+              <p class="screen-caption-desc">Pusat kendali konfigurasi database, webhook pihak ketiga, manajemen zona waktu multi-cabang, dan backup otomatis terenkripsi.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Project Detail Bottom CTA -->
+        <div class="project-cta-banner">
+          <div class="project-cta-info">
+            <h2 class="project-cta-title">Siap Bangun Sistem ERP Khusus Buat Bisnismu?</h2>
+            <p class="project-cta-desc">
+              Gak perlu kompromi pake software generik yang kaku. Kita diskusikan alur bisnis, integrasi gudang, dan arsitektur database bareng tim senior engineer Mayastra.
+            </p>
+          </div>
+          <a href="contact.html" class="project-cta-btn">
+            <span>Diskusi Bareng Mayastra</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l8-8M12 4H6M12 4v6"/></svg>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <div class="sketch-divider"></div>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company-block">
+            <p class="footer-company-name">BY. PT MAYASTRA NAWALOKA NUSANTARA</p>
+            <p class="footer-tagline">Bespoke digital architecture, mission-critical systems, dan modern software engineering.</p>
+          </div>
+          <div class="footer-menus">
+            <div class="menu-column">
+              <span class="menu-column-title">Capabilities</span>
+              <a href="project-erp.html" class="footer-link">ERP Systems</a>
+              <a href="project-ecommerce.html" class="footer-link">Commerce Engines</a>
+              <a href="project-cms.html" class="footer-link">CMS Platforms</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Corporate</span>
+              <a href="about.html" class="footer-link">About Company</a>
+              <a href="service.html" class="footer-link">Services</a>
+              <a href="articles.html" class="footer-link">Articles</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="menu-column">
+              <span class="menu-column-title">Network</span>
+              <a href="https://github.com/mayastranawaloka" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+              <a href="contact.html" class="footer-link">Inquiries</a>
+              <a href="mailto:contact@mayastranawaloka.com" class="footer-link">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Original Photo Footer with subtle top black gradient fade -->
+      <div class="giant-logo-container" aria-hidden="true">
+        <img src="assets/logo.png" alt="PT Mayastra Nawaloka Nusantara" class="giant-logo-image">
+      </div>
+    </footer>
+
+  </div><!-- end .sketch-frame -->
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
