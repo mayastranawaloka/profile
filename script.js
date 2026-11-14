@@ -569,6 +569,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (schema && schema['@graph'] && schema['@graph'][0]) {
           schema['@graph'][0].headline = article.title;
           schema['@graph'][0]['@id'] = `https://www.mayastranawaloka.com/article.html?id=${articleId}#article`;
+          schema['@graph'][0].datePublished = '2026-11-14T08:00:00+07:00';
+          schema['@graph'][0].dateModified = '2026-11-14T08:30:00+07:00';
           schemaScript.textContent = JSON.stringify(schema);
         }
       } catch (err) {

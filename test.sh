@@ -220,13 +220,25 @@ for p in pages:
     with open(p, "r", encoding="utf-8") as f:
         html = f.read()
 
-    # Canonical
+    # Canonical & Favicons
     if "rel=\"canonical\"" not in html:
         print(f"FAIL: Missing canonical link in {p}")
         sys.exit(1)
+    if "rel=\"icon\"" not in html:
+        print(f"FAIL: Missing favicon link in {p}")
+        sys.exit(1)
+    if "rel=\"apple-touch-icon\"" not in html:
+        print(f"FAIL: Missing apple-touch-icon in {p}")
+        sys.exit(1)
+    if "format-detection" not in html:
+        print(f"FAIL: Missing format-detection in {p}")
+        sys.exit(1)
 
     # Open Graph & Twitter
-    for tag in ["og:title", "og:description", "og:image", "og:url", "twitter:card", "twitter:title"]:
+    for tag in [
+        "og:title", "og:description", "og:image", "og:url", "og:image:width", "og:image:height", "og:image:type",
+        "twitter:card", "twitter:title", "twitter:site"
+    ]:
         if tag not in html:
             print(f"FAIL: Missing {tag} in {p}")
             sys.exit(1)
