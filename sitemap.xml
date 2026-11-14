@@ -22,6 +22,14 @@
       <image:loc>https://www.mayastranawaloka.com/assets/project-cms.svg</image:loc>
       <image:title>Editorial CMS Platform Showcase</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/project-llm-gateway.svg</image:loc>
+      <image:title>Enterprise LLM Gateway Showcase</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/project-agentic-ops.svg</image:loc>
+      <image:title>Autonomous Agentic Ops Showcase</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.mayastranawaloka.com/about.html</loc>
@@ -199,6 +207,106 @@
     <image:image>
       <image:loc>https://www.mayastranawaloka.com/assets/projects/cms/11-webhook-integrations.svg</image:loc>
       <image:title>CMS Architecture Screen 11</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/project-llm-gateway.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/01-gateway-telemetry.svg</image:loc>
+      <image:title>LLM Gateway Telemetry Screen 01</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/02-key-vault-governance.svg</image:loc>
+      <image:title>HSM Key Vault Governance Screen 02</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/03-model-router-matrix.svg</image:loc>
+      <image:title>Dynamic Model Router Screen 03</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/04-prompt-eval-harness.svg</image:loc>
+      <image:title>Prompt Eval Harness Screen 04</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/05-semantic-caching.svg</image:loc>
+      <image:title>Semantic Caching Screen 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/06-guardrails-firewall.svg</image:loc>
+      <image:title>Guardrails Firewall Screen 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/07-streaming-orchestrator.svg</image:loc>
+      <image:title>Streaming Orchestrator Screen 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/08-finetune-lora-registry.svg</image:loc>
+      <image:title>LoRA Fine-Tuning Registry Screen 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/09-quota-cost-allocation.svg</image:loc>
+      <image:title>Quota Cost Allocation Screen 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/10-audit-compliance-trail.svg</image:loc>
+      <image:title>Audit Compliance Trail Screen 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/llm-gateway/11-synthetic-dataset-factory.svg</image:loc>
+      <image:title>Synthetic Dataset Factory Screen 11</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mayastranawaloka.com/project-agentic-ops.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/01-agentic-mission-control.svg</image:loc>
+      <image:title>Agentic Mission Control Screen 01</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/02-rag-vector-pipeline.svg</image:loc>
+      <image:title>Vector RAG Pipeline Screen 02</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/03-sandbox-code-runner.svg</image:loc>
+      <image:title>Sandbox Code Runner Screen 03</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/04-human-in-the-loop.svg</image:loc>
+      <image:title>Human-in-the-Loop Gateway Screen 04</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/05-agent-tool-registry.svg</image:loc>
+      <image:title>Agent Tool Registry Screen 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/06-long-term-memory-store.svg</image:loc>
+      <image:title>Long-Term Memory Store Screen 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/07-multi-agent-consensus.svg</image:loc>
+      <image:title>Multi-Agent Consensus Screen 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/08-document-ingestion-grid.svg</image:loc>
+      <image:title>Document Ingestion Grid Screen 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/09-agent-observability-traces.svg</image:loc>
+      <image:title>Agent Observability Traces Screen 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/10-agent-security-boundary.svg</image:loc>
+      <image:title>Agent Security Boundary Screen 10</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/agentic-ops/11-autonomous-scheduler.svg</image:loc>
+      <image:title>Autonomous Scheduler Screen 11</image:title>
     </image:image>
   </url>
   <url>
