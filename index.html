@@ -124,25 +124,51 @@
   <!-- TAILWIND & FIGMA GRID SKETCH FRAME -->
   <div class="sketch-frame">
 
-    <!-- SECTION 1: HERO (Strictly single line, half screen height) -->
+    <!-- SECTION 1: HERO (Dual Blocks with Grayscale Indonesia Map Underlay) -->
     <section class="section-hero" id="hero">
-      <div class="container">
-        <div class="sketch-meta-bar">
-          <span class="sketch-tag">COORD // 01 HERO</span>
-          <span class="sketch-dimension">FRAME 1360 x 50vh</span>
+      <div class="hero-container">
+
+        <!-- Grayscale Indonesia Map Underlay -->
+        <div class="hero-map-underlay" aria-hidden="true">
+          <img src="assets/indonesia-map.svg" alt="" class="hero-map-svg" loading="eager">
         </div>
-        <h1 class="hero-title">MAYASTRA NAWALOKA</h1>
+
+        <!-- Dual Text Blocks -->
+        <div class="hero-dual-grid">
+
+          <!-- Left Block: MAYASTRA NAWALOKA NUSANTARA (Ascending Font Sizes, Left Aligned) -->
+          <h1 class="hero-block hero-block-left" aria-label="MAYASTRA NAWALOKA NUSANTARA">
+            <span class="hero-line hero-line-sm">MAYASTRA</span>
+            <span class="hero-line hero-line-md">NAWALOKA</span>
+            <span class="hero-line hero-line-lg">NUSANTARA</span>
+          </h1>
+
+          <!-- Right Block: BANGKIT MENANTANG BATAS (Ascending Font Sizes, Right Aligned) -->
+          <div class="hero-block hero-block-right" aria-label="BANGKIT MENANTANG BATAS">
+            <span class="hero-line hero-line-sm">BANGKIT</span>
+            <span class="hero-line hero-line-md">MENANTANG</span>
+            <span class="hero-line hero-line-lg">BATAS</span>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
     <div class="sketch-divider"></div>
 
-    <!-- SECTION 2: PROJECTS (Only images without words, preview button on hover leading to dedicated detail pages) -->
+    <!-- SECTION 2: PROJECTS (Image-First Showcase with Box Grid Title) -->
     <section class="section-projects" id="projects">
       <div class="container">
-        <div class="sketch-meta-bar">
-          <span class="sketch-tag">SECTION // 02 SELECTED WORKS</span>
-          <span class="sketch-dimension">5 ARCHITECTURAL PLATFORMS</span>
+        <div class="section-title-box">
+          <div class="section-title-grid">
+            <div class="section-title-meta">
+              <span class="section-title-index">SECTION // 01</span>
+              <span class="section-title-tag">ARCHITECTURAL PLATFORMS</span>
+              <span class="section-title-dim">5 WORKS // 55 CODED SCREENS</span>
+            </div>
+            <h2 class="section-title-heading">SELECTED WORKS</h2>
+          </div>
         </div>
         <div class="projects-feed">
           <!-- Project 1: ERP -->
@@ -218,12 +244,17 @@
     <!-- SECTION: ARTICLES CTA (Positioned right above contact section) -->
     <section class="section-articles-cta" id="articles-cta">
       <div class="container">
-        <div class="sketch-meta-bar">
-          <span class="sketch-tag">SECTION // 03 PUBLICATIONS</span>
-          <span class="sketch-dimension">20 ENTRIES</span>
+        <div class="section-title-box">
+          <div class="section-title-grid">
+            <div class="section-title-meta">
+              <span class="section-title-index">SECTION // 02</span>
+              <span class="section-title-tag">PUBLICATIONS &amp; RESEARCH</span>
+              <span class="section-title-dim">20 COMPREHENSIVE ENTRIES</span>
+            </div>
+            <h2 class="section-title-heading">PERSPECTIVES &amp; CAPABILITIES</h2>
+          </div>
         </div>
         <div class="articles-cta-box">
-          <h2 class="articles-cta-title">PERSPECTIVES &amp; CAPABILITIES</h2>
           <p class="articles-cta-desc">
             Kita buka-bukaan riset sistem komputer, arsitektur memory zero-copy, dan ledger konsensus terdistribusi, plus studi kasus mendalam tentang gimana tim Mayastra merancang commercial software yang clean, scalable, dan reliable.
           </p>
@@ -257,17 +288,25 @@
 
     <div class="sketch-divider"></div>
 
-    <!-- SECTION 3: CONTACT (Minimalist email section) -->
+    <!-- SECTION 3: CONTACT (Minimalist email section with Box Grid Title) -->
     <section class="section-contact" id="contact">
       <div class="container">
-        <div class="sketch-meta-bar">
-          <span class="sketch-tag">SECTION // 04 INQUIRY</span>
-          <span class="sketch-dimension">DIRECT DISPATCH</span>
+        <div class="section-title-box">
+          <div class="section-title-grid">
+            <div class="section-title-meta">
+              <span class="section-title-index">SECTION // 03</span>
+              <span class="section-title-tag">COMMUNICATION DISPATCH</span>
+              <span class="section-title-dim">DIRECT INQUIRY</span>
+            </div>
+            <h2 class="section-title-heading">INQUIRIES &amp; PARTNERSHIPS</h2>
+          </div>
         </div>
-        <p class="contact-label">Inquiries &amp; Partnerships</p>
-        <a href="mailto:contact@mayastranawaloka.com" class="contact-email-link" id="emailLink">contact@mayastranawaloka.com</a>
-        <div class="contact-actions">
-          <button type="button" class="btn-copy-email" id="copyEmailBtn">Copy Email Address</button>
+        <div class="contact-body-box">
+          <p class="contact-label">Electronic Mail</p>
+          <a href="mailto:contact@mayastranawaloka.com" class="contact-email-link" id="emailLink">contact@mayastranawaloka.com</a>
+          <div class="contact-actions">
+            <button type="button" class="btn-copy-email" id="copyEmailBtn">Copy Email Address</button>
+          </div>
         </div>
       </div>
     </section>
