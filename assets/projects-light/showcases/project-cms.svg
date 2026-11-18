@@ -76,9 +76,9 @@
     <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board &#8226; Updated 14 minutes ago &#8226; Public Visibility</text>
 
     <!-- Featured Header Visual inside editor -->
-    <rect x="40" y="220" width="800" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <circle cx="440" cy="330" r="50" fill="#e4e4e7"/>
-    <text x="440" y="335" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
+    <rect x="40" y="220" width="800" height="220" rx="4" fill="#f4f4f5" stroke="#dc2626" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="440" cy="330" r="50" fill="#dc2626" fill-opacity="0.25" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="440" y="335" fill="#dc2626" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
 
     <!-- Content Paragraphs -->
     <text x="40" y="480" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" line-height="24">Modern enterprise applications require high-precision information density without perceptual</text>

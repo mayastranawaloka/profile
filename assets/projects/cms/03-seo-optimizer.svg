@@ -89,8 +89,9 @@
       <!-- Social Card Preview -->
       <text x="24" y="285" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Open Graph Social Meta Card (Twitter/X &amp; LinkedIn)</text>
       <rect x="24" y="300" width="712" height="360" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-      <rect x="44" y="320" width="672" height="200" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
-      <text x="380" y="420" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="middle">og:image [1200x630 High Density Asset Verified]</text>
+      <rect x="44" y="320" width="672" height="200" rx="4" fill="#121215" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="380" cy="400" r="30" fill="#ef4444" fill-opacity="0.25" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="380" y="450" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">og:image [1200x630 High Density Asset Verified]</text>
       <text x="44" y="555" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">Architectural Minimalist Systems for Mid-Market Enterprise 2026</text>
       <text x="44" y="585" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">mayastranawaloka.com - 6 min read - PT Mayastra Nawaloka Nusantara</text>
       <text x="44" y="630" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Twitter Card: summary_large_image | og:type: article | twitter:site: @mayastranawaloka</text>

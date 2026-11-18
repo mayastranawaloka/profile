@@ -252,8 +252,8 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     
     <!-- Geometric artwork inside hero -->
     <rect x="620" y="40" width="350" height="300" rx="4" fill="#1c1c22" stroke="#323238" stroke-width="1"/>
-    <circle cx="795" cy="190" r="100" fill="#26262e"/>
-    <circle cx="795" cy="190" r="60" fill="#0d0d10"/>
+    <circle cx="795" cy="190" r="100" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="795" cy="190" r="60" fill="#0d0d10" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
     <line x1="620" y1="190" x2="970" y2="190" stroke="#323238" stroke-width="1"/>
     <line x1="795" y1="40" x2="795" y2="340" stroke="#323238" stroke-width="1"/>
 
@@ -276,21 +276,21 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
 
     <!-- Cart Item 1 -->
     <rect x="30" y="85" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <circle cx="60" cy="115" r="15" fill="#323238"/>
+    <circle cx="60" cy="115" r="15" fill="#ef4444" fill-opacity="0.85"/>
     <text x="105" y="105" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Matte Ceramic Carafe</text>
     <text x="105" y="125" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 1 | Midnight Black</text>
     <text x="105" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 480.000</text>
 
     <!-- Cart Item 2 -->
     <rect x="30" y="170" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <rect x="45" y="185" width="30" height="30" rx="2" fill="#323238"/>
+    <rect x="45" y="185" width="30" height="30" rx="2" fill="#ef4444" fill-opacity="0.85"/>
     <text x="105" y="190" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Linear Anodized Tray</text>
     <text x="105" y="210" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 2 | Raw Silver</text>
     <text x="105" y="227" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 650.000</text>
 
     <!-- Cart Item 3 -->
     <rect x="30" y="255" width="60" height="60" rx="4" fill="#1e1e24"/>
-    <circle cx="60" cy="285" r="18" fill="#323238"/>
+    <circle cx="60" cy="285" r="18" fill="#ef4444" fill-opacity="0.85"/>
     <text x="105" y="275" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Solid Cast Iron Desk Lamp</text>
     <text x="105" y="295" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Qty: 1 | Carbon Edition</text>
     <text x="105" y="312" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Rp 1.250.000</text>
@@ -324,7 +324,7 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     <!-- Product 1 -->
     <rect x="0" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
     <rect x="20" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <circle cx="160" cy="170" r="50" fill="#24242c"/>
+    <circle cx="160" cy="170" r="50" fill="#ef4444" fill-opacity="0.85"/>
     <text x="20" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Matte Obsidian Vessel</text>
     <text x="20" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Handcrafted Studio Stoneware</text>
     <text x="300" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 520.000</text>
@@ -332,7 +332,7 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     <!-- Product 2 -->
     <rect x="350" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
     <rect x="370" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <rect x="470" y="120" width="80" height="100" rx="4" fill="#24242c"/>
+    <rect x="470" y="120" width="80" height="100" rx="4" fill="#ef4444" fill-opacity="0.85"/>
     <text x="370" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Acoustic Wool Desk Mat</text>
     <text x="370" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Organic Felt Surface 900x400</text>
     <text x="650" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 390.000</text>
@@ -340,7 +340,7 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     <!-- Product 3 -->
     <rect x="700" y="50" width="320" height="340" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
     <rect x="720" y="70" width="280" height="200" rx="2" fill="#18181e"/>
-    <polygon points="860,110 810,210 910,210" fill="#24242c"/>
+    <polygon points="860,110 810,210 910,210" fill="#ef4444" fill-opacity="0.85"/>
     <text x="720" y="300" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Brass Geometric Bookend</text>
     <text x="720" y="322" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Solid Milled Metal Pair</text>
     <text x="1000" y="315" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 890.000</text>
@@ -430,9 +430,9 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
     <text x="40" y="190" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Published by Editorial Board &#8226; Updated 14 minutes ago &#8226; Public Visibility</text>
 
     <!-- Featured Header Visual inside editor -->
-    <rect x="40" y="220" width="800" height="220" rx="4" fill="#1b1b20" stroke="#2d2d34" stroke-width="1"/>
-    <circle cx="440" cy="330" r="50" fill="#292932"/>
-    <text x="440" y="335" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
+    <rect x="40" y="220" width="800" height="220" rx="4" fill="#1b1b20" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="440" cy="330" r="50" fill="#ef4444" fill-opacity="0.25" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="440" y="335" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Featured Hero Cover Image [1920x1080]</text>
 
     <!-- Content Paragraphs -->
     <text x="40" y="480" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" line-height="24">Modern enterprise applications require high-precision information density without perceptual</text>

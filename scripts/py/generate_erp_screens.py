@@ -558,7 +558,7 @@ def generate_all_erp():
     for name, email, dept, role, scope, mfa in users_07:
         table_rows_07 += f"""    <g transform="translate(32, {y_pos})">
       <line x1="0" y1="0" x2="1206" y2="0" stroke="#1f1f23" stroke-width="1"/>
-      <circle cx="20" cy="24" r="14" fill="#18181b" stroke="#27272a"/>
+      <circle cx="20" cy="24" r="14" fill="#ef4444"/>
       <text x="20" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">{name[0]}</text>
       <text x="50" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">{name}</text>
       <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">{email}</text>

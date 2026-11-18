@@ -78,7 +78,7 @@
       <!-- Item 1 -->
       <rect x="0" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="20" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <circle cx="172" cy="115" r="45" fill="#24242c"/>
+      <circle cx="172" cy="115" r="45" fill="#ef4444" fill-opacity="0.85"/>
       <text x="20" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Matte Ceramic Carafe</text>
       <text x="20" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Kitchen / Stoneware</text>
       <text x="325" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 480.000</text>
@@ -86,7 +86,7 @@
       <!-- Item 2 -->
       <rect x="375" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="395" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <rect x="510" y="70" width="75" height="90" rx="4" fill="#24242c"/>
+      <rect x="510" y="70" width="75" height="90" rx="4" fill="#ef4444" fill-opacity="0.85"/>
       <text x="395" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Linear Anodized Tray</text>
       <text x="395" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hardware / Silver</text>
       <text x="700" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 650.000</text>
@@ -94,7 +94,7 @@
       <!-- Item 3 -->
       <rect x="750" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="770" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <polygon points="942,65 895,165 990,165" fill="#24242c"/>
+      <polygon points="942,65 895,165 990,165" fill="#ef4444" fill-opacity="0.85"/>
       <text x="770" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Cast Iron Desk Lamp</text>
       <text x="770" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Lighting / Carbon</text>
       <text x="1075" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 1.250.000</text>
@@ -103,21 +103,21 @@
       <g transform="translate(0, 360)">
         <rect x="0" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="20" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <circle cx="172" cy="115" r="45" fill="#24242c"/>
+        <circle cx="172" cy="115" r="45" fill="#ef4444" fill-opacity="0.85"/>
         <text x="20" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Acoustic Desk Pad</text>
         <text x="20" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Desk / Felt Surface</text>
         <text x="325" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 390.000</text>
 
         <rect x="375" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="395" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <rect x="510" y="70" width="75" height="90" rx="4" fill="#24242c"/>
+        <rect x="510" y="70" width="75" height="90" rx="4" fill="#ef4444" fill-opacity="0.85"/>
         <text x="395" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Brass Bookend Pair</text>
         <text x="395" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Living / Milled Brass</text>
         <text x="700" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 890.000</text>
 
         <rect x="750" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="770" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <polygon points="942,65 895,165 990,165" fill="#24242c"/>
+        <polygon points="942,65 895,165 990,165" fill="#ef4444" fill-opacity="0.85"/>
         <text x="770" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Minimalist Timer</text>
         <text x="770" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Studio / Analog</text>
         <text x="1075" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 320.000</text>

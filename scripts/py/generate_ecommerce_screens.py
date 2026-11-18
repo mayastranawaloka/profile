@@ -76,20 +76,20 @@ def generate_all_ecommerce():
     <g transform="translate(0, 40)">
       <rect x="0" y="0" width="860" height="740" rx="6" fill="#141418" stroke="#27272a" stroke-width="1"/>
       <rect x="40" y="40" width="780" height="520" rx="4" fill="#18181e"/>
-      <circle cx="430" cy="300" r="160" fill="#22222a"/>
-      <circle cx="430" cy="300" r="100" fill="#0d0d10"/>
-      <circle cx="430" cy="300" r="50" fill="#1c1c24"/>
+      <circle cx="430" cy="300" r="160" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="1.5"/>
+      <circle cx="430" cy="300" r="100" fill="#0d0d10" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
+      <circle cx="430" cy="300" r="50" fill="#ef4444" fill-opacity="0.25"/>
       
       <!-- Multi-Angle Thumbnails -->
       <g transform="translate(40, 580)">
-        <rect x="0" y="0" width="120" height="120" rx="4" fill="#18181e" stroke="#ffffff" stroke-width="2"/>
-        <circle cx="60" cy="60" r="25" fill="#24242c"/>
+        <rect x="0" y="0" width="120" height="120" rx="4" fill="#18181e" stroke="#ef4444" stroke-width="2"/>
+        <circle cx="60" cy="60" r="25" fill="#ef4444" fill-opacity="0.85"/>
 
         <rect x="140" y="0" width="120" height="120" rx="4" fill="#18181e" stroke="#27272a" stroke-width="1"/>
-        <rect x="175" y="35" width="50" height="50" rx="2" fill="#24242c"/>
+        <rect x="175" y="35" width="50" height="50" rx="2" fill="#ef4444" fill-opacity="0.85"/>
 
         <rect x="280" y="0" width="120" height="120" rx="4" fill="#18181e" stroke="#27272a" stroke-width="1"/>
-        <polygon points="340,35 315,85 365,85" fill="#24242c"/>
+        <polygon points="340,35 315,85 365,85" fill="#ef4444" fill-opacity="0.85"/>
       </g>
     </g>
 
@@ -202,7 +202,7 @@ def generate_all_ecommerce():
       <!-- Item 1 -->
       <rect x="0" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="20" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <circle cx="172" cy="115" r="45" fill="#24242c"/>
+      <circle cx="172" cy="115" r="45" fill="#ef4444" fill-opacity="0.85"/>
       <text x="20" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Matte Ceramic Carafe</text>
       <text x="20" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Kitchen / Stoneware</text>
       <text x="325" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 480.000</text>
@@ -210,7 +210,7 @@ def generate_all_ecommerce():
       <!-- Item 2 -->
       <rect x="375" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="395" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <rect x="510" y="70" width="75" height="90" rx="4" fill="#24242c"/>
+      <rect x="510" y="70" width="75" height="90" rx="4" fill="#ef4444" fill-opacity="0.85"/>
       <text x="395" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Linear Anodized Tray</text>
       <text x="395" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hardware / Silver</text>
       <text x="700" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 650.000</text>
@@ -218,7 +218,7 @@ def generate_all_ecommerce():
       <!-- Item 3 -->
       <rect x="750" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
       <rect x="770" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-      <polygon points="942,65 895,165 990,165" fill="#24242c"/>
+      <polygon points="942,65 895,165 990,165" fill="#ef4444" fill-opacity="0.85"/>
       <text x="770" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Cast Iron Desk Lamp</text>
       <text x="770" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Lighting / Carbon</text>
       <text x="1075" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 1.250.000</text>
@@ -227,21 +227,21 @@ def generate_all_ecommerce():
       <g transform="translate(0, 360)">
         <rect x="0" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="20" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <circle cx="172" cy="115" r="45" fill="#24242c"/>
+        <circle cx="172" cy="115" r="45" fill="#ef4444" fill-opacity="0.85"/>
         <text x="20" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Acoustic Desk Pad</text>
         <text x="20" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Desk / Felt Surface</text>
         <text x="325" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 390.000</text>
 
         <rect x="375" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="395" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <rect x="510" y="70" width="75" height="90" rx="4" fill="#24242c"/>
+        <rect x="510" y="70" width="75" height="90" rx="4" fill="#ef4444" fill-opacity="0.85"/>
         <text x="395" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Brass Bookend Pair</text>
         <text x="395" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Living / Milled Brass</text>
         <text x="700" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 890.000</text>
 
         <rect x="750" y="0" width="345" height="330" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
         <rect x="770" y="20" width="305" height="190" rx="2" fill="#18181e"/>
-        <polygon points="942,65 895,165 990,165" fill="#24242c"/>
+        <polygon points="942,65 895,165 990,165" fill="#ef4444" fill-opacity="0.85"/>
         <text x="770" y="245" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Minimalist Timer</text>
         <text x="770" y="268" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Studio / Analog</text>
         <text x="1075" y="260" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="end">Rp 320.000</text>
@@ -283,7 +283,7 @@ def generate_all_ecommerce():
         <!-- Cart Item 1 -->
         <g transform="translate(0, 105)">
           <rect x="0" y="0" width="80" height="80" rx="4" fill="#1c1c24"/>
-          <circle cx="40" cy="40" r="22" fill="#292934"/>
+          <circle cx="40" cy="40" r="22" fill="#ef4444" fill-opacity="0.85"/>
           <text x="96" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Matte Ceramic Carafe</text>
           <text x="96" y="46" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Midnight Obsidian Edition</text>
           <text x="96" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">Rp 480.000</text>
@@ -294,7 +294,7 @@ def generate_all_ecommerce():
         <!-- Cart Item 2 -->
         <g transform="translate(0, 225)">
           <rect x="0" y="0" width="80" height="80" rx="4" fill="#1c1c24"/>
-          <rect x="25" y="25" width="30" height="30" rx="2" fill="#292934"/>
+          <rect x="25" y="25" width="30" height="30" rx="2" fill="#ef4444" fill-opacity="0.85"/>
           <text x="96" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Linear Anodized Tray</text>
           <text x="96" y="46" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Raw Silver / 400x200</text>
           <text x="96" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">Rp 650.000</text>

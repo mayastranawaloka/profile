@@ -275,8 +275,9 @@ cms_screens["03-seo-optimizer.svg"] = build_cms_svg(
       <!-- Social Card Preview -->
       <text x="24" y="285" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Open Graph Social Meta Card (Twitter/X &amp; LinkedIn)</text>
       <rect x="24" y="300" width="712" height="360" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-      <rect x="44" y="320" width="672" height="200" rx="4" fill="#121215" stroke="#27272a" stroke-width="1"/>
-      <text x="380" y="420" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="middle">og:image [1200x630 High Density Asset Verified]</text>
+      <rect x="44" y="320" width="672" height="200" rx="4" fill="#121215" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="380" cy="400" r="30" fill="#ef4444" fill-opacity="0.25" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="380" y="450" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">og:image [1200x630 High Density Asset Verified]</text>
       <text x="44" y="555" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">Architectural Minimalist Systems for Mid-Market Enterprise 2026</text>
       <text x="44" y="585" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">mayastranawaloka.com - 6 min read - PT Mayastra Nawaloka Nusantara</text>
       <text x="44" y="630" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Twitter Card: summary_large_image | og:type: article | twitter:site: @mayastranawaloka</text>
@@ -379,9 +380,9 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
 
       <!-- Asset Card 1 (Selected) -->
       <g transform="translate(24, 24)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#ffffff" stroke-width="2"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#ef4444" stroke-width="2"/>
         <rect x="12" y="12" width="234" height="130" rx="3" fill="#121215"/>
-        <circle cx="129" cy="77" r="28" fill="#27272a"/>
+        <circle cx="129" cy="77" r="28" fill="#ef4444" fill-opacity="0.85"/>
         <text x="12" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">hero-architecture-2026.webp</text>
         <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 148.6 KB - WebP</text>
       </g>
@@ -390,7 +391,7 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
       <g transform="translate(306, 24)">
         <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
         <rect x="12" y="12" width="234" height="130" rx="3" fill="#121215"/>
-        <rect x="110" y="58" width="38" height="38" fill="#27272a"/>
+        <rect x="110" y="58" width="38" height="38" fill="#ef4444" fill-opacity="0.85"/>
         <text x="12" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">diagram-kubernetes-mesh.svg</text>
         <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 42.1 KB</text>
       </g>
@@ -399,7 +400,7 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
       <g transform="translate(588, 24)">
         <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
         <rect x="12" y="12" width="234" height="130" rx="3" fill="#121215"/>
-        <circle cx="129" cy="77" r="28" fill="#27272a"/>
+        <circle cx="129" cy="77" r="28" fill="#ef4444" fill-opacity="0.85"/>
         <text x="12" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">founder-keynote-tech.webp</text>
         <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">2400x1600 - 320.4 KB - WebP</text>
       </g>
@@ -408,7 +409,7 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
       <g transform="translate(24, 268)">
         <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
         <rect x="12" y="12" width="234" height="130" rx="3" fill="#121215"/>
-        <circle cx="129" cy="77" r="28" fill="#27272a"/>
+        <circle cx="129" cy="77" r="28" fill="#ef4444" fill-opacity="0.85"/>
         <text x="12" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">server-rack-datacenter.webp</text>
         <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 210.8 KB - WebP</text>
       </g>
@@ -417,7 +418,7 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
       <g transform="translate(306, 268)">
         <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
         <rect x="12" y="12" width="234" height="130" rx="3" fill="#121215"/>
-        <rect x="110" y="58" width="38" height="38" fill="#27272a"/>
+        <rect x="110" y="58" width="38" height="38" fill="#ef4444" fill-opacity="0.85"/>
         <text x="12" y="170" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">system-topology-v4.svg</text>
         <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 64.2 KB</text>
       </g>
@@ -440,7 +441,7 @@ cms_screens["04-media-library.svg"] = build_cms_svg(
 
       <!-- Large Preview Box -->
       <rect x="24" y="70" width="336" height="180" rx="4" fill="#18181c" stroke="#27272a" stroke-width="1"/>
-      <circle cx="192" cy="160" r="40" fill="#27272a"/>
+      <circle cx="192" cy="160" r="40" fill="#ef4444" fill-opacity="0.85"/>
 
       <!-- Metadata Fields -->
       <text x="24" y="285" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">FILE NAME</text>
