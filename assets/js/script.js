@@ -44,11 +44,24 @@ const initMayastraApp = () => {
   // THEME ENGINE (Dark / Light Mode with SVG Palette Swapping)
   // ========================================================
   const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const ASSET_CACHE_KEY = 'v=9';
 
   const swapSvgs = (theme) => {
     document.querySelectorAll('img').forEach((img) => {
       const src = img.getAttribute('src');
       if (!src) return;
+
+      // Defensive fallback: prevent broken image placeholder if any light asset fails
+      img.onerror = function () {
+        const currentSrc = this.getAttribute('src') || '';
+        if (currentSrc.includes('projects-light/')) {
+          this.onerror = null;
+          this.setAttribute('src', currentSrc.replace('projects-light/', 'projects/'));
+        } else if (currentSrc.includes('-light.svg')) {
+          this.onerror = null;
+          this.setAttribute('src', currentSrc.replace('-light.svg', '.svg'));
+        }
+      };
 
       let newSrc = null;
       if (theme === 'light') {
@@ -72,8 +85,11 @@ const initMayastraApp = () => {
       }
 
       if (newSrc && newSrc !== src) {
+        // Append cache-busting version parameter to force immediate browser cache bypass
+        const cleanBase = newSrc.split('?')[0];
+        const cacheBusted = `${cleanBase}?${ASSET_CACHE_KEY}`;
         img.loading = 'eager';
-        img.setAttribute('src', newSrc);
+        img.setAttribute('src', cacheBusted);
       }
     });
   };
