@@ -106,11 +106,6 @@ body {
   background-color: #000000;
   border-left: 1px solid rgba(255, 255, 255, 0.09);
   border-right: 1px solid rgba(255, 255, 255, 0.09);
-  /* Pure CSS 64px architectural blueprint grid */
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 64px 64px;
 }
 
 /* Horizontal section divider with corner crosshair '+' markers */
@@ -623,10 +618,6 @@ body {
   margin-bottom: 48px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background-color: #050505;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 32px 32px;
 }
 
 .section-title-box::before,
@@ -2942,9 +2933,6 @@ blockquote {
   background-color: #ffffff;
   border-left: 1px solid rgba(0, 0, 0, 0.08);
   border-right: 1px solid rgba(0, 0, 0, 0.08);
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
 [data-theme="light"] .sketch-divider {
@@ -3065,9 +3053,6 @@ blockquote {
 [data-theme="light"] .section-title-box {
   background-color: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
 }
 
 [data-theme="light"] .section-title-box::before,
