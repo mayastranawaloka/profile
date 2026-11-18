@@ -34,7 +34,9 @@ def get_pulse_sidebar(active_name="Articles &amp; Posts"):
 
     return f"""  <!-- Sidebar -->
   <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#27272a" stroke-width="1"/>
-  <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
+  <rect x="28" y="82" width="18" height="18" rx="4" fill="#ef4444"/>
+  <circle cx="37" cy="91" r="3" fill="#fefefe"/>
+  <text x="56" y="96" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
 {menu_svg}  </g>"""
@@ -46,8 +48,8 @@ def get_pulse_top_bar(breadcrumb, btn1="Save Draft", btn2="Publish Live"):
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">{btn1}</text>
 
-    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ffffff"/>
-    <text x="1030" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">{btn2}</text>
+    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ef4444"/>
+    <text x="1030" y="26" fill="#fefefe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">{btn2}</text>
   </g>"""
 
 def build_cms_svg(url, active_nav, breadcrumb, btn1, btn2, content_svg):
@@ -628,18 +630,18 @@ cms_screens["06-revision-history.svg"] = build_cms_svg(
         <text x="36" y="24" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Modern enterprise systems require efficient data layouts.</text>
 
         <!-- Deleted lines highlighted in dark red tint -->
-        <rect x="30" y="42" width="550" height="46" rx="2" fill="#3b1114" stroke="#5a181c" stroke-width="1"/>
+        <rect x="30" y="42" width="550" height="46" rx="2" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
         <text x="0" y="62" fill="#52525b" font-family="monospace" font-size="12">15</text>
-        <text x="36" y="62" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">- Conventional UI frameworks introduce excessive render overhead</text>
-        <text x="36" y="80" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">  and noticeable user perceptible latency.</text>
+        <text x="36" y="62" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">- Conventional UI frameworks introduce excessive render overhead</text>
+        <text x="36" y="80" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">  and noticeable user perceptible latency.</text>
 
         <text x="0" y="112" fill="#52525b" font-family="monospace" font-size="12">16</text>
         <text x="36" y="112" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">By utilizing strict monochromatic typography, digital operations</text>
         <text x="36" y="130" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">achieve instantaneous user comprehension.</text>
 
-        <rect x="30" y="148" width="550" height="30" rx="2" fill="#3b1114" stroke="#5a181c" stroke-width="1"/>
+        <rect x="30" y="148" width="550" height="30" rx="2" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
         <text x="0" y="168" fill="#52525b" font-family="monospace" font-size="12">17</text>
-        <text x="36" y="168" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">- We suggest limiting visual components to simple basic tables.</text>
+        <text x="36" y="168" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">- We suggest limiting visual components to simple basic tables.</text>
 
         <text x="0" y="208" fill="#52525b" font-family="monospace" font-size="12">18</text>
         <text x="36" y="208" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Core Infrastructure Deliverables:</text>
@@ -657,19 +659,19 @@ cms_screens["06-revision-history.svg"] = build_cms_svg(
           <text x="0" y="24" fill="#52525b" font-family="monospace" font-size="12">14</text>
           <text x="36" y="24" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Modern enterprise systems require efficient data layouts.</text>
 
-          <!-- Added lines highlighted in dark green tint -->
-          <rect x="30" y="42" width="550" height="46" rx="2" fill="#132a18" stroke="#1c4723" stroke-width="1"/>
+          <!-- Added lines highlighted in subtle surface tint -->
+          <rect x="30" y="42" width="550" height="46" rx="2" fill="#ffffff" fill-opacity="0.06" stroke="#27272a" stroke-width="1"/>
           <text x="0" y="62" fill="#52525b" font-family="monospace" font-size="12">15</text>
-          <text x="36" y="62" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">+ Modern enterprise applications require high-precision information</text>
-          <text x="36" y="80" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">  density without perceptual clutter and distraction.</text>
+          <text x="36" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">+ Modern enterprise applications require high-precision information</text>
+          <text x="36" y="80" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">  density without perceptual clutter and distraction.</text>
 
           <text x="0" y="112" fill="#52525b" font-family="monospace" font-size="12">16</text>
           <text x="36" y="112" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">By utilizing strict monochromatic typography, digital operations</text>
           <text x="36" y="130" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">achieve instantaneous user comprehension.</text>
 
-          <rect x="30" y="148" width="550" height="30" rx="2" fill="#132a18" stroke="#1c4723" stroke-width="1"/>
+          <rect x="30" y="148" width="550" height="30" rx="2" fill="#ffffff" fill-opacity="0.06" stroke="#27272a" stroke-width="1"/>
           <text x="0" y="168" fill="#52525b" font-family="monospace" font-size="12">17</text>
-          <text x="36" y="168" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">+ Edge architecture guarantees sub-80ms global document propagation.</text>
+          <text x="36" y="168" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">+ Edge architecture guarantees sub-80ms global document propagation.</text>
 
           <text x="0" y="208" fill="#52525b" font-family="monospace" font-size="12">18</text>
           <text x="36" y="208" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Core Infrastructure Deliverables:</text>

@@ -22,7 +22,8 @@
   <!-- Sidebar -->
   <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Brand in Gateway -->
-  <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#dc2626"/>
+  <circle cx="40" cy="92" r="3.5" fill="#ffffff"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AI GATEWAY</text>
 
   <!-- Nav items -->
@@ -46,7 +47,8 @@
 
   <!-- Cluster status at bottom sidebar -->
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <circle cx="48" cy="951" r="5" fill="#09090b"/>
+  <circle cx="48" cy="951" r="10" fill="#dc2626" fill-opacity="0.15"/>
+  <circle cx="48" cy="951" r="4" fill="#dc2626"/>
   <text x="64" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Enterprise Vault #01</text>
   <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">HSM Encrypted / FIPS-140</text>
   <!-- Top bar inside main content -->

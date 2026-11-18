@@ -86,6 +86,11 @@ COLOR_MAP = {
     "#e4e4e7": "#09090b",
     "#f4f4f5": "#09090b",
     "#ffffff": "#09090b",
+
+    # 9. Refined Brand Red Accents -> Crisp Ruby Carmine in Light Mode
+    "#ef4444": "#dc2626",
+    "#dc2626": "#dc2626",
+    "#fefefe": "#ffffff",
 }
 
 def convert_svg_to_light(svg_text):

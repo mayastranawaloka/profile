@@ -23,6 +23,8 @@ def get_store_nav(active_cat="ALL OBJECTS", bag_count=3):
 
     return f"""  <!-- Store Navigation Bar -->
   <rect y="52" width="1600" height="70" fill="#0d0d10" stroke="#1f1f23" stroke-width="1"/>
+  <rect x="52" y="81" width="16" height="16" rx="3" fill="#ef4444"/>
+  <circle cx="60" cy="89" r="3" fill="#fefefe"/>
   <text x="80" y="94" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800" letter-spacing="3">KRONIK COMMERCE</text>
 
   <g transform="translate(480, 94)">
@@ -34,6 +36,7 @@ def get_store_nav(active_cat="ALL OBJECTS", bag_count=3):
     <text x="0" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1">IDR / EN</text>
     <rect x="80" y="-16" width="68" height="26" rx="13" fill="#ffffff"/>
     <text x="114" y="1" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">BAG ({bag_count})</text>
+    <circle cx="152" cy="-14" r="4.5" fill="#ef4444"/>
   </g>"""
 
 def build_ecommerce_svg(url, active_cat, bag_count, content_svg):

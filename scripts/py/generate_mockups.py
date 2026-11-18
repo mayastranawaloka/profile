@@ -29,7 +29,8 @@ erp_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
   <!-- Sidebar -->
   <rect x="0" y="52" width="260" height="948" fill="#0d0d10" stroke="#27272a" stroke-width="1"/>
   <!-- Logo / Brand in ERP -->
-  <rect x="28" y="80" width="24" height="24" rx="4" fill="#ffffff"/>
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#ef4444"/>
+  <circle cx="40" cy="92" r="3.5" fill="#fefefe"/>
   <text x="64" y="97" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
 
   <!-- Nav items -->
@@ -59,7 +60,8 @@ erp_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
 
   <!-- User info at bottom sidebar -->
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
-  <circle cx="48" cy="951" r="12" fill="#ffffff" fill-opacity="0.2"/>
+  <circle cx="48" cy="951" r="10" fill="#ef4444" fill-opacity="0.15"/>
+  <circle cx="48" cy="951" r="4" fill="#ef4444"/>
   <text x="70" y="948" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
   <text x="70" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
 
@@ -122,6 +124,7 @@ erp_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
     <!-- Dots -->
     <circle cx="500" cy="140" r="4" fill="#ffffff"/>
     <circle cx="740" cy="90" r="4" fill="#ffffff"/>
+    <circle cx="786" cy="85" r="5" fill="#ef4444"/>
 
     <!-- Months labels -->
     <text x="24" y="300" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Jan</text>
@@ -223,6 +226,8 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
 
   <!-- Store Navigation Bar -->
   <rect y="52" width="1600" height="70" fill="#0d0d10" stroke="#1f1f23" stroke-width="1"/>
+  <rect x="52" y="81" width="16" height="16" rx="3" fill="#ef4444"/>
+  <circle cx="60" cy="89" r="3" fill="#fefefe"/>
   <text x="80" y="94" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800" letter-spacing="3">KRONIK COMMERCE</text>
 
   <g transform="translate(480, 94)">
@@ -238,6 +243,7 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     <text x="0" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1">IDR / EN</text>
     <rect x="80" y="-16" width="68" height="26" rx="13" fill="#ffffff"/>
     <text x="114" y="1" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">BAG (3)</text>
+    <circle cx="152" cy="-14" r="4.5" fill="#ef4444"/>
   </g>
 
   <!-- Hero Feature Banner -->
@@ -257,8 +263,8 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
     <text x="50" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" max-width="480">Direct-to-consumer artisanal home and studio instruments.</text>
     <text x="50" y="260" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14">Engineered for commercial spaces and boutique environments.</text>
 
-    <rect x="50" y="295" width="150" height="42" rx="4" fill="#ffffff"/>
-    <text x="125" y="321" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">EXPLORE DROP</text>
+    <rect x="50" y="295" width="150" height="42" rx="4" fill="#ef4444"/>
+    <text x="125" y="321" fill="#fefefe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">EXPLORE DROP</text>
   </g>
 
   <!-- Cart / Checkout Preview Drawer on the Right -->
@@ -360,7 +366,9 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
 
   <!-- Sidebar -->
   <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#27272a" stroke-width="1"/>
-  <text x="28" y="98" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
+  <rect x="28" y="82" width="18" height="18" rx="4" fill="#ef4444"/>
+  <circle cx="37" cy="91" r="3" fill="#fefefe"/>
+  <text x="56" y="96" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
     <text x="38" y="24" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Dashboard</text>
@@ -395,8 +403,8 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
     <text x="905" y="26" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Save Draft</text>
 
-    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ffffff"/>
-    <text x="1030" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Publish Live</text>
+    <rect x="975" y="4" width="110" height="34" rx="4" fill="#ef4444"/>
+    <text x="1030" y="26" fill="#fefefe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Publish Live</text>
   </g>
 
   <!-- Editor Main Area -->

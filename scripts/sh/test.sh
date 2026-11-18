@@ -288,10 +288,12 @@ if failed:
 print(f"[*] Verified zero third-party brands across {len(files)} files.")
 '
 
-# 10. Verify 100% Strict Monochrome Palette across all SVG assets
-echo "[*] Verifying 100% strict monochrome palette across all SVG assets..."
+# 10. Verify Refined Brand Red Accents in Project SVGs and Strict Monochrome in Non-Project SVGs
+echo "[*] Verifying refined brand red accents in project SVGs and strict monochrome in non-project SVGs..."
 python3 -c '
 import glob, re, sys
+
+APPROVED_RED_ACCENTS = {"#ef4444", "#dc2626", "#b91c1c", "#c10f1e", "#991b1b", "#f87171"}
 
 def has_chromatic_color(hex_str):
     hex_str = hex_str.lstrip("#")
@@ -304,18 +306,38 @@ def has_chromatic_color(hex_str):
 
 svg_files = glob.glob("assets/**/*.svg", recursive=True)
 failed = False
+project_count = 0
+non_project_count = 0
+
 for fpath in svg_files:
     with open(fpath, "r", encoding="utf-8") as f:
         c = f.read()
     colors = re.findall(r"#[0-9a-fA-F]{6}", c)
-    bad = [col for col in colors if has_chromatic_color(col)]
-    if bad:
-        print(f"FAIL: Non-monochrome chromatic color {set(bad)} found in {fpath}")
-        failed = True
+    chromatic = [col.lower() for col in colors if has_chromatic_color(col)]
+    
+    is_project_svg = "assets/projects/" in fpath or "assets/projects-light/" in fpath
+    if is_project_svg:
+        project_count += 1
+        # Must have at least one approved red accent
+        red_accents = [col for col in chromatic if col in APPROVED_RED_ACCENTS]
+        if not red_accents:
+            print(f"FAIL: Missing required red accent in project SVG: {fpath}")
+            failed = True
+        # Must have zero unauthorized chromatic colors
+        bad_colors = [col for col in chromatic if col not in APPROVED_RED_ACCENTS]
+        if bad_colors:
+            print(f"FAIL: Unauthorized chromatic color {set(bad_colors)} in project SVG: {fpath}")
+            failed = True
+    else:
+        non_project_count += 1
+        # Non-project SVGs (maps, team) must be 100% strict monochrome
+        if chromatic:
+            print(f"FAIL: Non-monochrome chromatic color {set(chromatic)} in non-project SVG: {fpath}")
+            failed = True
 
 if failed:
     sys.exit(1)
-print(f"[*] Verified 100% strict monochrome palette across all {len(svg_files)} SVGs.")
+print(f"[*] Verified refined red accents across {project_count} project SVGs and strict monochrome across {non_project_count} non-project SVGs cleanly.")
 '
 
 # 11. Verify robots.txt and sitemap.xml
