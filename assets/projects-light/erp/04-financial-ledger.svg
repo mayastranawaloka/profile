@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <defs>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#ffffff"/>
+
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/finance</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <!-- Logo / Brand in ERP -->
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
+  <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
+
+  <!-- Nav items -->
+  <g transform="translate(24, 140)">
+    <rect x="16" y="14" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="24" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Overview</text>
+    <rect x="16" y="60" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="70" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Inventory &amp; Stock</text>
+    <rect x="16" y="106" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="116" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Orders &amp; Sales</text>
+    <rect x="16" y="152" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="162" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Procurement</text>
+    <rect x="0" y="184" width="212" height="38" rx="6" fill="#09090b" fill-opacity="0.08"/>
+    <rect x="16" y="198" width="10" height="10" fill="#09090b"/>
+    <text x="38" y="208" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Finance &amp; Ledger</text>
+    <rect x="16" y="244" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="254" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Warehouse Hub</text>
+    <rect x="16" y="290" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="300" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Settings</text>
+  </g>
+
+  <!-- User info at bottom sidebar -->
+  <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
+  <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
+  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+
+  <!-- Top bar inside main content -->
+  <g transform="translate(290, 80)">
+    <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Double-Entry Financial Ledger</text>
+    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Automated Journal Entries, Multi-Currency Reconciliations &amp; Balance Sheets</text>
+
+    <!-- Date selector & export button -->
+    <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="1125" y="30" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Audit Report</text>
+
+    <rect x="1195" y="8" width="105" height="34" rx="4" fill="#09090b"/>
+    <text x="1247" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Manual Journal</text>
+  </g>
+
+  <!-- KPI Cards -->
+  <g transform="translate(290, 160)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">NET CASH POSITION</text>
+    <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Rp 4.28 B</text>
+    <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Liquid bank balances</text>
+    <!-- Card 2 -->
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACCOUNTS RECEIVABLE</text>
+    <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Rp 1.62 B</text>
+    <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Average aging 14.2 days</text>
+    <!-- Card 3 -->
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACCOUNTS PAYABLE</text>
+    <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Rp 940.0 M</text>
+    <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Upcoming vendor commitments</text>
+    <!-- Card 4 -->
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">UNRECONCILED TRANSACTIONS</text>
+    <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0 Items</text>
+    <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero discrepancies flagged</text>
+  </g>
+
+
+  <!-- Main Content Grid -->
+  <g transform="translate(290, 304)">
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Double-Entry Immutable General Ledger</text>
+    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cryptographically chained balance records with row-level transactional locking</text>
+
+    <!-- Column Headers -->
+    <g transform="translate(32, 90)">
+      <text x="10" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TX ID</text>
+      <text x="130" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DATE</text>
+      <text x="250" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GL CODE</text>
+      <text x="360" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCOUNT NAME</text>
+      <text x="680" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DEBIT (IDR)</text>
+      <text x="830" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CREDIT (IDR)</text>
+      <text x="980" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">HASH CHECKSUM</text>
+      <text x="1100" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">STATUS</text>
+    </g>
+
+    <g transform="translate(32, 110)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88019</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1101-01</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cash at Bank (BCA Corporate)</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 850.000.000</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x9f82...c102</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 158)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88019</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4101-02</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Commercial Revenue Account</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 850.000.000</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x9f82...c103</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 206)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88020</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1301-04</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Warehouse Inventory Asset</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 320.000.000</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x7a11...4401</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 254)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88020</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2101-01</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Accounts Payable (Trade)</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 320.000.000</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x7a11...4402</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 302)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88021</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">13 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">5102-01</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Freight &amp; Logistics Expense</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 42.500.000</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x3b90...2190</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 350)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88021</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">13 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1101-02</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cash at Bank (Mandiri Ops)</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 42.500.000</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x3b90...2191</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 398)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88022</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">13 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1201-03</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Accounts Receivable Commercial</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 640.000.000</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x12bb...8801</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+    <g transform="translate(32, 446)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TX-88022</text>
+      <text x="130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">13 Nov 2026</text>
+      <text x="250" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4101-01</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Enterprise License Sales</text>
+      <text x="680" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">-</text>
+      <text x="830" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Rp 640.000.000</text>
+      <text x="980" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x12bb...8802</text>
+      <rect x="1100" y="12" width="90" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
+      <text x="1145" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">BALANCED</text>
+    </g>
+
+
+    <!-- Total Reconciliation Banner -->
+    <g transform="translate(32, 580)">
+      <rect x="0" y="0" width="1206" height="50" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TOTAL RECONCILED LEDGER BALANCE</text>
+      <text x="680" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">Rp 1.852.500.000</text>
+      <text x="830" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">Rp 1.852.500.000</text>
+      <text x="1170" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="end">PERFECT PARITY (0.00)</text>
+    </g>
+  </g>
+</svg>

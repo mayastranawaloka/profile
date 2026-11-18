@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <defs>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#ffffff"/>
+
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/warehouses/flow</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <!-- Logo / Brand in ERP -->
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
+  <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
+
+  <!-- Nav items -->
+  <g transform="translate(24, 140)">
+    <rect x="16" y="14" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="24" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Overview</text>
+    <rect x="16" y="60" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="70" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Inventory &amp; Stock</text>
+    <rect x="16" y="106" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="116" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Orders &amp; Sales</text>
+    <rect x="16" y="152" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="162" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Procurement</text>
+    <rect x="16" y="198" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="208" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Finance &amp; Ledger</text>
+    <rect x="0" y="230" width="212" height="38" rx="6" fill="#09090b" fill-opacity="0.08"/>
+    <rect x="16" y="244" width="10" height="10" fill="#09090b"/>
+    <text x="38" y="254" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Warehouse Hub</text>
+    <rect x="16" y="290" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="300" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Settings</text>
+  </g>
+
+  <!-- User info at bottom sidebar -->
+  <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
+  <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
+  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+
+  <!-- Top bar inside main content -->
+  <g transform="translate(290, 80)">
+    <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Supply Chain Flow &amp; Bottlenecks</text>
+    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inter-Hub Transfer Logistics, Route Efficiency &amp; Lead Time Optimization</text>
+
+    <!-- Date selector & export button -->
+    <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="1125" y="30" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Route Map</text>
+
+    <rect x="1195" y="8" width="105" height="34" rx="4" fill="#09090b"/>
+    <text x="1247" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Schedule Transfer</text>
+  </g>
+
+  <!-- KPI Cards -->
+  <g transform="translate(290, 160)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE TRANSIT NODES</text>
+    <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">4 Facilities</text>
+    <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">100% interconnected</text>
+    <!-- Card 2 -->
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CONSIGNMENTS IN MOTION</text>
+    <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">18 Shipments</text>
+    <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">En route inter-hub</text>
+    <!-- Card 3 -->
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">BOTTLENECK INDEX</text>
+    <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0.02 / Low</text>
+    <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Minimal port congestion</text>
+    <!-- Card 4 -->
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">FLEET READINESS</text>
+    <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">96.4 %</text>
+    <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">24 vehicle inspections passed</text>
+  </g>
+
+
+  <!-- Main Content Grid -->
+  <g transform="translate(290, 304)">
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Inter-Hub Supply Chain Network Flow</text>
+    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Topology map of transit lines, transfer latency, and real-time inventory velocity</text>
+
+    <!-- Network diagram -->
+    <g transform="translate(50, 110)">
+      <!-- Central Hub -->
+      <rect x="450" y="80" width="220" height="100" rx="8" fill="#f4f4f5" stroke="#09090b" stroke-width="1.5"/>
+      <text x="560" y="125" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="middle">JAKARTA CENTRAL HUB</text>
+      <text x="560" y="150" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">12,400 Pallets &#8226; Master Router</text>
+
+      <!-- West Node -->
+      <rect x="60" y="240" width="200" height="90" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="160" y="280" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">MEDAN DEPOT</text>
+      <text x="160" y="302" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Transit: 36h &#8226; 3,400 Units</text>
+
+      <!-- East Node 1 -->
+      <rect x="460" y="320" width="200" height="90" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="560" y="360" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">SURABAYA HUB</text>
+      <text x="560" y="382" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Transit: 14h &#8226; 6,800 Units</text>
+
+      <!-- East Node 2 -->
+      <rect x="860" y="240" width="200" height="90" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="960" y="280" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">MAKASSAR HUB</text>
+      <text x="960" y="302" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Transit: 48h &#8226; 4,200 Units</text>
+
+      <!-- Connecting Lines -->
+      <line x1="450" y1="140" x2="260" y2="280" stroke="#09090b" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <line x1="560" y1="180" x2="560" y2="320" stroke="#09090b" stroke-width="1.5"/>
+      <line x1="670" y1="140" x2="860" y2="280" stroke="#09090b" stroke-width="1.5" stroke-dasharray="6,4"/>
+    </g>
+
+    <!-- Bottom summary table -->
+    <g transform="translate(32, 480)">
+      <rect x="0" y="0" width="1206" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="34" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Active Pipeline Bottlenecks: 0 Critical Alerts</text>
+      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">All freight corridors running within optimal lead time tolerances</text>
+      <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta - Surabaya: 14 Line-Haul Trucks in Motion &#8226; Status: Clear</text>
+      <text x="24" y="125" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta - Medan: Maritime Ferry Transit Node #03 &#8226; Status: Dispatched</text>
+    </g>
+  </g>
+</svg>

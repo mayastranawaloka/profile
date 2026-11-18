@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#0a0a0c"/>
+
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://store.mayastranawaloka.com/checkout/step-1</text>
+
+  <!-- Store Navigation Bar -->
+  <rect y="52" width="1600" height="70" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="80" y="94" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800" letter-spacing="3">KRONIK COMMERCE</text>
+
+  <g transform="translate(480, 94)">
+    <text x="0" y="0" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">ALL OBJECTS</text>
+    <text x="120" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">LIVING</text>
+    <text x="240" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">HARDWARE</text>
+    <text x="360" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">ARCHIVES</text>
+    <text x="480" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">EDITORIAL</text>
+    
+  </g>
+
+  <!-- Currency & Cart -->
+  <g transform="translate(1380, 94)">
+    <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1">IDR / EN</text>
+    <rect x="80" y="-16" width="68" height="26" rx="13" fill="#09090b"/>
+    <text x="114" y="1" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">BAG (3)</text>
+  </g>
+
+  <!-- One-Page Checkout Layout -->
+  <g transform="translate(80, 150)">
+    <!-- Left Column: Shipping Address & Details -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="880" height="780" rx="6" fill="#121216" stroke="#e4e4e7" stroke-width="1"/>
+      <g transform="translate(40, 40)">
+        <text x="0" y="20" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">STEP 01 OF 02</text>
+        <text x="0" y="55" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Shipping &amp; Delivery Details</text>
+
+        <!-- Email & Phone -->
+        <text x="0" y="105" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">EMAIL ADDRESS FOR ORDER TRACKING</text>
+        <rect x="0" y="120" width="800" height="42" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="16" y="146" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">arief.wicaksono@enterprise.id</text>
+
+        <!-- Name Inputs -->
+        <g transform="translate(0, 185)">
+          <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">FIRST NAME</text>
+          <rect x="0" y="12" width="385" height="42" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+          <text x="16" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Arief</text>
+
+          <text x="415" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">LAST NAME</text>
+          <rect x="415" y="12" width="385" height="42" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+          <text x="431" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Wicaksono</text>
+        </g>
+
+        <!-- Street Address -->
+        <g transform="translate(0, 265)">
+          <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">STREET ADDRESS &amp; BUILDING</text>
+          <rect x="0" y="12" width="800" height="42" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+          <text x="16" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Jl. Senopati No. 82, Kebayoran Baru, Jakarta Selatan, DKI Jakarta 12190</text>
+        </g>
+
+        <!-- Courier Selector -->
+        <g transform="translate(0, 345)">
+          <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">SELECT COURIER SERVICE</text>
+          
+          <rect x="0" y="18" width="800" height="60" rx="4" fill="#09090b" fill-opacity="0.06" stroke="#09090b" stroke-width="1"/>
+          <circle cx="28" cy="48" r="6" fill="#09090b"/>
+          <text x="50" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">SiCepat Cargo Express (Next Day Delivery)</text>
+          <text x="50" y="62" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Estimated arrival: Tomorrow before 14:00 WIB</text>
+          <text x="770" y="52" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" text-anchor="end">FREE</text>
+
+          <rect x="0" y="90" width="800" height="60" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+          <circle cx="28" cy="120" r="6" fill="#e4e4e7"/>
+          <text x="50" y="116" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">JNE Trucking Heavy Freight (2-3 Days)</text>
+          <text x="50" y="134" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Palletized insured delivery</text>
+          <text x="770" y="124" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="end">Rp 45.000</text>
+        </g>
+
+        <!-- Continue Button -->
+        <rect x="0" y="540" width="800" height="52" rx="4" fill="#09090b"/>
+        <text x="400" y="572" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" letter-spacing="1" text-anchor="middle">CONTINUE TO PAYMENT GATEWAY</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Order Ledger Preview -->
+    <g transform="translate(910, 0)">
+      <rect x="0" y="0" width="530" height="780" rx="6" fill="#121216" stroke="#e4e4e7" stroke-width="1"/>
+      <g transform="translate(36, 40)">
+        <text x="0" y="20" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">ORDER SUMMARY (3 ITEMS)</text>
+        
+        <g transform="translate(0, 50)">
+          <text x="0" y="24" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Matte Ceramic Carafe x 1</text>
+          <text x="458" y="24" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="end">Rp 480.000</text>
+
+          <text x="0" y="60" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Linear Anodized Tray x 2</text>
+          <text x="458" y="60" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="end">Rp 650.000</text>
+
+          <text x="0" y="96" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Cast Iron Desk Lamp x 1</text>
+          <text x="458" y="96" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" text-anchor="end">Rp 1.250.000</text>
+        </g>
+        <line x1="0" y1="180" x2="458" y2="180" stroke="#e4e4e7"/>
+
+        <text x="0" y="220" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700">TOTAL DUE</text>
+        <text x="458" y="220" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="800" text-anchor="end">Rp 2.380.000</text>
+      </g>
+    </g>
+  </g>
+</svg>

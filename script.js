@@ -1,5 +1,5 @@
 // MAYASTRA NAWALOKA - Interactive Functionality & Knowledge Engine
-document.addEventListener('DOMContentLoaded', () => {
+const initMayastraApp = () => {
   const toastNotice = document.getElementById('toastNotice');
   const copyEmailBtn = document.getElementById('copyEmailBtn');
   const emailLink = document.getElementById('emailLink');
@@ -39,6 +39,67 @@ document.addEventListener('DOMContentLoaded', () => {
       toastNotice.classList.remove('show');
     }, 2800);
   };
+
+  // ========================================================
+  // THEME ENGINE (Dark / Light Mode with SVG Palette Swapping)
+  // ========================================================
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+
+  const swapSvgs = (theme) => {
+    document.querySelectorAll('img').forEach((img) => {
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      if (theme === 'light') {
+        // Swap project detail SVGs (assets/projects/ -> assets/projects-light/)
+        if (src.includes('projects/') && !src.includes('projects-light/')) {
+          img.setAttribute('src', src.replace('projects/', 'projects-light/'));
+        }
+        // Swap master project SVGs (assets/project-*.svg -> assets/project-*-light.svg)
+        else if (src.includes('project-') && !src.includes('-light.svg')) {
+          img.setAttribute('src', src.replace('.svg', '-light.svg'));
+        }
+        // Swap indonesia map underlay (indonesia-map.svg -> indonesia-map-light.svg)
+        else if (src.includes('indonesia-map.svg') && !src.includes('-light.svg')) {
+          img.setAttribute('src', src.replace('indonesia-map.svg', 'indonesia-map-light.svg'));
+        }
+      } else {
+        // Restore dark project detail SVGs
+        if (src.includes('projects-light/')) {
+          img.setAttribute('src', src.replace('projects-light/', 'projects/'));
+        }
+        // Restore dark master project SVGs
+        else if (src.includes('-light.svg')) {
+          img.setAttribute('src', src.replace('-light.svg', '.svg'));
+        }
+      }
+    });
+  };
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('mayastra_theme', theme);
+    if (themeToggleBtn) {
+      const label = themeToggleBtn.querySelector('.theme-toggle-label');
+      if (label) {
+        label.textContent = theme === 'light' ? 'LIGHT' : 'DARK';
+      }
+    }
+    swapSvgs(theme);
+  };
+
+  const savedTheme = localStorage.getItem('mayastra_theme') || 'dark';
+  applyTheme(savedTheme);
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'light' ? 'dark' : 'light';
+      applyTheme(next);
+      showToast(`THEME SWITCHED TO ${next.toUpperCase()}`);
+    });
+  }
 
   // Copy Email Functionality
   const copyEmail = () => {
@@ -632,4 +693,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (searchInput) {
     searchInput.addEventListener('input', applyArticleFilters);
   }
-});
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMayastraApp);
+} else {
+  initMayastraApp();
+}

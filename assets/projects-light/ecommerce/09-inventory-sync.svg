@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#0a0a0c"/>
+
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://store.mayastranawaloka.com/admin/inventory-matrix</text>
+
+  <!-- Store Navigation Bar -->
+  <rect y="52" width="1600" height="70" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="80" y="94" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800" letter-spacing="3">KRONIK COMMERCE</text>
+
+  <g transform="translate(480, 94)">
+    <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">ALL OBJECTS</text>
+    <text x="120" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">LIVING</text>
+    <text x="240" y="0" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">HARDWARE</text>
+    <text x="360" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">ARCHIVES</text>
+    <text x="480" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12"  letter-spacing="1.5">EDITORIAL</text>
+    
+  </g>
+
+  <!-- Currency & Cart -->
+  <g transform="translate(1380, 94)">
+    <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" letter-spacing="1">IDR / EN</text>
+    <rect x="80" y="-16" width="68" height="26" rx="13" fill="#09090b"/>
+    <text x="114" y="1" fill="#0a0a0c" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">BAG (3)</text>
+  </g>
+
+  <!-- Omnichannel Inventory Sync Matrix -->
+  <g transform="translate(80, 150)">
+    <rect x="0" y="0" width="1440" height="780" rx="6" fill="#121216" stroke="#e4e4e7" stroke-width="1"/>
+    
+    <g transform="translate(40, 40)">
+      <text x="0" y="24" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700">OMNICHANNEL INVENTORY BALANCING MATRIX</text>
+      <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Atomic stock reservation across Direct Web, Tokopedia, Shopee, and TikTok Shop</text>
+
+      <!-- Channel status pills -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="320" height="80" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="20" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">KRONIK STOREFRONT (WEB)</text>
+        <text x="20" y="55" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Priority Allocation: 60% &#8226; 0 ms Latency</text>
+
+        <rect x="345" y="0" width="320" height="80" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="365" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TOKOPEDIA OFFICIAL</text>
+        <text x="365" y="55" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Allocation: 20% &#8226; Webhook Synced</text>
+
+        <rect x="690" y="0" width="320" height="80" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="710" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">SHOPEE MALL</text>
+        <text x="710" y="55" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Allocation: 15% &#8226; Webhook Synced</text>
+
+        <rect x="1035" y="0" width="325" height="80" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="1055" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TIKTOK SHOP</text>
+        <text x="1055" y="55" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Allocation: 5% &#8226; Live Stock Lock</text>
+      </g>
+
+      <!-- Inventory Table -->
+      <g transform="translate(0, 190)">
+        <rect x="0" y="0" width="1360" height="490" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        
+        <g transform="translate(32, 40)">
+          <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PRODUCT TITLE</text>
+          <text x="360" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STORE STOCK</text>
+          <text x="560" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MARKETPLACE</text>
+          <text x="780" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RESERVED (IN CART)</text>
+          <text x="1040" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+
+          <line x1="0" y1="20" x2="1290" y2="20" stroke="#e4e4e7"/>
+          <text x="0" y="50" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Matte Ceramic Carafe</text>
+          <text x="360" y="50" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">240 units</text>
+          <text x="560" y="50" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">160 units</text>
+          <text x="780" y="50" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">18 units (Locked)</text>
+          <text x="1040" y="50" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">100% IN SYNC</text>
+
+          <line x1="0" y1="75" x2="1290" y2="75" stroke="#e4e4e7"/>
+          <text x="0" y="105" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Linear Anodized Tray</text>
+          <text x="360" y="105" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">180 units</text>
+          <text x="560" y="105" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">120 units</text>
+          <text x="780" y="105" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">12 units (Locked)</text>
+          <text x="1040" y="105" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">100% IN SYNC</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

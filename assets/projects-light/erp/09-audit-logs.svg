@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
+  <defs>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#ffffff"/>
+
+  <!-- Browser Header Bar -->
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
+  <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
+  <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/settings/audit-logs</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <!-- Logo / Brand in ERP -->
+  <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
+  <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
+
+  <!-- Nav items -->
+  <g transform="translate(24, 140)">
+    <rect x="16" y="14" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="24" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Overview</text>
+    <rect x="16" y="60" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="70" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Inventory &amp; Stock</text>
+    <rect x="16" y="106" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="116" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Orders &amp; Sales</text>
+    <rect x="16" y="152" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="162" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Procurement</text>
+    <rect x="16" y="198" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="208" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Finance &amp; Ledger</text>
+    <rect x="16" y="244" width="10" height="10" fill="#71717a"/>
+    <text x="38" y="254" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Warehouse Hub</text>
+    <rect x="0" y="276" width="212" height="38" rx="6" fill="#09090b" fill-opacity="0.08"/>
+    <rect x="16" y="290" width="10" height="10" fill="#09090b"/>
+    <text x="38" y="300" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Settings</text>
+  </g>
+
+  <!-- User info at bottom sidebar -->
+  <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
+  <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
+  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+
+  <!-- Top bar inside main content -->
+  <g transform="translate(290, 80)">
+    <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Immutable Audit Trail</text>
+    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cryptographic Mutation Logs, Operator Session Tracing &amp; State Diffing</text>
+
+    <!-- Date selector & export button -->
+    <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="1125" y="30" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Filter Logs</text>
+
+    <rect x="1195" y="8" width="105" height="34" rx="4" fill="#09090b"/>
+    <text x="1247" y="30" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Export Merkle Proof</text>
+  </g>
+
+  <!-- KPI Cards -->
+  <g transform="translate(290, 160)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TOTAL LOGGED MUTATIONS</text>
+    <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">1,842,910 Events</text>
+    <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">100% hash chain integrity</text>
+    <!-- Card 2 -->
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">VERIFIED CHECKSUMS</text>
+    <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Zero Tampering</text>
+    <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Merkle tree verified</text>
+    <!-- Card 3 -->
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SECURITY INCIDENTS</text>
+    <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0 Flagged</text>
+    <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Automated anomaly shield</text>
+    <!-- Card 4 -->
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">LOG RETENTION</text>
+    <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">7 Years</text>
+    <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Compliant with corporate law</text>
+  </g>
+
+
+  <!-- Main Content Grid -->
+  <g transform="translate(290, 304)">
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Cryptographically Chained Audit Stream</text>
+    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Nano-precision timestamps, immutable Merkle proofs, and actor identity tracking</text>
+
+    <!-- Column Headers -->
+    <g transform="translate(32, 90)">
+      <text x="10" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">EVENT ID</text>
+      <text x="140" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TIMESTAMP (UTC+7)</text>
+      <text x="360" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTOR IDENTITY</text>
+      <text x="560" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTION</text>
+      <text x="700" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TARGET TABLE</text>
+      <text x="890" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DIFF PAYLOAD</text>
+      <text x="1100" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">HASH PROOF</text>
+    </g>
+
+    <g transform="translate(32, 110)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009182</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 07:18:22.091</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Ahmad Fauzi (Ops)</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">UPDATE</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">inventory_balances</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">sku_qty: 4200 -> 4180</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0xfa91...38a1</text>
+    </g>
+    <g transform="translate(32, 158)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009181</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 07:14:08.412</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Siti Rahma (Finance)</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">RECONCILE</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">general_ledger_entries</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">tx_balance: 0 diff verified</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x882b...10c2</text>
+    </g>
+    <g transform="translate(32, 206)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009180</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 06:58:49.190</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">System Daemon</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">AUTOMATED_SYNC</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">redis_cart_reservations</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">expired_ttl_purged: 14</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x11ee...90a0</text>
+    </g>
+    <g transform="translate(32, 254)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009179</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 06:40:12.871</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Dewi Kusuma (Procure)</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">INSERT</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">purchase_orders</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">po_id: PO-2026-0894 approved</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x33b1...7712</text>
+    </g>
+    <g transform="translate(32, 302)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009178</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 05:30:00.002</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cron Worker</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">SNAPSHOT</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">cluster_wal_backups</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">s3_archive_sealed: 4.8 GB</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0xaa90...4421</text>
+    </g>
+    <g transform="translate(32, 350)">
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EV-009177</text>
+      <text x="140" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 2026 04:12:38.109</text>
+      <text x="360" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Budi Hartono (Admin)</text>
+      <text x="560" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">CONFIG_CHANGE</text>
+      <text x="700" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">security_policies</text>
+      <text x="890" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">mfa_grace_period: 0s enforced</text>
+      <text x="1100" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">0x00fa...5591</text>
+    </g>
+
+  </g>
+</svg>
