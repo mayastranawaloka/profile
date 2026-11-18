@@ -101,6 +101,46 @@ const initMayastraApp = () => {
     });
   }
 
+  // Mobile Nav Overflow Menu (3-dots kebab)
+  const navOverflowBtn = document.getElementById('navOverflowBtn');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (navOverflowBtn && navMenu) {
+    navOverflowBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const isOpen = navMenu.classList.toggle('open');
+      navOverflowBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close when clicking any nav link inside menu
+    navMenu.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navOverflowBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navOverflowBtn.contains(e.target)) {
+        if (navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+          navOverflowBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+        navOverflowBtn.setAttribute('aria-expanded', 'false');
+        navOverflowBtn.focus();
+      }
+    });
+  }
+
   // Copy Email Functionality
   const copyEmail = () => {
     const email = 'contact@mayastranawaloka.com';
