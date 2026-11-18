@@ -19,18 +19,27 @@ Minimalist corporate landing page for PT MAYASTRA NAWALOKA NUSANTARA.
 ├── CNAME                    # Custom domain mapping (www.mayastranawaloka.com)
 ├── Dockerfile               # Production container image definition (nginx:alpine)
 ├── docker-compose.yml       # Orchestration specification with 50% hardware resource cap
-├── deploy.sh                # Single-enter local deployment script
-├── redeploy.sh              # Single-enter redeployment script
-├── test.sh                  # Comprehensive verification test suite
 ├── index.html               # Semantic HTML5 single-page document
 ├── style.css                # Monochromatic styling and responsive layout rules
-├── script.js                # Interactive modal, clipboard, and keyboard controller
-├── nginx.conf               # Hardened web server config with gzip and caching
-├── assets/
-│   ├── logo.png             # Official corporate emblem
-│   ├── project-erp.svg      # Enterprise Resource Planning architectural mockup
-│   ├── project-ecommerce.svg# E-Commerce platform architectural mockup
-│   └── project-cms.svg      # Content Management System architectural mockup
+├── script.js                # Interactive navigation, knowledge engine, and clock controller
+├── nginx.conf               # Hardened web server config with gzip, routing, and caching
+├── robots.txt               # Search engine crawler policies
+├── sitemap.xml              # Complete sitemap with 31 verified entries
+├── assets/                  # Corporate emblem, team portraits, and 64 monochrome SVGs
+├── pages/                   # Dedicated sub-pages (About, Services, Articles, Projects)
+│   ├── about.html           # Corporate profile and leadership directory
+│   ├── service.html         # Enterprise capabilities and architectural services
+│   ├── articles.html        # Comprehensive research knowledge base
+│   ├── article.html         # Full-screen deep-dive article reader
+│   ├── contact.html         # Direct inquiry channel
+│   ├── project-erp.html     # ERP architecture showcase
+│   ├── project-ecommerce.html # E-Commerce platform showcase
+│   ├── project-cms.html     # CMS studio platform showcase
+│   ├── project-llm-gateway.html # Enterprise AI LLM gateway showcase
+│   └── project-agentic-ops.html # Autonomous agentic systems showcase
+├── scripts/                 # Development and operations scripts
+│   ├── py/                  # Python vector and screen generators
+│   └── sh/                  # Shell orchestration (deploy, redeploy, test, task-helper)
 └── tasks/                   # TSKDD local task tracking
 ```
 
@@ -38,10 +47,10 @@ Minimalist corporate landing page for PT MAYASTRA NAWALOKA NUSANTARA.
 
 ### With Docker
 
-Run the single-enter deployment script:
+Run the deployment script:
 
 ```bash
-./deploy.sh
+./scripts/sh/deploy.sh
 ```
 
 The application will be served at `http://localhost:8088`.
@@ -49,15 +58,15 @@ The application will be served at `http://localhost:8088`.
 To redeploy after modifications:
 
 ```bash
-./redeploy.sh
+./scripts/sh/redeploy.sh
 ```
 
 ### Running Tests
 
-Execute the automated test suite:
+Execute the automated verification test suite:
 
 ```bash
-./test.sh
+./scripts/sh/test.sh
 ```
 
 ## GitHub Pages Deployment

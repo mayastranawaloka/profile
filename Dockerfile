@@ -10,7 +10,6 @@ COPY . /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/.git \
     /usr/share/nginx/html/tasks \
     /usr/share/nginx/html/scripts \
-    /usr/share/nginx/html/task-helper.sh \
     /usr/share/nginx/html/Dockerfile \
     /usr/share/nginx/html/docker-compose.yml \
     /usr/share/nginx/html/*.sh \

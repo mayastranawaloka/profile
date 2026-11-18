@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target.closest('a')) return;
       const projectKey = card.getAttribute('data-project');
       if (projectKey) {
-        window.location.href = `project-${projectKey}.html`;
+        const isPages = window.location.pathname.includes('/pages/');
+        window.location.href = isPages ? `project-${projectKey}.html` : `pages/project-${projectKey}.html`;
       }
     });
   });
@@ -21,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       const projectKey = btn.getAttribute('data-project');
       if (projectKey) {
-        window.location.href = `project-${projectKey}.html`;
+        const isPages = window.location.pathname.includes('/pages/');
+        window.location.href = isPages ? `project-${projectKey}.html` : `pages/project-${projectKey}.html`;
       }
     });
   });

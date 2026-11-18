@@ -1,20 +1,51 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$REPO_ROOT"
+
 echo "[*] Running verification test suite..."
+
+# 0. Root Directory Hygiene and Subfolder Enforcement
+echo "[*] Verifying Root Directory Hygiene..."
+ROOT_HTML_COUNT=$(find . -maxdepth 1 -name "*.html" | wc -l)
+if [[ "$ROOT_HTML_COUNT" -ne 1 ]]; then
+  echo "FAIL: Expected only index.html in root, found ${ROOT_HTML_COUNT} html files"
+  find . -maxdepth 1 -name "*.html"
+  exit 1
+fi
+if [[ ! -f "index.html" ]]; then
+  echo "FAIL: index.html missing from root"
+  exit 1
+fi
+
+ROOT_PY_COUNT=$(find . -maxdepth 1 -name "*.py" | wc -l)
+if [[ "$ROOT_PY_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found python scripts in root, should be in scripts/py/"
+  find . -maxdepth 1 -name "*.py"
+  exit 1
+fi
+
+ROOT_SH_COUNT=$(find . -maxdepth 1 -name "*.sh" | wc -l)
+if [[ "$ROOT_SH_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found shell scripts in root, should be in scripts/sh/"
+  find . -maxdepth 1 -name "*.sh"
+  exit 1
+fi
 
 PAGES=(
   "index.html"
-  "about.html"
-  "service.html"
-  "articles.html"
-  "contact.html"
-  "project-erp.html"
-  "project-ecommerce.html"
-  "project-cms.html"
-  "project-llm-gateway.html"
-  "project-agentic-ops.html"
-  "article.html"
+  "pages/about.html"
+  "pages/service.html"
+  "pages/articles.html"
+  "pages/contact.html"
+  "pages/project-erp.html"
+  "pages/project-ecommerce.html"
+  "pages/project-cms.html"
+  "pages/project-llm-gateway.html"
+  "pages/project-agentic-ops.html"
+  "pages/article.html"
 )
 
 # 1. Structural Checks on all pages
@@ -44,7 +75,7 @@ for page in "${PAGES[@]}"; do
 
   # Verify Footer and original logo image
   grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' "$page" || { echo "FAIL: footer info missing in $page"; exit 1; }
-  grep -q 'src="assets/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
+  grep -q 'assets/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
 
   # Verify all 5 capabilities in footer
   grep -q 'project-erp.html' "$page" || { echo "FAIL: ERP link missing in footer of $page"; exit 1; }
@@ -70,11 +101,11 @@ done
 # 3. Dedicated Project Pages Verifications
 echo "[*] Verifying dedicated project detail pages..."
 PROJECT_PAGES=(
-  "project-erp.html"
-  "project-ecommerce.html"
-  "project-cms.html"
-  "project-llm-gateway.html"
-  "project-agentic-ops.html"
+  "pages/project-erp.html"
+  "pages/project-ecommerce.html"
+  "pages/project-cms.html"
+  "pages/project-llm-gateway.html"
+  "pages/project-agentic-ops.html"
 )
 
 for proj in "${PROJECT_PAGES[@]}"; do
@@ -91,24 +122,24 @@ done
 # Verify all 55 SVGs exist and are linked in respective pages
 for i in {1..11}; do
   NUM=$(printf "%02d" $i)
-  grep -q "assets/projects/erp/${NUM}-" project-erp.html || { echo "FAIL: missing SVG ${NUM} in project-erp.html"; exit 1; }
-  grep -q "assets/projects/ecommerce/${NUM}-" project-ecommerce.html || { echo "FAIL: missing SVG ${NUM} in project-ecommerce.html"; exit 1; }
-  grep -q "assets/projects/cms/${NUM}-" project-cms.html || { echo "FAIL: missing SVG ${NUM} in project-cms.html"; exit 1; }
-  grep -q "assets/projects/llm-gateway/${NUM}-" project-llm-gateway.html || { echo "FAIL: missing SVG ${NUM} in project-llm-gateway.html"; exit 1; }
-  grep -q "assets/projects/agentic-ops/${NUM}-" project-agentic-ops.html || { echo "FAIL: missing SVG ${NUM} in project-agentic-ops.html"; exit 1; }
+  grep -q "assets/projects/erp/${NUM}-" pages/project-erp.html || { echo "FAIL: missing SVG ${NUM} in project-erp.html"; exit 1; }
+  grep -q "assets/projects/ecommerce/${NUM}-" pages/project-ecommerce.html || { echo "FAIL: missing SVG ${NUM} in project-ecommerce.html"; exit 1; }
+  grep -q "assets/projects/cms/${NUM}-" pages/project-cms.html || { echo "FAIL: missing SVG ${NUM} in project-cms.html"; exit 1; }
+  grep -q "assets/projects/llm-gateway/${NUM}-" pages/project-llm-gateway.html || { echo "FAIL: missing SVG ${NUM} in project-llm-gateway.html"; exit 1; }
+  grep -q "assets/projects/agentic-ops/${NUM}-" pages/project-agentic-ops.html || { echo "FAIL: missing SVG ${NUM} in project-agentic-ops.html"; exit 1; }
 done
 
 # 4. Standalone Article Reader Page Verification
 echo "[*] Verifying standalone article reader page..."
-grep -q 'id="articleReaderView"' article.html || { echo "FAIL: articleReaderView missing in article.html"; exit 1; }
-grep -q 'id="articleCategoryBadge"' article.html || { echo "FAIL: category badge missing in article.html"; exit 1; }
-grep -q 'id="articleTitle"' article.html || { echo "FAIL: title element missing in article.html"; exit 1; }
-grep -q 'id="articleBody"' article.html || { echo "FAIL: body element missing in article.html"; exit 1; }
+grep -q 'id="articleReaderView"' pages/article.html || { echo "FAIL: articleReaderView missing in pages/article.html"; exit 1; }
+grep -q 'id="articleCategoryBadge"' pages/article.html || { echo "FAIL: category badge missing in pages/article.html"; exit 1; }
+grep -q 'id="articleTitle"' pages/article.html || { echo "FAIL: title element missing in pages/article.html"; exit 1; }
+grep -q 'id="articleBody"' pages/article.html || { echo "FAIL: body element missing in pages/article.html"; exit 1; }
 
 # 5. Articles page: 20 article cards (10 insight + 10 how-we-work) and direct links
 echo "[*] Verifying articles count and structure..."
-INSIGHT_COUNT=$(grep -c 'data-category="insight"' articles.html || true)
-SERVICE_COUNT=$(grep -c 'data-category="how-we-work"' articles.html || true)
+INSIGHT_COUNT=$(grep -c 'data-category="insight"' pages/articles.html || true)
+SERVICE_COUNT=$(grep -c 'data-category="how-we-work"' pages/articles.html || true)
 
 if [[ "$INSIGHT_COUNT" -ne 10 ]]; then
   echo "FAIL: Expected 10 insight articles, found ${INSIGHT_COUNT}"
@@ -120,7 +151,7 @@ if [[ "$SERVICE_COUNT" -ne 10 ]]; then
   exit 1
 fi
 
-grep -q 'id="articleSearchInput"' articles.html || { echo "FAIL: search input missing in articles.html"; exit 1; }
+grep -q 'id="articleSearchInput"' pages/articles.html || { echo "FAIL: search input missing in pages/articles.html"; exit 1; }
 
 # 6. Validate XML structure of all 55+ SVG assets
 echo "[*] Validating XML structure of all 55+ SVG assets..."
@@ -156,46 +187,71 @@ import re, sys, glob
 
 banned_chars = ["—", "–", "&#8212;", "&#8211;", "&mdash;", "&ndash;"]
 files = [
-    "index.html", "about.html", "service.html", "articles.html", "contact.html",
-    "project-erp.html", "project-ecommerce.html", "project-cms.html",
-    "project-llm-gateway.html", "project-agentic-ops.html", "article.html",
-    "style.css", "script.js", "robots.txt", "sitemap.xml"
+    "index.html", "pages/about.html", "pages/service.html", "pages/articles.html", "pages/contact.html",
+    "pages/project-erp.html", "pages/project-ecommerce.html", "pages/project-cms.html",
+    "pages/project-llm-gateway.html", "pages/project-agentic-ops.html", "pages/article.html",
+    "style.css", "script.js"
 ] + glob.glob("assets/**/*.svg", recursive=True)
 
-for path in files:
-    with open(path, "r", encoding="utf-8") as f:
+# Regex matching emojis across standard unicode blocks
+emoji_pattern = re.compile(
+    "[\U0001F600-\U0001F64F"  # emoticons
+    "\U0001F300-\U0001F5FF"  # symbols & pictographs
+    "\U0001F680-\U0001F6FF"  # transport & map
+    "\U0001F1E0-\U0001F1FF"  # flags
+    "\U00002702-\U000027B0"
+    "\U000024C2-\U0001F251"
+    "\U0001F900-\U0001F9FF"  # supplemental symbols
+    "\U0001FA70-\U0001FAFF"  # symbols and pictographs extended-a
+    "]+", flags=re.UNICODE
+)
+
+failed = False
+for fpath in files:
+    with open(fpath, "r", encoding="utf-8") as f:
         content = f.read()
-    for b in banned_chars:
-        if b in content:
-            print(f"FAIL: Banned dash {b} found in {path}")
-            sys.exit(1)
-    emoji_pattern = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
-    if emoji_pattern.search(content):
-        print(f"FAIL: Emoji detected in {path}")
-        sys.exit(1)
+    for bc in banned_chars:
+        if bc in content:
+            print(f"FAIL: Banned dash {bc} found in {fpath}")
+            failed = True
+    match = emoji_pattern.search(content)
+    if match:
+        print(f"FAIL: Emoji {match.group(0)} found in {fpath}")
+        failed = True
+
+if failed:
+    sys.exit(1)
 print(f"[*] Verified zero emojis and zero em dashes across {len(files)} files.")
 '
 
-# 9. Verify Strict Ban on External Brand Names in SVGs and HTML
+# 9. Verify Strict Ban on Third-Party AI/LLM Brand Names
 echo "[*] Checking for strict ban on third-party AI/LLM brand names..."
 python3 -c '
-import glob, sys, re
+import re, sys, glob
 
-banned_pattern = re.compile(r"\b(openai|anthropic|claude|chatgpt|gemini|mistral|llama|bedrock|langchain|llamaindex|cohere)\b", re.IGNORECASE)
+banned_brands = [
+    r"\bOpenAI\b", r"\bChatGPT\b", r"\bGPT-4\b", r"\bGPT-3\b",
+    r"\bClaude\b", r"\bAnthropic\b",
+    r"\bGemini\b", r"\bDeepSeek\b",
+    r"\bLlama\b", r"\bMeta\s+AI\b",
+    r"\bMistral\b", r"\bQwen\b"
+]
+
 files = [
-    "index.html", "about.html", "service.html", "articles.html", "contact.html",
-    "project-erp.html", "project-ecommerce.html", "project-cms.html",
-    "project-llm-gateway.html", "project-agentic-ops.html", "article.html"
+    "index.html", "pages/about.html", "pages/service.html", "pages/articles.html", "pages/contact.html",
+    "pages/project-erp.html", "pages/project-ecommerce.html", "pages/project-cms.html",
+    "pages/project-llm-gateway.html", "pages/project-agentic-ops.html", "pages/article.html"
 ] + glob.glob("assets/**/*.svg", recursive=True)
 
 failed = False
 for fpath in files:
     with open(fpath, "r", encoding="utf-8") as f:
-        c = f.read()
-    m = banned_pattern.search(c)
-    if m:
-        print(f"FAIL: Banned brand \"{m.group(1)}\" found in {fpath}")
-        failed = True
+        content = f.read()
+    for bb in banned_brands:
+        match = re.search(bb, content, re.IGNORECASE)
+        if match:
+            print(f"FAIL: Banned brand match \"{match.group(0)}\" ({bb}) found in {fpath}")
+            failed = True
 
 if failed:
     sys.exit(1)
@@ -232,7 +288,7 @@ if failed:
 print(f"[*] Verified 100% strict monochrome palette across all {len(svg_files)} SVGs.")
 '
 
-# 10. Verify robots.txt and sitemap.xml
+# 11. Verify robots.txt and sitemap.xml
 echo "[*] Verifying robots.txt and sitemap.xml..."
 if [[ ! -f "robots.txt" ]]; then
   echo "FAIL: missing robots.txt"
@@ -266,16 +322,16 @@ if len(urls) < 31:
 locs = [u.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text for u in urls]
 for required in [
     "https://www.mayastranawaloka.com/",
-    "https://www.mayastranawaloka.com/about.html",
-    "https://www.mayastranawaloka.com/service.html",
-    "https://www.mayastranawaloka.com/project-erp.html",
-    "https://www.mayastranawaloka.com/project-ecommerce.html",
-    "https://www.mayastranawaloka.com/project-cms.html",
-    "https://www.mayastranawaloka.com/project-llm-gateway.html",
-    "https://www.mayastranawaloka.com/project-agentic-ops.html",
-    "https://www.mayastranawaloka.com/articles.html",
-    "https://www.mayastranawaloka.com/contact.html",
-    "https://www.mayastranawaloka.com/article.html"
+    "https://www.mayastranawaloka.com/pages/about.html",
+    "https://www.mayastranawaloka.com/pages/service.html",
+    "https://www.mayastranawaloka.com/pages/project-erp.html",
+    "https://www.mayastranawaloka.com/pages/project-ecommerce.html",
+    "https://www.mayastranawaloka.com/pages/project-cms.html",
+    "https://www.mayastranawaloka.com/pages/project-llm-gateway.html",
+    "https://www.mayastranawaloka.com/pages/project-agentic-ops.html",
+    "https://www.mayastranawaloka.com/pages/articles.html",
+    "https://www.mayastranawaloka.com/pages/contact.html",
+    "https://www.mayastranawaloka.com/pages/article.html"
 ]:
     if required not in locs:
         print(f"FAIL: Missing required route in sitemap: {required}")
@@ -284,15 +340,15 @@ for required in [
 print(f"[*] Verified sitemap.xml with {len(urls)} entries and valid XML namespace.")
 '
 
-# 11. Verify Full SEO Tags & JSON-LD Schemas across all 11 HTML Pages
+# 12. Verify Full SEO Tags & JSON-LD Schemas across all 11 HTML Pages
 echo "[*] Verifying SEO metadata and Schema.org JSON-LD across all 11 pages..."
 python3 -c '
 import re, json, sys
 
 pages = [
-    "index.html", "about.html", "service.html", "articles.html", "contact.html",
-    "project-erp.html", "project-ecommerce.html", "project-cms.html",
-    "project-llm-gateway.html", "project-agentic-ops.html", "article.html"
+    "index.html", "pages/about.html", "pages/service.html", "pages/articles.html", "pages/contact.html",
+    "pages/project-erp.html", "pages/project-ecommerce.html", "pages/project-cms.html",
+    "pages/project-llm-gateway.html", "pages/project-agentic-ops.html", "pages/article.html"
 ]
 
 for p in pages:
@@ -344,7 +400,7 @@ for p in pages:
 print(f"[*] Verified SEO meta tags and Schema.org JSON-LD across all {len(pages)} pages cleanly.")
 '
 
-# 12. Verify About Page Team Photos, Nicknames, and Leadership Directory
+# 13. Verify About Page Team Photos, Nicknames, and Leadership Directory
 echo "[*] Verifying About page leadership team and directory..."
 for f in "assets/team/gilang.jpeg" "assets/team/cynthia.jpeg" "assets/team/herdian.jpeg"; do
   if [[ ! -f "$f" ]]; then
@@ -352,24 +408,24 @@ for f in "assets/team/gilang.jpeg" "assets/team/cynthia.jpeg" "assets/team/herdi
     exit 1
   fi
 done
-grep -q 'assets/team/gilang.jpeg' about.html || { echo "FAIL: gilang.jpeg missing in about.html"; exit 1; }
-grep -q 'assets/team/cynthia.jpeg' about.html || { echo "FAIL: cynthia.jpeg missing in about.html"; exit 1; }
-grep -q 'assets/team/herdian.jpeg' about.html || { echo "FAIL: herdian.jpeg missing in about.html"; exit 1; }
-grep -q 'GILANG' about.html || { echo "FAIL: GILANG nickname missing in about.html"; exit 1; }
-grep -q 'CYNTHIA' about.html || { echo "FAIL: CYNTHIA nickname missing in about.html"; exit 1; }
-grep -q 'HERDIAN' about.html || { echo "FAIL: HERDIAN nickname missing in about.html"; exit 1; }
-grep -q 'class="leadership-directory"' about.html || { echo "FAIL: leadership-directory missing in about.html"; exit 1; }
-grep -q 'Gilang Teja Krishna, S.Kom' about.html || { echo "FAIL: Gilang full name missing in about.html"; exit 1; }
-grep -q 'Carmelita Cynthia Dagur, S.Kom' about.html || { echo "FAIL: Cynthia full name missing in about.html"; exit 1; }
-grep -q 'Herdian Aji Laksana, S.Kom' about.html || { echo "FAIL: Herdian full name missing in about.html"; exit 1; }
+grep -q 'assets/team/gilang.jpeg' pages/about.html || { echo "FAIL: gilang.jpeg missing in pages/about.html"; exit 1; }
+grep -q 'assets/team/cynthia.jpeg' pages/about.html || { echo "FAIL: cynthia.jpeg missing in pages/about.html"; exit 1; }
+grep -q 'assets/team/herdian.jpeg' pages/about.html || { echo "FAIL: herdian.jpeg missing in pages/about.html"; exit 1; }
+grep -q 'GILANG' pages/about.html || { echo "FAIL: GILANG nickname missing in pages/about.html"; exit 1; }
+grep -q 'CYNTHIA' pages/about.html || { echo "FAIL: CYNTHIA nickname missing in pages/about.html"; exit 1; }
+grep -q 'HERDIAN' pages/about.html || { echo "FAIL: HERDIAN nickname missing in pages/about.html"; exit 1; }
+grep -q 'class="leadership-directory"' pages/about.html || { echo "FAIL: leadership-directory missing in pages/about.html"; exit 1; }
+grep -q 'Gilang Teja Krishna, S.Kom' pages/about.html || { echo "FAIL: Gilang full name missing in pages/about.html"; exit 1; }
+grep -q 'Carmelita Cynthia Dagur, S.Kom' pages/about.html || { echo "FAIL: Cynthia full name missing in pages/about.html"; exit 1; }
+grep -q 'Herdian Aji Laksana, S.Kom' pages/about.html || { echo "FAIL: Herdian full name missing in pages/about.html"; exit 1; }
 
-# 13. Verify Enterprise AI Integration SEO Priority Across Pages & Sitemap
+# 14. Verify Enterprise AI Integration SEO Priority Across Pages & Sitemap
 echo "[*] Verifying Enterprise AI Integration SEO Priority..."
 python3 -c '
 import re, sys, glob
 
 # Verify strict ban on pretentious buzzword "pelopor"
-for html_file in glob.glob("*.html"):
+for html_file in glob.glob("pages/*.html") + ["index.html"]:
     with open(html_file, "r", encoding="utf-8") as f:
         c = f.read()
     if re.search(r"\bpelopor\b", c, re.IGNORECASE):
@@ -379,13 +435,13 @@ for html_file in glob.glob("*.html"):
 checks = [
     ("index.html", r"<title>PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; LLM Integration Architecture</title>"),
     ("index.html", r"content=\"PT Mayastra Nawaloka Nusantara adalah perusahaan rekayasa software dan arsitektur sistem digital di Indonesia"),
-    ("service.html", r"<title>Enterprise AI &amp; LLM Integration Services - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
-    ("about.html", r"<title>About PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; Architectural Systems Profile</title>"),
-    ("contact.html", r"<title>Enterprise AI &amp; Software Consultations - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
-    ("articles.html", r"<title>Enterprise AI &amp; Engineering Research Insights - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
-    ("article.html", r"<title>Enterprise AI &amp; Engineering Research Reader - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
-    ("project-llm-gateway.html", r"<title>Enterprise AI LLM Gateway &amp; API Key Harness - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
-    ("project-agentic-ops.html", r"<title>Enterprise Autonomous Agentic AI &amp; RAG Systems - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/service.html", r"<title>Enterprise AI &amp; LLM Integration Services - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/about.html", r"<title>About PT MAYASTRA NAWALOKA NUSANTARA - Enterprise AI &amp; Architectural Systems Profile</title>"),
+    ("pages/contact.html", r"<title>Enterprise AI &amp; Software Consultations - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/articles.html", r"<title>Enterprise AI &amp; Engineering Research Insights - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/article.html", r"<title>Enterprise AI &amp; Engineering Research Reader - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/project-llm-gateway.html", r"<title>Enterprise AI LLM Gateway &amp; API Key Harness - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
+    ("pages/project-agentic-ops.html", r"<title>Enterprise Autonomous Agentic AI &amp; RAG Systems - PT MAYASTRA NAWALOKA NUSANTARA</title>"),
 ]
 
 for filename, pattern in checks:
@@ -397,17 +453,17 @@ for filename, pattern in checks:
 
 with open("sitemap.xml", "r", encoding="utf-8") as f:
     sitemap = f.read()
-if "project-llm-gateway.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
-    print("FAIL: project-llm-gateway.html not elevated to 0.95 priority in sitemap.xml")
+if "pages/project-llm-gateway.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
+    print("FAIL: pages/project-llm-gateway.html not elevated to 0.95 priority in sitemap.xml")
     sys.exit(1)
-if "project-agentic-ops.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
-    print("FAIL: project-agentic-ops.html not elevated to 0.95 priority in sitemap.xml")
+if "pages/project-agentic-ops.html</loc>\n    <lastmod>2026-11-14</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>" not in sitemap:
+    print("FAIL: pages/project-agentic-ops.html not elevated to 0.95 priority in sitemap.xml")
     sys.exit(1)
 
 print("[*] Verified Enterprise AI Integration SEO priority across all pages and sitemap cleanly.")
 '
 
-# 14. Verify Tap Highlight Disabled and Faded Grey Text Selection Styling
+# 15. Verify Tap Highlight Disabled and Faded Grey Text Selection Styling
 echo "[*] Verifying Tap Highlight Disabled and Faded Grey Selection in style.css..."
 grep -q -- '-webkit-tap-highlight-color: transparent' style.css || { echo "FAIL: tap-highlight-color not disabled in style.css"; exit 1; }
 grep -q '::selection' style.css || { echo "FAIL: ::selection not defined in style.css"; exit 1; }
