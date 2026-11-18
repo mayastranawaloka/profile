@@ -2082,10 +2082,15 @@ body {
 }
 
 .team-card-tag {
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: #e4e4e7;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 3px 8px;
+  border-radius: 2px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -3058,6 +3063,20 @@ blockquote {
   gap: 24px;
 }
 
+.article-cta-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.article-cta-desc {
+  font-size: 0.86rem;
+  color: #888888;
+  line-height: 1.5;
+}
+
 @media (max-width: 900px) {
   .project-specs-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3454,13 +3473,22 @@ blockquote {
 }
 
 [data-theme="light"] .team-card {
-  background-color: #fafafa;
-  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .team-card:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="light"] .team-card-image {
+  background-color: #f4f4f5;
 }
 
 [data-theme="light"] .team-card-footer {
-  background-color: #f4f4f5;
-  border-top-color: rgba(0, 0, 0, 0.08);
+  background-color: #fafafa;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .team-card-nickname {
@@ -3468,7 +3496,12 @@ blockquote {
 }
 
 [data-theme="light"] .team-card-tag {
-  color: #71717a;
+  color: #111111;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-weight: 600;
 }
 
 [data-theme="light"] .about-pillars {
@@ -3493,7 +3526,7 @@ blockquote {
 }
 
 [data-theme="light"] .leadership-directory {
-  border-color: rgba(0, 0, 0, 0.08);
+  border-top-color: rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .leadership-directory-title {
@@ -3505,34 +3538,153 @@ blockquote {
 }
 
 [data-theme="light"] .leadership-item {
-  border-bottom-color: rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
-[data-theme="light"] .leadership-name {
-  color: #111111;
+[data-theme="light"] .leadership-item:hover {
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
-[data-theme="light"] .leadership-role {
-  color: #52525b;
+[data-theme="light"] .leadership-item-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-[data-theme="light"] .leadership-badge {
-  background-color: rgba(0, 0, 0, 0.06);
-  border-color: rgba(0, 0, 0, 0.12);
-  color: #111111;
-}
-
-[data-theme="light"] .leadership-channel-link {
+[data-theme="light"] .leadership-index {
   color: #71717a;
 }
 
-[data-theme="light"] .leadership-channel-link:hover {
+[data-theme="light"] .leadership-full-name {
   color: #111111;
 }
 
+[data-theme="light"] .leadership-official-title {
+  color: #18181b;
+  font-weight: 600;
+}
+
+[data-theme="light"] .leadership-legal-badge {
+  background-color: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  color: #111111;
+  font-weight: 600;
+}
+
+[data-theme="light"] .leadership-scope-block {
+  color: #27272a;
+}
+
+[data-theme="light"] .leadership-scope-label {
+  color: #71717a;
+}
+
+[data-theme="light"] .leadership-scope-value {
+  color: #111111;
+  font-weight: 600;
+}
+
+[data-theme="light"] .leadership-desc {
+  color: #3f3f46;
+}
+
+[data-theme="light"] .leadership-channel-link {
+  background-color: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #27272a;
+}
+
+[data-theme="light"] .leadership-channel-link:hover {
+  background-color: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
 [data-theme="light"] .service-card {
-  background-color: #fafafa;
-  border-color: rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .service-card:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="light"] .service-index {
+  color: #71717a;
+}
+
+[data-theme="light"] .service-title-block h3 {
+  color: #111111;
+}
+
+[data-theme="light"] .service-subtitle {
+  color: #71717a;
+}
+
+[data-theme="light"] .service-detail-block p {
+  color: #3f3f46;
+}
+
+[data-theme="light"] .service-tag {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #52525b;
+}
+
+[data-theme="light"] .channel-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .channel-label {
+  color: #71717a;
+}
+
+[data-theme="light"] .channel-value {
+  color: #111111;
+}
+
+[data-theme="light"] .contact-body-box {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .contact-email-link {
+  color: #111111;
+}
+
+[data-theme="light"] .btn-copy-email {
+  background-color: #f4f4f5;
+  border-color: rgba(0, 0, 0, 0.14);
+  color: #111111;
+}
+
+[data-theme="light"] .btn-copy-email:hover {
+  background-color: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+[data-theme="light"] .article-category-badge {
+  background-color: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #111111;
+}
+
+[data-theme="light"] .article-card-meta {
+  color: #71717a;
+}
+
+[data-theme="light"] .article-card-excerpt {
+  color: #52525b;
+}
+
+[data-theme="light"] .article-tag-item {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #52525b;
 }
 
 [data-theme="light"] .service-title {
@@ -3738,6 +3890,53 @@ blockquote {
 [data-theme="light"] .article-reader-footer-box {
   background-color: #fafafa;
   border-color: #e4e4e7;
+}
+
+[data-theme="light"] .article-cta-title {
+  color: #111111;
+}
+
+[data-theme="light"] .article-cta-desc {
+  color: #71717a;
+}
+
+[data-theme="light"] .service-detail-link {
+  color: #111111;
+}
+
+[data-theme="light"] .service-detail-link:hover {
+  color: #000000;
+}
+
+[data-theme="light"] .contact-card-main {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .badge-insight {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #111111;
+}
+
+[data-theme="light"] .badge-service {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #27272a;
+}
+
+[data-theme="light"] .screens-section-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .project-screen-card:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .article-card:hover .article-card-title {
+  color: #000000;
 }
 
 [data-theme="light"] .toast-notice {
