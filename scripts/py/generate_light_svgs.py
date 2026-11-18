@@ -133,11 +133,14 @@ def process_all_svgs():
         ET.fromstring(light_content)
         print(f"Created {out_path}")
 
-    # 3. Indonesia map SVG
+    # 3. Indonesia map SVG (Daytime mode: omit dark mode night lights)
     if os.path.exists("assets/indonesia-map.svg"):
         with open("assets/indonesia-map.svg", "r", encoding="utf-8") as f:
             map_content = f.read()
-        light_map = convert_svg_to_light(map_content)
+        # Strip dark-mode specific night lights and city blooms for clean daytime map
+        clean_daytime_map = re.sub(r'\s*<!-- Metropolitan Night Glow Bloom[\s\S]*?<!-- Blueprint Geodetic Markers -->', '\n  <!-- Blueprint Geodetic Markers -->', map_content)
+        clean_daytime_map = re.sub(r'\s*<!-- Realistic City Night Light Radial Bloom Gradient[\s\S]*?</style>', '', clean_daytime_map)
+        light_map = convert_svg_to_light(clean_daytime_map)
         out_map = "assets/indonesia-map-light.svg"
         with open(out_map, "w", encoding="utf-8") as f:
             f.write(light_map)
