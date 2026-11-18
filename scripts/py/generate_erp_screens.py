@@ -81,8 +81,8 @@ def build_erp_svg(url, active_nav, title, subtitle, btn1, btn2, kpis, content_sv
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
   <defs>
     <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.0"/>
     </linearGradient>
     <linearGradient id="meterGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
@@ -222,8 +222,8 @@ def generate_all_erp():
       <text x="326" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">5 Awaiting Approval</text>
 
       <!-- Stage 3 (Active) -->
-      <rect x="612" y="0" width="280" height="62" rx="6" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1"/>
-      <text x="632" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700">STAGE 03 // DISPATCHED TO VENDOR</text>
+      <rect x="612" y="0" width="280" height="62" rx="6" fill="#ef4444" fill-opacity="0.12" stroke="#ef4444" stroke-opacity="0.8" stroke-width="1.5"/>
+      <text x="632" y="26" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700">STAGE 03 // DISPATCHED TO VENDOR</text>
       <text x="632" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">38 In Transit Orders</text>
 
       <!-- Stage 4 -->
@@ -487,7 +487,8 @@ def generate_all_erp():
     <!-- Network diagram -->
     <g transform="translate(50, 110)">
       <!-- Central Hub -->
-      <rect x="450" y="80" width="220" height="100" rx="8" fill="#18181b" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="450" y="80" width="220" height="100" rx="8" fill="#18181b" stroke="#ef4444" stroke-width="1.5"/>
+      <circle cx="650" cy="100" r="4" fill="#ef4444"/>
       <text x="560" y="125" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" text-anchor="middle">JAKARTA CENTRAL HUB</text>
       <text x="560" y="150" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">12,400 Pallets &#8226; Master Router</text>
 
@@ -507,9 +508,9 @@ def generate_all_erp():
       <text x="960" y="302" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Transit: 48h &#8226; 4,200 Units</text>
 
       <!-- Connecting Lines -->
-      <line x1="450" y1="140" x2="260" y2="280" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6,4"/>
-      <line x1="560" y1="180" x2="560" y2="320" stroke="#ffffff" stroke-width="1.5"/>
-      <line x1="670" y1="140" x2="860" y2="280" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <line x1="450" y1="140" x2="260" y2="280" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="560" y1="180" x2="560" y2="320" stroke="#ef4444" stroke-width="2"/>
+      <line x1="670" y1="140" x2="860" y2="280" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4"/>
     </g>
 
     <!-- Bottom summary table -->
@@ -831,9 +832,10 @@ def generate_all_erp():
       <text x="30" y="214" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">10K</text>
 
       <!-- Confidence band fill -->
-      <path d="M 50 180 Q 250 160 450 120 T 850 70 T 1130 50 L 1130 90 Q 850 110 450 150 T 50 200 Z" fill="#ffffff" fill-opacity="0.06"/>
+      <path d="M 50 180 Q 250 160 450 120 T 850 70 T 1130 50 L 1130 90 Q 850 110 450 150 T 50 200 Z" fill="#ef4444" fill-opacity="0.12"/>
       <!-- Projected Mean Demand Line -->
-      <path d="M 50 190 Q 250 170 450 135 T 850 90 T 1130 70" stroke="#ffffff" stroke-width="3" fill="none"/>
+      <path d="M 50 190 Q 250 170 450 135 T 850 90 T 1130 70" stroke="#ef4444" stroke-width="3" fill="none"/>
+      <circle cx="1130" cy="70" r="5" fill="#ef4444"/>
       <!-- Safety Stock Threshold Line -->
       <line x1="50" y1="170" x2="1130" y2="170" stroke="#71717a" stroke-width="1.5" stroke-dasharray="6 4"/>
       <text x="1130" y="165" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="end">Safety Buffer Baseline (16,000 Units)</text>

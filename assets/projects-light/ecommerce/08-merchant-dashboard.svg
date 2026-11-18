@@ -80,8 +80,8 @@
           <text x="0" y="184" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">3. Added to Shopping Bag: 14,200 Carts (21.9%)</text>
           <rect x="0" y="196" width="282" height="30" rx="4" fill="#09090b" fill-opacity="0.6"/>
 
-          <text x="0" y="264" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">4. Completed Payment: 6,840 Transactions (48.1% of checkout)</text>
-          <rect x="0" y="276" width="136" height="30" rx="4" fill="#09090b" fill-opacity="0.4"/>
+          <text x="0" y="264" fill="#dc2626" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">4. Completed Payment: 6,840 Transactions (48.1% of checkout)</text>
+          <rect x="0" y="276" width="136" height="30" rx="4" fill="#dc2626"/>
         </g>
       </g>
     </g>

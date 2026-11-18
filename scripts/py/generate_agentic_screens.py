@@ -80,6 +80,10 @@ def wrap_svg(inner_content, active_name, title, subtitle, url="https://agentic.i
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.0"/>
+    </linearGradient>
   </defs>
 
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
@@ -209,8 +213,9 @@ screens = {
         <rect x="24" y="80" width="392" height="150" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
         <text x="40" y="104" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SWARM EXECUTION VELOCITY</text>
         <text x="40" y="122" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Active tasks per minute across all nodes</text>
-        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130 L 400 215 L 40 215 Z" fill="url(#monoGrad)"/>
-        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130 L 400 215 L 40 215 Z" fill="url(#chartGrad)"/>
+        <path d="M 40 195 L 80 180 L 120 185 L 160 165 L 200 172 L 240 155 L 280 160 L 320 140 L 360 148 L 400 130" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+        <circle cx="400" cy="130" r="4.5" fill="#ef4444"/>
 
         <!-- Capability boundary status -->
         <g transform="translate(24, 250)">
@@ -685,10 +690,10 @@ screens = {
           <rect x="20" y="80" width="352" height="6" rx="3" fill="#27272a"/>
           <rect x="20" y="80" width="352" height="6" rx="3" fill="#ffffff"/>
 
-          <text x="20" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Restricted Syscalls (Socket/Execve)</text>
-          <text x="330" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">BLOCKED</text>
+          <text x="20" y="114" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Restricted Syscalls (Socket/Execve)</text>
+          <text x="330" y="114" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">BLOCKED</text>
           <rect x="20" y="124" width="352" height="6" rx="3" fill="#27272a"/>
-          <rect x="20" y="124" width="352" height="6" rx="3" fill="#ffffff"/>
+          <rect x="20" y="124" width="352" height="6" rx="3" fill="#ef4444"/>
 
           <line x1="20" y1="150" x2="372" y2="150" stroke="#27272a" stroke-width="1"/>
 

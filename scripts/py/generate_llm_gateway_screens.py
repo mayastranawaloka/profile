@@ -80,6 +80,10 @@ def wrap_svg(inner_content, active_name, title, subtitle, url="https://gateway.i
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.0"/>
+    </linearGradient>
   </defs>
 
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
@@ -209,8 +213,9 @@ screens = {
         <rect x="24" y="80" width="392" height="150" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
         <text x="40" y="104" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">INFERENCE VELOCITY CURVE</text>
         <text x="40" y="122" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Window: Last 60 Minutes (req/sec)</text>
-        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135 L 400 215 L 40 215 Z" fill="url(#monoGrad)"/>
-        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135 L 400 215 L 40 215 Z" fill="url(#chartGrad)"/>
+        <path d="M 40 200 L 80 185 L 120 190 L 160 170 L 200 178 L 240 160 L 280 165 L 320 145 L 360 150 L 400 135" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+        <circle cx="400" cy="135" r="4.5" fill="#ef4444"/>
 
         <!-- Stream status box -->
         <g transform="translate(24, 250)">

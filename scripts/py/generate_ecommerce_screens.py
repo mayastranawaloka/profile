@@ -522,7 +522,7 @@ def generate_all_ecommerce():
       <!-- Milestone Timeline Progress Bar -->
       <g transform="translate(0, 90)">
         <rect x="0" y="20" width="1344" height="6" rx="3" fill="#1f1f23"/>
-        <rect x="0" y="20" width="1000" height="6" rx="3" fill="#ffffff"/>
+        <rect x="0" y="20" width="1000" height="6" rx="3" fill="#ef4444"/>
 
         <!-- Milestone 1 -->
         <circle cx="0" cy="23" r="10" fill="#ffffff"/>
@@ -540,8 +540,8 @@ def generate_all_ecommerce():
         <text x="672" y="74" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 11:15 WIB</text>
 
         <!-- Milestone 4 (Active) -->
-        <circle cx="1008" cy="23" r="12" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-        <text x="1008" y="55" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Out for Delivery</text>
+        <circle cx="1008" cy="23" r="12" fill="#ef4444" stroke="#ffffff" stroke-width="3"/>
+        <text x="1008" y="55" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Out for Delivery</text>
         <text x="1008" y="74" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Courier En Route (South JKT)</text>
 
         <!-- Milestone 5 -->
@@ -631,8 +631,8 @@ def generate_all_ecommerce():
           <text x="0" y="184" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">3. Added to Shopping Bag: 14,200 Carts (21.9%)</text>
           <rect x="0" y="196" width="282" height="30" rx="4" fill="#ffffff" fill-opacity="0.6"/>
 
-          <text x="0" y="264" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">4. Completed Payment: 6,840 Transactions (48.1% of checkout)</text>
-          <rect x="0" y="276" width="136" height="30" rx="4" fill="#ffffff" fill-opacity="0.4"/>
+          <text x="0" y="264" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">4. Completed Payment: 6,840 Transactions (48.1% of checkout)</text>
+          <rect x="0" y="276" width="136" height="30" rx="4" fill="#ef4444"/>
         </g>
       </g>
     </g>

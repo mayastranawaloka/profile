@@ -8,6 +8,10 @@
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
     </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.0"/>
+    </linearGradient>
   </defs>
 
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
@@ -180,10 +184,10 @@
           <rect x="20" y="80" width="352" height="6" rx="3" fill="#27272a"/>
           <rect x="20" y="80" width="352" height="6" rx="3" fill="#ffffff"/>
 
-          <text x="20" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Restricted Syscalls (Socket/Execve)</text>
-          <text x="330" y="114" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">BLOCKED</text>
+          <text x="20" y="114" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Restricted Syscalls (Socket/Execve)</text>
+          <text x="330" y="114" fill="#ef4444" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">BLOCKED</text>
           <rect x="20" y="124" width="352" height="6" rx="3" fill="#27272a"/>
-          <rect x="20" y="124" width="352" height="6" rx="3" fill="#ffffff"/>
+          <rect x="20" y="124" width="352" height="6" rx="3" fill="#ef4444"/>
 
           <line x1="20" y1="150" x2="372" y2="150" stroke="#27272a" stroke-width="1"/>
 

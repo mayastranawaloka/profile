@@ -8,6 +8,10 @@
       <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
     </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.0"/>
+    </linearGradient>
   </defs>
 
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>

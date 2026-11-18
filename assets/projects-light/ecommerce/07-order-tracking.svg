@@ -44,7 +44,7 @@
       <!-- Milestone Timeline Progress Bar -->
       <g transform="translate(0, 90)">
         <rect x="0" y="20" width="1344" height="6" rx="3" fill="#f4f4f5"/>
-        <rect x="0" y="20" width="1000" height="6" rx="3" fill="#09090b"/>
+        <rect x="0" y="20" width="1000" height="6" rx="3" fill="#dc2626"/>
 
         <!-- Milestone 1 -->
         <circle cx="0" cy="23" r="10" fill="#09090b"/>
@@ -62,8 +62,8 @@
         <text x="672" y="74" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">14 Nov 11:15 WIB</text>
 
         <!-- Milestone 4 (Active) -->
-        <circle cx="1008" cy="23" r="12" fill="#09090b" stroke="#ffffff" stroke-width="3"/>
-        <text x="1008" y="55" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Out for Delivery</text>
+        <circle cx="1008" cy="23" r="12" fill="#dc2626" stroke="#09090b" stroke-width="3"/>
+        <text x="1008" y="55" fill="#dc2626" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Out for Delivery</text>
         <text x="1008" y="74" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Courier En Route (South JKT)</text>
 
         <!-- Milestone 5 -->

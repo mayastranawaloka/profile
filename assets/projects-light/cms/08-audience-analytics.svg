@@ -77,7 +77,7 @@
       <rect x="0" y="0" width="840" height="704" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
       <rect x="0" y="0" width="840" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="27" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">READER ENGAGEMENT &amp; DAILY TRAFFIC VOLUME</text>
-      <text x="620" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">White: Uniques | Dotted: Returns</text>
+      <text x="620" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Red: Uniques | Dotted: Returns</text>
 
       <!-- Chart Graphics -->
       <g transform="translate(30, 80)">
@@ -96,16 +96,16 @@
         <text x="30" y="375" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">0</text>
 
         <!-- Area Curve Underneath -->
-        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120 L 770 370 L 50 370 Z" fill="#09090b" fill-opacity="0.04"/>
+        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120 L 770 370 L 50 370 Z" fill="#dc2626" fill-opacity="0.12"/>
 
         <!-- Primary Trend Line -->
-        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120" stroke="#09090b" stroke-width="3" fill="none"/>
+        <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120" stroke="#dc2626" stroke-width="3" fill="none"/>
 
         <!-- Return Readers Dotted Line -->
         <path d="M 50 360 Q 150 330 250 340 T 450 270 T 650 210 T 770 230" stroke="#71717a" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
 
         <!-- Peak Indicator Point -->
-        <circle cx="650" cy="100" r="5" fill="#09090b"/>
+        <circle cx="650" cy="100" r="5" fill="#dc2626"/>
         <rect x="600" y="50" width="100" height="30" rx="4" fill="#09090b"/>
         <text x="650" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Peak: 11,480</text>
 

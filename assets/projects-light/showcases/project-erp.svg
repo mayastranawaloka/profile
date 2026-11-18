@@ -5,8 +5,8 @@
       <stop offset="100%" stop-color="#000000" stop-opacity="0.02"/>
     </linearGradient>
     <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.0"/>
     </linearGradient>
   </defs>
 
@@ -114,11 +114,11 @@
 
     <!-- Chart Polygon & Line -->
     <polygon points="24,250 100,230 180,240 260,190 340,170 420,200 500,140 580,120 660,130 740,90 786,85 786,270 24,270" fill="url(#chartGrad)"/>
-    <polyline points="24,250 100,230 180,240 260,190 340,170 420,200 500,140 580,120 660,130 740,90 786,85" fill="none" stroke="#09090b" stroke-width="2.5"/>
+    <polyline points="24,250 100,230 180,240 260,190 340,170 420,200 500,140 580,120 660,130 740,90 786,85" fill="none" stroke="#dc2626" stroke-width="2.5"/>
 
     <!-- Dots -->
-    <circle cx="500" cy="140" r="4" fill="#09090b"/>
-    <circle cx="740" cy="90" r="4" fill="#09090b"/>
+    <circle cx="500" cy="140" r="4" fill="#dc2626"/>
+    <circle cx="740" cy="90" r="4" fill="#dc2626"/>
     <circle cx="786" cy="85" r="5" fill="#dc2626"/>
 
     <!-- Months labels -->
