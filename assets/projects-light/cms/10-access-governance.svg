@@ -3,15 +3,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/governance/rbac</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/governance/rbac</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="250" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <text x="28" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
@@ -36,7 +36,7 @@
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Enterprise Access Governance / Role-Based Access Control</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Enterprise Access Governance / Role-Based Access Control</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
     <text x="905" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Audit Export</text>
 
@@ -48,101 +48,101 @@
   <g transform="translate(280, 140)">
     <!-- 3 Metrics Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="408" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTIVE EDITORIAL USERS</text>
+      <rect x="0" y="0" width="408" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTIVE EDITORIAL USERS</text>
       <text x="24" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">28 Active</text>
       <text x="260" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">0 Suspended</text>
 
-      <rect x="436" y="0" width="408" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="460" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">2-FACTOR ENFORCEMENT</text>
+      <rect x="436" y="0" width="408" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="460" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">2-FACTOR ENFORCEMENT</text>
       <text x="460" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">100% Policy</text>
       <text x="690" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">FIDO2 / TOTP</text>
 
-      <rect x="872" y="0" width="408" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="896" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTIVE CONCURRENT SESSIONS</text>
+      <rect x="872" y="0" width="408" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="896" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACTIVE CONCURRENT SESSIONS</text>
       <text x="896" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">34 Sessions</text>
       <text x="1140" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Across 4 Desks</text>
     </g>
 
     <!-- Team Members & RBAC Table -->
     <g transform="translate(0, 116)">
-      <rect x="0" y="0" width="1280" height="570" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="1280" height="44" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">USER &amp; EMAIL</text>
-      <text x="360" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">EDITORIAL DESK</text>
-      <text x="560" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">ASSIGNED ROLE</text>
-      <text x="800" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">AUTHENTICATION</text>
-      <text x="980" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">LAST ACTIVE</text>
-      <text x="1180" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">ACTION</text>
+      <rect x="0" y="0" width="1280" height="570" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">USER &amp; EMAIL</text>
+      <text x="360" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">EDITORIAL DESK</text>
+      <text x="560" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">ASSIGNED ROLE</text>
+      <text x="800" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">AUTHENTICATION</text>
+      <text x="980" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">LAST ACTIVE</text>
+      <text x="1180" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">ACTION</text>
 
       <!-- Row 1 -->
       <g transform="translate(0, 44)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Arya Pratama</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">arya@mayastranawaloka.com</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">arya@mayastranawaloka.com</text>
         <text x="360" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Executive Board</text>
         <rect x="560" y="26" width="165" height="24" rx="4" fill="#09090b" fill-opacity="0.12"/>
         <text x="642" y="42" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Editor-in-Chief (Full)</text>
         <text x="800" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">FIDO2 Hardware Key</text>
         <text x="980" y="42" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">Active Now</text>
-        <text x="1180" y="42" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
+        <text x="1180" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
       </g>
 
       <!-- Row 2 -->
       <g transform="translate(0, 124)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Siti Rahmawati</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">siti.r@mayastranawaloka.com</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">siti.r@mayastranawaloka.com</text>
         <text x="360" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Architecture Desk</text>
         <rect x="560" y="26" width="155" height="24" rx="4" fill="#e4e4e7"/>
         <text x="637" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Senior Tech Editor</text>
         <text x="800" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">TOTP Authenticator</text>
         <text x="980" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">12 mins ago</text>
-        <text x="1180" y="42" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
+        <text x="1180" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
       </g>
 
       <!-- Row 3 -->
       <g transform="translate(0, 204)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Budi Santoso</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">budi.s@mayastranawaloka.com</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">budi.s@mayastranawaloka.com</text>
         <text x="360" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Software Engineering</text>
-        <rect x="560" y="26" width="115" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="560" y="26" width="115" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="617" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Staff Writer</text>
         <text x="800" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">TOTP Authenticator</text>
         <text x="980" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">1 hour ago</text>
-        <text x="1180" y="42" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
+        <text x="1180" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
       </g>
 
       <!-- Row 4 -->
       <g transform="translate(0, 284)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Dian Kusuma</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">dian.k@mayastranawaloka.com</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">dian.k@mayastranawaloka.com</text>
         <text x="360" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Design Systems</text>
-        <rect x="560" y="26" width="165" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="560" y="26" width="165" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="642" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Copy &amp; Layout Review</text>
         <text x="800" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">FIDO2 Hardware Key</text>
         <text x="980" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">3 hours ago</text>
-        <text x="1180" y="42" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
+        <text x="1180" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
       </g>
 
       <!-- Row 5 -->
       <g transform="translate(0, 364)">
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">External Contributor</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">guest.contributor@partner.org</text>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">guest.contributor@partner.org</text>
         <text x="360" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Guest Column</text>
-        <rect x="560" y="26" width="145" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="560" y="26" width="145" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="632" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Sandboxed Author</text>
         <text x="800" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Email Magic Link + OTP</text>
         <text x="980" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Nov 12, 16:30</text>
-        <text x="1180" y="42" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
+        <text x="1180" y="42" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Manage</text>
       </g>
     </g>
 
     <!-- Bottom Governance Rules -->
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="1280" height="120" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="120" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">NEWSROOM GOVERNANCE &amp; SECURITY POLICIES</text>
       <line x1="24" y1="46" x2="1256" y2="46" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="72" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1. Session Idle Timeout: 12 Hours with mandatory re-auth on publishing live actions.</text>

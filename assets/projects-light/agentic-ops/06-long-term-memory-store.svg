@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#fafafa"/>
     </linearGradient>
     <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
@@ -13,14 +13,14 @@
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/memory</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/memory</text>
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Brand in Agentic Ops -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AGENTIC OPS</text>
@@ -48,11 +48,11 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="5" fill="#09090b"/>
   <text x="64" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Autonomous Swarm #04</text>
-  <text x="64" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
+  <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Episodic &amp; Semantic Long-Term Memory Store</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Knowledge Graph Entity Resolution, Dynamic Working Memory &amp; Cross-Session Persistence</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Knowledge Graph Entity Resolution, Dynamic Working Memory &amp; Cross-Session Persistence</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -66,23 +66,23 @@
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="20" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">KNOWLEDGE GRAPH NODES</text>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">KNOWLEDGE GRAPH NODES</text>
       <text x="20" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">1.24M</text>
       <text x="180" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">TRIPLES</text>
       <text x="20" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Entity-Relationship Graph Elements</text>
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="345" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">EPISODIC SESSIONS</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">EPISODIC SESSIONS</text>
       <text x="345" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">42,000</text>
       <text x="505" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">INDEXED</text>
       <text x="345" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Multi-Day Workflow Context Kept</text>
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="670" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CONTEXT RECALL RELEVANCE</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CONTEXT RECALL RELEVANCE</text>
       <text x="670" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">98.9%</text>
       <text x="830" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">RELEVANT</text>
       <text x="670" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Context Hallucinations</text>
-      <rect x="975" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="995" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CROSS-SESSION TTL</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">CROSS-SESSION TTL</text>
       <text x="995" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">PERMANENT</text>
       <text x="1155" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">PERSISTENT</text>
       <text x="995" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">PostgreSQL Directed Property Graph</text>
@@ -90,35 +90,35 @@
     <!-- Main Split Panels -->
     <g transform="translate(0, 114)">
       <!-- Left Panel: High Density Table -->
-      <rect width="820" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <rect width="820" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Memory Graph Entity Triples &amp; Episodic Records</text>
-      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Maintains persistent operational understanding across discontinuous agent workflows</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Maintains persistent operational understanding across discontinuous agent workflows</text>
 
       <!-- Search / Filter Pill -->
       <rect x="580" y="24" width="216" height="30" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="596" y="44" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
 
       <!-- Table Separator -->
       <line x1="24" y1="78" x2="796" y2="78" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Table Headers -->
-        <text x="24" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ENTITY ID</text>
-        <text x="210" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONCEPT TYPE</text>
-        <text x="390" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RELATIONSHIP TARGET</text>
-        <text x="520" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONFIDENCE</text>
-        <text x="640" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESS COUNT</text>
-        <text x="720" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ENTITY ID</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONCEPT TYPE</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RELATIONSHIP TARGET</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONFIDENCE</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESS COUNT</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <line x1="24" y1="108" x2="796" y2="108" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#f4f4f5" stroke-width="1"/>
 
       <!-- Rows -->
       <!-- Row 1 -->
-      <rect x="12" y="114" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="142" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">ENT-0x992</text>
       <text x="210" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Corporate Vendor</text>
       <text x="390" y="142" fill="#09090b" font-family="monospace" font-size="12">PT Nusantara Distribusi</text>
       <text x="520" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">99.8%</text>
-      <text x="640" y="142" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1,420 hits</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1,420 hits</text>
       <rect x="716" y="126" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="141" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 2 -->
@@ -127,16 +127,16 @@
       <text x="210" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Warehouse Facility</text>
       <text x="390" y="196" fill="#09090b" font-family="monospace" font-size="12">Cikarang Central Hub #01</text>
       <text x="520" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">99.5%</text>
-      <text x="640" y="196" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2,890 hits</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">2,890 hits</text>
       <rect x="716" y="180" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="195" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 3 -->
-      <rect x="12" y="222" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="250" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">ENT-0x771</text>
       <text x="210" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Financial Account</text>
       <text x="390" y="250" fill="#09090b" font-family="monospace" font-size="12">1100 Operational Cash</text>
       <text x="520" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
-      <text x="640" y="250" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4,120 hits</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">4,120 hits</text>
       <rect x="716" y="234" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="249" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 4 -->
@@ -145,53 +145,53 @@
       <text x="210" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tax Classification</text>
       <text x="390" y="304" fill="#09090b" font-family="monospace" font-size="12">PPN 11% Article 4 Law</text>
       <text x="520" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">99.2%</text>
-      <text x="640" y="304" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">890 hits</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">890 hits</text>
       <rect x="716" y="288" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="303" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 5 -->
-      <rect x="12" y="330" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="358" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">ENT-0x529</text>
       <text x="210" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Procurement Policy</text>
       <text x="390" y="358" fill="#09090b" font-family="monospace" font-size="12">Approval Threshold &amp;gt; $25k</text>
       <text x="520" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
-      <text x="640" y="358" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3,450 hits</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">3,450 hits</text>
       <rect x="716" y="342" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="357" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">OPTIMAL</text>
 
       <!-- Table Pagination / Status Footer -->
       <line x1="24" y1="620" x2="796" y2="620" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="646" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
       <rect x="710" y="632" width="86" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="753" y="648" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
 
       <!-- Right Panel: Telemetry / Inspector Drawer -->
       <g transform="translate(840, 0)">
-        <rect width="440" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect width="440" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
         <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Graph Traversal &amp; Working Memory Topology</text>
         <line x1="24" y1="58" x2="416" y2="58" stroke="#e4e4e7" stroke-width="1"/>
         <g transform="translate(24, 80)">
           <rect width="392" height="540" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
           <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">DIRECTED PROPERTY GRAPH STATS</text>
 
-          <text x="20" y="70" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Active Entity Nodes:</text>
+          <text x="20" y="70" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Active Entity Nodes:</text>
           <text x="20" y="94" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700">1,240,892 Nodes</text>
 
-          <text x="20" y="130" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Total Directed Edges:</text>
+          <text x="20" y="130" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Total Directed Edges:</text>
           <text x="20" y="154" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700">4,812,040 Edges</text>
 
           <line x1="20" y1="180" x2="372" y2="180" stroke="#e4e4e7" stroke-width="1"/>
 
           <text x="20" y="210" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WORKING MEMORY DECAY ENGINE</text>
           <text x="20" y="234" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Importance Weighting: Exponential Decay</text>
-          <text x="20" y="254" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Critical policies retain 1.0 importance factor</text>
+          <text x="20" y="254" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Critical policies retain 1.0 importance factor</text>
 
           <g transform="translate(20, 280)">
-            <rect width="352" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+            <rect width="352" height="150" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
             <text x="16" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">CROSS-SESSION SYNC ENGINE</text>
-            <text x="16" y="50" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Synchronizes state across days and weeks</text>
+            <text x="16" y="50" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Synchronizes state across days and weeks</text>
             <text x="16" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Immutable Postgres Property Store</text>
             <text x="16" y="94" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Agents resume long-horizon jobs seamlessly</text>
-            <text x="16" y="114" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero cross-tenant memory leakage guaranteed</text>
+            <text x="16" y="114" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero cross-tenant memory leakage guaranteed</text>
           </g>
         </g>
       </g>

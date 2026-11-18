@@ -3,15 +3,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/media</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/media</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="250" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <text x="28" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
@@ -36,7 +36,7 @@
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Media Library / Global Assets (4,892 files - 18.4 GB)</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Media Library / Global Assets (4,892 files - 18.4 GB)</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
     <text x="905" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Batch Optimize</text>
 
@@ -48,26 +48,26 @@
   <g transform="translate(280, 140)">
     <!-- Top Filter & Storage Row -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="360" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="16" y="26" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Search media by filename, alt text...</text>
+      <rect x="0" y="0" width="360" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="16" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Search media by filename, alt text...</text>
 
       <g transform="translate(390, 0)">
         <rect x="0" y="0" width="90" height="42" rx="4" fill="#09090b"/>
         <text x="45" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">All Assets</text>
 
-        <rect x="100" y="0" width="120" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="100" y="0" width="120" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
         <text x="160" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Images (3,840)</text>
 
-        <rect x="230" y="0" width="110" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="230" y="0" width="110" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
         <text x="285" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Vectors (820)</text>
 
-        <rect x="350" y="0" width="110" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="350" y="0" width="110" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
         <text x="405" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Docs (232)</text>
       </g>
 
       <!-- Storage Meter -->
       <g transform="translate(940, 0)">
-        <rect x="0" y="0" width="340" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="0" y="0" width="340" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
         <text x="16" y="26" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Storage: 18.4 / 50 GB (36%)</text>
         <rect x="180" y="16" width="140" height="10" rx="5" fill="#e4e4e7"/>
         <rect x="180" y="16" width="50" height="10" rx="5" fill="#09090b"/>
@@ -76,88 +76,88 @@
 
     <!-- Main Grid (Left) -->
     <g transform="translate(0, 60)">
-      <rect x="0" y="0" width="870" height="760" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="870" height="760" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Asset Card 1 (Selected) -->
       <g transform="translate(24, 24)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#09090b" stroke-width="2"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#09090b" stroke-width="2"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
         <circle cx="129" cy="77" r="28" fill="#e4e4e7"/>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">hero-architecture-2026.webp</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 148.6 KB - WebP</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 148.6 KB - WebP</text>
       </g>
 
       <!-- Asset Card 2 -->
       <g transform="translate(306, 24)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
         <rect x="110" y="58" width="38" height="38" fill="#e4e4e7"/>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">diagram-kubernetes-mesh.svg</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 42.1 KB</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 42.1 KB</text>
       </g>
 
       <!-- Asset Card 3 -->
       <g transform="translate(588, 24)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
         <circle cx="129" cy="77" r="28" fill="#e4e4e7"/>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">founder-keynote-tech.webp</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">2400x1600 - 320.4 KB - WebP</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">2400x1600 - 320.4 KB - WebP</text>
       </g>
 
       <!-- Asset Card 4 -->
       <g transform="translate(24, 268)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
         <circle cx="129" cy="77" r="28" fill="#e4e4e7"/>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">server-rack-datacenter.webp</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 210.8 KB - WebP</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">1920x1080 - 210.8 KB - WebP</text>
       </g>
 
       <!-- Asset Card 5 -->
       <g transform="translate(306, 268)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
         <rect x="110" y="58" width="38" height="38" fill="#e4e4e7"/>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">system-topology-v4.svg</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 64.2 KB</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Vector Scalable - 64.2 KB</text>
       </g>
 
       <!-- Asset Card 6 -->
       <g transform="translate(588, 268)">
-        <rect x="0" y="0" width="258" height="220" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="12" y="12" width="234" height="130" rx="3" fill="#f4f4f5"/>
-        <text x="129" y="82" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" text-anchor="middle">PDF</text>
+        <rect x="0" y="0" width="258" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="12" y="12" width="234" height="130" rx="3" fill="#fafafa"/>
+        <text x="129" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" text-anchor="middle">PDF</text>
         <text x="12" y="170" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">brand-guidelines-v2.pdf</text>
-        <text x="12" y="195" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Document - 1.8 MB</text>
+        <text x="12" y="195" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Document - 1.8 MB</text>
       </g>
     </g>
 
     <!-- Right Inspector Panel -->
     <g transform="translate(896, 60)">
-      <rect x="0" y="0" width="384" height="760" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="384" height="760" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="36" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">SELECTED ASSET INSPECTOR</text>
       <line x1="24" y1="52" x2="360" y2="52" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Large Preview Box -->
-      <rect x="24" y="70" width="336" height="180" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="24" y="70" width="336" height="180" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <circle cx="192" cy="160" r="40" fill="#e4e4e7"/>
 
       <!-- Metadata Fields -->
-      <text x="24" y="285" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">FILE NAME</text>
+      <text x="24" y="285" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">FILE NAME</text>
       <text x="24" y="308" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">hero-architecture-2026.webp</text>
 
-      <text x="24" y="345" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SPECIFICATIONS</text>
+      <text x="24" y="345" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SPECIFICATIONS</text>
       <text x="24" y="368" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">1920 x 1080 px | 148.6 KB | WebP 92Q</text>
-      <text x="24" y="390" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Compressed from 3.2 MB raw master</text>
+      <text x="24" y="390" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Compressed from 3.2 MB raw master</text>
 
-      <text x="24" y="430" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESSIBILITY ALT TEXT</text>
-      <rect x="24" y="445" width="336" height="60" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="430" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESSIBILITY ALT TEXT</text>
+      <rect x="24" y="445" width="336" height="60" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="36" y="470" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Enterprise server architecture blueprint with</text>
       <text x="36" y="490" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">high-availability edge cluster topology.</text>
 
-      <text x="24" y="535" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GLOBAL CDN PERMALINK</text>
-      <rect x="24" y="550" width="336" height="36" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="535" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GLOBAL CDN PERMALINK</text>
+      <rect x="24" y="550" width="336" height="36" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="36" y="573" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://cdn.mayastra.id/media/hero-arch.webp</text>
 
       <!-- Action Buttons -->

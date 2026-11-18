@@ -3,15 +3,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/settings/webhooks</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/settings/webhooks</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="250" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <text x="28" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
@@ -36,7 +36,7 @@
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">System Settings / Event Webhooks &amp; Edge Invalidation Pipeline</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">System Settings / Event Webhooks &amp; Edge Invalidation Pipeline</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
     <text x="905" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Test All Webhooks</text>
 
@@ -48,43 +48,43 @@
   <g transform="translate(280, 140)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">REGISTERED ENDPOINTS</text>
+      <rect x="0" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">REGISTERED ENDPOINTS</text>
       <text x="24" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">8 Active</text>
       <text x="180" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">0 Failing</text>
 
-      <rect x="326" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="350" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG DISPATCH LATENCY</text>
+      <rect x="326" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="350" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG DISPATCH LATENCY</text>
       <text x="350" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">14.2 ms</text>
       <text x="500" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Async Queue</text>
 
-      <rect x="652" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="676" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GLOBAL PURGE TIME</text>
+      <rect x="652" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="676" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">GLOBAL PURGE TIME</text>
       <text x="676" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">&lt; 50 ms</text>
       <text x="820" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge Propagation</text>
 
-      <rect x="978" y="0" width="302" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="1002" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DELIVERY RETRY SLA</text>
+      <rect x="978" y="0" width="302" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="1002" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DELIVERY RETRY SLA</text>
       <text x="1002" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">99.99 %</text>
       <text x="1140" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Exponential DLQ</text>
     </g>
 
     <!-- Webhook Table -->
     <g transform="translate(0, 116)">
-      <rect x="0" y="0" width="1280" height="570" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="1280" height="44" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">INTEGRATION &amp; TARGET URL</text>
-      <text x="440" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">SUBSCRIBED EVENTS</text>
-      <text x="740" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">HMAC SIGNATURE</text>
-      <text x="960" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">LAST DELIVERY</text>
-      <text x="1150" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">STATUS</text>
+      <rect x="0" y="0" width="1280" height="570" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">INTEGRATION &amp; TARGET URL</text>
+      <text x="440" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">SUBSCRIBED EVENTS</text>
+      <text x="740" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">HMAC SIGNATURE</text>
+      <text x="960" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">LAST DELIVERY</text>
+      <text x="1150" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">STATUS</text>
 
       <!-- Row 1 -->
       <g transform="translate(0, 44)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Cloudflare Edge Cache Purge</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.cloudflare.com/client/v4/zones/.../purge_cache</text>
-        <rect x="440" y="26" width="150" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.cloudflare.com/client/v4/zones/.../purge_cache</text>
+        <rect x="440" y="26" width="150" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="515" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.published, article.rev</text>
         <text x="740" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SHA256 (Enforced)</text>
         <text x="960" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Today 00:32 (18ms)</text>
@@ -94,10 +94,10 @@
 
       <!-- Row 2 -->
       <g transform="translate(0, 124)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Mobile Newsstand Push Notification</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://fcm.googleapis.com/v1/projects/mayastra-news/messages:send</text>
-        <rect x="440" y="26" width="160" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://fcm.googleapis.com/v1/projects/mayastra-news/messages:send</text>
+        <rect x="440" y="26" width="160" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="520" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.breaking_news</text>
         <text x="740" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">OAuth 2.0 Token</text>
         <text x="960" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Yesterday 18:20 (32ms)</text>
@@ -107,10 +107,10 @@
 
       <!-- Row 3 -->
       <g transform="translate(0, 204)">
-        <line x1="0" y1="80" x2="1280" y2="80" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="1280" y2="80" stroke="#f4f4f5" stroke-width="1"/>
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Search Engine IndexNow Broadcaster</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.indexnow.org/indexnow</text>
-        <rect x="440" y="26" width="140" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.indexnow.org/indexnow</text>
+        <rect x="440" y="26" width="140" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="510" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.url_published</text>
         <text x="740" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">API Key Header</text>
         <text x="960" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Today 00:32 (45ms)</text>
@@ -121,8 +121,8 @@
       <!-- Row 4 -->
       <g transform="translate(0, 284)">
         <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Static RSS / Atom XML Feed Builder</text>
-        <text x="24" y="52" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://cdn.mayastranawaloka.com/hooks/rebuild-rss</text>
-        <rect x="440" y="26" width="130" height="24" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="24" y="52" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://cdn.mayastranawaloka.com/hooks/rebuild-rss</text>
+        <rect x="440" y="26" width="130" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="505" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">article.all_events</text>
         <text x="740" y="42" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">HMAC-SHA256</text>
         <text x="960" y="42" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Nov 12 11:15 (8ms)</text>
@@ -133,7 +133,7 @@
 
     <!-- Bottom Security Policy -->
     <g transform="translate(0, 700)">
-      <rect x="0" y="0" width="1280" height="120" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="120" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">WEBHOOK SECURITY &amp; RETRY CONFIGURATION</text>
       <line x1="24" y1="46" x2="1256" y2="46" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="72" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">1. Cryptographic HMAC-SHA256 signature calculated over timestamp + JSON body to eliminate replay attacks.</text>

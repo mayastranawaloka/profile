@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#fafafa"/>
     </linearGradient>
     <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
@@ -13,14 +13,14 @@
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/sandbox</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/sandbox</text>
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Brand in Agentic Ops -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AGENTIC OPS</text>
@@ -48,11 +48,11 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="5" fill="#09090b"/>
   <text x="64" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Autonomous Swarm #04</text>
-  <text x="64" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
+  <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">gVisor Secure Isolated Code Sandbox</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Ephemeral Container Runtimes, Memory Caps &amp; Zero-Egress Network Blackhole</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Ephemeral Container Runtimes, Memory Caps &amp; Zero-Egress Network Blackhole</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -66,23 +66,23 @@
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="20" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE EPHEMERAL RUNNERS</text>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE EPHEMERAL RUNNERS</text>
       <text x="20" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">64</text>
       <text x="180" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">MICRO-VM</text>
       <text x="20" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Isolated Kernel Space Architecture</text>
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="345" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HOST ESCAPE INCIDENTS</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HOST ESCAPE INCIDENTS</text>
       <text x="345" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0</text>
       <text x="505" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">ZERO ESCAPE</text>
       <text x="345" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">100% Kernel Intercept Enforced</text>
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="670" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">STRICT MEMORY CEILING</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">STRICT MEMORY CEILING</text>
       <text x="670" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">128MB</text>
       <text x="830" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">CGROUPS</text>
       <text x="670" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">OOM-Kill Enforced Instantly</text>
-      <rect x="975" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="995" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">NETWORK EGRESS STATE</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">NETWORK EGRESS STATE</text>
       <text x="995" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">BLACKHOLE</text>
       <text x="1155" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">OFFLINE</text>
       <text x="995" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Host Socket Exposure Allowed</text>
@@ -90,35 +90,35 @@
     <!-- Main Split Panels -->
     <g transform="translate(0, 114)">
       <!-- Left Panel: High Density Table -->
-      <rect width="820" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <rect width="820" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Active Sandbox Runner Sessions &amp; Isolation Metrics</text>
-      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Dynamically executes agent-compiled code without risking host operating system integrity</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Dynamically executes agent-compiled code without risking host operating system integrity</text>
 
       <!-- Search / Filter Pill -->
       <rect x="580" y="24" width="216" height="30" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="596" y="44" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
 
       <!-- Table Separator -->
       <line x1="24" y1="78" x2="796" y2="78" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Table Headers -->
-        <text x="24" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RUNNER ID</text>
-        <text x="210" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AGENT WORKER</text>
-        <text x="390" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RUNTIME LANG</text>
-        <text x="520" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CPU QUOTA</text>
-        <text x="640" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MEMORY USED</text>
-        <text x="720" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RUNNER ID</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AGENT WORKER</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RUNTIME LANG</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CPU QUOTA</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MEMORY USED</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <line x1="24" y1="108" x2="796" y2="108" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#f4f4f5" stroke-width="1"/>
 
       <!-- Rows -->
       <!-- Row 1 -->
-      <rect x="12" y="114" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="142" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">RUN-0x882</text>
       <text x="210" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Python Data Analyzer</text>
       <text x="390" y="142" fill="#09090b" font-family="monospace" font-size="12">Python 3.11</text>
       <text x="520" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.5 Cores</text>
-      <text x="640" y="142" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">42 MB / 128MB</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">42 MB / 128MB</text>
       <rect x="716" y="126" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="141" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">RUNNING</text>
       <!-- Row 2 -->
@@ -127,16 +127,16 @@
       <text x="210" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SQL Transformation Worker</text>
       <text x="390" y="196" fill="#09090b" font-family="monospace" font-size="12">Go 1.22 Runtime</text>
       <text x="520" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.2 Cores</text>
-      <text x="640" y="196" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">18 MB / 128MB</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">18 MB / 128MB</text>
       <rect x="716" y="180" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="195" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">COMPLETED</text>
       <!-- Row 3 -->
-      <rect x="12" y="222" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="250" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">RUN-0x650</text>
       <text x="210" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Spreadsheet Formula Parser</text>
       <text x="390" y="250" fill="#09090b" font-family="monospace" font-size="12">Node 20 Runtime</text>
       <text x="520" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.4 Cores</text>
-      <text x="640" y="250" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">54 MB / 128MB</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">54 MB / 128MB</text>
       <rect x="716" y="234" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="249" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">RUNNING</text>
       <!-- Row 4 -->
@@ -145,28 +145,28 @@
       <text x="210" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Financial Metric Compiler</text>
       <text x="390" y="304" fill="#09090b" font-family="monospace" font-size="12">Rust Fast Runner</text>
       <text x="520" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.1 Cores</text>
-      <text x="640" y="304" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">12 MB / 128MB</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">12 MB / 128MB</text>
       <rect x="716" y="288" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="303" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">COMPLETED</text>
       <!-- Row 5 -->
-      <rect x="12" y="330" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="358" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">RUN-0x418</text>
       <text x="210" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Shell Safe Automation</text>
       <text x="390" y="358" fill="#09090b" font-family="monospace" font-size="12">BusyBox Sandbox</text>
       <text x="520" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">0.1 Cores</text>
-      <text x="640" y="358" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">8 MB / 128MB</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">8 MB / 128MB</text>
       <rect x="716" y="342" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="357" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">COMPLETED</text>
 
       <!-- Table Pagination / Status Footer -->
       <line x1="24" y1="620" x2="796" y2="620" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="646" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
       <rect x="710" y="632" width="86" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="753" y="648" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
 
       <!-- Right Panel: Telemetry / Inspector Drawer -->
       <g transform="translate(840, 0)">
-        <rect width="440" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect width="440" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
         <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Live Terminal Execution &amp; Syscall Logs</text>
         <line x1="24" y1="58" x2="416" y2="58" stroke="#e4e4e7" stroke-width="1"/>
         <g transform="translate(24, 80)">
@@ -174,23 +174,23 @@
           <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">TERMINAL OUTPUT (STDOUT / STDERR)</text>
 
           <g transform="translate(20, 50)">
-            <rect width="352" height="220" rx="4" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
-            <text x="16" y="26" fill="#52525b" font-family="monospace" font-size="11">$ python3 reconcile_variance.py</text>
+            <rect width="352" height="220" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+            <text x="16" y="26" fill="#71717a" font-family="monospace" font-size="11">$ python3 reconcile_variance.py</text>
             <text x="16" y="48" fill="#18181b" font-family="monospace" font-size="11">[+] Loading 14,290 ledger records...</text>
             <text x="16" y="70" fill="#18181b" font-family="monospace" font-size="11">[+] Validating double-entry balance: 0.00</text>
             <text x="16" y="92" fill="#09090b" font-family="monospace" font-size="11">[OK] Variance checked: Zero anomalies.</text>
             <text x="16" y="114" fill="#27272a" font-family="monospace" font-size="11">[+] Memory footprint: 42.1 MB</text>
-            <text x="16" y="136" fill="#52525b" font-family="monospace" font-size="11">[+] Execution completed in 0.42s</text>
+            <text x="16" y="136" fill="#71717a" font-family="monospace" font-size="11">[+] Execution completed in 0.42s</text>
             <text x="16" y="160" fill="#09090b" font-family="monospace" font-size="11">[+] Return code: 0 (Clean Exit)</text>
           </g>
 
           <g transform="translate(20, 290)">
-            <rect width="352" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+            <rect width="352" height="150" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
             <text x="16" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">EPHEMERAL RUNNER LIFECYCLE</text>
-            <text x="16" y="50" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">MicroVM Provisioning Time: 45 ms</text>
+            <text x="16" y="50" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">MicroVM Provisioning Time: 45 ms</text>
             <text x="16" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Destruction: Automatic on Process End</text>
             <text x="16" y="94" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Ephemeral storage purged; zero artifacts kept</text>
-            <text x="16" y="114" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Host file system mounted read-only or blackholed</text>
+            <text x="16" y="114" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Host file system mounted read-only or blackholed</text>
           </g>
         </g>
       </g>

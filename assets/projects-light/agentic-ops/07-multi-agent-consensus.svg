@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#fafafa"/>
     </linearGradient>
     <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
@@ -13,14 +13,14 @@
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/consensus</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://agentic.internal.mayastranawaloka.com/consensus</text>
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Brand in Agentic Ops -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AGENTIC OPS</text>
@@ -48,11 +48,11 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="5" fill="#09090b"/>
   <text x="64" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Autonomous Swarm #04</text>
-  <text x="64" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
+  <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">34 Active Agent Threads</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Multi-Agent Consensus &amp; Majority Voting</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Swarm Cross-Examination, Self-Correction Loops &amp; Adversarial Debate Synthesis</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Swarm Cross-Examination, Self-Correction Loops &amp; Adversarial Debate Synthesis</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -66,23 +66,23 @@
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="20" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SYNTHESIS CONSENSUS</text>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SYNTHESIS CONSENSUS</text>
       <text x="20" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">99.8%</text>
       <text x="180" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">AGREED</text>
       <text x="20" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Cross-Agent Consensus Rate</text>
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="345" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MEDIAN DEBATE ROUNDS</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MEDIAN DEBATE ROUNDS</text>
       <text x="345" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">3.2</text>
       <text x="505" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">REFINED</text>
       <text x="345" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Refinement Cycles Before Decision</text>
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="670" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SPECIALIST WORKERS</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">SPECIALIST WORKERS</text>
       <text x="670" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">4</text>
       <text x="830" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SWARM FLEET</text>
       <text x="670" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Planner, Coder, Critic, Judge</text>
-      <rect x="975" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="995" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HALLUCINATIONS CAUGHT</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HALLUCINATIONS CAUGHT</text>
       <text x="995" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">148</text>
       <text x="1155" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">REFUTED</text>
       <text x="995" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Filtered by Adversarial Critic Agent</text>
@@ -90,35 +90,35 @@
     <!-- Main Split Panels -->
     <g transform="translate(0, 114)">
       <!-- Left Panel: High Density Table -->
-      <rect width="820" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <rect width="820" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Deliberation Sessions &amp; Multi-Agent Verdicts</text>
-      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Independent agents formulate hypotheses and cross-examine facts before committing actions</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Independent agents formulate hypotheses and cross-examine facts before committing actions</text>
 
       <!-- Search / Filter Pill -->
       <rect x="580" y="24" width="216" height="30" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="596" y="44" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter agent swarms...</text>
 
       <!-- Table Separator -->
       <line x1="24" y1="78" x2="796" y2="78" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Table Headers -->
-        <text x="24" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SESSION ID</text>
-        <text x="210" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TASK OBJECTIVE</text>
-        <text x="390" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PRIMARY HYPOTHESIS</text>
-        <text x="520" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CRITIC VERDICT</text>
-        <text x="640" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONFIDENCE</text>
-        <text x="720" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SESSION ID</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TASK OBJECTIVE</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PRIMARY HYPOTHESIS</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CRITIC VERDICT</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CONFIDENCE</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <line x1="24" y1="108" x2="796" y2="108" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#f4f4f5" stroke-width="1"/>
 
       <!-- Rows -->
       <!-- Row 1 -->
-      <rect x="12" y="114" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="142" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">DEBATE-0x994</text>
       <text x="210" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Reconcile Q3 Variance</text>
       <text x="390" y="142" fill="#09090b" font-family="monospace" font-size="12">Allocation Misplaced</text>
       <text x="520" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">REFUTED &amp;gt; Corrected</text>
-      <text x="640" y="142" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
       <rect x="716" y="126" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="141" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
       <!-- Row 2 -->
@@ -127,16 +127,16 @@
       <text x="210" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Optimize Delivery Route</text>
       <text x="390" y="196" fill="#09090b" font-family="monospace" font-size="12">Hub Consolidation</text>
       <text x="520" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CONCURRED</text>
-      <text x="640" y="196" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">98.2%</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">98.2%</text>
       <rect x="716" y="180" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="195" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
       <!-- Row 3 -->
-      <rect x="12" y="222" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="250" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">DEBATE-0x992</text>
       <text x="210" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Validate PO Discount</text>
       <text x="390" y="250" fill="#09090b" font-family="monospace" font-size="12">2% Early Payment</text>
       <text x="520" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CONCURRED</text>
-      <text x="640" y="250" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
       <rect x="716" y="234" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="249" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
       <!-- Row 4 -->
@@ -145,28 +145,28 @@
       <text x="210" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Assess Credit Risk Ratio</text>
       <text x="390" y="304" fill="#09090b" font-family="monospace" font-size="12">1.8x Working Capital</text>
       <text x="520" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">REFUTED &amp;gt; 1.4x</text>
-      <text x="640" y="304" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">96.4%</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">96.4%</text>
       <rect x="716" y="288" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="303" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
       <!-- Row 5 -->
-      <rect x="12" y="330" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="358" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">DEBATE-0x990</text>
       <text x="210" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Audit Code Patch Security</text>
       <text x="390" y="358" fill="#09090b" font-family="monospace" font-size="12">Zero Memory Leak</text>
       <text x="520" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CONCURRED</text>
-      <text x="640" y="358" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100.0%</text>
       <rect x="716" y="342" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="357" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">VERIFIED</text>
 
       <!-- Table Pagination / Status Footer -->
       <line x1="24" y1="620" x2="796" y2="620" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="646" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active agent swarms</text>
       <rect x="710" y="632" width="86" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="753" y="648" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
 
       <!-- Right Panel: Telemetry / Inspector Drawer -->
       <g transform="translate(840, 0)">
-        <rect width="440" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect width="440" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
         <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Consensus Voting Weights &amp; Debate Tree</text>
         <line x1="24" y1="58" x2="416" y2="58" stroke="#e4e4e7" stroke-width="1"/>
         <g transform="translate(24, 80)">
@@ -194,12 +194,12 @@
           <text x="20" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Requires 80% weighted agreement before committing</text>
 
           <g transform="translate(20, 270)">
-            <rect width="352" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+            <rect width="352" height="150" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
             <text x="16" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">DEBATE ARTIFACT AUDIT</text>
-            <text x="16" y="50" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Full debate transcripts preserved in audit trail</text>
+            <text x="16" y="50" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Full debate transcripts preserved in audit trail</text>
             <text x="16" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Zero Black-Box Decisions</text>
             <text x="16" y="94" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Every deduction is traceable to concrete source files</text>
-            <text x="16" y="114" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Adversarial testing eliminates ungrounded assumptions</text>
+            <text x="16" y="114" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Adversarial testing eliminates ungrounded assumptions</text>
           </g>
         </g>
       </g>

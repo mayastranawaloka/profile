@@ -14,15 +14,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/settings/rbac</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/settings/rbac</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Logo / Brand in ERP -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
@@ -50,12 +50,12 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
   <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
-  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+  <text x="70" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
 
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Employee Directory &amp; RBAC Control</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Granular Security Roles, Department Policies &amp; Multi-Factor Access</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Granular Security Roles, Department Policies &amp; Multi-Factor Access</text>
 
     <!-- Date selector & export button -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -68,23 +68,23 @@
   <!-- KPI Cards -->
   <g transform="translate(290, 160)">
     <!-- Card 1 -->
-    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE OPERATORS</text>
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ACTIVE OPERATORS</text>
     <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">84 Users</text>
     <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Across all regional branches</text>
     <!-- Card 2 -->
-    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DEFINED ROLES</text>
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DEFINED ROLES</text>
     <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">12 Roles</text>
     <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Strict least-privilege matrix</text>
     <!-- Card 3 -->
-    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">PRIVILEGED ADMINS</text>
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">PRIVILEGED ADMINS</text>
     <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">3 Accounts</text>
     <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Root infrastructure operators</text>
     <!-- Card 4 -->
-    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MFA COMPLIANCE</text>
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">MFA COMPLIANCE</text>
     <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">100 %</text>
     <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Hardware security key enforced</text>
   </g>
@@ -92,25 +92,25 @@
 
   <!-- Main Content Grid -->
   <g transform="translate(290, 304)">
-    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
     <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Enterprise Role-Based Access Control (RBAC)</text>
-    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cryptographic user sessions, permission policies, and hardware token enforcement</text>
+    <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cryptographic user sessions, permission policies, and hardware token enforcement</text>
 
     <!-- Column Headers -->
     <g transform="translate(32, 90)">
-      <text x="50" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">EMPLOYEE NAME &amp; EMAIL</text>
-      <text x="380" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DEPARTMENT</text>
-      <text x="520" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ASSIGNED SECURITY ROLE</text>
-      <text x="800" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PERMISSION SCOPE</text>
-      <text x="1130" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">MFA STATUS</text>
+      <text x="50" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">EMPLOYEE NAME &amp; EMAIL</text>
+      <text x="380" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DEPARTMENT</text>
+      <text x="520" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ASSIGNED SECURITY ROLE</text>
+      <text x="800" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">PERMISSION SCOPE</text>
+      <text x="1130" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">MFA STATUS</text>
     </g>
 
     <g transform="translate(32, 110)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">B</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Budi Hartono, S.T.</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">budi.hartono@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">budi.hartono@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Operations</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Chief Operations Officer</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Full Cluster Admin</text>
@@ -118,11 +118,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 162)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">S</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Siti Rahmawati, S.E.</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">siti.rahma@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">siti.rahma@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Finance</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Senior Financial Controller</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">General Ledger Audit</text>
@@ -130,11 +130,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 214)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">A</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Ahmad Fauzi</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">ahmad.fauzi@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">ahmad.fauzi@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Logistics</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta Warehouse Manager</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inventory &amp; Outbound</text>
@@ -142,11 +142,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 266)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">D</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Dewi Kusuma</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">dewi.k@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">dewi.k@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Procurement</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Procurement Lead Specialist</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PO Creation &amp; Approval</text>
@@ -154,11 +154,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 318)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">R</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Reza Pratama</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">reza.p@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">reza.p@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Logistics</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Fleet Dispatch Coordinator</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Dispatch Queue Only</text>
@@ -166,11 +166,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 370)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">L</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Linda Wijaya</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">linda.w@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">linda.w@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Accounting</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Junior Tax &amp; Bookkeeper</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Read-Only Ledger</text>
@@ -178,11 +178,11 @@
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">2FA ACTIVE</text>
     </g>
     <g transform="translate(32, 422)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <circle cx="20" cy="24" r="14" fill="#f4f4f5" stroke="#e4e4e7"/>
       <text x="20" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">E</text>
       <text x="50" y="22" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Eko Saputra</text>
-      <text x="50" y="36" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">eko.s@mayastranawaloka.com</text>
+      <text x="50" y="36" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">eko.s@mayastranawaloka.com</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Operations</text>
       <text x="520" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Safety &amp; Facility Auditor</text>
       <text x="800" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Maintenance Log Read</text>
@@ -195,7 +195,7 @@
     <g transform="translate(32, 580)">
       <rect x="0" y="0" width="1206" height="50" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">MFA ENFORCEMENT: 100%</text>
-      <text x="300" y="32" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hardware WebAuthn / FIDO2 security keys mandatory for all privileged roles</text>
+      <text x="300" y="32" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hardware WebAuthn / FIDO2 security keys mandatory for all privileged roles</text>
     </g>
   </g>
 </svg>

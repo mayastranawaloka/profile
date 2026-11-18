@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#fafafa"/>
     </linearGradient>
     <linearGradient id="monoGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
@@ -13,14 +13,14 @@
   <rect width="1600" height="1000" fill="url(#bgGlow)"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://gateway.internal.mayastranawaloka.com/keys</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://gateway.internal.mayastranawaloka.com/keys</text>
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Brand in Gateway -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">AI GATEWAY</text>
@@ -48,11 +48,11 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="5" fill="#09090b"/>
   <text x="64" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Enterprise Vault #01</text>
-  <text x="64" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">HSM Encrypted / FIPS-140</text>
+  <text x="64" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">HSM Encrypted / FIPS-140</text>
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Hardware Security Module (HSM) Key Vault</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">FIPS 140-2 Level 3 Hardware Isolation, Envelope Encryption &amp; Key Rotation</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">FIPS 140-2 Level 3 Hardware Isolation, Envelope Encryption &amp; Key Rotation</text>
 
     <!-- Action buttons -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -66,23 +66,23 @@
   <g transform="translate(290, 150)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="20" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HARDWARE ISOLATED KEYS</text>
+      <rect x="0" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="20" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">HARDWARE ISOLATED KEYS</text>
       <text x="20" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">16</text>
       <text x="180" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SEALED</text>
       <text x="20" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero Plaintext Exposure to Host OS</text>
-      <rect x="325" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="345" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ENVELOPE ENCRYPTION</text>
+      <rect x="325" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="345" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ENVELOPE ENCRYPTION</text>
       <text x="345" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">AES-256</text>
       <text x="505" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">GCM CIPHER</text>
       <text x="345" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Root Key in Hardware Secure Enclave</text>
-      <rect x="650" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="670" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">KEY ROTATION CADENCE</text>
+      <rect x="650" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="670" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">KEY ROTATION CADENCE</text>
       <text x="670" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">24h</text>
       <text x="830" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">AUTOMATED</text>
       <text x="670" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Zero-Downtime Key Transitioning</text>
-      <rect x="975" y="0" width="300" height="96" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="995" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">AUTHORIZED SERVICE TOKENS</text>
+      <rect x="975" y="0" width="300" height="96" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="995" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">AUTHORIZED SERVICE TOKENS</text>
       <text x="995" y="64" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">142</text>
       <text x="1155" y="64" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">mTLS ROLES</text>
       <text x="995" y="82" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Role-Based Token Boundary Enforced</text>
@@ -90,35 +90,35 @@
     <!-- Main Split Panels -->
     <g transform="translate(0, 114)">
       <!-- Left Panel: High Density Table -->
-      <rect width="820" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <rect width="820" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Hardware-Backed Key Inventory &amp; Cryptographic Enclaves</text>
-      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tamper-resistant cryptographic boundaries with zero developer exposure to raw secrets</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tamper-resistant cryptographic boundaries with zero developer exposure to raw secrets</text>
 
       <!-- Search / Filter Pill -->
       <rect x="580" y="24" width="216" height="30" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="596" y="44" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter records...</text>
+      <text x="596" y="44" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Filter records...</text>
 
       <!-- Table Separator -->
       <line x1="24" y1="78" x2="796" y2="78" stroke="#e4e4e7" stroke-width="1"/>
 
       <!-- Table Headers -->
-        <text x="24" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">KEY IDENTIFIER</text>
-        <text x="210" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TARGET POOL</text>
-        <text x="390" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ENCLAVE ID</text>
-        <text x="520" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ROTATION CADENCE</text>
-        <text x="640" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESS SCOPE</text>
-        <text x="720" y="98" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
+        <text x="24" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">KEY IDENTIFIER</text>
+        <text x="210" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TARGET POOL</text>
+        <text x="390" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ENCLAVE ID</text>
+        <text x="520" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ROTATION CADENCE</text>
+        <text x="640" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ACCESS SCOPE</text>
+        <text x="720" y="98" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">STATUS</text>
 
-      <line x1="24" y1="108" x2="796" y2="108" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="24" y1="108" x2="796" y2="108" stroke="#f4f4f5" stroke-width="1"/>
 
       <!-- Rows -->
       <!-- Row 1 -->
-      <rect x="12" y="114" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="114" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="142" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">KEY-HSM-9021</text>
       <text x="210" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Deep Reasoning Pool</text>
       <text x="390" y="142" fill="#09090b" font-family="monospace" font-size="12">ENCLAVE-ALPHA-01</text>
       <text x="520" y="142" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Daily (Next: 04h)</text>
-      <text x="640" y="142" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inference:Write</text>
+      <text x="640" y="142" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inference:Write</text>
       <rect x="716" y="126" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="141" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 2 -->
@@ -127,16 +127,16 @@
       <text x="210" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">High-Throughput Pool</text>
       <text x="390" y="196" fill="#09090b" font-family="monospace" font-size="12">ENCLAVE-ALPHA-02</text>
       <text x="520" y="196" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Daily (Next: 11h)</text>
-      <text x="640" y="196" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inference:Write</text>
+      <text x="640" y="196" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Inference:Write</text>
       <rect x="716" y="180" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="195" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 3 -->
-      <rect x="12" y="222" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="222" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="250" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">KEY-HSM-7719</text>
       <text x="210" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Code Synthesis Pool</text>
       <text x="390" y="250" fill="#09090b" font-family="monospace" font-size="12">ENCLAVE-BETA-01</text>
       <text x="520" y="250" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Daily (Next: 18h)</text>
-      <text x="640" y="250" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CodeGen:Write</text>
+      <text x="640" y="250" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">CodeGen:Write</text>
       <rect x="716" y="234" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="249" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 4 -->
@@ -145,34 +145,34 @@
       <text x="210" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Vector Embedding Pool</text>
       <text x="390" y="304" fill="#09090b" font-family="monospace" font-size="12">ENCLAVE-GAMMA-01</text>
       <text x="520" y="304" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Weekly (Next: 3d)</text>
-      <text x="640" y="304" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Embed:ReadOnly</text>
+      <text x="640" y="304" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Embed:ReadOnly</text>
       <rect x="716" y="288" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="303" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
       <!-- Row 5 -->
-      <rect x="12" y="330" width="796" height="46" rx="4" fill="#f4f4f5"/>
+      <rect x="12" y="330" width="796" height="46" rx="4" fill="#fafafa"/>
       <text x="24" y="358" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">KEY-HSM-5102</text>
       <text x="210" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Backup Failover Pool</text>
       <text x="390" y="358" fill="#09090b" font-family="monospace" font-size="12">ENCLAVE-DELTA-01</text>
       <text x="520" y="358" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">On-Demand</text>
-      <text x="640" y="358" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Failover:Standby</text>
+      <text x="640" y="358" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Failover:Standby</text>
       <rect x="716" y="342" width="76" height="22" rx="3" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1"/>
       <text x="754" y="357" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" text-anchor="middle">OPTIMAL</text>
 
       <!-- Table Pagination / Status Footer -->
       <line x1="24" y1="620" x2="796" y2="620" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="646" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active records</text>
+      <text x="24" y="646" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Showing 1 to 5 of active records</text>
       <rect x="710" y="632" width="86" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="753" y="648" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" text-anchor="middle">Page 1 / 1</text>
 
       <!-- Right Panel: Telemetry / Inspector Drawer -->
       <g transform="translate(840, 0)">
-        <rect width="440" height="666" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <rect width="440" height="666" rx="6" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
         <text x="24" y="38" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Enclave Security Inspector &amp; PCR Validation</text>
         <line x1="24" y1="58" x2="416" y2="58" stroke="#e4e4e7" stroke-width="1"/>
         <g transform="translate(24, 80)">
           <rect width="392" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
           <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">HARDWARE ATTESTATION</text>
-          <text x="20" y="54" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PCR0 Measurement Hash (SHA-256):</text>
+          <text x="20" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PCR0 Measurement Hash (SHA-256):</text>
           <text x="20" y="78" fill="#18181b" font-family="monospace" font-size="10">e3b0c44298fc1c149afbf4c8996fb92427</text>
           <text x="20" y="104" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Integrity Status: VERIFIED</text>
           <text x="20" y="124" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Kernel memory dump protection armed</text>
@@ -183,20 +183,20 @@
           <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">DECRYPTION PERFORMANCE</text>
           <text x="20" y="60" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">0.12 ms</text>
           <text x="140" y="60" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hardware Overhead</text>
-          <text x="20" y="86" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Peak Decryption Calls: 14,820 req/sec</text>
+          <text x="20" y="86" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Peak Decryption Calls: 14,820 req/sec</text>
           <line x1="20" y1="104" x2="372" y2="104" stroke="#e4e4e7" stroke-width="1"/>
           <text x="20" y="126" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Envelope Protocol: AES-256-GCM Ephemeral</text>
-          <text x="20" y="146" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Rotated in memory without socket tear-down</text>
+          <text x="20" y="146" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Rotated in memory without socket tear-down</text>
         </g>
 
         <g transform="translate(24, 440)">
           <rect width="392" height="180" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
           <text x="20" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">EMERGENCY KILLSWITCH</text>
-          <text x="20" y="54" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Global API Key Revocation Gateway</text>
+          <text x="20" y="54" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Global API Key Revocation Gateway</text>
           <rect x="20" y="74" width="352" height="38" rx="4" fill="#e4e4e7"/>
           <text x="196" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" text-anchor="middle">KILLSWITCH ARMED (STANDBY)</text>
           <text x="20" y="134" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Single-action zeroization revokes all 16 enclaves</text>
-          <text x="20" y="154" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Requires quorum approval from 2 executive officers</text>
+          <text x="20" y="154" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Requires quorum approval from 2 executive officers</text>
         </g>
       </g>
     </g>

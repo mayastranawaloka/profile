@@ -311,35 +311,35 @@
   </g>
   <!-- Blueprint Geodetic Markers -->
   <g class="markers">
-    <path d="M 63.28 67.39 L 71.28 67.39 M 67.28 63.39 L 67.28 71.39" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 63.28 67.39 L 71.28 67.39 M 67.28 63.39 L 67.28 71.39" stroke="#71717a" stroke-width="1.2" />
     <circle cx="67.28" cy="67.39" r="1.5" fill="#09090b" />
     <text x="67.28" y="55.39" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="start" font-weight="600" letter-spacing="0.5">SABANG</text>
     <text x="67.28" y="47.39" font-family="monospace" font-size="7" fill="#71717a" text-anchor="start">05°53'N 95°18'E</text>
-    <path d="M 333.98 330.53 L 341.98 330.53 M 337.98 326.53 L 337.98 334.53" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 333.98 330.53 L 341.98 330.53 M 337.98 326.53 L 337.98 334.53" stroke="#71717a" stroke-width="1.2" />
     <circle cx="337.98" cy="330.53" r="1.5" fill="#09090b" />
     <text x="337.98" y="346.53" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="middle" font-weight="600" letter-spacing="0.5">JAKARTA</text>
     <text x="337.98" y="354.53" font-family="monospace" font-size="7" fill="#71717a" text-anchor="middle">06°12'S 106°50'E</text>
-    <path d="M 572.05 216.7 L 580.05 216.7 M 576.05 212.7 L 576.05 220.7" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 572.05 216.7 L 580.05 216.7 M 576.05 212.7 L 576.05 220.7" stroke="#71717a" stroke-width="1.2" />
     <circle cx="576.05" cy="216.7" r="1.5" fill="#09090b" />
     <text x="576.05" y="204.7" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="middle" font-weight="600" letter-spacing="0.5">NUSANTARA</text>
     <text x="576.05" y="196.7" font-family="monospace" font-size="7" fill="#71717a" text-anchor="middle">00°58'S 116°59'E // IKN</text>
-    <path d="M 629.34 307.46 L 637.34 307.46 M 633.34 303.46 L 633.34 311.46" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 629.34 307.46 L 637.34 307.46 M 633.34 303.46 L 633.34 311.46" stroke="#71717a" stroke-width="1.2" />
     <circle cx="633.34" cy="307.46" r="1.5" fill="#09090b" />
     <text x="633.34" y="323.46" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="middle" font-weight="600" letter-spacing="0.5">MAKASSAR</text>
     <text x="633.34" y="331.46" font-family="monospace" font-size="7" fill="#71717a" text-anchor="middle">05°08'S 119°25'E</text>
-    <path d="M 797.44 74.79 L 805.44 74.79 M 801.44 70.79 L 801.44 78.79" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 797.44 74.79 L 805.44 74.79 M 801.44 70.79 L 801.44 78.79" stroke="#71717a" stroke-width="1.2" />
     <circle cx="801.44" cy="74.79" r="1.5" fill="#09090b" />
     <text x="801.44" y="62.790000000000006" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="middle" font-weight="600" letter-spacing="0.5">MIANGAS</text>
     <text x="801.44" y="54.790000000000006" font-family="monospace" font-size="7" fill="#71717a" text-anchor="middle">05°33'N 126°35'E</text>
-    <path d="M 716.44 431.08 L 724.44 431.08 M 720.44 427.08 L 720.44 435.08" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 716.44 431.08 L 724.44 431.08 M 720.44 427.08 L 720.44 435.08" stroke="#71717a" stroke-width="1.2" />
     <circle cx="720.44" cy="431.08" r="1.5" fill="#09090b" />
     <text x="720.44" y="447.08" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="middle" font-weight="600" letter-spacing="0.5">ROTE</text>
     <text x="720.44" y="455.08" font-family="monospace" font-size="7" fill="#71717a" text-anchor="middle">10°49'S 123°08'E</text>
-    <path d="M 1129.19 250.65 L 1137.19 250.65 M 1133.19 246.65 L 1133.19 254.65" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 1129.19 250.65 L 1137.19 250.65 M 1133.19 246.65 L 1133.19 254.65" stroke="#71717a" stroke-width="1.2" />
     <circle cx="1133.19" cy="250.65" r="1.5" fill="#09090b" />
     <text x="1133.19" y="238.65" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="end" font-weight="600" letter-spacing="0.5">JAYAPURA</text>
     <text x="1133.19" y="230.65" font-family="monospace" font-size="7" fill="#71717a" text-anchor="end">02°32'S 140°42'E</text>
-    <path d="M 1120.5 380.37 L 1128.5 380.37 M 1124.5 376.37 L 1124.5 384.37" stroke="#52525b" stroke-width="1.2" />
+    <path d="M 1120.5 380.37 L 1128.5 380.37 M 1124.5 376.37 L 1124.5 384.37" stroke="#71717a" stroke-width="1.2" />
     <circle cx="1124.5" cy="380.37" r="1.5" fill="#09090b" />
     <text x="1124.5" y="396.37" font-family="monospace" font-size="8.5" fill="#27272a" text-anchor="end" font-weight="600" letter-spacing="0.5">MERAUKE</text>
     <text x="1124.5" y="404.37" font-family="monospace" font-size="7" fill="#71717a" text-anchor="end">08°29'S 140°20'E</text>

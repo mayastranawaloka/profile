@@ -3,15 +3,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/developers/graphql</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/developers/graphql</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="250" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <text x="28" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
@@ -36,7 +36,7 @@
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Developer Platform / GraphQL Schema Playground &amp; Edge API</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Developer Platform / GraphQL Schema Playground &amp; Edge API</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
     <text x="905" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Schema Docs</text>
 
@@ -47,17 +47,17 @@
   <!-- API Playground Area -->
   <g transform="translate(280, 140)">
     <!-- API Status Bar -->
-    <rect x="0" y="0" width="1280" height="42" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+    <rect x="0" y="0" width="1280" height="42" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
     <text x="20" y="26" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Endpoint: https://api.mayastranawaloka.com/graphql</text>
-    <text x="560" y="26" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge POP: SIN-01 (Singapore)</text>
+    <text x="560" y="26" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge POP: SIN-01 (Singapore)</text>
     <rect x="1140" y="8" width="120" height="26" rx="4" fill="#09090b" fill-opacity="0.1"/>
     <text x="1200" y="25" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Cache HIT (18ms)</text>
 
     <!-- Side-by-Side: GraphQL Editor (Left) & JSON Response (Right) -->
     <g transform="translate(0, 58)">
       <!-- Editor -->
-      <rect x="0" y="0" width="628" height="670" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="628" height="40" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="628" height="670" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="628" height="40" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="20" y="25" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">GRAPHQL QUERY INPUT</text>
 
       <g transform="translate(20, 60)">
@@ -109,8 +109,8 @@
 
       <!-- Query Variables Box -->
       <g transform="translate(20, 520)">
-        <rect x="0" y="0" width="588" height="120" rx="4" fill="#18181c" stroke="#e4e4e7" stroke-width="1"/>
-        <text x="16" y="25" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">QUERY VARIABLES (JSON)</text>
+        <rect x="0" y="0" width="588" height="120" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+        <text x="16" y="25" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">QUERY VARIABLES (JSON)</text>
         <text x="16" y="55" fill="#18181b" font-family="monospace" font-size="12">{{</text>
         <text x="32" y="80" fill="#09090b" font-family="monospace" font-size="12">"slug": "architectural-minimalist-systems"</text>
         <text x="16" y="105" fill="#18181b" font-family="monospace" font-size="12">}}</text>
@@ -119,8 +119,8 @@
 
     <!-- Response Window -->
     <g transform="translate(652, 58)">
-      <rect x="0" y="0" width="628" height="670" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="628" height="40" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="628" height="670" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="628" height="40" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="20" y="25" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">JSON RESPONSE (200 OK - 18ms - 1.2 KB)</text>
 
       <g transform="translate(20, 60)">
@@ -145,7 +145,7 @@
 
     <!-- Bottom Edge Delivery Bar -->
     <g transform="translate(0, 742)">
-      <rect x="0" y="0" width="1280" height="78" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="1280" height="78" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="30" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">EDGE CDN DISTRIBUTION NETWORK</text>
       <text x="24" y="55" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">24 Global Edge POPs Active | 99.98% Cache Hit Ratio | Global Propagation &lt; 80ms</text>
       <rect x="1120" y="20" width="136" height="38" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>

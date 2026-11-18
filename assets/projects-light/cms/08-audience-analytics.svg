@@ -3,15 +3,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/analytics/audience</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://cms.mayastranawaloka.com/analytics/audience</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="250" height="948" fill="#0c0c0e" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="250" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <text x="28" y="98" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="2">PULSE CMS</text>
 
   <g transform="translate(24, 140)">
@@ -36,7 +36,7 @@
 
   <!-- Editorial Top Bar -->
   <g transform="translate(280, 80)">
-    <text x="0" y="24" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Audience Analytics / Global Reader Metrics (Last 30 Days)</text>
+    <text x="0" y="24" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Audience Analytics / Global Reader Metrics (Last 30 Days)</text>
     <rect x="850" y="4" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
     <text x="905" y="26" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="middle">Filter: 30D</text>
 
@@ -48,23 +48,23 @@
   <g transform="translate(280, 140)">
     <!-- 4 KPI Cards -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="24" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL UNIQUE READERS</text>
+      <rect x="0" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="24" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL UNIQUE READERS</text>
       <text x="24" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">248,910</text>
       <text x="200" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">+18.4% MoM</text>
 
-      <rect x="326" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="350" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG TIME ON PAGE</text>
+      <rect x="326" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="350" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG TIME ON PAGE</text>
       <text x="350" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">4m 32s</text>
       <text x="490" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Benchmark 2m 10s</text>
 
-      <rect x="652" y="0" width="300" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="676" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG SCROLL DEPTH</text>
+      <rect x="652" y="0" width="300" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="676" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">AVG SCROLL DEPTH</text>
       <text x="676" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">78.6%</text>
       <text x="820" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">92% to Conclusion</text>
 
-      <rect x="978" y="0" width="302" height="96" rx="4" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="1002" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL ARTICLE SHARES</text>
+      <rect x="978" y="0" width="302" height="96" rx="4" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <text x="1002" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">TOTAL ARTICLE SHARES</text>
       <text x="1002" y="66" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800">14,290</text>
       <text x="1140" y="66" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">LinkedIn 58% / X 42%</text>
     </g>
@@ -72,19 +72,19 @@
     <!-- Split Panels: Large Chart (Left) + Referrals/Geo (Right) -->
     <g transform="translate(0, 116)">
       <!-- Left Chart Panel -->
-      <rect x="0" y="0" width="840" height="704" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="840" height="44" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="840" height="704" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="840" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="27" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">READER ENGAGEMENT &amp; DAILY TRAFFIC VOLUME</text>
-      <text x="620" y="27" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">White: Uniques | Dotted: Returns</text>
+      <text x="620" y="27" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">White: Uniques | Dotted: Returns</text>
 
       <!-- Chart Graphics -->
       <g transform="translate(30, 80)">
         <!-- Gridlines -->
-        <line x1="40" y1="50" x2="780" y2="50" stroke="#e4e4e7" stroke-width="1"/>
-        <line x1="40" y1="130" x2="780" y2="130" stroke="#e4e4e7" stroke-width="1"/>
-        <line x1="40" y1="210" x2="780" y2="210" stroke="#e4e4e7" stroke-width="1"/>
-        <line x1="40" y1="290" x2="780" y2="290" stroke="#e4e4e7" stroke-width="1"/>
-        <line x1="40" y1="370" x2="780" y2="370" stroke="#e4e4e7" stroke-width="1"/>
+        <line x1="40" y1="50" x2="780" y2="50" stroke="#f4f4f5" stroke-width="1"/>
+        <line x1="40" y1="130" x2="780" y2="130" stroke="#f4f4f5" stroke-width="1"/>
+        <line x1="40" y1="210" x2="780" y2="210" stroke="#f4f4f5" stroke-width="1"/>
+        <line x1="40" y1="290" x2="780" y2="290" stroke="#f4f4f5" stroke-width="1"/>
+        <line x1="40" y1="370" x2="780" y2="370" stroke="#f4f4f5" stroke-width="1"/>
 
         <!-- Y Axis labels -->
         <text x="30" y="55" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">12K</text>
@@ -100,7 +100,7 @@
         <path d="M 50 340 Q 150 280 250 300 T 450 180 T 650 100 T 770 120" stroke="#09090b" stroke-width="3" fill="none"/>
 
         <!-- Return Readers Dotted Line -->
-        <path d="M 50 360 Q 150 330 250 340 T 450 270 T 650 210 T 770 230" stroke="#52525b" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+        <path d="M 50 360 Q 150 330 250 340 T 450 270 T 650 210 T 770 230" stroke="#71717a" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
 
         <!-- Peak Indicator Point -->
         <circle cx="650" cy="100" r="5" fill="#09090b"/>
@@ -121,8 +121,8 @@
     <!-- Right Panels: Referral & Geo -->
     <g transform="translate(864, 116)">
       <!-- Top: Referral Sources -->
-      <rect x="0" y="0" width="416" height="340" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-      <rect x="0" y="0" width="416" height="44" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="416" height="340" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="416" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="27" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">TOP REFERRAL SOURCES</text>
 
       <g transform="translate(24, 64)">
@@ -154,8 +154,8 @@
 
       <!-- Bottom: Geographic Distribution -->
       <g transform="translate(0, 364)">
-        <rect x="0" y="0" width="416" height="340" rx="6" fill="#111114" stroke="#e4e4e7" stroke-width="1"/>
-        <rect x="0" y="0" width="416" height="44" fill="#151518" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="0" y="0" width="416" height="340" rx="6" fill="#ffffff" stroke="#e4e4e7" stroke-width="1"/>
+        <rect x="0" y="0" width="416" height="44" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
         <text x="24" y="27" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">GEOGRAPHIC DISTRIBUTION</text>
 
         <g transform="translate(24, 70)">

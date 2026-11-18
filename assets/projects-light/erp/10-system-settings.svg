@@ -14,15 +14,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/settings/system</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/settings/system</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Logo / Brand in ERP -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
@@ -50,12 +50,12 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
   <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
-  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+  <text x="70" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
 
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Cluster Parameters &amp; Integrations</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Database Replication, Webhook Endpoints, Encrypted Backup &amp; Timezone Policies</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Database Replication, Webhook Endpoints, Encrypted Backup &amp; Timezone Policies</text>
 
     <!-- Date selector & export button -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -68,23 +68,23 @@
   <!-- KPI Cards -->
   <g transform="translate(290, 160)">
     <!-- Card 1 -->
-    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DB REPLICATION LAG</text>
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DB REPLICATION LAG</text>
     <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">0.08 ms</text>
     <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Synchronous replica active</text>
     <!-- Card 2 -->
-    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">WEBHOOK DELIVERABILITY</text>
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">WEBHOOK DELIVERABILITY</text>
     <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">99.98 %</text>
     <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Zero dropped callbacks</text>
     <!-- Card 3 -->
-    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">BACKUP FREQUENCY</text>
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">BACKUP FREQUENCY</text>
     <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Hourly WAL</text>
     <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Encrypted multi-region S3</text>
     <!-- Card 4 -->
-    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">UPTIME SLA</text>
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">UPTIME SLA</text>
     <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">99.99 %</text>
     <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Continuous zero-downtime</text>
   </g>
@@ -92,21 +92,21 @@
 
   <!-- Main Content Grid -->
   <g transform="translate(290, 304)">
-    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
     <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Cluster Parameters &amp; Database Configurations</text>
-    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PostgreSQL high-availability cluster topology, webhook consumers, and cryptographic keys</text>
+    <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PostgreSQL high-availability cluster topology, webhook consumers, and cryptographic keys</text>
 
     <!-- Cluster parameter cards -->
     <g transform="translate(32, 100)">
       <rect x="0" y="0" width="580" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Primary Database Engine</text>
-      <text x="24" y="56" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PostgreSQL 16.4 Enterprise on High-Speed NVMe</text>
+      <text x="24" y="56" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">PostgreSQL 16.4 Enterprise on High-Speed NVMe</text>
       <text x="24" y="90" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Active Connections: 48 / 500 &#8226; Max Pool Size: 1,000</text>
       <text x="24" y="115" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Write-Ahead Log (WAL) Streaming: 0.08ms Latency</text>
 
       <rect x="620" y="0" width="586" height="150" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="644" y="32" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Automated Backup &amp; Disaster Recovery</text>
-      <text x="644" y="56" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Encrypted S3 Multi-Region Geographic Replication</text>
+      <text x="644" y="56" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Encrypted S3 Multi-Region Geographic Replication</text>
       <text x="644" y="90" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Hourly Differential Snapshot &#8226; Daily Full Image</text>
       <text x="644" y="115" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">RTO Target: &lt; 5 Minutes &#8226; RPO Target: &lt; 30 Seconds</text>
     </g>
@@ -115,16 +115,16 @@
     <g transform="translate(32, 280)">
       <rect x="0" y="0" width="1206" height="240" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="24" y="34" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600">Enterprise Integrations &amp; Webhook Endpoints</text>
-      <text x="24" y="58" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Configured external event subscribers with HMAC-SHA256 signature verification</text>
+      <text x="24" y="58" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Configured external event subscribers with HMAC-SHA256 signature verification</text>
 
       <line x1="24" y1="85" x2="1182" y2="85" stroke="#e4e4e7"/>
       <text x="24" y="115" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Courier Line-Haul Dispatch Webhook</text>
-      <text x="400" y="115" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.logistics-partner.co.id/v1/shipments/inbound</text>
+      <text x="400" y="115" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.logistics-partner.co.id/v1/shipments/inbound</text>
       <text x="1100" y="115" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">ACTIVE (200 OK)</text>
 
       <line x1="24" y1="145" x2="1182" y2="145" stroke="#e4e4e7"/>
       <text x="24" y="175" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Corporate Banking Mutasi Feed (BCA API)</text>
-      <text x="400" y="175" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.mayastranawaloka.com/integrations/banking/bca/mutasi</text>
+      <text x="400" y="175" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">https://api.mayastranawaloka.com/integrations/banking/bca/mutasi</text>
       <text x="1100" y="175" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="end">ACTIVE (200 OK)</text>
     </g>
   </g>

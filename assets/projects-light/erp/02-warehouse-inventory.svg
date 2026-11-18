@@ -14,15 +14,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/inventory</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/inventory</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Logo / Brand in ERP -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
@@ -50,12 +50,12 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
   <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
-  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+  <text x="70" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
 
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Warehouse Inventory Matrix</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SKU Stock Levels, Multi-Location Distribution &amp; Reorder Automation</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">SKU Stock Levels, Multi-Location Distribution &amp; Reorder Automation</text>
 
     <!-- Date selector & export button -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -68,23 +68,23 @@
   <!-- KPI Cards -->
   <g transform="translate(290, 160)">
     <!-- Card 1 -->
-    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TOTAL WAREHOUSED UNITS</text>
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TOTAL WAREHOUSED UNITS</text>
     <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">14,290 SKUs</text>
     <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Distributed across 4 hubs</text>
     <!-- Card 2 -->
-    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">LOW STOCK ALERTS</text>
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">LOW STOCK ALERTS</text>
     <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">14 Items</text>
     <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Triggered automated reorder</text>
     <!-- Card 3 -->
-    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">INVENTORY VALUATION</text>
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">INVENTORY VALUATION</text>
     <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">Rp 18.62 B</text>
     <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Calculated on FIFO basis</text>
     <!-- Card 4 -->
-    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TURNOVER RATIO</text>
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">TURNOVER RATIO</text>
     <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">8.4x / Year</text>
     <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Above sector median</text>
   </g>
@@ -92,121 +92,121 @@
 
   <!-- Main Content Grid -->
   <g transform="translate(290, 304)">
-    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <rect x="0" y="0" width="1270" height="660" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
     
     <!-- Table Header Controls -->
     <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Master Stock &amp; Inventory Ledger</text>
-    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14,290 verified SKUs across 4 nationwide fulfillment facilities</text>
+    <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">14,290 verified SKUs across 4 nationwide fulfillment facilities</text>
 
     <!-- Search input inside table -->
     <rect x="940" y="24" width="298" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="960" y="45" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Search by SKU or description...</text>
+    <text x="960" y="45" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Search by SKU or description...</text>
 
     <!-- Column Headers -->
     <g transform="translate(32, 90)">
-      <text x="10" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SKU CODE</text>
-      <text x="130" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ITEM DESCRIPTION</text>
-      <text x="490" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CATEGORY</text>
-      <text x="670" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">WAREHOUSE HUB</text>
-      <text x="820" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ON HAND</text>
-      <text x="910" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RESERVED</text>
-      <text x="990" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MIN ALERT</text>
-      <text x="1080" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">STATUS</text>
+      <text x="10" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">SKU CODE</text>
+      <text x="130" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ITEM DESCRIPTION</text>
+      <text x="490" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CATEGORY</text>
+      <text x="670" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">WAREHOUSE HUB</text>
+      <text x="820" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">ON HAND</text>
+      <text x="910" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">RESERVED</text>
+      <text x="990" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MIN ALERT</text>
+      <text x="1080" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" text-anchor="middle">STATUS</text>
     </g>
 
     <g transform="translate(32, 110)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99201</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Precision Linear Ball Bearing 12mm</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Industrial Hardware</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta Central</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">4,200</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">300</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">500</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">300</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">500</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 158)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99202</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Brushless DC Motor 48V 750W</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Electric Drive</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Surabaya Hub</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">1,850</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">120</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">250</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">120</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">250</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 206)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99203</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Anodized Aluminum Extrusion 4040</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Raw Structural</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Medan Depot</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">820</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">40</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">150</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">40</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">150</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 254)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99204</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Solid Carbide End Mill 4-Flute</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Tooling Consumable</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta Central</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">290</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">85</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">300</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">85</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">300</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">LOW STOCK</text>
     </g>
     <g transform="translate(32, 302)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99205</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Micro-Controller Industrial Gateway</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Electronics</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Makassar Hub</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">640</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">15</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">15</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">100</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 350)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99206</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">High-Torque Planetary Gearbox 10:1</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Transmission</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Surabaya Hub</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">410</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">30</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">80</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">30</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">80</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 398)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99207</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Heavy Duty Hydraulic Cylinder 100mm</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Pneumatics</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Jakarta Central</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">180</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">25</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">50</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">25</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">50</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
     <g transform="translate(32, 446)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
       <text x="10" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">SKU-99208</text>
       <text x="130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Silicone Thermal Conductive Pad 2mm</text>
       <text x="490" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Consumables</text>
       <text x="670" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Medan Depot</text>
       <text x="820" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">3,100</text>
-      <text x="910" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">200</text>
-      <text x="990" y="28" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">400</text>
+      <text x="910" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">200</text>
+      <text x="990" y="28" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">400</text>
       <rect x="1080" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="1130" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">HEALTHY</text>
     </g>
@@ -214,8 +214,8 @@
 
     <!-- Pagination Footer -->
     <g transform="translate(32, 590)">
-      <line x1="0" y1="0" x2="1206" y2="0" stroke="#e4e4e7" stroke-width="1"/>
-      <text x="10" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Showing 1 - 8 of 14,290 verified stock SKUs</text>
+      <line x1="0" y1="0" x2="1206" y2="0" stroke="#f4f4f5" stroke-width="1"/>
+      <text x="10" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Showing 1 - 8 of 14,290 verified stock SKUs</text>
       <rect x="1050" y="16" width="70" height="28" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
       <text x="1085" y="34" fill="#18181b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Previous</text>
       <rect x="1136" y="16" width="70" height="28" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>

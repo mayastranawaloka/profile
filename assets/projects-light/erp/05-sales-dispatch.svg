@@ -14,15 +14,15 @@
   <rect width="1600" height="1000" fill="#ffffff"/>
 
   <!-- Browser Header Bar -->
-  <rect width="1600" height="52" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+  <rect width="1600" height="52" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="36" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="56" cy="26" r="6" fill="#e4e4e7"/>
   <circle cx="76" cy="26" r="6" fill="#e4e4e7"/>
   <rect x="520" y="14" width="560" height="24" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-  <text x="800" y="30" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/orders/dispatch</text>
+  <text x="800" y="30" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">https://erp.mayastranawaloka.com/orders/dispatch</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="52" width="260" height="948" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+  <rect x="0" y="52" width="260" height="948" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
   <!-- Logo / Brand in ERP -->
   <rect x="28" y="80" width="24" height="24" rx="4" fill="#09090b"/>
   <text x="64" y="97" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">MAYA ERP</text>
@@ -50,12 +50,12 @@
   <rect x="24" y="930" width="212" height="42" rx="6" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
   <circle cx="48" cy="951" r="12" fill="#09090b" fill-opacity="0.2"/>
   <text x="70" y="948" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Admin Operations</text>
-  <text x="70" y="961" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
+  <text x="70" y="961" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Branch #04 - Jakarta</text>
 
   <!-- Top bar inside main content -->
   <g transform="translate(290, 80)">
     <text x="0" y="26" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">Sales Dispatch &amp; Logistics Hub</text>
-    <text x="0" y="48" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Outbound Order Queue, Courier Dispatch Manifests &amp; SLA Tracking</text>
+    <text x="0" y="48" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Outbound Order Queue, Courier Dispatch Manifests &amp; SLA Tracking</text>
 
     <!-- Date selector & export button -->
     <rect x="1070" y="8" width="110" height="34" rx="4" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
@@ -68,23 +68,23 @@
   <!-- KPI Cards -->
   <g transform="translate(290, 160)">
     <!-- Card 1 -->
-    <rect x="0" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="24" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">READY FOR DISPATCH</text>
+    <rect x="0" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="24" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">READY FOR DISPATCH</text>
     <text x="24" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">42 Orders</text>
     <text x="24" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Staged at outbound bays</text>
     <!-- Card 2 -->
-    <rect x="324" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="348" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DISPATCHED TODAY</text>
+    <rect x="324" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="348" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">DISPATCHED TODAY</text>
     <text x="348" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">286 Consignments</text>
     <text x="348" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Jakarta central hub</text>
     <!-- Card 3 -->
-    <rect x="648" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="672" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ON-TIME ARRIVAL RATE</text>
+    <rect x="648" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="672" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">ON-TIME ARRIVAL RATE</text>
     <text x="672" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">98.9 %</text>
     <text x="672" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Within guaranteed window</text>
     <!-- Card 4 -->
-    <rect x="972" y="0" width="298" height="120" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="996" y="34" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">AVERAGE TRANSIT</text>
+    <rect x="972" y="0" width="298" height="120" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
+    <text x="996" y="34" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">AVERAGE TRANSIT</text>
     <text x="996" y="74" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700">18.4 Hours</text>
     <text x="996" y="100" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Direct line-haul delivery</text>
   </g>
@@ -92,21 +92,21 @@
 
   <!-- Main Content Grid -->
   <g transform="translate(290, 304)">
-    <rect x="0" y="0" width="830" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+    <rect x="0" y="0" width="830" height="660" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
     <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Active Outbound Dispatch Queue</text>
-    <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Automated courier manifest sorting and shipment delivery SLA counters</text>
+    <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Automated courier manifest sorting and shipment delivery SLA counters</text>
 
     <!-- Column Headers -->
     <g transform="translate(32, 95)">
-      <text x="0" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">WAYBILL #</text>
-      <text x="140" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CLIENT / CONSIGNEE</text>
-      <text x="380" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DESTINATION</text>
-      <text x="520" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CARRIER</text>
-      <text x="660" y="0" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MANIFEST STATUS</text>
+      <text x="0" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">WAYBILL #</text>
+      <text x="140" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CLIENT / CONSIGNEE</text>
+      <text x="380" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">DESTINATION</text>
+      <text x="520" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">CARRIER</text>
+      <text x="660" y="0" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">MANIFEST STATUS</text>
     </g>
 
     <g transform="translate(32, 115)">
-      <line x1="0" y1="0" x2="766" y2="0" stroke="#e4e4e7"/>
+      <line x1="0" y1="0" x2="766" y2="0" stroke="#f4f4f5"/>
       <text x="0" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WB-JKT-9901</text>
       <text x="140" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Karya Bangun Sentosa</text>
       <text x="380" y="28" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Bandung</text>
@@ -114,7 +114,7 @@
       <rect x="660" y="12" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="710" y="28" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">DISPATCHED</text>
 
-      <line x1="0" y1="48" x2="766" y2="48" stroke="#e4e4e7"/>
+      <line x1="0" y1="48" x2="766" y2="48" stroke="#f4f4f5"/>
       <text x="0" y="76" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WB-JKT-9902</text>
       <text x="140" y="76" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Sinarmas Indah Logistik</text>
       <text x="380" y="76" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Semarang</text>
@@ -122,7 +122,7 @@
       <rect x="660" y="60" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="710" y="76" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">IN TRANSIT</text>
 
-      <line x1="0" y1="96" x2="766" y2="96" stroke="#e4e4e7"/>
+      <line x1="0" y1="96" x2="766" y2="96" stroke="#f4f4f5"/>
       <text x="0" y="124" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WB-JKT-9903</text>
       <text x="140" y="124" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Bima Sakti Kontraktor</text>
       <text x="380" y="124" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Surabaya</text>
@@ -130,7 +130,7 @@
       <rect x="660" y="108" width="100" height="24" rx="4" fill="#09090b" fill-opacity="0.08"/>
       <text x="710" y="124" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" text-anchor="middle">DELIVERED</text>
 
-      <line x1="0" y1="144" x2="766" y2="144" stroke="#e4e4e7"/>
+      <line x1="0" y1="144" x2="766" y2="144" stroke="#f4f4f5"/>
       <text x="0" y="172" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">WB-JKT-9904</text>
       <text x="140" y="172" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Pacific Indo Pratama</text>
       <text x="380" y="172" fill="#27272a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Denpasar</text>
@@ -141,24 +141,24 @@
 
     <!-- Right Side: Fleet Performance -->
     <g transform="translate(850, 0)">
-      <rect x="0" y="0" width="420" height="660" rx="8" fill="#f4f4f5" stroke="#e4e4e7" stroke-width="1"/>
+      <rect x="0" y="0" width="420" height="660" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
       <text x="32" y="44" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600">Carrier Breakdown &amp; SLA</text>
-      <text x="32" y="66" fill="#52525b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Fulfillment rate by logistics provider</text>
+      <text x="32" y="66" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Fulfillment rate by logistics provider</text>
 
       <g transform="translate(32, 105)">
         <text x="0" y="16" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">Internal Fleet Transport</text>
         <text x="350" y="16" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">99.4% On-Time</text>
-        <rect x="0" y="28" width="350" height="8" rx="4" fill="#e4e4e7"/>
+        <rect x="0" y="28" width="350" height="8" rx="4" fill="#f4f4f5"/>
         <rect x="0" y="28" width="345" height="8" rx="4" fill="#09090b"/>
 
         <text x="0" y="80" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">JNE Freight Logistics</text>
         <text x="350" y="80" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">97.8% On-Time</text>
-        <rect x="0" y="92" width="350" height="8" rx="4" fill="#e4e4e7"/>
+        <rect x="0" y="92" width="350" height="8" rx="4" fill="#f4f4f5"/>
         <rect x="0" y="92" width="320" height="8" rx="4" fill="#09090b"/>
 
         <text x="0" y="144" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">SiCepat Cargo</text>
         <text x="350" y="144" fill="#09090b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" text-anchor="end">98.2% On-Time</text>
-        <rect x="0" y="156" width="350" height="8" rx="4" fill="#e4e4e7"/>
+        <rect x="0" y="156" width="350" height="8" rx="4" fill="#f4f4f5"/>
         <rect x="0" y="156" width="330" height="8" rx="4" fill="#09090b"/>
       </g>
     </g>
