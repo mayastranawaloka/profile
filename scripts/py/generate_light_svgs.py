@@ -102,25 +102,7 @@ def convert_svg_to_light(svg_text):
     return converted
 
 def process_all_svgs():
-    # 1. Master project SVGs in assets/
-    master_svgs = [
-        "assets/project-erp.svg",
-        "assets/project-ecommerce.svg",
-        "assets/project-cms.svg",
-        "assets/project-llm-gateway.svg",
-        "assets/project-agentic-ops.svg",
-    ]
-    for m in master_svgs:
-        with open(m, "r", encoding="utf-8") as f:
-            content = f.read()
-        light_content = convert_svg_to_light(content)
-        out_path = m.replace(".svg", "-light.svg")
-        with open(out_path, "w", encoding="utf-8") as f:
-            f.write(light_content)
-        ET.fromstring(light_content)
-        print(f"Created {out_path}")
-
-    # 2. Detail project SVGs in assets/projects/
+    # 1. Project SVGs in assets/projects/ (both showcases and screen details)
     detail_svgs = glob.glob("assets/projects/**/*.svg", recursive=True)
     for d in detail_svgs:
         with open(d, "r", encoding="utf-8") as f:
@@ -133,15 +115,15 @@ def process_all_svgs():
         ET.fromstring(light_content)
         print(f"Created {out_path}")
 
-    # 3. Indonesia map SVG (Daytime mode: omit dark mode night lights)
-    if os.path.exists("assets/indonesia-map.svg"):
-        with open("assets/indonesia-map.svg", "r", encoding="utf-8") as f:
+    # 2. Indonesia map SVG (Daytime mode: omit dark mode night lights)
+    if os.path.exists("assets/maps/indonesia-map.svg"):
+        with open("assets/maps/indonesia-map.svg", "r", encoding="utf-8") as f:
             map_content = f.read()
         # Strip dark-mode specific night lights and city blooms for clean daytime map
         clean_daytime_map = re.sub(r'\s*<!-- Metropolitan Night Glow Bloom[\s\S]*?<!-- Blueprint Geodetic Markers -->', '\n  <!-- Blueprint Geodetic Markers -->', map_content)
         clean_daytime_map = re.sub(r'\s*<!-- Realistic City Night Light Radial Bloom Gradient[\s\S]*?</style>', '', clean_daytime_map)
         light_map = convert_svg_to_light(clean_daytime_map)
-        out_map = "assets/indonesia-map-light.svg"
+        out_map = "assets/maps/indonesia-map-light.svg"
         with open(out_map, "w", encoding="utf-8") as f:
             f.write(light_map)
         ET.fromstring(light_map)

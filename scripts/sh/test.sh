@@ -34,6 +34,36 @@ if [[ "$ROOT_SH_COUNT" -ne 0 ]]; then
   exit 1
 fi
 
+ROOT_CSS_COUNT=$(find . -maxdepth 1 -name "*.css" | wc -l)
+if [[ "$ROOT_CSS_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found CSS in root, should be in assets/css/"
+  find . -maxdepth 1 -name "*.css"
+  exit 1
+fi
+
+ROOT_JS_COUNT=$(find . -maxdepth 1 -name "*.js" | wc -l)
+if [[ "$ROOT_JS_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found JS in root, should be in assets/js/"
+  find . -maxdepth 1 -name "*.js"
+  exit 1
+fi
+
+# Verify no loose files in assets/ (everything must be strictly structured in subdirectories)
+ASSETS_LOOSE_COUNT=$(find assets -maxdepth 1 -type f | wc -l)
+if [[ "$ASSETS_LOOSE_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found loose files directly in assets/, should be neatly placed in subfolders"
+  find assets -maxdepth 1 -type f
+  exit 1
+fi
+
+# Verify no loose scripts in scripts/ (must be in py/, js/, sh/)
+SCRIPTS_LOOSE_COUNT=$(find scripts -maxdepth 1 -type f | wc -l)
+if [[ "$SCRIPTS_LOOSE_COUNT" -ne 0 ]]; then
+  echo "FAIL: Found loose files directly in scripts/, should be in py/, js/, or sh/"
+  find scripts -maxdepth 1 -type f
+  exit 1
+fi
+
 PAGES=(
   "index.html"
   "pages/about.html"
@@ -75,7 +105,7 @@ for page in "${PAGES[@]}"; do
 
   # Verify Footer and original logo image
   grep -q 'BY. PT MAYASTRA NAWALOKA NUSANTARA' "$page" || { echo "FAIL: footer info missing in $page"; exit 1; }
-  grep -q 'assets/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
+  grep -q 'assets/brand/logo.png"' "$page" || { echo "FAIL: original logo missing in $page"; exit 1; }
 
   # Verify all 5 capabilities in footer
   grep -q 'project-erp.html' "$page" || { echo "FAIL: ERP link missing in footer of $page"; exit 1; }
@@ -190,7 +220,7 @@ files = [
     "index.html", "pages/about.html", "pages/service.html", "pages/articles.html", "pages/contact.html",
     "pages/project-erp.html", "pages/project-ecommerce.html", "pages/project-cms.html",
     "pages/project-llm-gateway.html", "pages/project-agentic-ops.html", "pages/article.html",
-    "style.css", "script.js"
+    "assets/css/style.css", "assets/js/script.js"
 ] + glob.glob("assets/**/*.svg", recursive=True)
 
 # Regex matching emojis across standard unicode blocks
@@ -464,10 +494,10 @@ print("[*] Verified Enterprise AI Integration SEO priority across all pages and 
 '
 
 # 15. Verify Tap Highlight Disabled and Faded Grey Text Selection Styling
-echo "[*] Verifying Tap Highlight Disabled and Faded Grey Selection in style.css..."
-grep -q -- '-webkit-tap-highlight-color: transparent' style.css || { echo "FAIL: tap-highlight-color not disabled in style.css"; exit 1; }
-grep -q '::selection' style.css || { echo "FAIL: ::selection not defined in style.css"; exit 1; }
-grep -q '::-moz-selection' style.css || { echo "FAIL: ::-moz-selection not defined in style.css"; exit 1; }
-echo "[*] Verified tap highlight reset and custom selection in style.css cleanly."
+echo "[*] Verifying Tap Highlight Disabled and Faded Grey Selection in assets/css/style.css..."
+grep -q -- '-webkit-tap-highlight-color: transparent' assets/css/style.css || { echo "FAIL: tap-highlight-color not disabled in assets/css/style.css"; exit 1; }
+grep -q '::selection' assets/css/style.css || { echo "FAIL: ::selection not defined in assets/css/style.css"; exit 1; }
+grep -q '::-moz-selection' assets/css/style.css || { echo "FAIL: ::-moz-selection not defined in assets/css/style.css"; exit 1; }
+echo "[*] Verified tap highlight reset and custom selection in assets/css/style.css cleanly."
 
 echo "[OK] All 11 pages, 55 project SVGs, team assets, sitemap.xml, and robots.txt passed verification suite cleanly!"

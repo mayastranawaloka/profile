@@ -51,26 +51,22 @@ const initMayastraApp = () => {
       if (!src) return;
 
       if (theme === 'light') {
-        // Swap project detail SVGs (assets/projects/ -> assets/projects-light/)
+        // Swap project SVGs (both showcases and detail screens)
         if (src.includes('projects/') && !src.includes('projects-light/')) {
           img.setAttribute('src', src.replace('projects/', 'projects-light/'));
-        }
-        // Swap master project SVGs (assets/project-*.svg -> assets/project-*-light.svg)
-        else if (src.includes('project-') && !src.includes('-light.svg')) {
-          img.setAttribute('src', src.replace('.svg', '-light.svg'));
         }
         // Swap indonesia map underlay (indonesia-map.svg -> indonesia-map-light.svg)
         else if (src.includes('indonesia-map.svg') && !src.includes('-light.svg')) {
           img.setAttribute('src', src.replace('indonesia-map.svg', 'indonesia-map-light.svg'));
         }
       } else {
-        // Restore dark project detail SVGs
+        // Restore dark project SVGs
         if (src.includes('projects-light/')) {
           img.setAttribute('src', src.replace('projects-light/', 'projects/'));
         }
-        // Restore dark master project SVGs
-        else if (src.includes('-light.svg')) {
-          img.setAttribute('src', src.replace('-light.svg', '.svg'));
+        // Restore dark indonesia map underlay
+        else if (src.includes('indonesia-map-light.svg')) {
+          img.setAttribute('src', src.replace('indonesia-map-light.svg', 'indonesia-map.svg'));
         }
       }
     });

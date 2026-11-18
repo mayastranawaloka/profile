@@ -34,7 +34,7 @@ const { chromium } = require('playwright');
     // 4. Check footer original logo loaded
     const logoImg = page.locator('.giant-logo-image');
     const logoSrc = await logoImg.getAttribute('src');
-    if (logoSrc !== 'assets/logo.png') throw new Error(`Footer logo must be assets/logo.png, got ${logoSrc}`);
+    if (logoSrc !== 'assets/brand/logo.png') throw new Error(`Footer logo must be assets/brand/logo.png, got ${logoSrc}`);
     const nw = await logoImg.evaluate(el => el.naturalWidth);
     const nh = await logoImg.evaluate(el => el.naturalHeight);
     console.log(`  Footer Logo original photo: ${nw}x${nh}`);

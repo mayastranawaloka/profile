@@ -147,7 +147,7 @@ def generate_svg():
     svg_parts.append('</svg>')
 
     full_svg = "\n".join(svg_parts)
-    output_path = "assets/indonesia-map.svg"
+    output_path = "assets/maps/indonesia-map.svg"
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(full_svg)
     print(f"Generated {output_path} successfully ({len(full_svg)} bytes).")

@@ -110,7 +110,7 @@ def generate_all_erp():
     # -------------------------------------------------------------
     # Screen 01: Executive Overview (100% Home Master Parity)
     # -------------------------------------------------------------
-    with open("assets/project-erp.svg", "r", encoding="utf-8") as f:
+    with open("assets/projects/showcases/project-erp.svg", "r", encoding="utf-8") as f:
         svg_01 = f.read()
     with open("assets/projects/erp/01-executive-overview.svg", "w", encoding="utf-8") as f:
         f.write(svg_01)

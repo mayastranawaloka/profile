@@ -7,27 +7,27 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/logo.png</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/brand/logo.png</image:loc>
       <image:title>PT Mayastra Nawaloka Nusantara Emblem</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/project-erp.svg</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/showcases/project-erp.svg</image:loc>
       <image:title>Enterprise Resource Planning Showcase</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/project-ecommerce.svg</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/showcases/project-ecommerce.svg</image:loc>
       <image:title>Modern Commerce Engine Showcase</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/project-cms.svg</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/showcases/project-cms.svg</image:loc>
       <image:title>Editorial CMS Platform Showcase</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/project-llm-gateway.svg</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/showcases/project-llm-gateway.svg</image:loc>
       <image:title>Enterprise LLM Gateway Showcase</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/project-agentic-ops.svg</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/projects/showcases/project-agentic-ops.svg</image:loc>
       <image:title>Autonomous Agentic Ops Showcase</image:title>
     </image:image>
   </url>
@@ -37,7 +37,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.mayastranawaloka.com/assets/logo.png</image:loc>
+      <image:loc>https://www.mayastranawaloka.com/assets/brand/logo.png</image:loc>
       <image:title>PT Mayastra Nawaloka Nusantara Official Logo</image:title>
     </image:image>
     <image:image>

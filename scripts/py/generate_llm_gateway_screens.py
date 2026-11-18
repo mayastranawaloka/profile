@@ -806,7 +806,7 @@ for fname, d in screens.items():
     print(f"Generated {path}")
 
 # Write master SVG byte-for-byte identical to Screen 01
-master_path = "assets/project-llm-gateway.svg"
+master_path = "assets/projects/showcases/project-llm-gateway.svg"
 with open(os.path.join(out_dir, "01-gateway-telemetry.svg"), "r", encoding="utf-8") as f:
     master_content = f.read()
 

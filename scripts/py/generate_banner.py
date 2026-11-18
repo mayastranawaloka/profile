@@ -3,8 +3,8 @@ import os
 from PIL import Image, ImageFilter
 
 def create_panoramic_banner():
-    logo_path = 'assets/logo.png'
-    output_path = 'assets/logo-banner.png'
+    logo_path = 'assets/brand/logo.png'
+    output_path = 'assets/brand/logo-banner.png'
 
     if not os.path.exists(logo_path):
         raise FileNotFoundError(f"Missing {logo_path}")

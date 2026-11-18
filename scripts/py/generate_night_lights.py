@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate realistic Indonesian population density night lights for assets/indonesia-map.svg.
+Generate realistic Indonesian population density night lights for assets/maps/indonesia-map.svg.
 Based on real demographic distribution (BPS Indonesia):
 - Java (~56% of population): Dense continuous chains (Jabodetabek, Bandung Raya, Pantura, Joglosemar, Gerbangkertosusilo, Malang Raya)
 - Sumatra (~21%): Medan-Deli, Palembang, Lampung, Pekanbaru, Batam, Padang
@@ -319,7 +319,8 @@ def generate_lights():
     return "\n".join(elements)
 
 def inject_night_lights():
-    with open("assets/indonesia-map.svg", "r", encoding="utf-8") as f:
+    map_path = "assets/maps/indonesia-map.svg"
+    with open(map_path, "r", encoding="utf-8") as f:
         svg_content = f.read()
 
     # 1. Check if <defs> exists and inject bloom gradient + animation CSS
@@ -383,12 +384,12 @@ def inject_night_lights():
 
     svg_content = svg_content.replace(marker_target, lights_svg + '\n' + marker_target)
 
-    with open("assets/indonesia-map.svg", "w", encoding="utf-8") as f:
+    with open(map_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
     # Validate XML
     ET.fromstring(svg_content)
-    print("[OK] assets/indonesia-map.svg successfully updated and validated cleanly as valid XML!")
+    print(f"[OK] {map_path} successfully updated and validated cleanly as valid XML!")
 
 if __name__ == "__main__":
     inject_night_lights()

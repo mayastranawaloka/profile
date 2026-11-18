@@ -69,7 +69,7 @@ cms_screens = {}
 # -------------------------------------------------------------
 # Screen 1: Editorial Markdown Workspace (100% Home Master Parity)
 # -------------------------------------------------------------
-with open("assets/project-cms.svg", "r", encoding="utf-8") as f:
+with open("assets/projects/showcases/project-cms.svg", "r", encoding="utf-8") as f:
     cms_screens["01-editorial-workspace.svg"] = f.read()
 
 # -------------------------------------------------------------

@@ -56,7 +56,7 @@ def generate_all_ecommerce():
     # -------------------------------------------------------------
     # Screen 01: Curated Storefront (100% Home Master Parity)
     # -------------------------------------------------------------
-    with open("assets/project-ecommerce.svg", "r", encoding="utf-8") as f:
+    with open("assets/projects/showcases/project-ecommerce.svg", "r", encoding="utf-8") as f:
         svg_01 = f.read()
     with open("assets/projects/ecommerce/01-curated-storefront.svg", "w", encoding="utf-8") as f:
         f.write(svg_01)

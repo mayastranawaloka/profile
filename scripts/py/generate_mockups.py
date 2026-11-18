@@ -204,9 +204,9 @@ erp_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
   </g>
 </svg>'''
 
-with open("assets/project-erp.svg", "w") as f:
+with open("assets/projects/showcases/project-erp.svg", "w") as f:
     f.write(erp_svg.strip())
-print("[OK] generated assets/project-erp.svg")
+print("[OK] generated assets/projects/showcases/project-erp.svg")
 
 # 2. Toko Online / E-Commerce Mockup SVG
 ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
@@ -341,9 +341,9 @@ ecommerce_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100
   </g>
 </svg>'''
 
-with open("assets/project-ecommerce.svg", "w") as f:
+with open("assets/projects/showcases/project-ecommerce.svg", "w") as f:
     f.write(ecommerce_svg.strip())
-print("[OK] generated assets/project-ecommerce.svg")
+print("[OK] generated assets/projects/showcases/project-ecommerce.svg")
 
 # 3. CMS Mockup SVG
 cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" fill="none">
@@ -484,6 +484,6 @@ cms_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" wid
   </g>
 </svg>'''
 
-with open("assets/project-cms.svg", "w") as f:
+with open("assets/projects/showcases/project-cms.svg", "w") as f:
     f.write(cms_svg.strip())
-print("[OK] generated assets/project-cms.svg")
+print("[OK] generated assets/projects/showcases/project-cms.svg")
